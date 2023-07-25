@@ -1,0 +1,50 @@
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p -slabs -r2c_dir 1 -ingrid 4 1 1 -no-gpu-aware -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p -slabs -r2c_dir 1 -ingrid 4 1 1 -no-gpu-aware -n5
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p -slabs -r2c_dir 1 -ingrid 4 1 1 -no-gpu-aware -n5
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p -slabs -r2c_dir 1 -ingrid 4 1 1 -no-gpu-aware -n5
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  plan_cufft_r2c::cufftMakePlanMany() (forward) failed with error code: 5
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  plan_cufft_r2c::cufftMakePlanMany() (forward) failed with error code: 5
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  plan_cufft_r2c::cufftMakePlanMany() (forward) failed with error code: 5
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  plan_cufft_r2c::cufftMakePlanMany() (forward) failed with error code: 5
+/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/ensemble__5c07b928/worker5//tmp_files/321.sh: line 3: 33649 Aborted                 (core dumped) speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p -slabs -r2c_dir 1 -ingrid 4 1 1 -no-gpu-aware -n5
+x3207c0s1b1n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 134

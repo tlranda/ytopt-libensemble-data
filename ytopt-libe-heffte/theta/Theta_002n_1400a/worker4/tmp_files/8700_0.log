@@ -1,0 +1,15 @@
+
+----------------------------------------------------------------------------- 
+heFFTe performance test
+----------------------------------------------------------------------------- 
+Backend:   fftw
+Size:      1400x1400x1400
+MPI ranks:  128
+Grids: (16, 4, 2)  (1, 1, 128)  -  (16, 8, 1)  -  
+Time per run: 6.88133 (s)
+Performance:  62.5129 GFlops/s
+Memory usage: 1316MB/rank
+Tolerance:    1e-11
+Max error:    5.34295e-15
+
+Application 28476794 resources: utime ~15392s, stime ~7917s, Rss ~2396160, inblocks ~211124, outblocks ~48

@@ -1,0 +1,207 @@
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 512 512 512 -slabs -r2c_dir 2 -ingrid 4 2 1 -outgrid 4 2 1
+MPICH ERROR [Rank 3] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s13b1n0] - Abort(3218063) (rank 3 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x148168000000, scnts=0x1f68990, sdispls=0x1f68ce0, dtype=0x4c001041, rbuf=0x148170080000, rcnts=0x1f68f90, rdispls=0x1f68fc0, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x148168000000, scnts=0x1f68990, sdispls=0x1f68ce0, dtype=0x4c001041, rbuf=0x148170080000, rcnts=0x1f68f90, rdispls=0x1f68fc0, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 4] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s19b0n0] - Abort(204544655) (rank 4 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14c538000000, scnts=0x1a7ebc0, sdispls=0x1a7eea0, dtype=0x4c001041, rbuf=0x14c540080000, rcnts=0x1a417b0, rdispls=0x1a417e0, datatype=dtype=0x4c001041, comm=comm=0xc4000003) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14c538000000, scnts=0x1a7ebc0, sdispls=0x1a7eea0, dtype=0x4c001041, rbuf=0x14c540080000, rcnts=0x1a417b0, rdispls=0x1a417e0, datatype=dtype=0x4c001041, comm=comm=0xc4000003) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 2] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s13b1n0] - Abort(1009851023) (rank 2 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1476e8000000, scnts=0x2082960, sdispls=0x2082cb0, dtype=0x4c001041, rbuf=0x1476f0080000, rcnts=0x2082f60, rdispls=0x2082f90, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1476e8000000, scnts=0x2082960, sdispls=0x2082cb0, dtype=0x4c001041, rbuf=0x1476f0080000, rcnts=0x2082f60, rdispls=0x2082f90, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 1] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s13b1n0] - Abort(70326927) (rank 1 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1548b8000000, scnts=0xe81960, sdispls=0xe81cb0, dtype=0x4c001041, rbuf=0x1548c0080000, rcnts=0xe81f60, rdispls=0xe81f90, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1548b8000000, scnts=0xe81960, sdispls=0xe81cb0, dtype=0x4c001041, rbuf=0x1548c0080000, rcnts=0xe81f60, rdispls=0xe81f90, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 6] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s19b0n0] - Abort(338762383) (rank 6 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14f616000000, scnts=0xa328c0, sdispls=0xa32ba0, dtype=0x4c001041, rbuf=0x14f61e080000, rcnts=0xa32e50, rdispls=0xa32e80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14f616000000, scnts=0xa328c0, sdispls=0xa32ba0, dtype=0x4c001041, rbuf=0x14f61e080000, rcnts=0xa32e50, rdispls=0xa32e80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 7] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s19b0n0] - Abort(808524431) (rank 7 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x152a20000000, scnts=0x1bed8c0, sdispls=0x1bedba0, dtype=0x4c001041, rbuf=0x152a28080000, rcnts=0x1bede50, rdispls=0x1bede80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x152a20000000, scnts=0x1bed8c0, sdispls=0x1bedba0, dtype=0x4c001041, rbuf=0x152a28080000, rcnts=0x1bede50, rdispls=0x1bede80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 5] [job id a5c2aa82-bcf1-47c6-875b-4348de89ba53] [Sun Jul  2 00:56:08 2023] [x3104c0s19b0n0] - Abort(472980111) (rank 5 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1507f6000000, scnts=0x1de88c0, sdispls=0x1de8ba0, dtype=0x4c001041, rbuf=0x1507fe080000, rcnts=0x1de8e50, rdispls=0x1de8e80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x1507f6000000, scnts=0x1de88c0, sdispls=0x1de8ba0, dtype=0x4c001041, rbuf=0x1507fe080000, rcnts=0x1de8e50, rdispls=0x1de8e80, datatype=dtype=0x4c001041, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+x3104c0s19b0n0.hsn.cm.polaris.alcf.anl.gov: rank 4 exited with code 255

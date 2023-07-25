@@ -1,0 +1,94 @@
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
++ speed3d_r2c cufft float-long 1400 1400 1400 -reorder -a2a -p2p_pl -slabs -r2c_dir 1 -ingrid 2 2 2 -outgrid 8 1 1 -no-gpu-aware -n5
+
+----------------------------------------------------------------------------- 
+heFFTe performance test
+----------------------------------------------------------------------------- 
+Backend:   cufft
+Size:      1400x1400x1400
+MPI ranks:    8
+Grids: (2, 2, 2)  (1, 1, 8)  -  (8, 1, 1)  -  
+Time per run: 0.962 (s)
+Performance:  447.164 GFlops/s
+Memory usage: 10471MB/rank
+Tolerance:    0.0005
+Max error:    1.43903e-05
+

@@ -1,0 +1,129 @@
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p -pencils -r2c_dir 2 -outgrid 4 2 1
+MPICH ERROR [Rank 4] [job id 8079be4a-079b-41b9-add4-2785c1bd7a0b] [Sun Jul  2 00:57:34 2023] [x3104c0s19b0n0] - Abort(808049039) (rank 4 in comm 0): Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x152b31000000, count=2129920, dtype=0x4c000840, dest=0, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x152b31000000, count=2129920, dtype=0x4c000840, dest=0, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 6] [job id 8079be4a-079b-41b9-add4-2785c1bd7a0b] [Sun Jul  2 00:57:34 2023] [x3104c0s19b0n0] - Abort(942266767) (rank 6 in comm 0): Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x14a666000000, count=2097152, dtype=0x4c000840, dest=7, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x14a666000000, count=2097152, dtype=0x4c000840, dest=7, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 0] [job id 8079be4a-079b-41b9-add4-2785c1bd7a0b] [Sun Jul  2 00:57:34 2023] [x3104c0s13b1n0] - Abort(808049039) (rank 0 in comm 0): Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x149731000000, count=2097152, dtype=0x4c000840, dest=4, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Send: Other MPI error, error stack:
+PMPI_Send(163).................: MPI_Send(buf=0x149731000000, count=2097152, dtype=0x4c000840, dest=4, tag=0, MPI_COMM_WORLD) failed
+PMPI_Send(143).................: 
+MPIR_Wait_impl(41).............: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+x3104c0s13b1n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 255
