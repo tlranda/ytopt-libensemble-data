@@ -1,0 +1,1360 @@
+Modify PS1
+Calling on 1 workers with 64 mpi ranks per worker for size 64
+Tue Jul 25 18:54:00 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_64r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_64a_default_time.txt
+Tue Jul 25 18:54:05 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_64a_default.log
+-50.7571 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_64a_default_time.txt
+5.241 seconds
+Write to: ThetaDefault/defaults.csv
+      p0  p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float  64        ...             64       False       2             1
+
+[1 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 64
+Tue Jul 25 18:54:09 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_128r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_64a_default_time.txt
+Tue Jul 25 18:54:15 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_64a_default.log
+-13.9167 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_64a_default_time.txt
+5.851 seconds
+Write to: ThetaDefault/defaults.csv
+      p0  p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float  64        ...             64       False       2             1
+0  float  64        ...             64       False       2             1
+
+[2 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 64
+Tue Jul 25 18:54:16 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_256r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_64a_default_time.txt
+Tue Jul 25 18:54:22 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_64a_default.log
+-13.1377 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_64a_default_time.txt
+6.196 seconds
+Write to: ThetaDefault/defaults.csv
+      p0  p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float  64        ...             64       False       2             1
+1  float  64        ...             64       False       2             1
+0  float  64        ...             64       False       2             1
+
+[3 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 64
+Tue Jul 25 18:54:23 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_512r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_64a_default_time.txt
+Tue Jul 25 18:54:29 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_64a_default.log
+-9.69587 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_64a_default_time.txt
+6.774 seconds
+Write to: ThetaDefault/defaults.csv
+      p0  p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float  64        ...             64       False       2             1
+1  float  64        ...             64       False       2             1
+2  float  64        ...             64       False       2             1
+0  float  64        ...             64       False       2             1
+
+[4 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 64
+Tue Jul 25 18:54:30 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_1024r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_64a_default_time.txt
+Tue Jul 25 18:54:38 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_64a_default.log
+-3.02847 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_64a_default_time.txt
+8.401 seconds
+Write to: ThetaDefault/defaults.csv
+      p0  p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float  64        ...             64       False       2             1
+1  float  64        ...             64       False       2             1
+2  float  64        ...             64       False       2             1
+3  float  64        ...             64       False       2             1
+0  float  64        ...             64       False       2             1
+
+[5 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 64
+Tue Jul 25 18:54:39 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_4096r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_64a_default_time.txt
+Tue Jul 25 18:55:02 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_64a_default.log
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 64
+Tue Jul 25 18:55:02 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 64 > ThetaDefault/Theta_8192r_64a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_64a_default_time.txt
+Tue Jul 25 18:55:14 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_64a_default.log
+
+
+Calling on 1 workers with 64 mpi ranks per worker for size 128
+Tue Jul 25 18:55:15 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_64r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_128a_default_time.txt
+Tue Jul 25 18:55:20 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_128a_default.log
+-80.5208 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_128a_default_time.txt
+5.251 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[6 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 128
+Tue Jul 25 18:55:21 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_128r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_128a_default_time.txt
+Tue Jul 25 18:55:27 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_128a_default.log
+-60.503 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_128a_default_time.txt
+5.989 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+5  float  128        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[7 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 128
+Tue Jul 25 18:55:28 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_256r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_128a_default_time.txt
+Tue Jul 25 18:55:34 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_128a_default.log
+-71.0689 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_128a_default_time.txt
+6.029 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+5  float  128        ...             64       False       2             1
+6  float  128        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[8 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 128
+Tue Jul 25 18:55:35 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_512r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_128a_default_time.txt
+Tue Jul 25 18:55:41 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_128a_default.log
+-53.9338 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_128a_default_time.txt
+6.863 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+5  float  128        ...             64       False       2             1
+6  float  128        ...             64       False       2             1
+7  float  128        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[9 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 128
+Tue Jul 25 18:55:42 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_1024r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_128a_default_time.txt
+Tue Jul 25 18:55:51 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_128a_default.log
+-52.1593 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_128a_default_time.txt
+8.375 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+5  float  128        ...             64       False       2             1
+6  float  128        ...             64       False       2             1
+7  float  128        ...             64       False       2             1
+8  float  128        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[10 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 128
+Tue Jul 25 18:55:51 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_4096r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_128a_default_time.txt
+Tue Jul 25 18:56:27 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_128a_default.log
+-7.46581 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_4096r_128a_default_time.txt
+35.241 seconds
+Write to: ThetaDefault/defaults.csv
+      p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0  float   64        ...             64       False       2             1
+1  float   64        ...             64       False       2             1
+2  float   64        ...             64       False       2             1
+3  float   64        ...             64       False       2             1
+4  float   64        ...             64       False       2             1
+5  float  128        ...             64       False       2             1
+6  float  128        ...             64       False       2             1
+7  float  128        ...             64       False       2             1
+8  float  128        ...             64       False       2             1
+9  float  128        ...             64       False       2             1
+0  float  128        ...             64       False       2             1
+
+[11 rows x 20 columns]
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 128
+Tue Jul 25 18:56:27 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 128 > ThetaDefault/Theta_8192r_128a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_128a_default_time.txt
+Tue Jul 25 18:58:28 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_128a_default.log
+-14.0407 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_8192r_128a_default_time.txt
+120.636 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+0   float  128        ...             64       False       2             1
+
+[12 rows x 20 columns]
+
+
+Calling on 1 workers with 64 mpi ranks per worker for size 256
+Tue Jul 25 18:58:29 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_64r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_256a_default_time.txt
+Tue Jul 25 18:58:34 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_256a_default.log
+-99.275 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_256a_default_time.txt
+5.676 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[13 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 256
+Tue Jul 25 18:58:35 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_128r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_256a_default_time.txt
+Tue Jul 25 18:58:41 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_256a_default.log
+-130.175 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_256a_default_time.txt
+6.022 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[14 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 256
+Tue Jul 25 18:58:42 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_256r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_256a_default_time.txt
+Tue Jul 25 18:58:48 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_256a_default.log
+-169.992 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_256a_default_time.txt
+6.266 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[15 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 256
+Tue Jul 25 18:58:49 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_512r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_256a_default_time.txt
+Tue Jul 25 18:58:56 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_256a_default.log
+-212.758 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_256a_default_time.txt
+6.959 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[16 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 256
+Tue Jul 25 18:58:57 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_1024r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_256a_default_time.txt
+Tue Jul 25 18:59:05 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_256a_default.log
+-262.966 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_256a_default_time.txt
+8.323 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[17 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 256
+Tue Jul 25 18:59:06 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_4096r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_256a_default_time.txt
+Tue Jul 25 18:59:41 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_256a_default.log
+-189.617 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_4096r_256a_default_time.txt
+35.107 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[18 rows x 20 columns]
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 256
+Tue Jul 25 18:59:42 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 256 > ThetaDefault/Theta_8192r_256a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_256a_default_time.txt
+Tue Jul 25 19:01:42 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_256a_default.log
+-78.5689 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_8192r_256a_default_time.txt
+120.803 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+0   float  256        ...             64       False       2             1
+
+[19 rows x 20 columns]
+
+
+Calling on 1 workers with 64 mpi ranks per worker for size 512
+Tue Jul 25 19:01:43 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_64r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_512a_default_time.txt
+Tue Jul 25 19:01:52 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_512a_default.log
+-103.258 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_512a_default_time.txt
+8.932 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[20 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 512
+Tue Jul 25 19:01:53 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_128r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_512a_default_time.txt
+Tue Jul 25 19:02:01 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_512a_default.log
+-135.152 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_512a_default_time.txt
+7.968 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[21 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 512
+Tue Jul 25 19:02:02 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_256r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_512a_default_time.txt
+Tue Jul 25 19:02:09 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_512a_default.log
+-201.733 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_512a_default_time.txt
+7.59 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+20  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[22 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 512
+Tue Jul 25 19:02:10 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_512r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_512a_default_time.txt
+Tue Jul 25 19:02:18 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_512a_default.log
+-338.026 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_512a_default_time.txt
+7.515 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+20  float  512        ...             64       False       2             1
+21  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[23 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 512
+Tue Jul 25 19:02:18 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_1024r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_512a_default_time.txt
+Tue Jul 25 19:02:27 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_512a_default.log
+-593.57 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_512a_default_time.txt
+8.739 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+20  float  512        ...             64       False       2             1
+21  float  512        ...             64       False       2             1
+22  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[24 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 512
+Tue Jul 25 19:02:28 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_4096r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_512a_default_time.txt
+Tue Jul 25 19:03:03 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_512a_default.log
+-839.744 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_4096r_512a_default_time.txt
+35.475 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+20  float  512        ...             64       False       2             1
+21  float  512        ...             64       False       2             1
+22  float  512        ...             64       False       2             1
+23  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[25 rows x 20 columns]
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 512
+Tue Jul 25 19:03:04 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 512 > ThetaDefault/Theta_8192r_512a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_512a_default_time.txt
+Tue Jul 25 19:05:07 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_512a_default.log
+-723.358 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_8192r_512a_default_time.txt
+123.419 seconds
+Write to: ThetaDefault/defaults.csv
+       p0   p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float   64        ...             64       False       2             1
+1   float   64        ...             64       False       2             1
+2   float   64        ...             64       False       2             1
+3   float   64        ...             64       False       2             1
+4   float   64        ...             64       False       2             1
+5   float  128        ...             64       False       2             1
+6   float  128        ...             64       False       2             1
+7   float  128        ...             64       False       2             1
+8   float  128        ...             64       False       2             1
+9   float  128        ...             64       False       2             1
+10  float  128        ...             64       False       2             1
+11  float  128        ...             64       False       2             1
+12  float  256        ...             64       False       2             1
+13  float  256        ...             64       False       2             1
+14  float  256        ...             64       False       2             1
+15  float  256        ...             64       False       2             1
+16  float  256        ...             64       False       2             1
+17  float  256        ...             64       False       2             1
+18  float  256        ...             64       False       2             1
+19  float  512        ...             64       False       2             1
+20  float  512        ...             64       False       2             1
+21  float  512        ...             64       False       2             1
+22  float  512        ...             64       False       2             1
+23  float  512        ...             64       False       2             1
+24  float  512        ...             64       False       2             1
+0   float  512        ...             64       False       2             1
+
+[26 rows x 20 columns]
+
+
+Calling on 1 workers with 64 mpi ranks per worker for size 1024
+Tue Jul 25 19:05:08 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_64r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_1024a_default_time.txt
+Tue Jul 25 19:05:53 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_1024a_default.log
+-73.6355 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_1024a_default_time.txt
+44.593 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[27 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 1024
+Tue Jul 25 19:05:54 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_128r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_1024a_default_time.txt
+Tue Jul 25 19:06:20 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_1024a_default.log
+-127.374 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_1024a_default_time.txt
+26.71 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[28 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 1024
+Tue Jul 25 19:06:21 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_256r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_1024a_default_time.txt
+Tue Jul 25 19:06:39 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_1024a_default.log
+-214.109 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_1024a_default_time.txt
+18.075 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[29 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 1024
+Tue Jul 25 19:06:40 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_512r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_1024a_default_time.txt
+Tue Jul 25 19:06:53 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_1024a_default.log
+-368.427 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_1024a_default_time.txt
+13.384 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[30 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 1024
+Tue Jul 25 19:06:54 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_1024r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_1024a_default_time.txt
+Tue Jul 25 19:07:06 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_1024a_default.log
+-677.447 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_1024a_default_time.txt
+11.916 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[31 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 1024
+Tue Jul 25 19:07:07 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_4096r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_1024a_default_time.txt
+Tue Jul 25 19:07:43 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_1024a_default.log
+-1903.53 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_4096r_1024a_default_time.txt
+36.256 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[32 rows x 20 columns]
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 1024
+Tue Jul 25 19:07:44 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 1024 > ThetaDefault/Theta_8192r_1024a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_1024a_default_time.txt
+Tue Jul 25 19:09:48 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_1024a_default.log
+-2437.53 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_8192r_1024a_default_time.txt
+123.951 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+0   float  1024        ...             64       False       2             1
+
+[33 rows x 20 columns]
+
+
+Calling on 1 workers with 64 mpi ranks per worker for size 1400
+Tue Jul 25 19:09:49 UTC 2023
+{ time aprun -n 64 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_64r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_64r_1400a_default_time.txt
+Tue Jul 25 19:11:48 UTC 2023
+Read logs from: ThetaDefault/Theta_64r_1400a_default.log
+-63.4248 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_64r_1400a_default_time.txt
+119.287 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[34 rows x 20 columns]
+
+Calling on 1 workers with 128 mpi ranks per worker for size 1400
+Tue Jul 25 19:11:49 UTC 2023
+{ time aprun -n 128 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_128r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_128r_1400a_default_time.txt
+Tue Jul 25 19:12:55 UTC 2023
+Read logs from: ThetaDefault/Theta_128r_1400a_default.log
+-109.695 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_128r_1400a_default_time.txt
+66.651 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[35 rows x 20 columns]
+
+Calling on 1 workers with 256 mpi ranks per worker for size 1400
+Tue Jul 25 19:12:56 UTC 2023
+{ time aprun -n 256 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_256r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_256r_1400a_default_time.txt
+Tue Jul 25 19:13:39 UTC 2023
+Read logs from: ThetaDefault/Theta_256r_1400a_default.log
+-171.826 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_256r_1400a_default_time.txt
+42.633 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+34  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[36 rows x 20 columns]
+
+Calling on 1 workers with 512 mpi ranks per worker for size 1400
+Tue Jul 25 19:13:39 UTC 2023
+{ time aprun -n 512 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_512r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_512r_1400a_default_time.txt
+Tue Jul 25 19:14:05 UTC 2023
+Read logs from: ThetaDefault/Theta_512r_1400a_default.log
+-335.586 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_512r_1400a_default_time.txt
+25.972 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+34  float  1400        ...             64       False       2             1
+35  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[37 rows x 20 columns]
+
+Calling on 1 workers with 1024 mpi ranks per worker for size 1400
+Tue Jul 25 19:14:06 UTC 2023
+{ time aprun -n 1024 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_1024r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_1024r_1400a_default_time.txt
+Tue Jul 25 19:14:26 UTC 2023
+Read logs from: ThetaDefault/Theta_1024r_1400a_default.log
+-620.073 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_1024r_1400a_default_time.txt
+19.552 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+34  float  1400        ...             64       False       2             1
+35  float  1400        ...             64       False       2             1
+36  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[38 rows x 20 columns]
+
+Calling on 1 workers with 4096 mpi ranks per worker for size 1400
+Tue Jul 25 19:14:26 UTC 2023
+{ time aprun -n 4096 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_4096r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_4096r_1400a_default_time.txt
+Tue Jul 25 19:15:12 UTC 2023
+Read logs from: ThetaDefault/Theta_4096r_1400a_default.log
+-1933.68 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_4096r_1400a_default_time.txt
+45.597 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+34  float  1400        ...             64       False       2             1
+35  float  1400        ...             64       False       2             1
+36  float  1400        ...             64       False       2             1
+37  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[39 rows x 20 columns]
+
+Calling on 1 workers with 8192 mpi ranks per worker for size 1400
+Tue Jul 25 19:15:13 UTC 2023
+{ time aprun -n 8192 -N 64 -cc depth ./default_fftw.sh 1400 > ThetaDefault/Theta_8192r_1400a_default.log 2>&1 ; } 2> ThetaDefault/Theta_8192r_1400a_default_time.txt
+Tue Jul 25 19:17:32 UTC 2023
+Read logs from: ThetaDefault/Theta_8192r_1400a_default.log
+-3343.74 GFLOP/s
+Read elapsed time from: ThetaDefault/Theta_8192r_1400a_default_time.txt
+139.17000000000002 seconds
+Write to: ThetaDefault/defaults.csv
+       p0    p1 p2 p3  ... ranks_per_node gpu_enabled libE_id  libE_workers
+0   float    64        ...             64       False       2             1
+1   float    64        ...             64       False       2             1
+2   float    64        ...             64       False       2             1
+3   float    64        ...             64       False       2             1
+4   float    64        ...             64       False       2             1
+5   float   128        ...             64       False       2             1
+6   float   128        ...             64       False       2             1
+7   float   128        ...             64       False       2             1
+8   float   128        ...             64       False       2             1
+9   float   128        ...             64       False       2             1
+10  float   128        ...             64       False       2             1
+11  float   128        ...             64       False       2             1
+12  float   256        ...             64       False       2             1
+13  float   256        ...             64       False       2             1
+14  float   256        ...             64       False       2             1
+15  float   256        ...             64       False       2             1
+16  float   256        ...             64       False       2             1
+17  float   256        ...             64       False       2             1
+18  float   256        ...             64       False       2             1
+19  float   512        ...             64       False       2             1
+20  float   512        ...             64       False       2             1
+21  float   512        ...             64       False       2             1
+22  float   512        ...             64       False       2             1
+23  float   512        ...             64       False       2             1
+24  float   512        ...             64       False       2             1
+25  float   512        ...             64       False       2             1
+26  float  1024        ...             64       False       2             1
+27  float  1024        ...             64       False       2             1
+28  float  1024        ...             64       False       2             1
+29  float  1024        ...             64       False       2             1
+30  float  1024        ...             64       False       2             1
+31  float  1024        ...             64       False       2             1
+32  float  1024        ...             64       False       2             1
+33  float  1400        ...             64       False       2             1
+34  float  1400        ...             64       False       2             1
+35  float  1400        ...             64       False       2             1
+36  float  1400        ...             64       False       2             1
+37  float  1400        ...             64       False       2             1
+38  float  1400        ...             64       False       2             1
+0   float  1400        ...             64       False       2             1
+
+[40 rows x 20 columns]
+
+
+Requested 42 calls
