@@ -1,0 +1,33 @@
+
+Lmod is automatically replacing "nvhpc/21.9" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-nvhpc/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+
+Lmod is automatically replacing "gcc/11.2.0" with "nvhpc/21.9".
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: PrgEnv-gnu (required by: conda/2022-09-08)
+-------------------------------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+mkdir: cannot create directory ‘PolarisDefault’: File exists
+/var/spool/pbs/mom_priv/jobs/563221.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 33: 45101 Killed                  timeout -s 9 300 bash -c '{ time mpiexec -n 16 --ppn 4 --cpu-bind depth ./set_affinity_gpu_polaris.sh ./default_cufft.sh 256 > PolarisDefault/Polaris_16r_256a_default.log 2>&1 ; } 2> PolarisDefault/Polaris_16r_256a_default_time.txt'
+Traceback (most recent call last):
+  File "<stdin>", line 16, in <module>
+NameError: name 'flops' is not defined. Did you mean: 'float'?
+/var/spool/pbs/mom_priv/jobs/563221.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 33: 45394 Killed                  timeout -s 9 300 bash -c '{ time mpiexec -n 32 --ppn 4 --cpu-bind depth ./set_affinity_gpu_polaris.sh ./default_cufft.sh 256 > PolarisDefault/Polaris_32r_256a_default.log 2>&1 ; } 2> PolarisDefault/Polaris_32r_256a_default_time.txt'
+Traceback (most recent call last):
+  File "<stdin>", line 16, in <module>
+NameError: name 'flops' is not defined. Did you mean: 'float'?
+/var/spool/pbs/mom_priv/jobs/563221.polaris-pbs-01.hsn.cm.polaris.alcf.anl.gov.SC: line 33: 48736 Killed                  timeout -s 9 300 bash -c '{ time mpiexec -n 8 --ppn 4 --cpu-bind depth ./set_affinity_gpu_polaris.sh ./default_cufft.sh 1400 > PolarisDefault/Polaris_8r_1400a_default.log 2>&1 ; } 2> PolarisDefault/Polaris_8r_1400a_default_time.txt'
+Traceback (most recent call last):
+  File "<stdin>", line 16, in <module>
+NameError: name 'flops' is not defined. Did you mean: 'float'?
