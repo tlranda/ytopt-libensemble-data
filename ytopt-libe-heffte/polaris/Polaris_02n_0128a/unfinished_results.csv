@@ -1,3 +1,6 @@
-p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,ranks_per_node,gpu_enabled,libE_id,libE_workers
-float,128,-no-reorder,-a2av, ,-pencils,-r2c_dir 1,0.6708178886075279,0.1760555767455091,16,cufft,0.0,0.0,,0,0,False,0,0
-float,128,-reorder, ,-p2p_pl,-pencils,-r2c_dir 2,0.7266834656665675,0.9228952129057388,16,cufft,0.0,0.0,,0,0,False,0,0
+p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
+float,128,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,0.7551989061054005,0.3189808894804633,0.1823330620010247,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,128,-reorder,-a2a,-p2p_pl, ,-r2c_dir 0,0.7161129408283442,0.3100025756848222,0.94244416947662,cufft,0.0,0.0,,0,0.0,0,False,0,0
+double,128,-reorder,-a2a,-p2p_pl, ,-r2c_dir 0,0.914336554614008,0.3668284769917804,0.9130621145006582,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,128,-no-reorder,-a2av, ,-pencils,-r2c_dir 1,0.6708178886075279,0.1760555767455091,16.0,cufft,0.0,0.0,,0,,0,False,0,0
+float,128,-reorder, ,-p2p_pl,-pencils,-r2c_dir 2,0.7266834656665675,0.9228952129057388,16.0,cufft,0.0,0.0,,0,,0,False,0,0

@@ -1,4 +1,8 @@
-p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,ranks_per_node,gpu_enabled,libE_id,libE_workers
-float,64,-reorder,-a2av,-p2p_pl, ,-r2c_dir 2,0.7150478308017579,0.6050073858078366,8,cufft,0.0,0.0,,0,0,False,0,0
-float,64,-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,0.7245320199079903,0.480356346633221,12,cufft,0.0,0.0,,0,0,False,0,0
-float,64,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,0.719271289588494,0.6194783484856589,12,cufft,0.0,0.0,,0,0,False,0,0
+p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
+float,64,-reorder, ,-p2p_pl, ,-r2c_dir 0,0.8323542723651949,0.4904546051742902,0.1930781688798949,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,64,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,0.9155315602288764,0.5531809679750228,0.4503505307691409,cufft,0.0,0.0,,0,0.0,0,False,0,0
+double,64,-reorder,-a2a,-p2p_pl,-pencils, ,0.9089615058312336,0.4964444092397969,0.8535425699440209,cufft,0.0,0.0,,0,0.0,0,False,0,0
+double,64,-reorder,-a2av,-p2p, , ,0.8769331604675771,0.5810099852691023,0.8713528365305682,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,64,-reorder,-a2av,-p2p_pl, ,-r2c_dir 2,0.7150478308017579,0.6050073858078366,8.0,cufft,0.0,0.0,,0,,0,False,0,0
+float,64,-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,0.7245320199079903,0.480356346633221,12.0,cufft,0.0,0.0,,0,,0,False,0,0
+float,64,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,0.719271289588494,0.6194783484856589,12.0,cufft,0.0,0.0,,0,,0,False,0,0

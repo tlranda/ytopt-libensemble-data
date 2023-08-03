@@ -1,0 +1,135 @@
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
++ speed3d_r2c cufft double 64 64 64 -no-reorder -r2c_dir 2 -ingrid 4 2 1 -n5
+MPICH ERROR [Rank 3] [job id d04f013b-5186-4833-8de7-fec9973f0d77] [Fri Jul 28 01:21:08 2023] [x3104c0s13b1n0] - Abort(137435791) (rank 3 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14d1d3600000, scnts=0x1dd1470, sdispls=0x1defa90, dtype=0x4c001041, rbuf=0x14d1d3644000, rcnts=0x1dce4a0, rdispls=0x1dce4d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14d1d3600000, scnts=0x1dd1470, sdispls=0x1defa90, dtype=0x4c001041, rbuf=0x14d1d3644000, rcnts=0x1dce4a0, rdispls=0x1dce4d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 5] [job id d04f013b-5186-4833-8de7-fec9973f0d77] [Fri Jul 28 01:21:08 2023] [x3104c0s19b0n0] - Abort(472980111) (rank 5 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x152873600000, scnts=0x1c07cc0, sdispls=0x1c06d30, dtype=0x4c001041, rbuf=0x152873640000, rcnts=0x1bc94a0, rdispls=0x1bc94d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x152873600000, scnts=0x1c07cc0, sdispls=0x1c06d30, dtype=0x4c001041, rbuf=0x152873640000, rcnts=0x1bc94a0, rdispls=0x1bc94d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 2] [job id d04f013b-5186-4833-8de7-fec9973f0d77] [Fri Jul 28 01:21:08 2023] [x3104c0s13b1n0] - Abort(540088975) (rank 2 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14553b600000, scnts=0x1441470, sdispls=0x145fa90, dtype=0x4c001041, rbuf=0x14553b644000, rcnts=0x143e4a0, rdispls=0x143e4d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14553b600000, scnts=0x1441470, sdispls=0x145fa90, dtype=0x4c001041, rbuf=0x14553b644000, rcnts=0x143e4a0, rdispls=0x143e4d0, datatype=dtype=0x4c001041, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+x3104c0s19b0n0.hsn.cm.polaris.alcf.anl.gov: rank 5 exited with code 255

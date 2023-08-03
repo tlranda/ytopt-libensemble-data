@@ -1,0 +1,147 @@
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 512 512 512 -reorder -a2a -p2p_pl -pencils -r2c_dir 2 -outgrid 4 2 1 -n5
+MPICH ERROR [Rank 4] [job id 7562ff76-bdb7-4f0c-a8ff-85d60ddb3cd3] [Thu Aug  3 06:42:39 2023] [x3206c0s7b0n0] - Abort(404894095) (rank 4 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x17ffd30, index=0x7fffb9b798b4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x17ffd30, index=0x7fffb9b798b4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 0] [job id 7562ff76-bdb7-4f0c-a8ff-85d60ddb3cd3] [Thu Aug  3 06:42:39 2023] [x3206c0s37b1n0] - Abort(68825487) (rank 0 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x176ce60, index=0x7fff258ebe64, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x176ce60, index=0x7fff258ebe64, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 6] [job id 7562ff76-bdb7-4f0c-a8ff-85d60ddb3cd3] [Thu Aug  3 06:42:39 2023] [x3206c0s7b0n0] - Abort(472002959) (rank 6 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x23814d0, index=0x7ffe21844fe4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x23814d0, index=0x7ffe21844fe4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 7] [job id 7562ff76-bdb7-4f0c-a8ff-85d60ddb3cd3] [Thu Aug  3 06:42:39 2023] [x3206c0s7b0n0] - Abort(538587535) (rank 7 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0xd79af0, index=0x7ffc85005d64, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0xd79af0, index=0x7ffc85005d64, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 5] [job id 7562ff76-bdb7-4f0c-a8ff-85d60ddb3cd3] [Thu Aug  3 06:42:39 2023] [x3206c0s7b0n0] - Abort(2240911) (rank 5 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x1c0b3c0, index=0x7ffe0fa215b4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x1c0b3c0, index=0x7ffe0fa215b4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+x3206c0s37b1n0.hsn.cm.polaris.alcf.anl.gov: rank 0 exited with code 255

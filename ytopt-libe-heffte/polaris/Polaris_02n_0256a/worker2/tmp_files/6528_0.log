@@ -1,0 +1,117 @@
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
++ '[' -z '' ']'
++ case "$-" in
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
++ speed3d_r2c cufft float 256 256 256 -a2a -r2c_dir 1 -ingrid 4 2 1 -outgrid 8 1 1 -n5
+MPICH ERROR [Rank 2] [job id 3632cfca-e99e-4487-aa81-8e57604d48ad] [Thu Aug  3 06:32:52 2023] [x3206c0s37b1n0] - Abort(338762127) (rank 2 in comm 0): Fatal error in PMPI_Alltoall: Other MPI error, error stack:
+PMPI_Alltoall(433)...............: MPI_Alltoall(sbuf=0x1474a6000000, scount=133120, dtype=0x4c000840, rbuf=0x1474a6820000, rcount=133120, datatype=dtype=0x4c000840, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoall_throttled(471): 
+MPIR_Waitall(167)................: 
+MPIR_Waitall_impl(51)............: 
+MPID_Progress_wait(184)..........: 
+MPIDI_Progress_test(80)..........: 
+MPIDI_OFI_handle_cq_error(1059)..: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoall: Other MPI error, error stack:
+PMPI_Alltoall(433)...............: MPI_Alltoall(sbuf=0x1474a6000000, scount=133120, dtype=0x4c000840, rbuf=0x1474a6820000, rcount=133120, datatype=dtype=0x4c000840, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoall_throttled(471): 
+MPIR_Waitall(167)................: 
+MPIR_Waitall_impl(51)............: 
+MPID_Progress_wait(184)..........: 
+MPIDI_Progress_test(80)..........: 
+MPIDI_OFI_handle_cq_error(1059)..: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 6] [job id 3632cfca-e99e-4487-aa81-8e57604d48ad] [Thu Aug  3 06:32:52 2023] [x3206c0s7b0n0] - Abort(607197583) (rank 6 in comm 0): Fatal error in PMPI_Alltoall: Other MPI error, error stack:
+PMPI_Alltoall(433)...............: MPI_Alltoall(sbuf=0x14ca26000000, scount=133120, dtype=0x4c000840, rbuf=0x14ca26820000, rcount=133120, datatype=dtype=0x4c000840, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoall_throttled(471): 
+MPIR_Waitall(167)................: 
+MPIR_Waitall_impl(51)............: 
+MPID_Progress_wait(184)..........: 
+MPIDI_Progress_test(80)..........: 
+MPIDI_OFI_handle_cq_error(1059)..: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Alltoall: Other MPI error, error stack:
+PMPI_Alltoall(433)...............: MPI_Alltoall(sbuf=0x14ca26000000, scount=133120, dtype=0x4c000840, rbuf=0x14ca26820000, rcount=133120, datatype=dtype=0x4c000840, comm=comm=0xc4000001) failed
+MPIR_CRAY_Alltoall_throttled(471): 
+MPIR_Waitall(167)................: 
+MPIR_Waitall_impl(51)............: 
+MPID_Progress_wait(184)..........: 
+MPIDI_Progress_test(80)..........: 
+MPIDI_OFI_handle_cq_error(1059)..: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+x3206c0s7b0n0.hsn.cm.polaris.alcf.anl.gov: rank 6 exited with code 255

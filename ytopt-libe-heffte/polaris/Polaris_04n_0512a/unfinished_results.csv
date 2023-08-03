@@ -1,2 +1,4 @@
-p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,ranks_per_node,gpu_enabled,libE_id,libE_workers
-float,512,-no-reorder, , ,-pencils,-r2c_dir 1,0.9637646494257363,0.008844447702319513,16,cufft,0.0,0.0,,0,0,False,0,0
+p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
+float,512,-reorder,-a2a,-p2p,-pencils, ,0.9005704350606993,0.4979066325499807,0.9116577317230308,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,512,-reorder,-a2av,-p2p_pl,-pencils, ,0.889211816196629,0.5100185157422241,0.9164152148353464,cufft,0.0,0.0,,0,0.0,0,False,0,0
+float,512,-no-reorder, , ,-pencils,-r2c_dir 1,0.9637646494257364,0.0088444477023195,16.0,cufft,0.0,0.0,,0,,0,False,0,0

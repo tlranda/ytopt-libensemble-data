@@ -1,0 +1,135 @@
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -reorder -a2av -p2p_pl -slabs -r2c_dir 2 -ingrid 2 2 2 -outgrid 4 2 1 -n5
+MPICH ERROR [Rank 4] [job id c7365a92-64b3-4146-9f39-b9750348bc02] [Thu Aug  3 06:33:16 2023] [x3001c0s25b0n0] - Abort(673329551) (rank 4 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x1c70cc0, index=0x7ffe2908d784, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x1c70cc0, index=0x7ffe2908d784, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 5] [job id c7365a92-64b3-4146-9f39-b9750348bc02] [Thu Aug  3 06:33:16 2023] [x3001c0s25b0n0] - Abort(472002959) (rank 5 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=4, req_array=0xff2ca0, index=0x7ffc0a541fb4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=4, req_array=0xff2ca0, index=0x7ffc0a541fb4, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - remote access error)
+MPICH ERROR [Rank 7] [job id c7365a92-64b3-4146-9f39-b9750348bc02] [Thu Aug  3 06:33:16 2023] [x3001c0s25b0n0] - Abort(739914127) (rank 7 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x2085ca0, index=0x7ffea8d1a064, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=3, req_array=0x2085ca0, index=0x7ffea8d1a064, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 6] [job id c7365a92-64b3-4146-9f39-b9750348bc02] [Thu Aug  3 06:33:16 2023] [x3001c0s25b0n0] - Abort(203567503) (rank 6 in comm 0): Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=4, req_array=0xfe4ca0, index=0x7ffe62caf284, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Waitany: Other MPI error, error stack:
+PMPI_Waitany(277)..............: MPI_Waitany(count=4, req_array=0xfe4ca0, index=0x7ffe62caf284, status=0x1) failed
+PMPI_Waitany(245)..............: 
+MPIR_Waitany_impl(97)..........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+x3001c0s25b0n0.hsn.cm.polaris.alcf.anl.gov: rank 4 exited with code 255

@@ -1,0 +1,94 @@
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
++ '[' -z '' ']'
++ case "$-" in
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ unset __lmod_vx
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
++ '[' -z '' ']'
++ case "$-" in
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 64 64 64 -reorder -a2a -pencils -r2c_dir 2 -ingrid 2 2 2 -outgrid 8 1 1 -n5
+
+----------------------------------------------------------------------------- 
+heFFTe performance test
+----------------------------------------------------------------------------- 
+Backend:   cufft
+Size:      64x64x64
+MPI ranks:    8
+Grids: (2, 2, 2)  (2, 4, 1)  (1, 4, 2)  (8, 1, 1)  -  
+Time per run: 0.00118395 (s)
+Performance:  19.9274 GFlops/s
+Memory usage: 1MB/rank
+Tolerance:    0.0005
+Max error:    2.44379e-06
+
