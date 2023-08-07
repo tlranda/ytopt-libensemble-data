@@ -1,0 +1,809 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ source /home/trandall/polaris_heffte_env.sh
+++ module load cudatoolkit-standalone/12.0.0 conda
++++ /usr/share/lmod/lmod/libexec/lmod bash load cudatoolkit-standalone/12.0.0 conda
+
+Lmod is automatically replacing "nvhpc/21.9" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-nvhpc/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+++ eval unset 'CC;' unset '__LMOD_REF_COUNT_CPATH;' unset 'CPATH;' 'CRAYPE_DIR=/opt/cray/pe/craype/2.7.15;' export 'CRAYPE_DIR;' 'CRAYPE_VERSION=2.7.15;' export 'CRAYPE_VERSION;' 'CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.2.2;' export 'CRAY_DSMML_BASEDIR;' 'CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.2.2/dsmml;' export 'CRAY_DSMML_DIR;' 'CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.2.2/dsmml;' export 'CRAY_DSMML_PREFIX;' 'CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.2.2;' export 'CRAY_DSMML_ROOTDIR;' 'CRAY_DSMML_VER=0.2.2;' export 'CRAY_DSMML_VER;' 'CRAY_DSMML_VERSION=0.2.2;' export 'CRAY_DSMML_VERSION;' '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:1\;/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib:1\;/opt/cray/pe/mpich/8.1.16/gtl/lib:1\;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1\;/opt/cray/pe/perftools/22.05.0/lib64:1;' export '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH;' 'CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib:/opt/cray/pe/mpich/8.1.16/gtl/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/perftools/22.05.0/lib64;' export 'CRAY_LD_LIBRARY_PATH;' 'CRAY_LMOD_COMPILER=gnu/8.0;' export 'CRAY_LMOD_COMPILER;' 'CRAY_LMOD_MPI=cray-mpich/8.0;' export 'CRAY_LMOD_MPI;' 'CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.16/ofi;' export 'CRAY_MPICH_BASEDIR;' 'CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1;' export 'CRAY_MPICH_DIR;' 'CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1;' export 'CRAY_MPICH_PREFIX;' 'CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.16;' export 'CRAY_MPICH_ROOTDIR;' 'CRAY_MPICH_VER=8.1.16;' export 'CRAY_MPICH_VER;' 'CRAY_MPICH_VERSION=8.1.16;' export 'CRAY_MPICH_VERSION;' unset 'CRAY_NVIDIA_PREFIX;' unset 'CRAY_NVIDIA_VERSION;' 'CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/6.1.2/include;' export 'CRAY_PMI_INCLUDE_OPTS;' 'CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/6.1.2/lib;' export 'CRAY_PMI_POST_LINK_OPTS;' 'CRAY_PMI_PREFIX=/opt/cray/pe/pmi/6.1.2;' export 'CRAY_PMI_PREFIX;' 'CRAY_PMI_VERSION=6.1.2;' export 'CRAY_PMI_VERSION;' 'CUDA_HOME=/soft/compilers/cudatoolkit/cuda-11.6.2;' export 'CUDA_HOME;' unset 'CXX;' 'ENV_NAME=conda/2022-09-08;' export 'ENV_NAME;' unset 'F77;' unset 'F90;' unset 'FC;' 'GCC_PATH=/opt/cray/pe/gcc/11.2.0;' export 'GCC_PATH;' 'GCC_PREFIX=/opt/cray/pe/gcc/11.2.0;' export 'GCC_PREFIX;' 'GCC_VERSION=11.2.0;' export 'GCC_VERSION;' 'GNU_VERSION=11.2.0;' export 'GNU_VERSION;' '__LMOD_REF_COUNT_INFOPATH=/opt/cray/pe/gcc/11.2.0/snos/share/info:1;' export '__LMOD_REF_COUNT_INFOPATH;' 'INFOPATH=/opt/cray/pe/gcc/11.2.0/snos/share/info;' export 'INFOPATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:1\;/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:1\;/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:1\;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:1\;/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:1\;/opt/cray/pe/gcc/11.2.0/snos/lib64:1\;/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:1\;/opt/cray/pe/papi/6.0.0.14/lib64:1\;/opt/cray/libfabric/1.11.0.4.125/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/opt/cray/pe/gcc/11.2.0/snos/lib64:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_COMPILER=gcc;' export 'LMOD_FAMILY_COMPILER;' 'LMOD_FAMILY_COMPILER_VERSION=11.2.0;' export 'LMOD_FAMILY_COMPILER_VERSION;' 'LMOD_FAMILY_CRAYPE=craype;' export 'LMOD_FAMILY_CRAYPE;' 'LMOD_FAMILY_CRAYPE_VERSION=2.7.15;' export 'LMOD_FAMILY_CRAYPE_VERSION;' 'LMOD_FAMILY_MPI=cray-mpich;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=8.1.16;' export 'LMOD_FAMILY_MPI_VERSION;' 'LMOD_FAMILY_PRGENV=PrgEnv-gnu;' export 'LMOD_FAMILY_PRGENV;' 'LMOD_FAMILY_PRGENV_VERSION=8.3.3;' export 'LMOD_FAMILY_PRGENV_VERSION;' 'LMOD_FAMILY_PYTHON=conda;' export 'LMOD_FAMILY_PYTHON;' 'LMOD_FAMILY_PYTHON_VERSION=2022-09-08;' export 'LMOD_FAMILY_PYTHON_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.125:1\;craype-network-ofi:1\;perftools-base/22.05.0:1\;craype-accel-nvidia80:1\;cudatoolkit-standalone/12.0.0:1\;gcc/11.2.0:1\;craype/2.7.15:1\;cray-dsmml/0.2.2:1\;cray-mpich/8.1.16:1\;cray-pmi/6.1.2:1\;cray-pmi-lib/6.0.17:1\;cray-pals/1.1.7:1\;cray-libpals/1.1.7:1\;PrgEnv-gnu/8.3.3:2\;conda/2022-09-08:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.125:craype-network-ofi:perftools-base/22.05.0:craype-accel-nvidia80:cudatoolkit-standalone/12.0.0:gcc/11.2.0:craype/2.7.15:cray-dsmml/0.2.2:cray-mpich/8.1.16:cray-pmi/6.1.2:cray-pmi-lib/6.0.17:cray-pals/1.1.7:cray-libpals/1.1.7:PrgEnv-gnu/8.3.3:conda/2022-09-08;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/pals/1.1.7/man:1\;/opt/cray/pe/pmi/6.1.2/man:1\;/opt/cray/pe/mpich/8.1.16/ofi/man:1\;/opt/cray/pe/mpich/8.1.16/man/mpich:1\;/opt/cray/pe/dsmml/0.2.2/dsmml/man:1\;/opt/cray/pe/craype/2.7.15/man:1\;/opt/cray/pe/gcc/11.2.0/snos/share/man:1\;/opt/cray/pe/perftools/22.05.0/man:1\;/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:1\;/opt/cray/libfabric/1.11.0.4.125/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/local/man:1\;/usr/share/man:1\;/opt/c3/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/pe/pals/1.1.7/man:/opt/cray/pe/pmi/6.1.2/man:/opt/cray/pe/mpich/8.1.16/ofi/man:/opt/cray/pe/mpich/8.1.16/man/mpich:/opt/cray/pe/dsmml/0.2.2/dsmml/man:/opt/cray/pe/craype/2.7.15/man:/opt/cray/pe/gcc/11.2.0/snos/share/man:/opt/cray/pe/perftools/22.05.0/man:/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:/opt/cray/libfabric/1.11.0.4.125/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/usr/share/man:/opt/c3/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/gnu/8.0/ofi/1.0/cray-mpich/8.0:1\;/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0:1\;/opt/cray/pe/lmod/modulefiles/mix_compilers:1\;/opt/cray/pe/lmod/modulefiles/compiler/gnu/8.0:1\;/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:1\;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1\;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1\;/usr/share/modulefiles/Linux:1\;/usr/share/modulefiles/Core:1\;/usr/share/lmod/lmod/modulefiles/Core:1\;/opt/cray/pe/lmod/modulefiles/core:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1\;/soft/modulefiles:1\;/opt/modulefiles:1\;/opt/cray/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/gnu/8.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/mix_compilers:/opt/cray/pe/lmod/modulefiles/compiler/gnu/8.0:/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/soft/modulefiles:/opt/modulefiles:/opt/cray/modulefiles;' export 'MODULEPATH;' 'MPI4JAX_USE_CUDA_MPI=1;' export 'MPI4JAX_USE_CUDA_MPI;' 'MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1;' export 'MPICH_DIR;' 'MPICH_GPU_SUPPORT_ENABLED=1;' export 'MPICH_GPU_SUPPORT_ENABLED;' unset 'NVHPC;' unset 'NVIDIA_PATH;' unset 'NVIDIA_VERSION;' '__LMOD_REF_COUNT_PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/bin:1\;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:1\;/opt/cray/pe/pals/1.1.7/bin:1\;/opt/cray/pe/craype/2.7.15/bin:1\;/opt/cray/pe/gcc/11.2.0/bin:1\;/soft/compilers/cudatoolkit/cuda-12.0.0/bin:1\;/opt/cray/pe/perftools/22.05.0/bin:1\;/opt/cray/pe/papi/6.0.0.14/bin:1\;/opt/cray/libfabric/1.11.0.4.125/bin:1\;/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/home/trandall/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/opt/c3/bin:1\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:1\;/opt/cray/pe/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin;' export 'PATH;' 'PE_DSMML_MODULE_NAME=cray-dsmml;' export 'PE_DSMML_MODULE_NAME;' 'PE_DSMML_PKGCONFIG_LIBS=dsmml;' export 'PE_DSMML_PKGCONFIG_LIBS;' 'PE_ENV=GNU;' export 'PE_ENV;' 'PE_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_FORTRAN_PKGCONFIG_LIBS;' '__LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH;' 'PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib/pkgconfig;' export 'PE_GNU_FIXED_PKGCONFIG_PATH;' '__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=GNU:1;' export '__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV;' 'PE_MPICH_FIXED_PRGENV=GNU;' export 'PE_MPICH_FIXED_PRGENV;' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU=9.1:1;' export '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU;' 'PE_MPICH_GENCOMPILERS_GNU=9.1;' export 'PE_MPICH_GENCOMPILERS_GNU;' unset '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA;' unset 'PE_MPICH_GENCOMPILERS_NVIDIA;' 'PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx906;' 'PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx908;' 'PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx90a;' 'PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia70;' 'PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia80;' 'PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx906;' 'PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx908;' 'PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx90a;' 'PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia70;' 'PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia80;' 'PE_MPICH_MODULE_NAME=cray-mpich;' export 'PE_MPICH_MODULE_NAME;' 'PE_MPICH_PKGCONFIG_LIBS=mpich;' export 'PE_MPICH_PKGCONFIG_LIBS;' 'PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@;' export 'PE_MPICH_PKGCONFIG_VARIABLES;' unset '__LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH;' unset 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;' 'PE_PALS_PKGCONFIG_LIBS=libpals;' export 'PE_PALS_PKGCONFIG_LIBS;' 'PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib;' export 'PE_PERFTOOLS_MPICH_LIBDIR;' 'PE_PKGCONFIG_LIBS=mpich:dsmml;' export 'PE_PKGCONFIG_LIBS;' 'PE_PKGCONFIG_PRODUCTS=PE_PALS:PE_PMI:PE_MPICH:PE_DSMML;' export 'PE_PKGCONFIG_PRODUCTS;' 'PE_PMI_PKGCONFIG_LIBS=cray-pmi;' export 'PE_PMI_PKGCONFIG_LIBS;' 'PE_PRODUCT_LIST=CRAY_PMI:CRAYPE:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT:CRAY_ACCEL;' export 'PE_PRODUCT_LIST;' 'PKGCONFIG_ENABLED=1;' export 'PKGCONFIG_ENABLED;' 'PKG_CONFIG_PATH=/opt/cray/pe/pals/1.1.7/lib/pkgconfig:/opt/cray/pe/pmi/6.1.2/lib/pkgconfig:/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:/opt/cray/pe/craype/2.7.15/pkg-config:/opt/cray/libfabric/1.11.0.4.125/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' unset 'PYTHONSTARTUP;' 'PYTHONUSERBASE=/home/trandall/.local/polaris/conda/2022-09-08;' export 'PYTHONUSERBASE;' 'SLURM_MPI_TYPE=cray_shasta;' export 'SLURM_MPI_TYPE;' 'XLA_FLAGS=--xla_gpu_force_compilation_parallelism=1\' '--xla_gpu_cuda_data_dir=/soft/compilers/cudatoolkit/cuda-11.6.2;' export 'XLA_FLAGS;' 'XLA_PYTHON_CLIENT_PREALLOCATE=false;' export 'XLA_PYTHON_CLIENT_PREALLOCATE;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1\;/soft/modulefiles/libfabric/1.11.0.4.125:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1\;/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:1\;/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:1\;/opt/cray/pe/lmod/modulefiles/core/gcc/11.2.0.lua:1\;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:1\;/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0/cray-mpich/8.1.16.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:1\;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-gnu/8.3.3.lua:2\;/soft/modulefiles/conda/2022-09-08.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/soft/modulefiles/libfabric/1.11.0.4.125:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:/opt/cray/pe/lmod/modulefiles/core/gcc/11.2.0.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0/cray-mpich/8.1.16.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-gnu/8.3.3.lua:/soft/modulefiles/conda/2022-09-08.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtZ251IixbImNvbXBpbGVyIl09ImdjYyIsWyJjcmF5cGUiXT0iY3JheXBlIixbImNyYXlwZV9hY2NlbCJdPSJjcmF5cGUtYWNjZWwtbnZpZGlhODAiLFsiY3JheXBlX2NwdSJdPSJjcmF5cGUteDg2LXJvbWUiLFsiY3JheXBlX25ldHdvcmsiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbIm1waSJdPSJjcmF5LW1waWNoIixbInB5dGhvbiJdPSJjb25kYSIsfSxtVD17WyJQcmdFbnYtZ251Il09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9QcmdFbnYt;' export '_ModuleTable001_;' '_ModuleTable002_=Z251LzguMy4zLmx1YSIsWyJmdWxsTmFtZSJdPSJQcmdFbnYtZ251LzguMy4zIixbImxvYWRPcmRlciJdPTE1LHByb3BUPXt9LFsicmVmX2NvdW50Il09MSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYtZ251Iix9LGNvbmRhPXtbImZuIl09Ii9zb2Z0L21vZHVsZWZpbGVzL2NvbmRhLzIwMjItMDktMDgubHVhIixbImZ1bGxOYW1lIl09ImNvbmRhLzIwMjItMDktMDgiLFsibG9hZE9yZGVyIl09MTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY29uZGEiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29y;' export '_ModuleTable002_;' '_ModuleTable003_=ZS9jcmF5LWRzbW1sLzAuMi4yLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMi4yIixbImxvYWRPcmRlciJdPTkscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1kc21tbCIsfSxbImNyYXktbGlicGFscyJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1saWJwYWxzLzEuMS43Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWxpYnBhbHMvMS4xLjciLFsibG9hZE9yZGVyIl09MTQscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1saWJwYWxzIix9LFsiY3JheS1tcGljaCJdPXtbImZuIl09Ii9v;' export '_ModuleTable003_;' '_ModuleTable004_=cHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbW5ldC9nbnUvOC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuMTYubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbXBpY2gvOC4xLjE2IixbImxvYWRPcmRlciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktbXBpY2giLH0sWyJjcmF5LXBhbHMiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcGFscy8xLjEuNy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wYWxzLzEuMS43IixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09;' export '_ModuleTable004_;' '_ModuleTable005_=ImNyYXktcGFscyIsfSxbImNyYXktcG1pIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBtaS82LjEuMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wbWkvNi4xLjIiLFsibG9hZE9yZGVyIl09MTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWkiLH0sWyJjcmF5LXBtaS1saWIiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLWxpYi82LjAuMTcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLWxpYi82LjAuMTciLFsibG9hZE9yZGVyIl09MTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJd;' export '_ModuleTable005_;' '_ModuleTable006_=PSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWktbGliIix9LGNyYXlwZT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXlwZS8yLjcuMTUubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS8yLjcuMTUiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUiLH0sWyJjcmF5cGUtYWNjZWwtbnZpZGlhODAiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1hY2NlbC1udmlkaWE4MC5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIixbImxvYWRP;' export '_ModuleTable006_;' '_ModuleTable007_=cmRlciJdPTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIix9LFsiY3JheXBlLW5ldHdvcmstb2ZpIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUtbmV0d29yay1vZmkubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsfSxbImNyYXlwZS14ODYtcm9tZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21v;' export '_ModuleTable007_;' '_ModuleTable008_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvY3JheXBlLXg4Ni1yb21lLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUteDg2LXJvbWUiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUteDg2LXJvbWUiLH0sWyJjdWRhdG9vbGtpdC1zdGFuZGFsb25lIl09e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvY3VkYXRvb2xraXQtc3RhbmRhbG9uZS8xMi4wLjAubHVhIixbImZ1bGxOYW1lIl09ImN1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h;' export '_ModuleTable008_;' '_ModuleTable009_=bWUiXT0iY3VkYXRvb2xraXQtc3RhbmRhbG9uZS8xMi4wLjAiLH0sZ2NjPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvZ2NjLzExLjIuMC5sdWEiLFsiZnVsbE5hbWUiXT0iZ2NjLzExLjIuMCIsWyJsb2FkT3JkZXIiXT03LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYyIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEuMC40LjEyNSIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMS4wLjQuMTI1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUi;' export '_ModuleTable009_;' '_ModuleTable010_=XT0ibGliZmFicmljIix9LFsicGVyZnRvb2xzLWJhc2UiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL3BlcmZ0b29scy1iYXNlLzIyLjA1LjAubHVhIixbImZ1bGxOYW1lIl09InBlcmZ0b29scy1iYXNlLzIyLjA1LjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJwZXJmdG9vbHMtYmFzZSIsfSx9LG1wYXRoQT17Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL21waS9nbnUvOC4wL29maS8xLjAvY3JheS1tcGljaC84LjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb21uZXQvZ251LzguMC9vZmkvMS4wIiwiL29wdC9jcmF5L3Bl;' export '_ModuleTable010_;' '_ModuleTable011_=L2xtb2QvbW9kdWxlZmlsZXMvbWl4X2NvbXBpbGVycyIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbXBpbGVyL2dudS84LjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9wZXJmdG9vbHMvMjIuMDUuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21v;' export '_ModuleTable011_;' '_ModuleTable012_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvc29mdC9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L3NvZnQvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlczovb3B0L2NyYXkvbW9kdWxlZmlsZXMiLH0=;' export '_ModuleTable012_;' '_ModuleTable_Sz_=12;' export '_ModuleTable_Sz_;' 'http_proxy=http://proxy.alcf.anl.gov:3128;' export 'http_proxy;' 'https_proxy=http://proxy.alcf.anl.gov:3128;' export 'https_proxy;' alias 'mpirun=mpiexec;' source '/soft/datascience/conda/2022-09-08/mconda3/etc/profile.d/conda.sh;' '[[' -z '${ZSH_EVAL_CONTEXT+x}' ']]' '&&' export -f conda __conda_activate __conda_hashr __conda_reactivate '__add_sys_prefix_to_path;'
++++ unset CC
++++ unset __LMOD_REF_COUNT_CPATH
++++ unset CPATH
++++ CRAYPE_DIR=/opt/cray/pe/craype/2.7.15
++++ export CRAYPE_DIR
++++ CRAYPE_VERSION=2.7.15
++++ export CRAYPE_VERSION
++++ CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.2.2
++++ export CRAY_DSMML_BASEDIR
++++ CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.2.2/dsmml
++++ export CRAY_DSMML_DIR
++++ CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.2.2/dsmml
++++ export CRAY_DSMML_PREFIX
++++ CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.2.2
++++ export CRAY_DSMML_ROOTDIR
++++ CRAY_DSMML_VER=0.2.2
++++ export CRAY_DSMML_VER
++++ CRAY_DSMML_VERSION=0.2.2
++++ export CRAY_DSMML_VERSION
++++ __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH='/opt/cray/pe/pmi/6.1.2/lib:1;/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib:1;/opt/cray/pe/mpich/8.1.16/gtl/lib:1;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1;/opt/cray/pe/perftools/22.05.0/lib64:1'
++++ export __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH
++++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib:/opt/cray/pe/mpich/8.1.16/gtl/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/perftools/22.05.0/lib64
++++ export CRAY_LD_LIBRARY_PATH
++++ CRAY_LMOD_COMPILER=gnu/8.0
++++ export CRAY_LMOD_COMPILER
++++ CRAY_LMOD_MPI=cray-mpich/8.0
++++ export CRAY_LMOD_MPI
++++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.16/ofi
++++ export CRAY_MPICH_BASEDIR
++++ CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1
++++ export CRAY_MPICH_DIR
++++ CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1
++++ export CRAY_MPICH_PREFIX
++++ CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.16
++++ export CRAY_MPICH_ROOTDIR
++++ CRAY_MPICH_VER=8.1.16
++++ export CRAY_MPICH_VER
++++ CRAY_MPICH_VERSION=8.1.16
++++ export CRAY_MPICH_VERSION
++++ unset CRAY_NVIDIA_PREFIX
++++ unset CRAY_NVIDIA_VERSION
++++ CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/6.1.2/include
++++ export CRAY_PMI_INCLUDE_OPTS
++++ CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/6.1.2/lib
++++ export CRAY_PMI_POST_LINK_OPTS
++++ CRAY_PMI_PREFIX=/opt/cray/pe/pmi/6.1.2
++++ export CRAY_PMI_PREFIX
++++ CRAY_PMI_VERSION=6.1.2
++++ export CRAY_PMI_VERSION
++++ CUDA_HOME=/soft/compilers/cudatoolkit/cuda-11.6.2
++++ export CUDA_HOME
++++ unset CXX
++++ ENV_NAME=conda/2022-09-08
++++ export ENV_NAME
++++ unset F77
++++ unset F90
++++ unset FC
++++ GCC_PATH=/opt/cray/pe/gcc/11.2.0
++++ export GCC_PATH
++++ GCC_PREFIX=/opt/cray/pe/gcc/11.2.0
++++ export GCC_PREFIX
++++ GCC_VERSION=11.2.0
++++ export GCC_VERSION
++++ GNU_VERSION=11.2.0
++++ export GNU_VERSION
++++ __LMOD_REF_COUNT_INFOPATH=/opt/cray/pe/gcc/11.2.0/snos/share/info:1
++++ export __LMOD_REF_COUNT_INFOPATH
++++ INFOPATH=/opt/cray/pe/gcc/11.2.0/snos/share/info
++++ export INFOPATH
++++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:1;/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:1;/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:1;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:1;/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:1;/opt/cray/pe/gcc/11.2.0/snos/lib64:1;/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:1;/opt/cray/pe/papi/6.0.0.14/lib64:1;/opt/cray/libfabric/1.11.0.4.125/lib64:1'
++++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
++++ LD_LIBRARY_PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/opt/cray/pe/gcc/11.2.0/snos/lib64:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64
++++ export LD_LIBRARY_PATH
++++ LMOD_FAMILY_COMPILER=gcc
++++ export LMOD_FAMILY_COMPILER
++++ LMOD_FAMILY_COMPILER_VERSION=11.2.0
++++ export LMOD_FAMILY_COMPILER_VERSION
++++ LMOD_FAMILY_CRAYPE=craype
++++ export LMOD_FAMILY_CRAYPE
++++ LMOD_FAMILY_CRAYPE_VERSION=2.7.15
++++ export LMOD_FAMILY_CRAYPE_VERSION
++++ LMOD_FAMILY_MPI=cray-mpich
++++ export LMOD_FAMILY_MPI
++++ LMOD_FAMILY_MPI_VERSION=8.1.16
++++ export LMOD_FAMILY_MPI_VERSION
++++ LMOD_FAMILY_PRGENV=PrgEnv-gnu
++++ export LMOD_FAMILY_PRGENV
++++ LMOD_FAMILY_PRGENV_VERSION=8.3.3
++++ export LMOD_FAMILY_PRGENV_VERSION
++++ LMOD_FAMILY_PYTHON=conda
++++ export LMOD_FAMILY_PYTHON
++++ LMOD_FAMILY_PYTHON_VERSION=2022-09-08
++++ export LMOD_FAMILY_PYTHON_VERSION
++++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.125:1;craype-network-ofi:1;perftools-base/22.05.0:1;craype-accel-nvidia80:1;cudatoolkit-standalone/12.0.0:1;gcc/11.2.0:1;craype/2.7.15:1;cray-dsmml/0.2.2:1;cray-mpich/8.1.16:1;cray-pmi/6.1.2:1;cray-pmi-lib/6.0.17:1;cray-pals/1.1.7:1;cray-libpals/1.1.7:1;PrgEnv-gnu/8.3.3:2;conda/2022-09-08:1'
++++ export __LMOD_REF_COUNT_LOADEDMODULES
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.125:craype-network-ofi:perftools-base/22.05.0:craype-accel-nvidia80:cudatoolkit-standalone/12.0.0:gcc/11.2.0:craype/2.7.15:cray-dsmml/0.2.2:cray-mpich/8.1.16:cray-pmi/6.1.2:cray-pmi-lib/6.0.17:cray-pals/1.1.7:cray-libpals/1.1.7:PrgEnv-gnu/8.3.3:conda/2022-09-08
++++ export LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/opt/cray/pe/pals/1.1.7/man:1;/opt/cray/pe/pmi/6.1.2/man:1;/opt/cray/pe/mpich/8.1.16/ofi/man:1;/opt/cray/pe/mpich/8.1.16/man/mpich:1;/opt/cray/pe/dsmml/0.2.2/dsmml/man:1;/opt/cray/pe/craype/2.7.15/man:1;/opt/cray/pe/gcc/11.2.0/snos/share/man:1;/opt/cray/pe/perftools/22.05.0/man:1;/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:1;/opt/cray/libfabric/1.11.0.4.125/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/local/man:1;/usr/share/man:1;/opt/c3/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/opt/cray/pe/pals/1.1.7/man:/opt/cray/pe/pmi/6.1.2/man:/opt/cray/pe/mpich/8.1.16/ofi/man:/opt/cray/pe/mpich/8.1.16/man/mpich:/opt/cray/pe/dsmml/0.2.2/dsmml/man:/opt/cray/pe/craype/2.7.15/man:/opt/cray/pe/gcc/11.2.0/snos/share/man:/opt/cray/pe/perftools/22.05.0/man:/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:/opt/cray/libfabric/1.11.0.4.125/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/usr/share/man:/opt/c3/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
++++ export MANPATH
++++ __LMOD_REF_COUNT_MODULEPATH='/opt/cray/pe/lmod/modulefiles/mpi/gnu/8.0/ofi/1.0/cray-mpich/8.0:1;/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/mix_compilers:1;/opt/cray/pe/lmod/modulefiles/compiler/gnu/8.0:1;/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:1;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/opt/cray/pe/lmod/modulefiles/core:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1;/soft/modulefiles:1;/opt/modulefiles:1;/opt/cray/modulefiles:1'
++++ export __LMOD_REF_COUNT_MODULEPATH
++++ MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/gnu/8.0/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0:/opt/cray/pe/lmod/modulefiles/mix_compilers:/opt/cray/pe/lmod/modulefiles/compiler/gnu/8.0:/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/soft/modulefiles:/opt/modulefiles:/opt/cray/modulefiles
++++ export MODULEPATH
++++ MPI4JAX_USE_CUDA_MPI=1
++++ export MPI4JAX_USE_CUDA_MPI
++++ MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1
++++ export MPICH_DIR
++++ MPICH_GPU_SUPPORT_ENABLED=1
++++ export MPICH_GPU_SUPPORT_ENABLED
++++ unset NVHPC
++++ unset NVIDIA_PATH
++++ unset NVIDIA_VERSION
++++ __LMOD_REF_COUNT_PATH='/soft/compilers/cudatoolkit/cuda-11.6.2/bin:1;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:1;/opt/cray/pe/pals/1.1.7/bin:1;/opt/cray/pe/craype/2.7.15/bin:1;/opt/cray/pe/gcc/11.2.0/bin:1;/soft/compilers/cudatoolkit/cuda-12.0.0/bin:1;/opt/cray/pe/perftools/22.05.0/bin:1;/opt/cray/pe/papi/6.0.0.14/bin:1;/opt/cray/libfabric/1.11.0.4.125/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/home/trandall/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/opt/c3/bin:1;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:1;/opt/cray/pe/bin:1'
++++ export __LMOD_REF_COUNT_PATH
++++ PATH=/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
++++ export PATH
++++ PE_DSMML_MODULE_NAME=cray-dsmml
++++ export PE_DSMML_MODULE_NAME
++++ PE_DSMML_PKGCONFIG_LIBS=dsmml
++++ export PE_DSMML_PKGCONFIG_LIBS
++++ PE_ENV=GNU
++++ export PE_ENV
++++ PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_FORTRAN_PKGCONFIG_LIBS
++++ __LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib/pkgconfig:1
++++ export __LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH
++++ PE_GNU_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib/pkgconfig
++++ export PE_GNU_FIXED_PKGCONFIG_PATH
++++ __LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=GNU:1
++++ export __LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV
++++ PE_MPICH_FIXED_PRGENV=GNU
++++ export PE_MPICH_FIXED_PRGENV
++++ PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU=9.1:1
++++ export __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU
++++ PE_MPICH_GENCOMPILERS_GNU=9.1
++++ export PE_MPICH_GENCOMPILERS_GNU
++++ unset __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA
++++ unset PE_MPICH_GENCOMPILERS_NVIDIA
++++ PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx906
++++ PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx908
++++ PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx90a
++++ PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia70
++++ PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia80
++++ PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx906
++++ PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx908
++++ PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx90a
++++ PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia70
++++ PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia80
++++ PE_MPICH_MODULE_NAME=cray-mpich
++++ export PE_MPICH_MODULE_NAME
++++ PE_MPICH_PKGCONFIG_LIBS=mpich
++++ export PE_MPICH_PKGCONFIG_LIBS
++++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
++++ export PE_MPICH_PKGCONFIG_VARIABLES
++++ unset __LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH
++++ unset PE_NVIDIA_FIXED_PKGCONFIG_PATH
++++ PE_PALS_PKGCONFIG_LIBS=libpals
++++ export PE_PALS_PKGCONFIG_LIBS
++++ PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.16/ofi/gnu/9.1/lib
++++ export PE_PERFTOOLS_MPICH_LIBDIR
++++ PE_PKGCONFIG_LIBS=mpich:dsmml
++++ export PE_PKGCONFIG_LIBS
++++ PE_PKGCONFIG_PRODUCTS=PE_PALS:PE_PMI:PE_MPICH:PE_DSMML
++++ export PE_PKGCONFIG_PRODUCTS
++++ PE_PMI_PKGCONFIG_LIBS=cray-pmi
++++ export PE_PMI_PKGCONFIG_LIBS
++++ PE_PRODUCT_LIST=CRAY_PMI:CRAYPE:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT:CRAY_ACCEL
++++ export PE_PRODUCT_LIST
++++ PKGCONFIG_ENABLED=1
++++ export PKGCONFIG_ENABLED
++++ PKG_CONFIG_PATH=/opt/cray/pe/pals/1.1.7/lib/pkgconfig:/opt/cray/pe/pmi/6.1.2/lib/pkgconfig:/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:/opt/cray/pe/craype/2.7.15/pkg-config:/opt/cray/libfabric/1.11.0.4.125/lib64/pkgconfig
++++ export PKG_CONFIG_PATH
++++ unset PYTHONSTARTUP
++++ PYTHONUSERBASE=/home/trandall/.local/polaris/conda/2022-09-08
++++ export PYTHONUSERBASE
++++ SLURM_MPI_TYPE=cray_shasta
++++ export SLURM_MPI_TYPE
++++ XLA_FLAGS='--xla_gpu_force_compilation_parallelism=1 --xla_gpu_cuda_data_dir=/soft/compilers/cudatoolkit/cuda-11.6.2'
++++ export XLA_FLAGS
++++ XLA_PYTHON_CLIENT_PREALLOCATE=false
++++ export XLA_PYTHON_CLIENT_PREALLOCATE
++++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1;/soft/modulefiles/libfabric/1.11.0.4.125:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1;/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:1;/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:1;/opt/cray/pe/lmod/modulefiles/core/gcc/11.2.0.lua:1;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:1;/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0/cray-mpich/8.1.16.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:1;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-gnu/8.3.3.lua:2;/soft/modulefiles/conda/2022-09-08.lua:1'
++++ export __LMOD_REF_COUNT__LMFILES_
++++ _LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/soft/modulefiles/libfabric/1.11.0.4.125:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:/opt/cray/pe/lmod/modulefiles/core/gcc/11.2.0.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:/opt/cray/pe/lmod/modulefiles/comnet/gnu/8.0/ofi/1.0/cray-mpich/8.1.16.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-gnu/8.3.3.lua:/soft/modulefiles/conda/2022-09-08.lua
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtZ251IixbImNvbXBpbGVyIl09ImdjYyIsWyJjcmF5cGUiXT0iY3JheXBlIixbImNyYXlwZV9hY2NlbCJdPSJjcmF5cGUtYWNjZWwtbnZpZGlhODAiLFsiY3JheXBlX2NwdSJdPSJjcmF5cGUteDg2LXJvbWUiLFsiY3JheXBlX25ldHdvcmsiXT0iY3JheXBlLW5ldHdvcmstb2ZpIixbIm1waSJdPSJjcmF5LW1waWNoIixbInB5dGhvbiJdPSJjb25kYSIsfSxtVD17WyJQcmdFbnYtZ251Il09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9QcmdFbnYt
++++ export _ModuleTable001_
++++ _ModuleTable002_=Z251LzguMy4zLmx1YSIsWyJmdWxsTmFtZSJdPSJQcmdFbnYtZ251LzguMy4zIixbImxvYWRPcmRlciJdPTE1LHByb3BUPXt9LFsicmVmX2NvdW50Il09MSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYtZ251Iix9LGNvbmRhPXtbImZuIl09Ii9zb2Z0L21vZHVsZWZpbGVzL2NvbmRhLzIwMjItMDktMDgubHVhIixbImZ1bGxOYW1lIl09ImNvbmRhLzIwMjItMDktMDgiLFsibG9hZE9yZGVyIl09MTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY29uZGEiLH0sWyJjcmF5LWRzbW1sIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29y
++++ export _ModuleTable002_
++++ _ModuleTable003_=ZS9jcmF5LWRzbW1sLzAuMi4yLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWRzbW1sLzAuMi4yIixbImxvYWRPcmRlciJdPTkscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1kc21tbCIsfSxbImNyYXktbGlicGFscyJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1saWJwYWxzLzEuMS43Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LWxpYnBhbHMvMS4xLjciLFsibG9hZE9yZGVyIl09MTQscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1saWJwYWxzIix9LFsiY3JheS1tcGljaCJdPXtbImZuIl09Ii9v
++++ export _ModuleTable003_
++++ _ModuleTable004_=cHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbW5ldC9nbnUvOC4wL29maS8xLjAvY3JheS1tcGljaC84LjEuMTYubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbXBpY2gvOC4xLjE2IixbImxvYWRPcmRlciJdPTEwLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktbXBpY2giLH0sWyJjcmF5LXBhbHMiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcGFscy8xLjEuNy5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wYWxzLzEuMS43IixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09
++++ export _ModuleTable004_
++++ _ModuleTable005_=ImNyYXktcGFscyIsfSxbImNyYXktcG1pIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBtaS82LjEuMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1wbWkvNi4xLjIiLFsibG9hZE9yZGVyIl09MTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWkiLH0sWyJjcmF5LXBtaS1saWIiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXktcG1pLWxpYi82LjAuMTcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLWxpYi82LjAuMTciLFsibG9hZE9yZGVyIl09MTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MixbInN0YXR1cyJd
++++ export _ModuleTable005_
++++ _ModuleTable006_=PSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheS1wbWktbGliIix9LGNyYXlwZT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL2NyYXlwZS8yLjcuMTUubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS8yLjcuMTUiLFsibG9hZE9yZGVyIl09OCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUiLH0sWyJjcmF5cGUtYWNjZWwtbnZpZGlhODAiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS1hY2NlbC1udmlkaWE4MC5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIixbImxvYWRP
++++ export _ModuleTable006_
++++ _ModuleTable007_=cmRlciJdPTUscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIix9LFsiY3JheXBlLW5ldHdvcmstb2ZpIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUtbmV0d29yay1vZmkubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsfSxbImNyYXlwZS14ODYtcm9tZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21v
++++ export _ModuleTable007_
++++ _ModuleTable008_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvY3JheXBlLXg4Ni1yb21lLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUteDg2LXJvbWUiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUteDg2LXJvbWUiLH0sWyJjdWRhdG9vbGtpdC1zdGFuZGFsb25lIl09e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvY3VkYXRvb2xraXQtc3RhbmRhbG9uZS8xMi4wLjAubHVhIixbImZ1bGxOYW1lIl09ImN1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wIixbImxvYWRPcmRlciJdPTYscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5h
++++ export _ModuleTable008_
++++ _ModuleTable009_=bWUiXT0iY3VkYXRvb2xraXQtc3RhbmRhbG9uZS8xMi4wLjAiLH0sZ2NjPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvZ2NjLzExLjIuMC5sdWEiLFsiZnVsbE5hbWUiXT0iZ2NjLzExLjIuMCIsWyJsb2FkT3JkZXIiXT03LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTIsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImdjYyIsfSxsaWJmYWJyaWM9e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvbGliZmFicmljLzEuMTEuMC40LjEyNSIsWyJmdWxsTmFtZSJdPSJsaWJmYWJyaWMvMS4xMS4wLjQuMTI1IixbImxvYWRPcmRlciJdPTIscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUi
++++ export _ModuleTable009_
++++ _ModuleTable010_=XT0ibGliZmFicmljIix9LFsicGVyZnRvb2xzLWJhc2UiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlL3BlcmZ0b29scy1iYXNlLzIyLjA1LjAubHVhIixbImZ1bGxOYW1lIl09InBlcmZ0b29scy1iYXNlLzIyLjA1LjAiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJwZXJmdG9vbHMtYmFzZSIsfSx9LG1wYXRoQT17Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL21waS9nbnUvOC4wL29maS8xLjAvY3JheS1tcGljaC84LjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb21uZXQvZ251LzguMC9vZmkvMS4wIiwiL29wdC9jcmF5L3Bl
++++ export _ModuleTable010_
++++ _ModuleTable011_=L2xtb2QvbW9kdWxlZmlsZXMvbWl4X2NvbXBpbGVycyIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvbXBpbGVyL2dudS84LjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9wZXJmdG9vbHMvMjIuMDUuMCIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL25ldC9vZmkvMS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3B1L3g4Ni1yb21lLzEuMCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXgiLCIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCIvdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZSIsIi9vcHQvY3JheS9wZS9sbW9kL21v
++++ export _ModuleTable011_
++++ _ModuleTable012_=ZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQiLCIvc29mdC9tb2R1bGVmaWxlcyIsIi9vcHQvbW9kdWxlZmlsZXMiLCIvb3B0L2NyYXkvbW9kdWxlZmlsZXMiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eDovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZTovb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQ6L3NvZnQvbW9kdWxlZmlsZXM6L29wdC9tb2R1bGVmaWxlczovb3B0L2NyYXkvbW9kdWxlZmlsZXMiLH0=
++++ export _ModuleTable012_
++++ _ModuleTable_Sz_=12
++++ export _ModuleTable_Sz_
++++ http_proxy=http://proxy.alcf.anl.gov:3128
++++ export http_proxy
++++ https_proxy=http://proxy.alcf.anl.gov:3128
++++ export https_proxy
++++ alias mpirun=mpiexec
++++ source /soft/datascience/conda/2022-09-08/mconda3/etc/profile.d/conda.sh
+++++ export CONDA_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/conda
+++++ CONDA_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/conda
+++++ export _CE_M=
+++++ _CE_M=
+++++ export _CE_CONDA=
+++++ _CE_CONDA=
+++++ export CONDA_PYTHON_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/python
+++++ CONDA_PYTHON_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/python
+++++ '[' -z '' ']'
+++++ export CONDA_SHLVL=0
+++++ CONDA_SHLVL=0
+++++ '[' -n '' ']'
+++++++ dirname /soft/datascience/conda/2022-09-08/mconda3/bin/conda
++++++ dirname /soft/datascience/conda/2022-09-08/mconda3/bin
+++++ PATH=/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
+++++ export PATH
+++++ '[' -z '' ']'
+++++ PS1=
++++ [[ -z '' ]]
++++ export -f conda __conda_activate __conda_hashr __conda_reactivate __add_sys_prefix_to_path
++++ : -s sh
+++ eval
+++ conda activate ytune_23
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate ytune_23
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate ytune_23
++++ __add_sys_prefix_to_path
++++ '[' -n '' ']'
+++++ dirname /soft/datascience/conda/2022-09-08/mconda3/bin/conda
++++ SYSP=/soft/datascience/conda/2022-09-08/mconda3/bin
+++++ dirname /soft/datascience/conda/2022-09-08/mconda3/bin
++++ SYSP=/soft/datascience/conda/2022-09-08/mconda3
++++ '[' -n '' ']'
++++ PATH=/soft/datascience/conda/2022-09-08/mconda3/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
++++ export PATH
++++ /soft/datascience/conda/2022-09-08/mconda3/bin/conda shell.posix activate ytune_23
+++ ask_conda='PS1='\''(conda/2021-09-22/ytune_23) '\''
+export PATH='\''/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/home/trandall/.conda/envs/ytune_23'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''ytune_23'\''
+export CONDA_PROMPT_MODIFIER='\''(conda/2021-09-22/ytune_23) '\''
+export CONDA_EXE='\''/soft/datascience/conda/2022-09-08/mconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/soft/datascience/conda/2022-09-08/mconda3/bin/python'\'''
+++ eval 'PS1='\''(conda/2021-09-22/ytune_23) '\''
+export PATH='\''/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin'\''
+export CONDA_PREFIX='\''/home/trandall/.conda/envs/ytune_23'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''ytune_23'\''
+export CONDA_PROMPT_MODIFIER='\''(conda/2021-09-22/ytune_23) '\''
+export CONDA_EXE='\''/soft/datascience/conda/2022-09-08/mconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/soft/datascience/conda/2022-09-08/mconda3/bin/python'\'''
++++ PS1='(conda/2021-09-22/ytune_23) '
++++ export PATH=/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
++++ PATH=/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/cray/pe/gcc/11.2.0/bin:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
++++ export CONDA_PREFIX=/home/trandall/.conda/envs/ytune_23
++++ CONDA_PREFIX=/home/trandall/.conda/envs/ytune_23
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=ytune_23
++++ CONDA_DEFAULT_ENV=ytune_23
++++ export 'CONDA_PROMPT_MODIFIER=(conda/2021-09-22/ytune_23) '
++++ CONDA_PROMPT_MODIFIER='(conda/2021-09-22/ytune_23) '
++++ export CONDA_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/conda
++++ CONDA_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/python
++++ CONDA_PYTHON_EXE=/soft/datascience/conda/2022-09-08/mconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ module swap PrgEnv-gnu PrgEnv-nvhpc/8.3.3
++++ /usr/share/lmod/lmod/libexec/lmod bash swap PrgEnv-gnu PrgEnv-nvhpc/8.3.3
+
+Lmod is automatically replacing "gcc/11.2.0" with "nvhpc/21.9".
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: PrgEnv-gnu (required by: conda/2022-09-08)
+-------------------------------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+++ eval 'CC=cpp;' export 'CC;' '__LMOD_REF_COUNT_CPATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/include/qd:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmem/include:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/include:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/include:1;' export '__LMOD_REF_COUNT_CPATH;' 'CPATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/include/qd:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmem/include:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/include:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/include;' export 'CPATH;' 'CRAYPE_DIR=/opt/cray/pe/craype/2.7.15;' export 'CRAYPE_DIR;' 'CRAYPE_VERSION=2.7.15;' export 'CRAYPE_VERSION;' 'CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.2.2;' export 'CRAY_DSMML_BASEDIR;' 'CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.2.2/dsmml;' export 'CRAY_DSMML_DIR;' 'CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.2.2/dsmml;' export 'CRAY_DSMML_PREFIX;' 'CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.2.2;' export 'CRAY_DSMML_ROOTDIR;' 'CRAY_DSMML_VER=0.2.2;' export 'CRAY_DSMML_VER;' 'CRAY_DSMML_VERSION=0.2.2;' export 'CRAY_DSMML_VERSION;' '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:1\;/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib:1\;/opt/cray/pe/mpich/8.1.16/gtl/lib:1\;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1\;/opt/cray/pe/perftools/22.05.0/lib64:1;' export '__LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH;' 'CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib:/opt/cray/pe/mpich/8.1.16/gtl/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/perftools/22.05.0/lib64;' export 'CRAY_LD_LIBRARY_PATH;' 'CRAY_LMOD_COMPILER=nvidia/20;' export 'CRAY_LMOD_COMPILER;' 'CRAY_LMOD_MPI=cray-mpich/8.0;' export 'CRAY_LMOD_MPI;' 'CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.16/ofi;' export 'CRAY_MPICH_BASEDIR;' 'CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7;' export 'CRAY_MPICH_DIR;' 'CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7;' export 'CRAY_MPICH_PREFIX;' 'CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.16;' export 'CRAY_MPICH_ROOTDIR;' 'CRAY_MPICH_VER=8.1.16;' export 'CRAY_MPICH_VER;' 'CRAY_MPICH_VERSION=8.1.16;' export 'CRAY_MPICH_VERSION;' 'CRAY_NVIDIA_PREFIX=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9;' export 'CRAY_NVIDIA_PREFIX;' 'CRAY_NVIDIA_VERSION=21.9;' export 'CRAY_NVIDIA_VERSION;' 'CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/6.1.2/include;' export 'CRAY_PMI_INCLUDE_OPTS;' 'CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/6.1.2/lib;' export 'CRAY_PMI_POST_LINK_OPTS;' 'CRAY_PMI_PREFIX=/opt/cray/pe/pmi/6.1.2;' export 'CRAY_PMI_PREFIX;' 'CRAY_PMI_VERSION=6.1.2;' export 'CRAY_PMI_VERSION;' 'CXX=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvc++;' export 'CXX;' 'F77=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran;' export 'F77;' 'F90=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran;' export 'F90;' 'FC=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran;' export 'FC;' unset 'GCC_PATH;' unset 'GCC_PREFIX;' unset 'GCC_VERSION;' unset 'GNU_VERSION;' unset '__LMOD_REF_COUNT_INFOPATH;' unset 'INFOPATH;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:1\;/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:1\;/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:1\;/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:1\;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:1\;/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:1\;/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:1\;/opt/cray/pe/papi/6.0.0.14/lib64:1\;/opt/cray/libfabric/1.11.0.4.125/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64;' export 'LD_LIBRARY_PATH;' 'LMOD_FAMILY_COMPILER=nvhpc;' export 'LMOD_FAMILY_COMPILER;' 'LMOD_FAMILY_COMPILER_VERSION=21.9;' export 'LMOD_FAMILY_COMPILER_VERSION;' 'LMOD_FAMILY_CRAYPE=craype;' export 'LMOD_FAMILY_CRAYPE;' 'LMOD_FAMILY_CRAYPE_VERSION=2.7.15;' export 'LMOD_FAMILY_CRAYPE_VERSION;' 'LMOD_FAMILY_MPI=cray-mpich;' export 'LMOD_FAMILY_MPI;' 'LMOD_FAMILY_MPI_VERSION=8.1.16;' export 'LMOD_FAMILY_MPI_VERSION;' 'LMOD_FAMILY_PRGENV=PrgEnv-nvhpc;' export 'LMOD_FAMILY_PRGENV;' 'LMOD_FAMILY_PRGENV_VERSION=8.3.3;' export 'LMOD_FAMILY_PRGENV_VERSION;' '__LMOD_REF_COUNT_LOADEDMODULES=craype-x86-rome:1\;libfabric/1.11.0.4.125:1\;craype-network-ofi:1\;perftools-base/22.05.0:1\;craype-accel-nvidia80:1\;cudatoolkit-standalone/12.0.0:1\;conda/2022-09-08:1\;nvhpc/21.9:1\;craype/2.7.15:1\;cray-dsmml/0.2.2:1\;cray-mpich/8.1.16:1\;cray-pmi/6.1.2:1\;cray-pmi-lib/6.0.17:1\;cray-pals/1.1.7:1\;cray-libpals/1.1.7:1\;PrgEnv-nvhpc/8.3.3:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.125:craype-network-ofi:perftools-base/22.05.0:craype-accel-nvidia80:cudatoolkit-standalone/12.0.0:conda/2022-09-08:nvhpc/21.9:craype/2.7.15:cray-dsmml/0.2.2:cray-mpich/8.1.16:cray-pmi/6.1.2:cray-pmi-lib/6.0.17:cray-pals/1.1.7:cray-libpals/1.1.7:PrgEnv-nvhpc/8.3.3;' export 'LOADEDMODULES;' '__LMOD_REF_COUNT_MANPATH=/opt/cray/pe/pals/1.1.7/man:1\;/opt/cray/pe/pmi/6.1.2/man:1\;/opt/cray/pe/mpich/8.1.16/ofi/man:1\;/opt/cray/pe/mpich/8.1.16/man/mpich:1\;/opt/cray/pe/dsmml/0.2.2/dsmml/man:1\;/opt/cray/pe/craype/2.7.15/man:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/man:1\;/opt/cray/pe/perftools/22.05.0/man:1\;/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:1\;/opt/cray/libfabric/1.11.0.4.125/share/man:1\;/usr/share/lmod/lmod/share/man:1\;/usr/local/man:1\;/usr/share/man:1\;/opt/c3/man:1\;/opt/pbs/share/man:1\;/opt/clmgr/man:1\;/opt/sgi/share/man:1\;/opt/clmgr/share/man:1\;/opt/clmgr/lib/cm-cli/man:1;' export '__LMOD_REF_COUNT_MANPATH;' 'MANPATH=/opt/cray/pe/pals/1.1.7/man:/opt/cray/pe/pmi/6.1.2/man:/opt/cray/pe/mpich/8.1.16/ofi/man:/opt/cray/pe/mpich/8.1.16/man/mpich:/opt/cray/pe/dsmml/0.2.2/dsmml/man:/opt/cray/pe/craype/2.7.15/man:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/man:/opt/cray/pe/perftools/22.05.0/man:/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:/opt/cray/libfabric/1.11.0.4.125/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/usr/share/man:/opt/c3/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man;' export 'MANPATH;' '__LMOD_REF_COUNT_MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/nvidia/20/ofi/1.0/cray-mpich/8.0:1\;/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0:1\;/opt/cray/pe/lmod/modulefiles/compiler/nvidia/20:1\;/opt/cray/pe/lmod/modulefiles/mix_compilers:1\;/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:1\;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1\;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1\;/usr/share/modulefiles/Linux:1\;/usr/share/modulefiles/Core:1\;/usr/share/lmod/lmod/modulefiles/Core:1\;/opt/cray/pe/lmod/modulefiles/core:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1\;/soft/modulefiles:1\;/opt/modulefiles:1\;/opt/cray/modulefiles:1;' export '__LMOD_REF_COUNT_MODULEPATH;' 'MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/nvidia/20/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/nvidia/20:/opt/cray/pe/lmod/modulefiles/mix_compilers:/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/soft/modulefiles:/opt/modulefiles:/opt/cray/modulefiles;' export 'MODULEPATH;' 'MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7;' export 'MPICH_DIR;' 'NVHPC=/opt/nvidia/hpc_sdk;' export 'NVHPC;' 'NVIDIA_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9;' export 'NVIDIA_PATH;' 'NVIDIA_VERSION=21.9;' export 'NVIDIA_VERSION;' '__LMOD_REF_COUNT_PATH=/opt/cray/pe/pals/1.1.7/bin:1\;/opt/cray/pe/craype/2.7.15/bin:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:1\;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:1\;/home/trandall/.conda/envs/ytune_23/bin:1\;/soft/datascience/conda/2022-09-08/mconda3/condabin:1\;/soft/compilers/cudatoolkit/cuda-11.6.2/bin:1\;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:1\;/soft/compilers/cudatoolkit/cuda-12.0.0/bin:1\;/opt/cray/pe/perftools/22.05.0/bin:1\;/opt/cray/pe/papi/6.0.0.14/bin:1\;/opt/cray/libfabric/1.11.0.4.125/bin:1\;/opt/clmgr/sbin:1\;/opt/clmgr/bin:1\;/opt/sgi/sbin:1\;/opt/sgi/bin:1\;/home/trandall/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/bin:2\;/opt/c3/bin:1\;/usr/lib/mit/bin:1\;/usr/lib/mit/sbin:1\;/opt/pbs/bin:1\;/sbin:1\;/opt/cray/pe/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin;' export 'PATH;' 'PE_DSMML_MODULE_NAME=cray-dsmml;' export 'PE_DSMML_MODULE_NAME;' 'PE_DSMML_PKGCONFIG_LIBS=dsmml;' export 'PE_DSMML_PKGCONFIG_LIBS;' 'PE_ENV=NVIDIA;' export 'PE_ENV;' 'PE_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_FORTRAN_PKGCONFIG_LIBS;' unset '__LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH;' unset 'PE_GNU_FIXED_PKGCONFIG_PATH;' '__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=NVIDIA:1;' export '__LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV;' 'PE_MPICH_FIXED_PRGENV=NVIDIA;' export 'PE_MPICH_FIXED_PRGENV;' 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90;' export 'PE_MPICH_FORTRAN_PKGCONFIG_LIBS;' unset '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU;' unset 'PE_MPICH_GENCOMPILERS_GNU;' '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA=20.7:1;' export '__LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA;' 'PE_MPICH_GENCOMPILERS_NVIDIA=20.7;' export 'PE_MPICH_GENCOMPILERS_NVIDIA;' 'PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx906;' 'PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx908;' 'PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_amd_gfx90a;' 'PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia70;' 'PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.16/gtl/lib;' export 'PE_MPICH_GTL_DIR_nvidia80;' 'PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx906;' 'PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx908;' 'PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa;' export 'PE_MPICH_GTL_LIBS_amd_gfx90a;' 'PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia70;' 'PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda;' export 'PE_MPICH_GTL_LIBS_nvidia80;' 'PE_MPICH_MODULE_NAME=cray-mpich;' export 'PE_MPICH_MODULE_NAME;' 'PE_MPICH_PKGCONFIG_LIBS=mpich;' export 'PE_MPICH_PKGCONFIG_LIBS;' 'PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@;' export 'PE_MPICH_PKGCONFIG_VARIABLES;' '__LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib/pkgconfig:1;' export '__LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH;' 'PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib/pkgconfig;' export 'PE_NVIDIA_FIXED_PKGCONFIG_PATH;' 'PE_PALS_PKGCONFIG_LIBS=libpals;' export 'PE_PALS_PKGCONFIG_LIBS;' 'PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib;' export 'PE_PERFTOOLS_MPICH_LIBDIR;' 'PE_PKGCONFIG_LIBS=mpich:dsmml;' export 'PE_PKGCONFIG_LIBS;' 'PE_PKGCONFIG_PRODUCTS=PE_PALS:PE_PMI:PE_MPICH:PE_DSMML;' export 'PE_PKGCONFIG_PRODUCTS;' 'PE_PMI_PKGCONFIG_LIBS=cray-pmi;' export 'PE_PMI_PKGCONFIG_LIBS;' 'PE_PRODUCT_LIST=CRAY_PMI:CRAYPE:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT:CRAY_ACCEL;' export 'PE_PRODUCT_LIST;' 'PKGCONFIG_ENABLED=1;' export 'PKGCONFIG_ENABLED;' 'PKG_CONFIG_PATH=/opt/cray/pe/pals/1.1.7/lib/pkgconfig:/opt/cray/pe/pmi/6.1.2/lib/pkgconfig:/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:/opt/cray/pe/craype/2.7.15/pkg-config:/opt/cray/libfabric/1.11.0.4.125/lib64/pkgconfig;' export 'PKG_CONFIG_PATH;' 'SLURM_MPI_TYPE=cray_shasta;' export 'SLURM_MPI_TYPE;' '__LMOD_REF_COUNT__LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1\;/soft/modulefiles/libfabric/1.11.0.4.125:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1\;/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:1\;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:1\;/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:1\;/soft/modulefiles/conda/2022-09-08.lua:1\;/opt/cray/pe/lmod/modulefiles/core/nvhpc/21.9.lua:1\;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:1\;/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0/cray-mpich/8.1.16.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:1\;/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:1\;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-nvhpc/8.3.3.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/soft/modulefiles/libfabric/1.11.0.4.125:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:/soft/modulefiles/conda/2022-09-08.lua:/opt/cray/pe/lmod/modulefiles/core/nvhpc/21.9.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0/cray-mpich/8.1.16.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-nvhpc/8.3.3.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtbnZocGMiLFsiY29tcGlsZXIiXT0ibnZocGMiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfYWNjZWwiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIixbImNyYXlwZV9jcHUiXT0iY3JheXBlLXg4Ni1yb21lIixbImNyYXlwZV9uZXR3b3JrIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsWyJtcGkiXT0iY3JheS1tcGljaCIsWyJweXRob24iXT0iY29uZGEiLH0sbVQ9e1siUHJnRW52LW52aHBjIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9Q;' export '_ModuleTable001_;' '_ModuleTable002_=cmdFbnYtbnZocGMvOC4zLjMubHVhIixbImZ1bGxOYW1lIl09IlByZ0Vudi1udmhwYy84LjMuMyIsWyJsb2FkT3JkZXIiXT0xNixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYtbnZocGMvOC4zLjMiLH0sY29uZGE9e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvY29uZGEvMjAyMi0wOS0wOC5sdWEiLFsiZnVsbE5hbWUiXT0iY29uZGEvMjAyMi0wOS0wOCIsWyJsb2FkT3JkZXIiXT03LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNvbmRhIix9LFsiY3JheS1kc21tbCJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2Nv;' export '_ModuleTable002_;' '_ModuleTable003_=cmUvY3JheS1kc21tbC8wLjIuMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1kc21tbC8wLjIuMiIsWyJsb2FkT3JkZXIiXT0xMCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LWRzbW1sIix9LFsiY3JheS1saWJwYWxzIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWxpYnBhbHMvMS4xLjcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbGlicGFscy8xLjEuNyIsWyJsb2FkT3JkZXIiXT0xNSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LWxpYnBhbHMiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0i;' export '_ModuleTable003_;' '_ModuleTable004_=L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L252aWRpYS8yMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4xLjE2Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS4xNiIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LW1waWNoIix9LFsiY3JheS1wYWxzIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBhbHMvMS4xLjcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcGFscy8xLjEuNyIsWyJsb2FkT3JkZXIiXT0xNCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFt;' export '_ModuleTable004_;' '_ModuleTable005_=ZSJdPSJjcmF5LXBhbHMiLH0sWyJjcmF5LXBtaSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1wbWkvNi4xLjIubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLzYuMS4yIixbImxvYWRPcmRlciJdPTEyLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktcG1pIix9LFsiY3JheS1wbWktbGliIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBtaS1saWIvNi4wLjE3Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LXBtaS1saWIvNi4wLjE3IixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0;' export '_ModuleTable005_;' '_ModuleTable006_=dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktcG1pLWxpYiIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5cGUvMi43LjE1Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjE1IixbImxvYWRPcmRlciJdPTkscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlIix9LFsiY3JheXBlLWFjY2VsLW52aWRpYTgwIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUtYWNjZWwtbnZpZGlhODAubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS1hY2NlbC1udmlkaWE4MCIsWyJs;' export '_ModuleTable006_;' '_ModuleTable007_=b2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS1hY2NlbC1udmlkaWE4MCIsfSxbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvY3JheXBlLW5ldHdvcmstb2ZpLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1v;' export '_ModuleTable007_;' '_ModuleTable008_=ZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS14ODYtcm9tZS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LFsiY3VkYXRvb2xraXQtc3RhbmRhbG9uZSJdPXtbImZuIl09Ii9zb2Z0L21vZHVsZWZpbGVzL2N1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhdG9vbGtpdC1zdGFuZGFsb25lLzEyLjAuMCIsWyJsb2FkT3JkZXIiXT02LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVz;' export '_ModuleTable008_;' '_ModuleTable009_=ZXJOYW1lIl09ImN1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvc29mdC9tb2R1bGVmaWxlcy9saWJmYWJyaWMvMS4xMS4wLjQuMTI1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC4xMjUiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sbnZocGM9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9udmhwYy8yMS45Lmx1YSIsWyJmdWxsTmFtZSJdPSJudmhwYy8yMS45IixbImxvYWRPcmRlciJdPTgscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUi;' export '_ModuleTable009_;' '_ModuleTable010_=LFsidXNlck5hbWUiXT0ibnZocGMiLH0sWyJwZXJmdG9vbHMtYmFzZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvcGVyZnRvb2xzLWJhc2UvMjIuMDUuMC5sdWEiLFsiZnVsbE5hbWUiXT0icGVyZnRvb2xzLWJhc2UvMjIuMDUuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0b29scy1iYXNlIix9LH0sbXBhdGhBPXsiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbXBpL252aWRpYS8yMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L252aWRpYS8yMC9vZmkvMS4wIiwi;' export '_ModuleTable010_;' '_ModuleTable011_=L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvbnZpZGlhLzIwIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbWl4X2NvbXBpbGVycyIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL3BlcmZ0b29scy8yMi4wNS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbmV0L29maS8xLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcHUveDg2LXJvbWUvMS4wIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlIiwiL29wdC9j;' export '_ModuleTable011_;' '_ModuleTable012_=cmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdCIsIi9zb2Z0L21vZHVsZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovc29mdC9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzOi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsfQ==;' export '_ModuleTable012_;' '_ModuleTable_Sz_=12;' export '_ModuleTable_Sz_;' alias 'mpirun=mpiexec;'
++++ CC=cpp
++++ export CC
++++ __LMOD_REF_COUNT_CPATH='/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/include/qd:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmem/include:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/include:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/include:1'
++++ export __LMOD_REF_COUNT_CPATH
++++ CPATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/include/qd:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmem/include:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/include:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/include
++++ export CPATH
++++ CRAYPE_DIR=/opt/cray/pe/craype/2.7.15
++++ export CRAYPE_DIR
++++ CRAYPE_VERSION=2.7.15
++++ export CRAYPE_VERSION
++++ CRAY_DSMML_BASEDIR=/opt/cray/pe/dsmml/0.2.2
++++ export CRAY_DSMML_BASEDIR
++++ CRAY_DSMML_DIR=/opt/cray/pe/dsmml/0.2.2/dsmml
++++ export CRAY_DSMML_DIR
++++ CRAY_DSMML_PREFIX=/opt/cray/pe/dsmml/0.2.2/dsmml
++++ export CRAY_DSMML_PREFIX
++++ CRAY_DSMML_ROOTDIR=/opt/cray/pe/dsmml/0.2.2
++++ export CRAY_DSMML_ROOTDIR
++++ CRAY_DSMML_VER=0.2.2
++++ export CRAY_DSMML_VER
++++ CRAY_DSMML_VERSION=0.2.2
++++ export CRAY_DSMML_VERSION
++++ __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH='/opt/cray/pe/pmi/6.1.2/lib:1;/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib:1;/opt/cray/pe/mpich/8.1.16/gtl/lib:1;/opt/cray/pe/dsmml/0.2.2/dsmml/lib:1;/opt/cray/pe/perftools/22.05.0/lib64:1'
++++ export __LMOD_REF_COUNT_CRAY_LD_LIBRARY_PATH
++++ CRAY_LD_LIBRARY_PATH=/opt/cray/pe/pmi/6.1.2/lib:/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib:/opt/cray/pe/mpich/8.1.16/gtl/lib:/opt/cray/pe/dsmml/0.2.2/dsmml/lib:/opt/cray/pe/perftools/22.05.0/lib64
++++ export CRAY_LD_LIBRARY_PATH
++++ CRAY_LMOD_COMPILER=nvidia/20
++++ export CRAY_LMOD_COMPILER
++++ CRAY_LMOD_MPI=cray-mpich/8.0
++++ export CRAY_LMOD_MPI
++++ CRAY_MPICH_BASEDIR=/opt/cray/pe/mpich/8.1.16/ofi
++++ export CRAY_MPICH_BASEDIR
++++ CRAY_MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7
++++ export CRAY_MPICH_DIR
++++ CRAY_MPICH_PREFIX=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7
++++ export CRAY_MPICH_PREFIX
++++ CRAY_MPICH_ROOTDIR=/opt/cray/pe/mpich/8.1.16
++++ export CRAY_MPICH_ROOTDIR
++++ CRAY_MPICH_VER=8.1.16
++++ export CRAY_MPICH_VER
++++ CRAY_MPICH_VERSION=8.1.16
++++ export CRAY_MPICH_VERSION
++++ CRAY_NVIDIA_PREFIX=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9
++++ export CRAY_NVIDIA_PREFIX
++++ CRAY_NVIDIA_VERSION=21.9
++++ export CRAY_NVIDIA_VERSION
++++ CRAY_PMI_INCLUDE_OPTS=-I/opt/cray/pe/pmi/6.1.2/include
++++ export CRAY_PMI_INCLUDE_OPTS
++++ CRAY_PMI_POST_LINK_OPTS=-L/opt/cray/pe/pmi/6.1.2/lib
++++ export CRAY_PMI_POST_LINK_OPTS
++++ CRAY_PMI_PREFIX=/opt/cray/pe/pmi/6.1.2
++++ export CRAY_PMI_PREFIX
++++ CRAY_PMI_VERSION=6.1.2
++++ export CRAY_PMI_VERSION
++++ CXX=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvc++
++++ export CXX
++++ F77=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran
++++ export F77
++++ F90=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran
++++ export F90
++++ FC=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin/nvfortran
++++ export FC
++++ unset GCC_PATH
++++ unset GCC_PREFIX
++++ unset GCC_VERSION
++++ unset GNU_VERSION
++++ unset __LMOD_REF_COUNT_INFOPATH
++++ unset INFOPATH
++++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:1;/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:1;/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:1;/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:1;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:1;/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:1;/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:1;/opt/cray/pe/papi/6.0.0.14/lib64:1;/opt/cray/libfabric/1.11.0.4.125/lib64:1'
++++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
++++ LD_LIBRARY_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64
++++ export LD_LIBRARY_PATH
++++ LMOD_FAMILY_COMPILER=nvhpc
++++ export LMOD_FAMILY_COMPILER
++++ LMOD_FAMILY_COMPILER_VERSION=21.9
++++ export LMOD_FAMILY_COMPILER_VERSION
++++ LMOD_FAMILY_CRAYPE=craype
++++ export LMOD_FAMILY_CRAYPE
++++ LMOD_FAMILY_CRAYPE_VERSION=2.7.15
++++ export LMOD_FAMILY_CRAYPE_VERSION
++++ LMOD_FAMILY_MPI=cray-mpich
++++ export LMOD_FAMILY_MPI
++++ LMOD_FAMILY_MPI_VERSION=8.1.16
++++ export LMOD_FAMILY_MPI_VERSION
++++ LMOD_FAMILY_PRGENV=PrgEnv-nvhpc
++++ export LMOD_FAMILY_PRGENV
++++ LMOD_FAMILY_PRGENV_VERSION=8.3.3
++++ export LMOD_FAMILY_PRGENV_VERSION
++++ __LMOD_REF_COUNT_LOADEDMODULES='craype-x86-rome:1;libfabric/1.11.0.4.125:1;craype-network-ofi:1;perftools-base/22.05.0:1;craype-accel-nvidia80:1;cudatoolkit-standalone/12.0.0:1;conda/2022-09-08:1;nvhpc/21.9:1;craype/2.7.15:1;cray-dsmml/0.2.2:1;cray-mpich/8.1.16:1;cray-pmi/6.1.2:1;cray-pmi-lib/6.0.17:1;cray-pals/1.1.7:1;cray-libpals/1.1.7:1;PrgEnv-nvhpc/8.3.3:1'
++++ export __LMOD_REF_COUNT_LOADEDMODULES
++++ LOADEDMODULES=craype-x86-rome:libfabric/1.11.0.4.125:craype-network-ofi:perftools-base/22.05.0:craype-accel-nvidia80:cudatoolkit-standalone/12.0.0:conda/2022-09-08:nvhpc/21.9:craype/2.7.15:cray-dsmml/0.2.2:cray-mpich/8.1.16:cray-pmi/6.1.2:cray-pmi-lib/6.0.17:cray-pals/1.1.7:cray-libpals/1.1.7:PrgEnv-nvhpc/8.3.3
++++ export LOADEDMODULES
++++ __LMOD_REF_COUNT_MANPATH='/opt/cray/pe/pals/1.1.7/man:1;/opt/cray/pe/pmi/6.1.2/man:1;/opt/cray/pe/mpich/8.1.16/ofi/man:1;/opt/cray/pe/mpich/8.1.16/man/mpich:1;/opt/cray/pe/dsmml/0.2.2/dsmml/man:1;/opt/cray/pe/craype/2.7.15/man:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/man:1;/opt/cray/pe/perftools/22.05.0/man:1;/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:1;/opt/cray/libfabric/1.11.0.4.125/share/man:1;/usr/share/lmod/lmod/share/man:1;/usr/local/man:1;/usr/share/man:1;/opt/c3/man:1;/opt/pbs/share/man:1;/opt/clmgr/man:1;/opt/sgi/share/man:1;/opt/clmgr/share/man:1;/opt/clmgr/lib/cm-cli/man:1'
++++ export __LMOD_REF_COUNT_MANPATH
++++ MANPATH=/opt/cray/pe/pals/1.1.7/man:/opt/cray/pe/pmi/6.1.2/man:/opt/cray/pe/mpich/8.1.16/ofi/man:/opt/cray/pe/mpich/8.1.16/man/mpich:/opt/cray/pe/dsmml/0.2.2/dsmml/man:/opt/cray/pe/craype/2.7.15/man:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/man:/opt/cray/pe/perftools/22.05.0/man:/opt/cray/pe/papi/6.0.0.14/share/pdoc/man:/opt/cray/libfabric/1.11.0.4.125/share/man:/usr/share/lmod/lmod/share/man:/usr/local/man:/usr/share/man:/opt/c3/man:/opt/pbs/share/man:/opt/clmgr/man:/opt/sgi/share/man:/opt/clmgr/share/man:/opt/clmgr/lib/cm-cli/man
++++ export MANPATH
++++ __LMOD_REF_COUNT_MODULEPATH='/opt/cray/pe/lmod/modulefiles/mpi/nvidia/20/ofi/1.0/cray-mpich/8.0:1;/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/compiler/nvidia/20:1;/opt/cray/pe/lmod/modulefiles/mix_compilers:1;/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:1;/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:1;/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/opt/cray/pe/lmod/modulefiles/core:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default:1;/soft/modulefiles:1;/opt/modulefiles:1;/opt/cray/modulefiles:1'
++++ export __LMOD_REF_COUNT_MODULEPATH
++++ MODULEPATH=/opt/cray/pe/lmod/modulefiles/mpi/nvidia/20/ofi/1.0/cray-mpich/8.0:/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0:/opt/cray/pe/lmod/modulefiles/compiler/nvidia/20:/opt/cray/pe/lmod/modulefiles/mix_compilers:/opt/cray/pe/lmod/modulefiles/perftools/22.05.0:/opt/cray/pe/lmod/modulefiles/net/ofi/1.0:/opt/cray/pe/lmod/modulefiles/cpu/x86-rome/1.0:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/opt/cray/pe/lmod/modulefiles/core:/opt/cray/pe/lmod/modulefiles/craype-targets/default:/soft/modulefiles:/opt/modulefiles:/opt/cray/modulefiles
++++ export MODULEPATH
++++ MPICH_DIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7
++++ export MPICH_DIR
++++ NVHPC=/opt/nvidia/hpc_sdk
++++ export NVHPC
++++ NVIDIA_PATH=/opt/nvidia/hpc_sdk/Linux_x86_64/21.9
++++ export NVIDIA_PATH
++++ NVIDIA_VERSION=21.9
++++ export NVIDIA_VERSION
++++ __LMOD_REF_COUNT_PATH='/opt/cray/pe/pals/1.1.7/bin:1;/opt/cray/pe/craype/2.7.15/bin:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:1;/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:1;/home/trandall/.conda/envs/ytune_23/bin:1;/soft/datascience/conda/2022-09-08/mconda3/condabin:1;/soft/compilers/cudatoolkit/cuda-11.6.2/bin:1;/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:1;/soft/compilers/cudatoolkit/cuda-12.0.0/bin:1;/opt/cray/pe/perftools/22.05.0/bin:1;/opt/cray/pe/papi/6.0.0.14/bin:1;/opt/cray/libfabric/1.11.0.4.125/bin:1;/opt/clmgr/sbin:1;/opt/clmgr/bin:1;/opt/sgi/sbin:1;/opt/sgi/bin:1;/home/trandall/bin:1;/usr/local/bin:1;/usr/bin:1;/bin:2;/opt/c3/bin:1;/usr/lib/mit/bin:1;/usr/lib/mit/sbin:1;/opt/pbs/bin:1;/sbin:1;/opt/cray/pe/bin:1'
++++ export __LMOD_REF_COUNT_PATH
++++ PATH=/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
++++ export PATH
++++ PE_DSMML_MODULE_NAME=cray-dsmml
++++ export PE_DSMML_MODULE_NAME
++++ PE_DSMML_PKGCONFIG_LIBS=dsmml
++++ export PE_DSMML_PKGCONFIG_LIBS
++++ PE_ENV=NVIDIA
++++ export PE_ENV
++++ PE_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_FORTRAN_PKGCONFIG_LIBS
++++ unset __LMOD_REF_COUNT_PE_GNU_FIXED_PKGCONFIG_PATH
++++ unset PE_GNU_FIXED_PKGCONFIG_PATH
++++ __LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV=NVIDIA:1
++++ export __LMOD_REF_COUNT_PE_MPICH_FIXED_PRGENV
++++ PE_MPICH_FIXED_PRGENV=NVIDIA
++++ export PE_MPICH_FIXED_PRGENV
++++ PE_MPICH_FORTRAN_PKGCONFIG_LIBS=mpichf90
++++ export PE_MPICH_FORTRAN_PKGCONFIG_LIBS
++++ unset __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_GNU
++++ unset PE_MPICH_GENCOMPILERS_GNU
++++ __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA=20.7:1
++++ export __LMOD_REF_COUNT_PE_MPICH_GENCOMPILERS_NVIDIA
++++ PE_MPICH_GENCOMPILERS_NVIDIA=20.7
++++ export PE_MPICH_GENCOMPILERS_NVIDIA
++++ PE_MPICH_GTL_DIR_amd_gfx906=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx906
++++ PE_MPICH_GTL_DIR_amd_gfx908=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx908
++++ PE_MPICH_GTL_DIR_amd_gfx90a=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_amd_gfx90a
++++ PE_MPICH_GTL_DIR_nvidia70=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia70
++++ PE_MPICH_GTL_DIR_nvidia80=-L/opt/cray/pe/mpich/8.1.16/gtl/lib
++++ export PE_MPICH_GTL_DIR_nvidia80
++++ PE_MPICH_GTL_LIBS_amd_gfx906=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx906
++++ PE_MPICH_GTL_LIBS_amd_gfx908=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx908
++++ PE_MPICH_GTL_LIBS_amd_gfx90a=-lmpi_gtl_hsa
++++ export PE_MPICH_GTL_LIBS_amd_gfx90a
++++ PE_MPICH_GTL_LIBS_nvidia70=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia70
++++ PE_MPICH_GTL_LIBS_nvidia80=-lmpi_gtl_cuda
++++ export PE_MPICH_GTL_LIBS_nvidia80
++++ PE_MPICH_MODULE_NAME=cray-mpich
++++ export PE_MPICH_MODULE_NAME
++++ PE_MPICH_PKGCONFIG_LIBS=mpich
++++ export PE_MPICH_PKGCONFIG_LIBS
++++ PE_MPICH_PKGCONFIG_VARIABLES=PE_MPICH_GTL_DIR_@accelerator@:PE_MPICH_GTL_LIBS_@accelerator@
++++ export PE_MPICH_PKGCONFIG_VARIABLES
++++ __LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib/pkgconfig:1
++++ export __LMOD_REF_COUNT_PE_NVIDIA_FIXED_PKGCONFIG_PATH
++++ PE_NVIDIA_FIXED_PKGCONFIG_PATH=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib/pkgconfig
++++ export PE_NVIDIA_FIXED_PKGCONFIG_PATH
++++ PE_PALS_PKGCONFIG_LIBS=libpals
++++ export PE_PALS_PKGCONFIG_LIBS
++++ PE_PERFTOOLS_MPICH_LIBDIR=/opt/cray/pe/mpich/8.1.16/ofi/nvidia/20.7/lib
++++ export PE_PERFTOOLS_MPICH_LIBDIR
++++ PE_PKGCONFIG_LIBS=mpich:dsmml
++++ export PE_PKGCONFIG_LIBS
++++ PE_PKGCONFIG_PRODUCTS=PE_PALS:PE_PMI:PE_MPICH:PE_DSMML
++++ export PE_PKGCONFIG_PRODUCTS
++++ PE_PMI_PKGCONFIG_LIBS=cray-pmi
++++ export PE_PMI_PKGCONFIG_LIBS
++++ PE_PRODUCT_LIST=CRAY_PMI:CRAYPE:CRAYPE_X86_ROME:PERFTOOLS:CRAYPAT:CRAY_ACCEL
++++ export PE_PRODUCT_LIST
++++ PKGCONFIG_ENABLED=1
++++ export PKGCONFIG_ENABLED
++++ PKG_CONFIG_PATH=/opt/cray/pe/pals/1.1.7/lib/pkgconfig:/opt/cray/pe/pmi/6.1.2/lib/pkgconfig:/opt/cray/pe/dsmml/0.2.2/dsmml/lib/pkgconfig:/opt/cray/pe/craype/2.7.15/pkg-config:/opt/cray/libfabric/1.11.0.4.125/lib64/pkgconfig
++++ export PKG_CONFIG_PATH
++++ SLURM_MPI_TYPE=cray_shasta
++++ export SLURM_MPI_TYPE
++++ __LMOD_REF_COUNT__LMFILES_='/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:1;/soft/modulefiles/libfabric/1.11.0.4.125:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:1;/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:1;/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:1;/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:1;/soft/modulefiles/conda/2022-09-08.lua:1;/opt/cray/pe/lmod/modulefiles/core/nvhpc/21.9.lua:1;/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:1;/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0/cray-mpich/8.1.16.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:1;/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:1;/opt/cray/pe/lmod/modulefiles/core/PrgEnv-nvhpc/8.3.3.lua:1'
++++ export __LMOD_REF_COUNT__LMFILES_
++++ _LMFILES_=/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-x86-rome.lua:/soft/modulefiles/libfabric/1.11.0.4.125:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-network-ofi.lua:/opt/cray/pe/lmod/modulefiles/core/perftools-base/22.05.0.lua:/opt/cray/pe/lmod/modulefiles/craype-targets/default/craype-accel-nvidia80.lua:/soft/modulefiles/cudatoolkit-standalone/12.0.0.lua:/soft/modulefiles/conda/2022-09-08.lua:/opt/cray/pe/lmod/modulefiles/core/nvhpc/21.9.lua:/opt/cray/pe/lmod/modulefiles/core/craype/2.7.15.lua:/opt/cray/pe/lmod/modulefiles/core/cray-dsmml/0.2.2.lua:/opt/cray/pe/lmod/modulefiles/comnet/nvidia/20/ofi/1.0/cray-mpich/8.1.16.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi/6.1.2.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pmi-lib/6.0.17.lua:/opt/cray/pe/lmod/modulefiles/core/cray-pals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/cray-libpals/1.1.7.lua:/opt/cray/pe/lmod/modulefiles/core/PrgEnv-nvhpc/8.3.3.lua
++++ export _LMFILES_
++++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbIlByZ0VudiJdPSJQcmdFbnYtbnZocGMiLFsiY29tcGlsZXIiXT0ibnZocGMiLFsiY3JheXBlIl09ImNyYXlwZSIsWyJjcmF5cGVfYWNjZWwiXT0iY3JheXBlLWFjY2VsLW52aWRpYTgwIixbImNyYXlwZV9jcHUiXT0iY3JheXBlLXg4Ni1yb21lIixbImNyYXlwZV9uZXR3b3JrIl09ImNyYXlwZS1uZXR3b3JrLW9maSIsWyJtcGkiXT0iY3JheS1tcGljaCIsWyJweXRob24iXT0iY29uZGEiLH0sbVQ9e1siUHJnRW52LW52aHBjIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9Q
++++ export _ModuleTable001_
++++ _ModuleTable002_=cmdFbnYtbnZocGMvOC4zLjMubHVhIixbImZ1bGxOYW1lIl09IlByZ0Vudi1udmhwYy84LjMuMyIsWyJsb2FkT3JkZXIiXT0xNixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJQcmdFbnYtbnZocGMvOC4zLjMiLH0sY29uZGE9e1siZm4iXT0iL3NvZnQvbW9kdWxlZmlsZXMvY29uZGEvMjAyMi0wOS0wOC5sdWEiLFsiZnVsbE5hbWUiXT0iY29uZGEvMjAyMi0wOS0wOCIsWyJsb2FkT3JkZXIiXT03LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNvbmRhIix9LFsiY3JheS1kc21tbCJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2Nv
++++ export _ModuleTable002_
++++ _ModuleTable003_=cmUvY3JheS1kc21tbC8wLjIuMi5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheS1kc21tbC8wLjIuMiIsWyJsb2FkT3JkZXIiXT0xMCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LWRzbW1sIix9LFsiY3JheS1saWJwYWxzIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LWxpYnBhbHMvMS4xLjcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktbGlicGFscy8xLjEuNyIsWyJsb2FkT3JkZXIiXT0xNSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LWxpYnBhbHMiLH0sWyJjcmF5LW1waWNoIl09e1siZm4iXT0i
++++ export _ModuleTable003_
++++ _ModuleTable004_=L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L252aWRpYS8yMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4xLjE2Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LW1waWNoLzguMS4xNiIsWyJsb2FkT3JkZXIiXT0xMSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5LW1waWNoIix9LFsiY3JheS1wYWxzIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBhbHMvMS4xLjcubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcGFscy8xLjEuNyIsWyJsb2FkT3JkZXIiXT0xNCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFt
++++ export _ModuleTable004_
++++ _ModuleTable005_=ZSJdPSJjcmF5LXBhbHMiLH0sWyJjcmF5LXBtaSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvY3JheS1wbWkvNi4xLjIubHVhIixbImZ1bGxOYW1lIl09ImNyYXktcG1pLzYuMS4yIixbImxvYWRPcmRlciJdPTEyLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktcG1pIix9LFsiY3JheS1wbWktbGliIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5LXBtaS1saWIvNi4wLjE3Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5LXBtaS1saWIvNi4wLjE3IixbImxvYWRPcmRlciJdPTEzLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0
++++ export _ModuleTable005_
++++ _ModuleTable006_=dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXktcG1pLWxpYiIsfSxjcmF5cGU9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9jcmF5cGUvMi43LjE1Lmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUvMi43LjE1IixbImxvYWRPcmRlciJdPTkscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlIix9LFsiY3JheXBlLWFjY2VsLW52aWRpYTgwIl09e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdC9jcmF5cGUtYWNjZWwtbnZpZGlhODAubHVhIixbImZ1bGxOYW1lIl09ImNyYXlwZS1hY2NlbC1udmlkaWE4MCIsWyJs
++++ export _ModuleTable006_
++++ _ModuleTable007_=b2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImNyYXlwZS1hY2NlbC1udmlkaWE4MCIsfSxbImNyYXlwZS1uZXR3b3JrLW9maSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NyYXlwZS10YXJnZXRzL2RlZmF1bHQvY3JheXBlLW5ldHdvcmstb2ZpLmx1YSIsWyJmdWxsTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjcmF5cGUtbmV0d29yay1vZmkiLH0sWyJjcmF5cGUteDg2LXJvbWUiXT17WyJmbiJdPSIvb3B0L2NyYXkvcGUvbG1v
++++ export _ModuleTable007_
++++ _ModuleTable008_=ZC9tb2R1bGVmaWxlcy9jcmF5cGUtdGFyZ2V0cy9kZWZhdWx0L2NyYXlwZS14ODYtcm9tZS5sdWEiLFsiZnVsbE5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIixbImxvYWRPcmRlciJdPTEscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MCxbInN0YXR1cyJdPSJhY3RpdmUiLFsidXNlck5hbWUiXT0iY3JheXBlLXg4Ni1yb21lIix9LFsiY3VkYXRvb2xraXQtc3RhbmRhbG9uZSJdPXtbImZuIl09Ii9zb2Z0L21vZHVsZWZpbGVzL2N1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wLmx1YSIsWyJmdWxsTmFtZSJdPSJjdWRhdG9vbGtpdC1zdGFuZGFsb25lLzEyLjAuMCIsWyJsb2FkT3JkZXIiXT02LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVz
++++ export _ModuleTable008_
++++ _ModuleTable009_=ZXJOYW1lIl09ImN1ZGF0b29sa2l0LXN0YW5kYWxvbmUvMTIuMC4wIix9LGxpYmZhYnJpYz17WyJmbiJdPSIvc29mdC9tb2R1bGVmaWxlcy9saWJmYWJyaWMvMS4xMS4wLjQuMTI1IixbImZ1bGxOYW1lIl09ImxpYmZhYnJpYy8xLjExLjAuNC4xMjUiLFsibG9hZE9yZGVyIl09Mixwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJsaWJmYWJyaWMiLH0sbnZocGM9e1siZm4iXT0iL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29yZS9udmhwYy8yMS45Lmx1YSIsWyJmdWxsTmFtZSJdPSJudmhwYy8yMS45IixbImxvYWRPcmRlciJdPTgscHJvcFQ9e30sWyJzdGFja0RlcHRoIl09MSxbInN0YXR1cyJdPSJhY3RpdmUi
++++ export _ModuleTable009_
++++ _ModuleTable010_=LFsidXNlck5hbWUiXT0ibnZocGMiLH0sWyJwZXJmdG9vbHMtYmFzZSJdPXtbImZuIl09Ii9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmUvcGVyZnRvb2xzLWJhc2UvMjIuMDUuMC5sdWEiLFsiZnVsbE5hbWUiXT0icGVyZnRvb2xzLWJhc2UvMjIuMDUuMCIsWyJsb2FkT3JkZXIiXT00LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InBlcmZ0b29scy1iYXNlIix9LH0sbXBhdGhBPXsiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbXBpL252aWRpYS8yMC9vZmkvMS4wL2NyYXktbXBpY2gvOC4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tbmV0L252aWRpYS8yMC9vZmkvMS4wIiwi
++++ export _ModuleTable010_
++++ _ModuleTable011_=L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY29tcGlsZXIvbnZpZGlhLzIwIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbWl4X2NvbXBpbGVycyIsIi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL3BlcmZ0b29scy8yMi4wNS4wIiwiL29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvbmV0L29maS8xLjAiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jcHUveDg2LXJvbWUvMS4wIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvb3B0L2NyYXkvcGUvbG1vZC9tb2R1bGVmaWxlcy9jb3JlIiwiL29wdC9j
++++ export _ModuleTable011_
++++ _ModuleTable012_=cmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdCIsIi9zb2Z0L21vZHVsZWZpbGVzIiwiL29wdC9tb2R1bGVmaWxlcyIsIi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlOi9vcHQvY3JheS9wZS9sbW9kL21vZHVsZWZpbGVzL2NvcmU6L29wdC9jcmF5L3BlL2xtb2QvbW9kdWxlZmlsZXMvY3JheXBlLXRhcmdldHMvZGVmYXVsdDovc29mdC9tb2R1bGVmaWxlczovb3B0L21vZHVsZWZpbGVzOi9vcHQvY3JheS9tb2R1bGVmaWxlcyIsfQ==
++++ export _ModuleTable012_
++++ _ModuleTable_Sz_=12
++++ export _ModuleTable_Sz_
++++ alias mpirun=mpiexec
++++ : -s sh
+++ eval
+++ export MPICH_GPU_SUPPORT_ENABLED=1
+++ MPICH_GPU_SUPPORT_ENABLED=1
+++ export PATH=/home/trandall/ytune_23/dependencies/heffte/heffte/build_polaris_gpu/benchmarks:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
+++ PATH=/home/trandall/ytune_23/dependencies/heffte/heffte/build_polaris_gpu/benchmarks:/opt/cray/pe/pals/1.1.7/bin:/opt/cray/pe/craype/2.7.15/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/extras/qd/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/bin:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/bin:/home/trandall/.conda/envs/ytune_23/bin:/soft/datascience/conda/2022-09-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-11.6.2/bin:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/include:/soft/compilers/cudatoolkit/cuda-12.0.0/bin:/opt/cray/pe/perftools/22.05.0/bin:/opt/cray/pe/papi/6.0.0.14/bin:/opt/cray/libfabric/1.11.0.4.125/bin:/opt/clmgr/sbin:/opt/clmgr/bin:/opt/sgi/sbin:/opt/sgi/bin:/home/trandall/bin:/usr/local/bin:/usr/bin:/bin:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/opt/pbs/bin:/sbin:/opt/cray/pe/bin
+++ export LD_LIBRARY_PATH=/home/trandall/ytune_23/dependencies/heffte/heffte/build_polaris_gpu:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64
+++ LD_LIBRARY_PATH=/home/trandall/ytune_23/dependencies/heffte/heffte/build_polaris_gpu:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nvshmeme/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/comm_libs/nccl/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/math_libs/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilers/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/compilersextras/qd/lib:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cudaextras/CUPTI/lib64:/opt/nvidia/hpc_sdk/Linux_x86_64/21.9/cuda/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-11.6.2/lib64:/soft/libraries/trt/TensorRT-8.4.3.1.Linux.x86_64-gnu.cuda-11.6.cudnn8.4/lib:/soft/libraries/nccl/nccl_2.14.3-1+cuda11.6_x86_64/lib:/soft/libraries/cudnn/cudnn-11.6-linux-x64-v8.4.1.50/lib:/soft/compilers/cudatoolkit/cuda-12.0.0/lib64:/opt/cray/pe/papi/6.0.0.14/lib64:/opt/cray/libfabric/1.11.0.4.125/lib64
+++ [[ -z '' ]]
+++ echo 'Modify PS1'
+++ export 'PS1=|\@| (conda/2021-09-22/ytune_23) '
+++ PS1='|\@| (conda/2021-09-22/ytune_23) '
+++ export PROMPT_DIRTRIM=2
+++ PROMPT_DIRTRIM=2
+++ export PS1_EDITED=1
+++ PS1_EDITED=1
++ cd /home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
++ app_scales=(64)
++ mpi_ranks=(8 16 32 64)
++ n_nodes=(2 4 8 16)
++ workers=(4)
++ calls=0
++ for app_scale in ${app_scales[@]}
++ str_app=64
++ [[ 2 -lt 4 ]]
++ str_app=064
++ [[ 3 -lt 4 ]]
++ str_app=0064
++ [[ 4 -lt 4 ]]
++ for rank_index in ${!mpi_ranks[@]}
++ n_ranks=8
++ n_nodes=2
++ str_nodes=2
++ [[ 1 -lt 2 ]]
++ str_nodes=02
++ [[ 2 -lt 2 ]]
++ for n_workers in ${workers[@]}
++ echo 'Calling on 4 workers with 8 mpi ranks per worker for size 64'
++ call='python libEwrapper.py --mpi-ranks 8 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_8r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ date
++ echo 'python libEwrapper.py --mpi-ranks 8 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_8r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ eval 'python libEwrapper.py --mpi-ranks 8 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_8r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
+++ python libEwrapper.py --mpi-ranks 8 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_8r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s1b1n0
++ date
++ echo
++ export EXE=run_gctla_c6e9e96a.py
++ EXE=run_gctla_c6e9e96a.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_c6e9e96a.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ echo 'python run_gctla_c6e9e96a.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ eval 'python run_gctla_c6e9e96a.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
+++ python run_gctla_c6e9e96a.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 8 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 902.53it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 883.42it/s]
++ echo
++ date
++ echo
++ date
++ calls=1
++ echo
++ for rank_index in ${!mpi_ranks[@]}
++ n_ranks=16
++ n_nodes=4
++ str_nodes=4
++ [[ 1 -lt 2 ]]
++ str_nodes=04
++ [[ 2 -lt 2 ]]
++ for n_workers in ${workers[@]}
++ echo 'Calling on 4 workers with 16 mpi ranks per worker for size 64'
++ call='python libEwrapper.py --mpi-ranks 16 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_16r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ date
++ echo 'python libEwrapper.py --mpi-ranks 16 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_16r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ eval 'python libEwrapper.py --mpi-ranks 16 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_16r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
+++ python libEwrapper.py --mpi-ranks 16 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_16r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s1b1n0
++ date
++ echo
++ export EXE=run_gctla_a36235dd.py
++ EXE=run_gctla_a36235dd.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_a36235dd.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ echo 'python run_gctla_a36235dd.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ eval 'python run_gctla_a36235dd.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
+++ python run_gctla_a36235dd.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 16 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 1217.14it/s]
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 255
+  warnings.warn(eval_error_warning)
++ echo
++ date
++ echo
++ date
++ calls=2
++ echo
++ for rank_index in ${!mpi_ranks[@]}
++ n_ranks=32
++ n_nodes=8
++ str_nodes=8
++ [[ 1 -lt 2 ]]
++ str_nodes=08
++ [[ 2 -lt 2 ]]
++ for n_workers in ${workers[@]}
++ echo 'Calling on 4 workers with 32 mpi ranks per worker for size 64'
++ call='python libEwrapper.py --mpi-ranks 32 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_32r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ date
++ echo 'python libEwrapper.py --mpi-ranks 32 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_32r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ eval 'python libEwrapper.py --mpi-ranks 32 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_32r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
+++ python libEwrapper.py --mpi-ranks 32 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_32r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s1b1n0
++ date
++ echo
++ export EXE=run_gctla_a51a79dc.py
++ EXE=run_gctla_a51a79dc.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_a51a79dc.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ echo 'python run_gctla_a51a79dc.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ eval 'python run_gctla_a51a79dc.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
+++ python run_gctla_a51a79dc.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 32 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 1333.79it/s]
+[0]  2023-08-04 06:11:27,780 libensemble.manager (ERROR): ---- Received error message from worker 2 ----
+[0]  2023-08-04 06:11:27,780 libensemble.manager (ERROR): Message: IndexError: list index out of range
+[0]  2023-08-04 06:11:27,781 libensemble.manager (ERROR): Traceback (most recent call last):
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/worker.py", line 406, in run
+    response = self._handle(Work)
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/worker.py", line 355, in _handle
+    calc_out, persis_info, calc_status = self._handle_calc(Work, calc_in)
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/worker.py", line 275, in _handle_calc
+    out = calc(calc_in, Work)
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/utils/runners.py", line 47, in run_sim
+    return result(calc_in, Work["persis_info"], self.sim_specs, Work["libE_info"], self.sim_f, Work["tag"])
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/utils/runners.py", line 91, in _normal_result
+    return user_f(*args)
+  File "/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/libE_obj.py", line 27, in init_obj
+    y = problem.objective(point, sim_specs['in'], libE_info['workerID'])
+  File "/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_problem.py", line 176, in objective
+    result = self.plopper.findRuntime(x, self.CAPITAL_PARAMS, *args, **kwargs)
+  File "/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py", line 294, in findRuntime
+    dictVal = self.createDict(x, params, *args, **kwargs)
+  File "/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gc_tla_problem.py", line 292, in createDict
+    dictVal = self.topology_interpret(dictVal)
+  File "/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gc_tla_problem.py", line 235, in topology_interpret
+    config['P9'] = machine_info['sequence'][int(len(machine_info['sequence']) * float(config['P9']))]
+IndexError: list index out of range
+
+[0]  2023-08-04 06:11:27,782 libensemble.libE (ERROR): Manager exception raised .. aborting ensemble:
+[0]  2023-08-04 06:11:27,782 libensemble.libE (ERROR): Dumping ensemble history with 0 sims evaluated:
+Traceback (most recent call last):
+  File "/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_a51a79dc.py", line 486, in <module>
+    H, persis_info, flag = libE(sim_specs, gen_specs, exit_criteria, persis_info,
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/libE.py", line 257, in libE
+    return libE_funcs[libE_specs.get("comms", "mpi")](
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/libE.py", line 500, in libE_local
+    return manager(
+  File "/home/trandall/ytune_23/dependencies/libensemble/libensemble/libE.py", line 305, in manager
+    raise LoggedException(*e.args, "See error details above and in ensemble.log") from None
+libensemble.manager.LoggedException: ('Received error message from worker 2', 'IndexError: list index out of range', 'See error details above and in ensemble.log')
++ echo
++ date
++ echo
++ date
++ calls=3
++ echo
++ for rank_index in ${!mpi_ranks[@]}
++ n_ranks=64
++ n_nodes=16
++ str_nodes=16
++ [[ 2 -lt 2 ]]
++ for n_workers in ${workers[@]}
++ echo 'Calling on 4 workers with 64 mpi ranks per worker for size 64'
++ call='python libEwrapper.py --mpi-ranks 64 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_64r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ date
++ echo 'python libEwrapper.py --mpi-ranks 64 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_64r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
++ eval 'python libEwrapper.py --mpi-ranks 64 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_64r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/*n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results'
+++ python libEwrapper.py --mpi-ranks 64 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_TL_nodes_64r_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --gc-initial-quantile 0.8 --launch-job --display-results
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s1b1n0
++ date
++ echo
++ export EXE=run_gctla_0a0eb739.py
++ EXE=run_gctla_0a0eb739.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_0a0eb739.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ echo 'python run_gctla_0a0eb739.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
++ eval 'python run_gctla_0a0eb739.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8'
+++ python run_gctla_0a0eb739.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 64 --constraint-app 64 --input logs/PolarisSourceTasks/Polaris_01n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_02n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0064a/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_16n_0064a/manager_results.csv --predictions-only False --initial-quantile 0.8
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 928.23it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 910.88it/s]
++ echo
++ date
++ echo
++ date
++ calls=4
++ echo
++ echo
++ echo 'Requested 4 calls'
