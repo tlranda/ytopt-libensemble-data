@@ -1,0 +1,64 @@
+time=9.39043 0/2 /pressio/roibin/background/pressio/noop:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background/pressio/noop:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background/pressio/noop:noop:metric <char*> = "noop"
+/pressio/roibin/background/pressio/noop:pressio:metric <char*> = "noop"
+/pressio/roibin/background/pressio:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background/pressio:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background/pressio:pressio:bound_name <char*> = <empty>
+/pressio/roibin/background/pressio:pressio:compressor <char*> = "noop"
+/pressio/roibin/background/pressio:pressio:metric <char*> = "noop"
+/pressio/roibin/background/pressio:pressio:reset_mode <bool> = <empty>
+/pressio/roibin/background:binning:compressor <char*> = "pressio"
+/pressio/roibin/background:binning:metric <char*> = "noop"
+/pressio/roibin/background:binning:nthreads <uint32> = 4
+/pressio/roibin/background:binning:shape <data> = data{ type=double dims={3, } has_data=[2, 2, 1, ]}
+/pressio/roibin/background:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background:pressio:metric <char*> = "noop"
+/pressio/roibin/background:pressio:nthreads <uint32> = 4
+/pressio/roibin/roi:fpzip:has_header <int32> = 0
+/pressio/roibin/roi:fpzip:metric <char*> = "noop"
+/pressio/roibin/roi:fpzip:prec <int32> = 0
+/pressio/roibin/roi:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/roi:metrics:errors_fatal <int32> = 1
+/pressio/roibin/roi:pressio:metric <char*> = "noop"
+/pressio/roibin:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin:metrics:errors_fatal <int32> = 1
+/pressio/roibin:pressio:metric <char*> = "noop"
+/pressio/roibin:pressio:nthreads <uint32> = 2
+/pressio/roibin:roibin:background <char*> = "binning"
+/pressio/roibin:roibin:centers <data> = data{ type=uint64_t dims={} has_data=false}
+/pressio/roibin:roibin:metric <char*> = "noop"
+/pressio/roibin:roibin:nthreads <uint32> = 2
+/pressio/roibin:roibin:roi <char*> = "fpzip"
+/pressio/roibin:roibin:roi_size <data> = data{ type=double dims={3, } has_data=[8, 8, 0, ]}
+/pressio/roibin:roibin:roi_strategy <char*> = "coordinates"
+/pressio:metrics:copy_compressor_results <int32> = 1
+/pressio:metrics:errors_fatal <int32> = 1
+/pressio:pressio:bound_name <char*> = <empty>
+/pressio:pressio:compressor <char*> = "roibin"
+/pressio:pressio:metric <char*> = "noop"
+/pressio:pressio:reset_mode <bool> = <empty>
+
+time=9.39049 0/2 global data_dims{130, 1480, 1552}
+time=9.39049 0/2 global peakx_dims{130, 2048}
+time=9.39049 0/2 global peaky_dims{130, 2048}
+time=9.3905 0/2 global npeaks{130}
+time=9.3905 0/2 processing 0 2
+time=26.8509 0/2 processing 2 4
+time=37.9827 0/2 processing 4 6
+time=52.8549 0/2 processing 6 8
+time=73.803 0/2 processing 8 10
+time=101.699 0/2 processing 10 12
+time=111.671 0/2 processing 12 14
+time=129.419 0/2 processing 14 16
+time=144.02 0/2 processing 16 18
+time=155.279 0/2 processing 18 20
+time=172.463 0/2 processing 20 22
+time=194.771 0/2 processing 22 24
+time=214.667 0/2 processing 24 26
+time=232.379 0/2 processing 26 28
+time=243.707 0/2 processing 28 30
+time=262.847 0/2 processing 30 32
+time=273.227 0/2 processing 32 34
+time=287.123 0/2 processing 34 36

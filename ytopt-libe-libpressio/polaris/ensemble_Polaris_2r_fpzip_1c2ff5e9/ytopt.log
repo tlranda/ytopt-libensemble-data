@@ -1,0 +1,794 @@
+2023-08-23 14:28:47|62678|INFO|ytopt:46] 
+
+Loading ytopt
+--------------
+2023-08-23 14:28:47|41744|INFO|ytopt:46] 
+
+Loading ytopt
+--------------
+2023-08-23 14:28:47|62678|INFO|ytopt.search.hps.optimizer.optimizer:66] Using skopt.Optimizer with RF base_estimator
+2023-08-23 14:28:47|41744|INFO|ytopt.search.hps.optimizer.optimizer:66] Using skopt.Optimizer with RF base_estimator
+2023-08-23 14:29:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 18, 'p1': 4, 'p2': 1} --> ('roibin_fpzip.json', 18, 4, 1): evaluated objective: -0.124835
+2023-08-23 14:29:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 1, 3] lie: 0.0
+2023-08-23 14:29:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 2, 'p2': 2} --> ('roibin_fpzip.json', 30, 2, 2): evaluated objective: -0.14536
+2023-08-23 14:29:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 12, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 12, 3, 3): evaluated objective: -0.146196
+2023-08-23 14:29:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 42, 'p1': 3, 'p2': 1} --> ('roibin_fpzip.json', 42, 3, 1): evaluated objective: -0.126541
+2023-08-23 14:29:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 47, 3, 2] lie: 0.0
+2023-08-23 14:29:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 32, 1, 4] lie: 0.0
+2023-08-23 14:29:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 28, 3, 4] lie: 0.0
+2023-08-23 14:30:29|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 49, 1, 3): evaluated objective: -0.166145
+2023-08-23 14:30:30|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 2, 4] lie: 0.0
+2023-08-23 14:30:40|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 28, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 28, 3, 4): evaluated objective: -0.135714
+2023-08-23 14:30:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 5, 2, 3] lie: 0.0
+2023-08-23 14:30:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 47, 'p1': 3, 'p2': 2} --> ('roibin_fpzip.json', 47, 3, 2): evaluated objective: -0.134461
+2023-08-23 14:30:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 32, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 32, 1, 4): evaluated objective: -0.145572
+2023-08-23 14:30:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 1, 4] lie: 0.0
+2023-08-23 14:30:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 58, 1, 3] lie: 0.0
+2023-08-23 14:30:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 13, 'p1': 4, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 13, 4, 1, 3): evaluated objective: -0.0180306
+2023-08-23 14:30:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 2, 4] lie: 0.0
+2023-08-23 14:30:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 40, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 40, 1, 2, 4): evaluated objective: -0.0195611
+2023-08-23 14:30:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 3, 2] lie: 0.0
+2023-08-23 14:30:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 12, 'p1': 3, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 12, 3, 3, 3): evaluated objective: -0.0190875
+2023-08-23 14:30:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 2, 3] lie: 0.0
+2023-08-23 14:30:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 30, 'p1': 2, 'p2': 2, 'p3': 2} --> ('roibin_blosc-9.json', 30, 2, 2, 2): evaluated objective: -0.0177208
+2023-08-23 14:30:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 19, 3, 3, 1] lie: 0.0
+2023-08-23 14:31:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 30, 2, 4): evaluated objective: -0.159426
+2023-08-23 14:31:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 1, 4] lie: 0.0
+2023-08-23 14:31:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 49, 1, 4): evaluated objective: -0.144254
+2023-08-23 14:31:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 57, 2, 4] lie: 0.0
+2023-08-23 14:31:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 5, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 5, 2, 3): evaluated objective: -0.137908
+2023-08-23 14:31:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 58, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 58, 1, 3): evaluated objective: -0.141285
+2023-08-23 14:31:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 35, 1, 4] lie: 0.0
+2023-08-23 14:31:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 32, 1, 3] lie: 0.0
+2023-08-23 14:32:02|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 31, 1, 4): evaluated objective: -0.165021
+2023-08-23 14:32:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 1, 4] lie: 0.0
+2023-08-23 14:32:18|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 47, 3, 2, 4): evaluated objective: -0.0216726
+2023-08-23 14:32:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 42, 4, 3, 4] lie: 0.0
+2023-08-23 14:32:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 25, 1, 2, 3): evaluated objective: -0.0210159
+2023-08-23 14:32:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 42, 4, 1, 4] lie: 0.0
+2023-08-23 14:32:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 57, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 57, 2, 4): evaluated objective: -0.145253
+2023-08-23 14:32:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 1, 4] lie: 0.0
+2023-08-23 14:32:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 35, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 35, 1, 4): evaluated objective: -0.145395
+2023-08-23 14:32:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 1, 4] lie: 0.0
+2023-08-23 14:32:30|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 32, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 32, 1, 3): evaluated objective: -0.145768
+2023-08-23 14:32:31|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 26, 1, 4] lie: 0.0
+2023-08-23 14:32:31|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 3, 'p3': 2} --> ('roibin_blosc-9.json', 58, 2, 3, 2): evaluated objective: -0.0191107
+2023-08-23 14:32:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 36, 3, 2, 4] lie: 0.0
+2023-08-23 14:32:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 30, 1, 4): evaluated objective: -0.152486
+2023-08-23 14:32:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 1, 3] lie: 0.0
+2023-08-23 14:33:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 19, 'p1': 3, 'p2': 3, 'p3': 1} --> ('roibin_blosc-9.json', 19, 3, 3, 1): evaluated objective: -0.0127296
+2023-08-23 14:33:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 2, 2, 4] lie: 0.0
+2023-08-23 14:33:20|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 51, 1, 4): evaluated objective: -0.148393
+2023-08-23 14:33:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 29, 1, 4] lie: 0.0
+2023-08-23 14:33:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 50, 1, 4): evaluated objective: -0.147024
+2023-08-23 14:33:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 1, 3] lie: 0.0
+2023-08-23 14:33:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 26, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 26, 1, 4): evaluated objective: -0.149752
+2023-08-23 14:33:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 1, 3] lie: 0.0
+2023-08-23 14:33:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 50, 1, 3): evaluated objective: -0.146644
+2023-08-23 14:33:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 2, 1, 4] lie: 0.0
+2023-08-23 14:34:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 42, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 42, 4, 3, 4): evaluated objective: -0.0194693
+2023-08-23 14:34:02|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 43, 2, 4, 4] lie: 0.0
+2023-08-23 14:34:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 42, 'p1': 4, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 42, 4, 1, 4): evaluated objective: -0.0189593
+2023-08-23 14:34:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 42, 3, 2, 4] lie: 0.0
+2023-08-23 14:34:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 29, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 29, 1, 4): evaluated objective: -0.148117
+2023-08-23 14:34:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 28, 1, 4] lie: 0.0
+2023-08-23 14:34:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 30, 1, 3): evaluated objective: -0.140272
+2023-08-23 14:34:15|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 27, 1, 4] lie: 0.0
+2023-08-23 14:34:16|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 31, 1, 3): evaluated objective: -0.149902
+2023-08-23 14:34:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 36, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 36, 3, 2, 4): evaluated objective: -0.0190491
+2023-08-23 14:34:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 28, 2, 4] lie: 0.0
+2023-08-23 14:34:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 42, 3, 1, 4] lie: 0.0
+2023-08-23 14:34:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 2, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 2, 1, 4): evaluated objective: -0.147042
+2023-08-23 14:34:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 29, 2, 4] lie: 0.0
+2023-08-23 14:35:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 28, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 28, 1, 4): evaluated objective: -0.151001
+2023-08-23 14:35:07|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 29, 1, 3] lie: 0.0
+2023-08-23 14:35:07|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 27, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 27, 1, 4): evaluated objective: -0.146608
+2023-08-23 14:35:08|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 28, 1, 2] lie: 0.0
+2023-08-23 14:35:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 28, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 28, 2, 4): evaluated objective: -0.147459
+2023-08-23 14:35:09|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 47, 2, 2, 4): evaluated objective: -0.0193378
+2023-08-23 14:35:10|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 2, 4] lie: 0.0
+2023-08-23 14:35:10|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 1, 2, 4] lie: 0.0
+2023-08-23 14:35:29|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 29, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 29, 2, 4): evaluated objective: -0.145342
+2023-08-23 14:35:29|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 4, 4] lie: 0.0
+2023-08-23 14:35:56|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 43, 'p1': 2, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 43, 2, 4, 4): evaluated objective: -0.0181038
+2023-08-23 14:35:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 2, 4] lie: 0.0
+2023-08-23 14:36:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 29, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 29, 1, 3): evaluated objective: -0.141151
+2023-08-23 14:36:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 33, 2, 4] lie: 0.0
+2023-08-23 14:36:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 28, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 28, 1, 2): evaluated objective: -0.143819
+2023-08-23 14:36:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 31, 2, 4): evaluated objective: -0.14706
+2023-08-23 14:36:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 42, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 42, 3, 2, 4): evaluated objective: -0.0188537
+2023-08-23 14:36:02|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 32, 2, 4] lie: 0.0
+2023-08-23 14:36:02|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 50, 1, 2, 3] lie: 0.0
+2023-08-23 14:36:02|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 33, 1, 4] lie: 0.0
+2023-08-23 14:36:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 42, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 42, 3, 1, 4): evaluated objective: -0.0182599
+2023-08-23 14:36:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 1, 2, 4] lie: 0.0
+2023-08-23 14:36:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 30, 4, 4): evaluated objective: -0.160174
+2023-08-23 14:36:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 32, 1, 2] lie: 0.0
+2023-08-23 14:36:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 33, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 33, 2, 4): evaluated objective: -0.148357
+2023-08-23 14:36:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 33, 1, 3] lie: 0.0
+2023-08-23 14:36:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 32, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 32, 2, 4): evaluated objective: -0.148265
+2023-08-23 14:36:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 33, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 33, 1, 4): evaluated objective: -0.14832
+2023-08-23 14:36:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 48, 1, 3] lie: 0.0
+2023-08-23 14:36:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 2, 3] lie: 0.0
+2023-08-23 14:37:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 54, 1, 2, 4): evaluated objective: -0.0186847
+2023-08-23 14:37:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 49, 2, 2, 4] lie: 0.0
+2023-08-23 14:37:07|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 32, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 32, 1, 2): evaluated objective: -0.154497
+2023-08-23 14:37:08|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 1, 3] lie: 0.0
+2023-08-23 14:37:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 33, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 33, 1, 3): evaluated objective: -0.137574
+2023-08-23 14:37:45|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 46, 1, 4] lie: 0.0
+2023-08-23 14:37:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 48, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 48, 1, 3): evaluated objective: -0.144132
+2023-08-23 14:37:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 1, 1] lie: 0.0
+2023-08-23 14:37:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 49, 2, 3): evaluated objective: -0.133964
+2023-08-23 14:37:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 42, 1, 4] lie: 0.0
+2023-08-23 14:37:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 58, 1, 2, 4): evaluated objective: -0.0186943
+2023-08-23 14:37:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 48, 3, 2, 4] lie: 0.0
+2023-08-23 14:37:54|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 50, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 50, 1, 2, 3): evaluated objective: -0.018611
+2023-08-23 14:37:55|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 46, 4, 2, 4] lie: 0.0
+2023-08-23 14:37:55|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 47, 1, 2, 4): evaluated objective: -0.0185003
+2023-08-23 14:37:56|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 4, 2, 4] lie: 0.0
+2023-08-23 14:37:59|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 53, 1, 3): evaluated objective: -0.149433
+2023-08-23 14:38:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 38, 1, 4] lie: 0.0
+2023-08-23 14:38:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 46, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 46, 1, 4): evaluated objective: -0.149452
+2023-08-23 14:38:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 2, 4] lie: 0.0
+2023-08-23 14:38:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 1, 'p2': 1} --> ('roibin_fpzip.json', 49, 1, 1): evaluated objective: -0.125491
+2023-08-23 14:38:40|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 48, 1, 4] lie: 0.0
+2023-08-23 14:38:40|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 42, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 42, 1, 4): evaluated objective: -0.151865
+2023-08-23 14:38:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 36, 1, 4] lie: 0.0
+2023-08-23 14:38:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 49, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 49, 2, 2, 4): evaluated objective: -0.0185728
+2023-08-23 14:38:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 46, 3, 2, 4] lie: 0.0
+2023-08-23 14:38:51|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 38, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 38, 1, 4): evaluated objective: -0.147386
+2023-08-23 14:38:51|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 52, 1, 4] lie: 0.0
+2023-08-23 14:39:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 49, 2, 4): evaluated objective: -0.148062
+2023-08-23 14:39:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 57, 1, 4] lie: 0.0
+2023-08-23 14:39:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 48, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 48, 1, 4): evaluated objective: -0.145024
+2023-08-23 14:39:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 44, 1, 4] lie: 0.0
+2023-08-23 14:39:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 36, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 36, 1, 4): evaluated objective: -0.146393
+2023-08-23 14:39:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 47, 1, 4] lie: 0.0
+2023-08-23 14:39:40|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 48, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 48, 3, 2, 4): evaluated objective: -0.018303
+2023-08-23 14:39:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 52, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 52, 1, 4): evaluated objective: -0.149489
+2023-08-23 14:39:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 1, 4] lie: 0.0
+2023-08-23 14:39:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 46, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 46, 4, 2, 4): evaluated objective: -0.0180984
+2023-08-23 14:39:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 58, 1, 4] lie: 0.0
+2023-08-23 14:39:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 57, 3, 2, 3] lie: 0.0
+2023-08-23 14:39:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 47, 4, 2, 4): evaluated objective: -0.0178229
+2023-08-23 14:39:47|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 4, 4] lie: 0.0
+2023-08-23 14:40:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 57, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 57, 1, 4): evaluated objective: -0.149714
+2023-08-23 14:40:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 1, 4] lie: 0.0
+2023-08-23 14:40:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 44, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 44, 1, 4): evaluated objective: -0.149714
+2023-08-23 14:40:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 1, 4] lie: 0.0
+2023-08-23 14:40:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 47, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 47, 1, 4): evaluated objective: -0.148062
+2023-08-23 14:40:29|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 1, 4] lie: 0.0
+2023-08-23 14:40:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 58, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 58, 1, 4): evaluated objective: -0.15148
+2023-08-23 14:40:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 1, 3] lie: 0.0
+2023-08-23 14:40:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 46, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 46, 3, 2, 4): evaluated objective: -0.0188626
+2023-08-23 14:40:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 2, 3] lie: 0.0
+2023-08-23 14:41:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 56, 1, 4): evaluated objective: -0.148228
+2023-08-23 14:41:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 57, 1, 3] lie: 0.0
+2023-08-23 14:41:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 54, 1, 4): evaluated objective: -0.148173
+2023-08-23 14:41:20|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 1, 4] lie: 0.0
+2023-08-23 14:41:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 53, 1, 4): evaluated objective: -0.152524
+2023-08-23 14:41:22|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 2, 4] lie: 0.0
+2023-08-23 14:41:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 60, 1, 3): evaluated objective: -0.149527
+2023-08-23 14:41:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 1, 4] lie: 0.0
+2023-08-23 14:41:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 47, 3, 1, 4): evaluated objective: -0.0190249
+2023-08-23 14:41:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 3, 4] lie: 0.0
+2023-08-23 14:41:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 57, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 57, 3, 2, 3): evaluated objective: -0.0184031
+2023-08-23 14:41:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 3, 1, 3] lie: 0.0
+2023-08-23 14:41:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 47, 3, 4, 4): evaluated objective: -0.0181049
+2023-08-23 14:41:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 1, 1, 3] lie: 0.0
+2023-08-23 14:42:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 57, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 57, 1, 3): evaluated objective: -0.140636
+2023-08-23 14:42:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 1, 4] lie: 0.0
+2023-08-23 14:42:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 55, 1, 4): evaluated objective: -0.149808
+2023-08-23 14:42:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 1, 3] lie: 0.0
+2023-08-23 14:42:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 55, 2, 4): evaluated objective: -0.146879
+2023-08-23 14:42:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 3, 4] lie: 0.0
+2023-08-23 14:42:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 59, 1, 4): evaluated objective: -0.149921
+2023-08-23 14:42:20|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 58, 2, 4] lie: 0.0
+2023-08-23 14:42:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 47, 3, 2, 3): evaluated objective: -0.0185334
+2023-08-23 14:42:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 1, 1, 4] lie: 0.0
+2023-08-23 14:42:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 60, 1, 4): evaluated objective: -0.149153
+2023-08-23 14:42:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 1, 3] lie: 0.0
+2023-08-23 14:43:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 55, 1, 3): evaluated objective: -0.140885
+2023-08-23 14:43:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 2, 4] lie: 0.0
+2023-08-23 14:43:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 55, 3, 4): evaluated objective: -0.14057
+2023-08-23 14:43:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 1, 3] lie: 0.0
+2023-08-23 14:43:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 58, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 58, 2, 4): evaluated objective: -0.146951
+2023-08-23 14:43:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 2, 4] lie: 0.0
+2023-08-23 14:43:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 47, 3, 3, 4): evaluated objective: -0.018808
+2023-08-23 14:43:21|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 41, 3, 1, 4] lie: 0.0
+2023-08-23 14:43:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 3, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 47, 3, 1, 3): evaluated objective: -0.0186946
+2023-08-23 14:43:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 47, 2, 1, 4] lie: 0.0
+2023-08-23 14:43:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 47, 1, 1, 3): evaluated objective: -0.018519
+2023-08-23 14:43:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 3, 1, 4] lie: 0.0
+2023-08-23 14:43:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 59, 1, 3): evaluated objective: -0.146035
+2023-08-23 14:43:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 2, 4] lie: 0.0
+2023-08-23 14:43:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 56, 2, 4): evaluated objective: -0.141385
+2023-08-23 14:43:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 3, 4] lie: 0.0
+2023-08-23 14:43:59|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 56, 1, 3): evaluated objective: -0.145183
+2023-08-23 14:43:59|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 1, 2] lie: 0.0
+2023-08-23 14:44:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 60, 2, 4): evaluated objective: -0.146035
+2023-08-23 14:44:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 2, 3] lie: 0.0
+2023-08-23 14:44:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 47, 1, 1, 4): evaluated objective: -0.0186165
+2023-08-23 14:44:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 48, 3, 1, 4] lie: 0.0
+2023-08-23 14:44:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 59, 2, 4): evaluated objective: -0.146879
+2023-08-23 14:44:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 1, 2] lie: 0.0
+2023-08-23 14:44:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 59, 3, 4): evaluated objective: -0.132581
+2023-08-23 14:44:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 2, 3] lie: 0.0
+2023-08-23 14:44:52|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 59, 1, 2): evaluated objective: -0.140421
+2023-08-23 14:44:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 4, 4] lie: 0.0
+2023-08-23 14:44:54|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 60, 2, 3): evaluated objective: -0.134719
+2023-08-23 14:44:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 60, 3, 4] lie: 0.0
+2023-08-23 14:45:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 41, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 41, 3, 1, 4): evaluated objective: -0.0191107
+2023-08-23 14:45:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 46, 1, 1, 4] lie: 0.0
+2023-08-23 14:45:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 47, 'p1': 2, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 47, 2, 1, 4): evaluated objective: -0.0190364
+2023-08-23 14:45:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 55, 3, 1, 4] lie: 0.0
+2023-08-23 14:45:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 59, 3, 1, 4): evaluated objective: -0.0191472
+2023-08-23 14:45:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 3, 1, 4] lie: 0.0
+2023-08-23 14:45:30|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 60, 1, 2): evaluated objective: -0.141939
+2023-08-23 14:45:31|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 4, 4] lie: 0.0
+2023-08-23 14:45:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 59, 2, 3): evaluated objective: -0.143837
+2023-08-23 14:45:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 3, 4] lie: 0.0
+2023-08-23 14:45:45|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 60, 4, 4): evaluated objective: -0.145324
+2023-08-23 14:45:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 3, 3] lie: 0.0
+2023-08-23 14:45:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 60, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 60, 3, 4): evaluated objective: -0.133664
+2023-08-23 14:45:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 29, 4, 4] lie: 0.0
+2023-08-23 14:46:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 48, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 48, 3, 1, 4): evaluated objective: -0.0185803
+2023-08-23 14:46:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 56, 3, 1, 4] lie: 0.0
+2023-08-23 14:46:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 31, 4, 4): evaluated objective: -0.143336
+2023-08-23 14:46:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 27, 4, 4] lie: 0.0
+2023-08-23 14:46:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 30, 3, 4): evaluated objective: -0.136443
+2023-08-23 14:46:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 4, 4] lie: 0.0
+2023-08-23 14:46:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 30, 3, 3): evaluated objective: -0.147568
+2023-08-23 14:46:38|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 58, 4, 3] lie: 0.0
+2023-08-23 14:46:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 29, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 29, 4, 4): evaluated objective: -0.146519
+2023-08-23 14:46:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 28, 4, 4] lie: 0.0
+2023-08-23 14:46:59|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 46, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 46, 1, 1, 4): evaluated objective: -0.0184646
+2023-08-23 14:47:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 3, 1, 4] lie: 0.0
+2023-08-23 14:47:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 55, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 55, 3, 1, 4): evaluated objective: -0.0186119
+2023-08-23 14:47:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 56, 3, 2, 4] lie: 0.0
+2023-08-23 14:47:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 60, 3, 1, 4): evaluated objective: -0.0179477
+2023-08-23 14:47:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 57, 2, 2, 4] lie: 0.0
+2023-08-23 14:47:15|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 27, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 27, 4, 4): evaluated objective: -0.15045
+2023-08-23 14:47:16|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 30, 4, 2] lie: 0.0
+2023-08-23 14:47:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 54, 4, 4): evaluated objective: -0.151039
+2023-08-23 14:47:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 4, 4] lie: 0.0
+2023-08-23 14:47:31|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 58, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 58, 4, 3): evaluated objective: -0.136865
+2023-08-23 14:47:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 36, 4, 4] lie: 0.0
+2023-08-23 14:47:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 28, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 28, 4, 4): evaluated objective: -0.148912
+2023-08-23 14:47:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 33, 4, 4] lie: 0.0
+2023-08-23 14:47:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 56, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 56, 3, 1, 4): evaluated objective: -0.0178856
+2023-08-23 14:47:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 53, 1, 2, 4] lie: 0.0
+2023-08-23 14:48:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 30, 'p1': 4, 'p2': 2} --> ('roibin_fpzip.json', 30, 4, 2): evaluated objective: -0.133499
+2023-08-23 14:48:10|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 32, 4, 4] lie: 0.0
+2023-08-23 14:48:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 49, 4, 4): evaluated objective: -0.145501
+2023-08-23 14:48:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 4, 3] lie: 0.0
+2023-08-23 14:48:23|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 36, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 36, 4, 4): evaluated objective: -0.150431
+2023-08-23 14:48:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 4, 4] lie: 0.0
+2023-08-23 14:48:31|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 33, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 33, 4, 4): evaluated objective: -0.149097
+2023-08-23 14:48:31|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 37, 4, 4] lie: 0.0
+2023-08-23 14:48:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 3, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 54, 3, 1, 4): evaluated objective: -0.0192016
+2023-08-23 14:48:52|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 3, 2, 4] lie: 0.0
+2023-08-23 14:49:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 56, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 56, 3, 2, 4): evaluated objective: -0.0186264
+2023-08-23 14:49:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 3, 2, 4] lie: 0.0
+2023-08-23 14:49:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 32, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 32, 4, 4): evaluated objective: -0.149004
+2023-08-23 14:49:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 35, 4, 4] lie: 0.0
+2023-08-23 14:49:04|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 57, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 57, 2, 2, 4): evaluated objective: -0.0190055
+2023-08-23 14:49:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 55, 1, 4, 4] lie: 0.0
+2023-08-23 14:49:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 31, 4, 3): evaluated objective: -0.144533
+2023-08-23 14:49:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 34, 4, 4] lie: 0.0
+2023-08-23 14:49:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 51, 4, 4): evaluated objective: -0.148301
+2023-08-23 14:49:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 52, 4, 4] lie: 0.0
+2023-08-23 14:49:23|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 37, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 37, 4, 4): evaluated objective: -0.147934
+2023-08-23 14:49:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 39, 4, 4] lie: 0.0
+2023-08-23 14:49:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 53, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 53, 1, 2, 4): evaluated objective: -0.0193128
+2023-08-23 14:49:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 1, 2, 4] lie: 0.0
+2023-08-23 14:49:59|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 35, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 35, 4, 4): evaluated objective: -0.146843
+2023-08-23 14:50:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 36, 4, 3] lie: 0.0
+2023-08-23 14:50:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 34, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 34, 4, 4): evaluated objective: -0.150279
+2023-08-23 14:50:05|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 38, 4, 4] lie: 0.0
+2023-08-23 14:50:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 52, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 52, 4, 4): evaluated objective: -0.145839
+2023-08-23 14:50:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 4, 4] lie: 0.0
+2023-08-23 14:50:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 39, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 39, 4, 4): evaluated objective: -0.147024
+2023-08-23 14:50:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 43, 4, 4] lie: 0.0
+2023-08-23 14:50:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 54, 3, 2, 4): evaluated objective: -0.0190902
+2023-08-23 14:50:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 2, 2, 4] lie: 0.0
+2023-08-23 14:50:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 52, 3, 2, 4): evaluated objective: -0.0194382
+2023-08-23 14:50:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 53, 2, 2, 4] lie: 0.0
+2023-08-23 14:50:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 36, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 36, 4, 3): evaluated objective: -0.135853
+2023-08-23 14:50:54|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 4, 3] lie: 0.0
+2023-08-23 14:50:54|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 55, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 55, 1, 4, 4): evaluated objective: -0.0195396
+2023-08-23 14:50:55|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 53, 3, 2, 4] lie: 0.0
+2023-08-23 14:50:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 38, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 38, 4, 4): evaluated objective: -0.150204
+2023-08-23 14:50:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 41, 4, 4] lie: 0.0
+2023-08-23 14:51:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 50, 4, 4): evaluated objective: -0.14735
+2023-08-23 14:51:05|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 40, 4, 4] lie: 0.0
+2023-08-23 14:51:10|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 43, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 43, 4, 4): evaluated objective: -0.149172
+2023-08-23 14:51:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 47, 4, 4] lie: 0.0
+2023-08-23 14:51:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 52, 1, 2, 4): evaluated objective: -0.0186905
+2023-08-23 14:51:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 3, 2, 3] lie: 0.0
+2023-08-23 14:51:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 51, 4, 3): evaluated objective: -0.139372
+2023-08-23 14:51:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 4, 3] lie: 0.0
+2023-08-23 14:51:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 41, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 41, 4, 4): evaluated objective: -0.145625
+2023-08-23 14:51:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 44, 4, 4] lie: 0.0
+2023-08-23 14:51:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 40, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 40, 4, 4): evaluated objective: -0.150658
+2023-08-23 14:51:58|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 42, 4, 4] lie: 0.0
+2023-08-23 14:52:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 47, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 47, 4, 4): evaluated objective: -0.146753
+2023-08-23 14:52:05|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 4, 3] lie: 0.0
+2023-08-23 14:52:31|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 52, 2, 2, 4): evaluated objective: -0.0193244
+2023-08-23 14:52:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 3, 3, 4] lie: 0.0
+2023-08-23 14:52:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 49, 4, 3): evaluated objective: -0.140984
+2023-08-23 14:52:40|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 46, 4, 4] lie: 0.0
+2023-08-23 14:52:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 44, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 44, 4, 4): evaluated objective: -0.151039
+2023-08-23 14:52:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 45, 4, 4] lie: 0.0
+2023-08-23 14:52:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 53, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 53, 3, 2, 4): evaluated objective: -0.0182775
+2023-08-23 14:52:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 1, 2, 3] lie: 0.0
+2023-08-23 14:52:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 53, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 53, 2, 2, 4): evaluated objective: -0.0187263
+2023-08-23 14:52:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 52, 2, 3, 4] lie: 0.0
+2023-08-23 14:52:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 42, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 42, 4, 4): evaluated objective: -0.150336
+2023-08-23 14:52:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 3, 4] lie: 0.0
+2023-08-23 14:52:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 50, 4, 3): evaluated objective: -0.139356
+2023-08-23 14:52:58|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 3, 4] lie: 0.0
+2023-08-23 14:53:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 52, 3, 2, 3): evaluated objective: -0.0182611
+2023-08-23 14:53:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 1, 3, 4] lie: 0.0
+2023-08-23 14:53:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 46, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 46, 4, 4): evaluated objective: -0.146035
+2023-08-23 14:53:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 48, 4, 4] lie: 0.0
+2023-08-23 14:53:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 45, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 45, 4, 4): evaluated objective: -0.147005
+2023-08-23 14:53:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 52, 3, 4] lie: 0.0
+2023-08-23 14:53:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 50, 3, 4): evaluated objective: -0.133395
+2023-08-23 14:53:43|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 4, 4] lie: 0.0
+2023-08-23 14:53:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 49, 3, 4): evaluated objective: -0.135807
+2023-08-23 14:53:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 4, 4] lie: 0.0
+2023-08-23 14:54:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 48, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 48, 4, 4): evaluated objective: -0.149996
+2023-08-23 14:54:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 3, 4] lie: 0.0
+2023-08-23 14:54:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 52, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 52, 3, 4): evaluated objective: -0.132669
+2023-08-23 14:54:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 52, 3, 3, 4): evaluated objective: -0.0187263
+2023-08-23 14:54:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 58, 4, 4] lie: 0.0
+2023-08-23 14:54:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 2, 3, 4] lie: 0.0
+2023-08-23 14:54:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 52, 1, 2, 3): evaluated objective: -0.0183799
+2023-08-23 14:54:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 53, 4, 4): evaluated objective: -0.148081
+2023-08-23 14:54:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 59, 3, 3] lie: 0.0
+2023-08-23 14:54:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 54, 3, 4, 4] lie: 0.0
+2023-08-23 14:54:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 52, 'p1': 2, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 52, 2, 3, 4): evaluated objective: -0.0175281
+2023-08-23 14:54:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 3, 3, 3] lie: 0.0
+2023-08-23 14:54:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 55, 4, 4): evaluated objective: -0.146807
+2023-08-23 14:54:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 4, 4] lie: 0.0
+2023-08-23 14:55:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 54, 1, 3, 4): evaluated objective: -0.0189251
+2023-08-23 14:55:16|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 3, 'p2': 4} --> ('roibin_fpzip.json', 54, 3, 4): evaluated objective: -0.134461
+2023-08-23 14:55:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 55, 1, 3, 4] lie: 0.0
+2023-08-23 14:55:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 57, 4, 4] lie: 0.0
+2023-08-23 14:55:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 58, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 58, 4, 4): evaluated objective: -0.148044
+2023-08-23 14:55:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 3, 3] lie: 0.0
+2023-08-23 14:55:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 59, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 59, 3, 3): evaluated objective: -0.145042
+2023-08-23 14:55:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 1, 2] lie: 0.0
+2023-08-23 14:55:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 56, 4, 4): evaluated objective: -0.146285
+2023-08-23 14:55:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 2, 3] lie: 0.0
+2023-08-23 14:56:07|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 57, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 57, 4, 4): evaluated objective: -0.149302
+2023-08-23 14:56:08|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 57, 1, 2] lie: 0.0
+2023-08-23 14:56:08|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 56, 3, 3): evaluated objective: -0.143819
+2023-08-23 14:56:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 56, 4, 3] lie: 0.0
+2023-08-23 14:56:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 2, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 54, 2, 3, 4): evaluated objective: -0.0183182
+2023-08-23 14:56:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 56, 1, 3, 4] lie: 0.0
+2023-08-23 14:56:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 56, 1, 2): evaluated objective: -0.142856
+2023-08-23 14:56:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 2, 3] lie: 0.0
+2023-08-23 14:56:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 56, 2, 3): evaluated objective: -0.13866
+2023-08-23 14:56:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 1, 2] lie: 0.0
+2023-08-23 14:56:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 54, 'p1': 3, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 54, 3, 4, 4): evaluated objective: -0.0177736
+2023-08-23 14:56:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 55, 3, 4, 4] lie: 0.0
+2023-08-23 14:56:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 3, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 59, 3, 3, 3): evaluated objective: -0.0188593
+2023-08-23 14:56:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 3, 3, 4] lie: 0.0
+2023-08-23 14:56:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 57, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 57, 1, 2): evaluated objective: -0.143715
+2023-08-23 14:56:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 1, 3] lie: 0.0
+2023-08-23 14:56:58|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 56, 'p1': 4, 'p2': 3} --> ('roibin_fpzip.json', 56, 4, 3): evaluated objective: -0.140355
+2023-08-23 14:56:58|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 52, 1, 3] lie: 0.0
+2023-08-23 14:57:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 55, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 55, 1, 3, 4): evaluated objective: -0.0187616
+2023-08-23 14:57:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 3, 4] lie: 0.0
+2023-08-23 14:57:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 55, 2, 3): evaluated objective: -0.142566
+2023-08-23 14:57:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 1, 3] lie: 0.0
+2023-08-23 14:57:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 54, 1, 2): evaluated objective: -0.143061
+2023-08-23 14:57:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 1, 2] lie: 0.0
+2023-08-23 14:57:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 54, 1, 3): evaluated objective: -0.14906
+2023-08-23 14:57:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 3, 3] lie: 0.0
+2023-08-23 14:57:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 52, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 52, 1, 3): evaluated objective: -0.150053
+2023-08-23 14:57:51|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 2, 3] lie: 0.0
+2023-08-23 14:58:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 51, 1, 3): evaluated objective: -0.142583
+2023-08-23 14:58:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 1, 2] lie: 0.0
+2023-08-23 14:58:03|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 55, 1, 2): evaluated objective: -0.146537
+2023-08-23 14:58:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 52, 1, 2] lie: 0.0
+2023-08-23 14:58:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 56, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 56, 1, 3, 4): evaluated objective: -0.0189554
+2023-08-23 14:58:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 3, 1] lie: 0.0
+2023-08-23 14:58:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 59, 3, 3, 4): evaluated objective: -0.0192975
+2023-08-23 14:58:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 3, 4] lie: 0.0
+2023-08-23 14:58:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 55, 'p1': 3, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 55, 3, 4, 4): evaluated objective: -0.018339
+2023-08-23 14:58:18|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 2, 4] lie: 0.0
+2023-08-23 14:58:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 54, 3, 3): evaluated objective: -0.148191
+2023-08-23 14:58:40|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 54, 1, 1] lie: 0.0
+2023-08-23 14:58:43|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 2, 'p2': 3} --> ('roibin_fpzip.json', 53, 2, 3): evaluated objective: -0.140603
+2023-08-23 14:58:43|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 55, 3, 2] lie: 0.0
+2023-08-23 14:58:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 58, 1, 3, 4): evaluated objective: -0.0199455
+2023-08-23 14:58:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 3, 3] lie: 0.0
+2023-08-23 14:58:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 53, 1, 2): evaluated objective: -0.14469
+2023-08-23 14:58:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 1, 2] lie: 0.0
+2023-08-23 14:58:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 52, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 52, 1, 2): evaluated objective: -0.145519
+2023-08-23 14:58:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 53, 2, 2] lie: 0.0
+2023-08-23 14:59:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 54, 'p1': 1, 'p2': 1} --> ('roibin_fpzip.json', 54, 1, 1): evaluated objective: -0.127432
+2023-08-23 14:59:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 51, 1, 1] lie: 0.0
+2023-08-23 14:59:36|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 55, 'p1': 3, 'p2': 2} --> ('roibin_fpzip.json', 55, 3, 2): evaluated objective: -0.129871
+2023-08-23 14:59:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 49, 1, 2] lie: 0.0
+2023-08-23 14:59:45|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 51, 1, 2): evaluated objective: -0.143096
+2023-08-23 14:59:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 50, 1, 2] lie: 0.0
+2023-08-23 14:59:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 53, 'p1': 2, 'p2': 2} --> ('roibin_fpzip.json', 53, 2, 2): evaluated objective: -0.143302
+2023-08-23 14:59:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 45, 1, 2] lie: 0.0
+2023-08-23 14:59:59|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 60, 2, 3, 4): evaluated objective: -0.0196379
+2023-08-23 15:00:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 3, 4] lie: 0.0
+2023-08-23 15:00:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 58, 2, 2, 4): evaluated objective: -0.020368
+2023-08-23 15:00:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 4, 4] lie: 0.0
+2023-08-23 15:00:23|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 58, 1, 3, 3): evaluated objective: -0.0211106
+2023-08-23 15:00:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 3, 3] lie: 0.0
+2023-08-23 15:00:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 51, 'p1': 1, 'p2': 1} --> ('roibin_fpzip.json', 51, 1, 1): evaluated objective: -0.124796
+2023-08-23 15:00:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 33, 1, 2] lie: 0.0
+2023-08-23 15:00:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 49, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 49, 1, 2): evaluated objective: -0.149246
+2023-08-23 15:00:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 31, 1, 2] lie: 0.0
+2023-08-23 15:00:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 3, 'p3': 1} --> ('roibin_blosc-9.json', 58, 1, 3, 1): evaluated objective: -0.0128045
+2023-08-23 15:00:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 3, 2, 4] lie: 0.0
+2023-08-23 15:00:38|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 50, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 50, 1, 2): evaluated objective: -0.146017
+2023-08-23 15:00:39|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 47, 1, 2] lie: 0.0
+2023-08-23 15:00:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 45, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 45, 1, 2): evaluated objective: -0.140437
+2023-08-23 15:00:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 21, 2, 2] lie: 0.0
+2023-08-23 15:01:17|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 33, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 33, 1, 2): evaluated objective: -0.144743
+2023-08-23 15:01:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 1, 1, 4] lie: 0.0
+2023-08-23 15:01:22|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 31, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 31, 1, 2): evaluated objective: -0.140802
+2023-08-23 15:01:22|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 24, 1, 4] lie: 0.0
+2023-08-23 15:01:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 47, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 47, 1, 2): evaluated objective: -0.141804
+2023-08-23 15:01:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 25, 1, 4] lie: 0.0
+2023-08-23 15:01:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 21, 'p1': 2, 'p2': 2} --> ('roibin_fpzip.json', 21, 2, 2): evaluated objective: -0.142634
+2023-08-23 15:01:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 26, 4, 4] lie: 0.0
+2023-08-23 15:01:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 58, 2, 3, 4): evaluated objective: -0.0190692
+2023-08-23 15:01:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 2, 1, 4] lie: 0.0
+2023-08-23 15:01:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 58, 2, 4, 4): evaluated objective: -0.0185104
+2023-08-23 15:01:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 4, 2, 4] lie: 0.0
+2023-08-23 15:02:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 1, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 1, 1, 4): evaluated objective: -0.146501
+2023-08-23 15:02:10|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 27, 2, 4] lie: 0.0
+2023-08-23 15:02:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 58, 2, 3, 3): evaluated objective: -0.0181151
+2023-08-23 15:02:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 24, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 24, 1, 4): evaluated objective: -0.14843
+2023-08-23 15:02:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 1, 2, 4] lie: 0.0
+2023-08-23 15:02:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 27, 1, 3] lie: 0.0
+2023-08-23 15:02:22|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 25, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 25, 1, 4): evaluated objective: -0.146178
+2023-08-23 15:02:23|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 25, 4, 4] lie: 0.0
+2023-08-23 15:02:23|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 26, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 26, 4, 4): evaluated objective: -0.140785
+2023-08-23 15:02:23|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 58, 3, 2, 4): evaluated objective: -0.0186549
+2023-08-23 15:02:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 23, 1, 4] lie: 0.0
+2023-08-23 15:02:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 2, 3] lie: 0.0
+2023-08-23 15:02:59|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 27, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 27, 2, 4): evaluated objective: -0.146142
+2023-08-23 15:03:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 26, 2, 4] lie: 0.0
+2023-08-23 15:03:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 27, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 27, 1, 3): evaluated objective: -0.146393
+2023-08-23 15:03:02|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 20, 1, 4] lie: 0.0
+2023-08-23 15:03:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 23, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 23, 1, 4): evaluated objective: -0.146393
+2023-08-23 15:03:13|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 1, 4] lie: 0.0
+2023-08-23 15:03:16|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 25, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 25, 4, 4): evaluated objective: -0.147496
+2023-08-23 15:03:16|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 24, 4, 4] lie: 0.0
+2023-08-23 15:03:39|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 2, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 58, 2, 1, 4): evaluated objective: -0.0187961
+2023-08-23 15:03:39|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 2, 4] lie: 0.0
+2023-08-23 15:03:40|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 58, 4, 2, 4): evaluated objective: -0.0182781
+2023-08-23 15:03:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 2, 2, 4] lie: 0.0
+2023-08-23 15:03:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 26, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 26, 2, 4): evaluated objective: -0.145095
+2023-08-23 15:03:53|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 24, 2, 4] lie: 0.0
+2023-08-23 15:03:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 20, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 20, 1, 4): evaluated objective: -0.147696
+2023-08-23 15:03:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 25, 2, 4] lie: 0.0
+2023-08-23 15:04:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 59, 1, 2, 4): evaluated objective: -0.0190543
+2023-08-23 15:04:02|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 1, 2, 4] lie: 0.0
+2023-08-23 15:04:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 22, 1, 4): evaluated objective: -0.148191
+2023-08-23 15:04:07|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 2, 4] lie: 0.0
+2023-08-23 15:04:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 24, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 24, 4, 4): evaluated objective: -0.147168
+2023-08-23 15:04:09|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 24, 1, 3] lie: 0.0
+2023-08-23 15:04:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 58, 1, 2, 3): evaluated objective: -0.018832
+2023-08-23 15:04:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 1, 3, 4] lie: 0.0
+2023-08-23 15:04:45|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 24, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 24, 2, 4): evaluated objective: -0.144445
+2023-08-23 15:04:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 23, 1, 3] lie: 0.0
+2023-08-23 15:04:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 25, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 25, 2, 4): evaluated objective: -0.147623
+2023-08-23 15:04:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 21, 1, 4] lie: 0.0
+2023-08-23 15:04:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 22, 2, 4): evaluated objective: -0.14893
+2023-08-23 15:04:58|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 23, 4, 4] lie: 0.0
+2023-08-23 15:05:00|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 24, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 24, 1, 3): evaluated objective: -0.143027
+2023-08-23 15:05:01|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 19, 1, 4] lie: 0.0
+2023-08-23 15:05:33|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 60, 2, 2, 4): evaluated objective: -0.0180827
+2023-08-23 15:05:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 2, 3, 4] lie: 0.0
+2023-08-23 15:05:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 59, 2, 2, 4): evaluated objective: -0.0182652
+2023-08-23 15:05:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 3, 3] lie: 0.0
+2023-08-23 15:05:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 23, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 23, 1, 3): evaluated objective: -0.146735
+2023-08-23 15:05:38|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 1, 3] lie: 0.0
+2023-08-23 15:05:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 21, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 21, 1, 4): evaluated objective: -0.151827
+2023-08-23 15:05:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 21, 2, 4] lie: 0.0
+2023-08-23 15:05:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 60, 1, 2, 4): evaluated objective: -0.0188
+2023-08-23 15:05:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 23, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 23, 4, 4): evaluated objective: -0.147477
+2023-08-23 15:05:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 59, 4, 3, 4] lie: 0.0
+2023-08-23 15:05:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 4, 4] lie: 0.0
+2023-08-23 15:05:54|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 19, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 19, 1, 4): evaluated objective: -0.152233
+2023-08-23 15:05:55|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 20, 2, 4] lie: 0.0
+2023-08-23 15:06:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 59, 1, 3, 4): evaluated objective: -0.018687
+2023-08-23 15:06:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 3, 3, 4] lie: 0.0
+2023-08-23 15:06:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 22, 1, 3): evaluated objective: -0.144097
+2023-08-23 15:06:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 3, 3] lie: 0.0
+2023-08-23 15:06:34|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 21, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 21, 2, 4): evaluated objective: -0.146214
+2023-08-23 15:06:35|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 22, 1, 2] lie: 0.0
+2023-08-23 15:06:41|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 22, 4, 4): evaluated objective: -0.147187
+2023-08-23 15:06:42|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 20, 4, 4] lie: 0.0
+2023-08-23 15:06:46|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 20, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 20, 2, 4): evaluated objective: -0.146969
+2023-08-23 15:06:47|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 18, 2, 4] lie: 0.0
+2023-08-23 15:07:18|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 22, 3, 3): evaluated objective: -0.148837
+2023-08-23 15:07:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 12, 1, 4] lie: 0.0
+2023-08-23 15:07:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 2, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 59, 2, 3, 4): evaluated objective: -0.0179815
+2023-08-23 15:07:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 1, 3, 4] lie: 0.0
+2023-08-23 15:07:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 60, 2, 3, 3): evaluated objective: -0.01808
+2023-08-23 15:07:28|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 22, 'p1': 1, 'p2': 2} --> ('roibin_fpzip.json', 22, 1, 2): evaluated objective: -0.142328
+2023-08-23 15:07:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 1, 3, 3] lie: 0.0
+2023-08-23 15:07:29|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 20, 1, 3] lie: 0.0
+2023-08-23 15:07:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 20, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 20, 4, 4): evaluated objective: -0.146644
+2023-08-23 15:07:33|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 19, 4, 4] lie: 0.0
+2023-08-23 15:07:37|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 18, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 18, 2, 4): evaluated objective: -0.145253
+2023-08-23 15:07:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 59, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 59, 4, 3, 4): evaluated objective: -0.0182438
+2023-08-23 15:07:38|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 5, 2, 4] lie: 0.0
+2023-08-23 15:07:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 1, 3] lie: 0.0
+2023-08-23 15:07:52|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 60, 3, 3, 4): evaluated objective: -0.0194597
+2023-08-23 15:07:53|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 4, 3, 4] lie: 0.0
+2023-08-23 15:08:10|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 12, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 12, 1, 4): evaluated objective: -0.149135
+2023-08-23 15:08:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 17, 1, 4] lie: 0.0
+2023-08-23 15:08:20|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 20, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 20, 1, 3): evaluated objective: -0.144219
+2023-08-23 15:08:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 18, 1, 4] lie: 0.0
+2023-08-23 15:08:26|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 19, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 19, 4, 4): evaluated objective: -0.148283
+2023-08-23 15:08:27|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 4, 3, 3] lie: 0.0
+2023-08-23 15:08:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 5, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 5, 2, 4): evaluated objective: -0.143216
+2023-08-23 15:08:32|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 8, 2, 4] lie: 0.0
+2023-08-23 15:09:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 17, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 17, 1, 4): evaluated objective: -0.148837
+2023-08-23 15:09:05|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 14, 1, 4] lie: 0.0
+2023-08-23 15:09:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 18, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 18, 1, 4): evaluated objective: -0.145271
+2023-08-23 15:09:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 16, 1, 4] lie: 0.0
+2023-08-23 15:09:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 60, 1, 3, 4): evaluated objective: -0.018868
+2023-08-23 15:09:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 4, 4, 4] lie: 0.0
+2023-08-23 15:09:18|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 60, 1, 3, 3): evaluated objective: -0.0187849
+2023-08-23 15:09:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 3, 4, 4] lie: 0.0
+2023-08-23 15:09:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 4, 'p1': 3, 'p2': 3} --> ('roibin_fpzip.json', 4, 3, 3): evaluated objective: -0.147078
+2023-08-23 15:09:19|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 17, 4, 4] lie: 0.0
+2023-08-23 15:09:24|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 8, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 8, 2, 4): evaluated objective: -0.147751
+2023-08-23 15:09:25|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 9, 1, 4] lie: 0.0
+2023-08-23 15:09:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 60, 2, 1, 3): evaluated objective: -0.0181154
+2023-08-23 15:09:33|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 3, 2, 4] lie: 0.0
+2023-08-23 15:09:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 60, 4, 3, 4): evaluated objective: -0.0184897
+2023-08-23 15:09:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 4, 4] lie: 0.0
+2023-08-23 15:09:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 14, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 14, 1, 4): evaluated objective: -0.151307
+2023-08-23 15:09:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 8, 1, 4] lie: 0.0
+2023-08-23 15:10:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 16, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 16, 1, 4): evaluated objective: -0.148597
+2023-08-23 15:10:04|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 15, 1, 4] lie: 0.0
+2023-08-23 15:10:11|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 17, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 17, 4, 4): evaluated objective: -0.147405
+2023-08-23 15:10:12|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 14, 4, 4] lie: 0.0
+2023-08-23 15:10:20|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 9, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 9, 1, 4): evaluated objective: -0.150223
+2023-08-23 15:10:21|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 16, 4, 4] lie: 0.0
+2023-08-23 15:10:50|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 8, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 8, 1, 4): evaluated objective: -0.147423
+2023-08-23 15:10:51|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 13, 1, 4] lie: 0.0
+2023-08-23 15:10:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 15, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 15, 1, 4): evaluated objective: -0.148893
+2023-08-23 15:10:56|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 12, 1, 3] lie: 0.0
+2023-08-23 15:11:02|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 4, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 60, 4, 4, 4): evaluated objective: -0.0199749
+2023-08-23 15:11:03|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 3, 4, 3] lie: 0.0
+2023-08-23 15:11:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 14, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 14, 4, 4): evaluated objective: -0.150791
+2023-08-23 15:11:06|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 14, 2, 4] lie: 0.0
+2023-08-23 15:11:09|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 3, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 60, 3, 4, 4): evaluated objective: -0.0190061
+2023-08-23 15:11:10|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 1, 4, 4] lie: 0.0
+2023-08-23 15:11:14|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 16, 'p1': 4, 'p2': 4} --> ('roibin_fpzip.json', 16, 4, 4): evaluated objective: -0.147605
+2023-08-23 15:11:15|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 14, 3, 3] lie: 0.0
+2023-08-23 15:11:21|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 60, 3, 2, 4): evaluated objective: -0.0192366
+2023-08-23 15:11:22|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 3, 4, 4] lie: 0.0
+2023-08-23 15:11:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 58, 1, 4, 4): evaluated objective: -0.0190595
+2023-08-23 15:11:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 4, 4] lie: 0.0
+2023-08-23 15:11:43|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 13, 'p1': 1, 'p2': 4} --> ('roibin_fpzip.json', 13, 1, 4): evaluated objective: -0.151807
+2023-08-23 15:11:44|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 11, 1, 4] lie: 0.0
+2023-08-23 15:11:48|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 12, 'p1': 1, 'p2': 3} --> ('roibin_fpzip.json', 12, 1, 3): evaluated objective: -0.145148
+2023-08-23 15:11:49|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 15, 4, 4] lie: 0.0
+2023-08-23 15:11:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_fpzip.json', 'p0': 14, 'p1': 2, 'p2': 4} --> ('roibin_fpzip.json', 14, 2, 4): evaluated objective: -0.147514
+2023-08-23 15:11:57|62761|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_fpzip.json', 15, 2, 4] lie: 0.0
+2023-08-23 15:12:56|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 3, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 60, 3, 4, 3): evaluated objective: -0.0183944
+2023-08-23 15:12:56|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 4, 4, 3] lie: 0.0
+2023-08-23 15:12:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 60, 1, 4, 4): evaluated objective: -0.0191945
+2023-08-23 15:12:58|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 1, 4, 3] lie: 0.0
+2023-08-23 15:13:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 3, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 58, 3, 4, 4): evaluated objective: -0.017816
+2023-08-23 15:13:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 60, 2, 4, 3] lie: 0.0
+2023-08-23 15:13:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 60, 2, 4, 4): evaluated objective: -0.0182761
+2023-08-23 15:13:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 36, 1, 4, 3] lie: 0.0
+2023-08-23 15:14:47|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 60, 1, 4, 3): evaluated objective: -0.0189377
+2023-08-23 15:14:48|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 58, 1, 4, 3] lie: 0.0
+2023-08-23 15:14:48|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 4, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 60, 4, 4, 3): evaluated objective: -0.0186488
+2023-08-23 15:14:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 40, 3, 4, 3] lie: 0.0
+2023-08-23 15:15:03|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 60, 'p1': 2, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 60, 2, 4, 3): evaluated objective: -0.0182012
+2023-08-23 15:15:03|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 36, 3, 3, 4] lie: 0.0
+2023-08-23 15:15:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 36, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 36, 1, 4, 3): evaluated objective: -0.0188525
+2023-08-23 15:15:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 37, 1, 3, 4] lie: 0.0
+2023-08-23 15:16:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 58, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 58, 1, 4, 3): evaluated objective: -0.0200581
+2023-08-23 15:16:39|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 38, 1, 2, 4] lie: 0.0
+2023-08-23 15:16:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 40, 'p1': 3, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 40, 3, 4, 3): evaluated objective: -0.0186073
+2023-08-23 15:16:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 38, 1, 2, 3] lie: 0.0
+2023-08-23 15:16:53|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 36, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 36, 3, 3, 4): evaluated objective: -0.019329
+2023-08-23 15:16:54|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 1, 4] lie: 0.0
+2023-08-23 15:17:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 37, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 37, 1, 3, 4): evaluated objective: -0.0186099
+2023-08-23 15:17:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 32, 1, 2, 3] lie: 0.0
+2023-08-23 15:18:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 38, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 38, 1, 2, 3): evaluated objective: -0.0184017
+2023-08-23 15:18:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 35, 1, 2, 4] lie: 0.0
+2023-08-23 15:18:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 38, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 38, 1, 2, 4): evaluated objective: -0.0186669
+2023-08-23 15:18:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 35, 1, 4, 3] lie: 0.0
+2023-08-23 15:18:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 25, 1, 1, 4): evaluated objective: -0.0185555
+2023-08-23 15:18:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 28, 1, 2, 4] lie: 0.0
+2023-08-23 15:18:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 32, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 32, 1, 2, 3): evaluated objective: -0.019417
+2023-08-23 15:18:58|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 27, 1, 2, 3] lie: 0.0
+2023-08-23 15:20:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 35, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 35, 1, 2, 4): evaluated objective: -0.0183477
+2023-08-23 15:20:21|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 33, 3, 2, 4] lie: 0.0
+2023-08-23 15:20:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 35, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 35, 1, 4, 3): evaluated objective: -0.0184213
+2023-08-23 15:20:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 33, 1, 4, 3] lie: 0.0
+2023-08-23 15:20:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 28, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 28, 1, 2, 4): evaluated objective: -0.0187757
+2023-08-23 15:20:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 29, 1, 2, 3] lie: 0.0
+2023-08-23 15:20:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 27, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 27, 1, 2, 3): evaluated objective: -0.0188362
+2023-08-23 15:20:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 28, 1, 4, 4] lie: 0.0
+2023-08-23 15:22:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 33, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 33, 3, 2, 4): evaluated objective: -0.0185296
+2023-08-23 15:22:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 28, 1, 2, 3] lie: 0.0
+2023-08-23 15:22:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 33, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 33, 1, 4, 3): evaluated objective: -0.019027
+2023-08-23 15:22:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 30, 3, 2, 4] lie: 0.0
+2023-08-23 15:22:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 29, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 29, 1, 2, 3): evaluated objective: -0.0188555
+2023-08-23 15:22:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 31, 1, 4, 3] lie: 0.0
+2023-08-23 15:22:40|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 28, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 28, 1, 4, 4): evaluated objective: -0.0193871
+2023-08-23 15:22:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 28, 1, 1, 4] lie: 0.0
+2023-08-23 15:24:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 28, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 28, 1, 2, 3): evaluated objective: -0.0180165
+2023-08-23 15:24:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 29, 1, 2, 4] lie: 0.0
+2023-08-23 15:24:10|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 30, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 30, 3, 2, 4): evaluated objective: -0.0186293
+2023-08-23 15:24:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 27, 1, 1, 4] lie: 0.0
+2023-08-23 15:24:18|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 31, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 31, 1, 4, 3): evaluated objective: -0.0185691
+2023-08-23 15:24:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 24, 2, 2, 4] lie: 0.0
+2023-08-23 15:24:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 28, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 28, 1, 1, 4): evaluated objective: -0.0185351
+2023-08-23 15:24:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 29, 3, 3, 4] lie: 0.0
+2023-08-23 15:25:54|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 29, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 29, 1, 2, 4): evaluated objective: -0.018746
+2023-08-23 15:25:55|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 2, 4] lie: 0.0
+2023-08-23 15:26:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 27, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 27, 1, 1, 4): evaluated objective: -0.0184649
+2023-08-23 15:26:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 2, 4] lie: 0.0
+2023-08-23 15:26:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 24, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 24, 2, 2, 4): evaluated objective: -0.0189473
+2023-08-23 15:26:09|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 2, 3] lie: 0.0
+2023-08-23 15:26:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 29, 'p1': 3, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 29, 3, 3, 4): evaluated objective: -0.0190034
+2023-08-23 15:26:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 3, 3] lie: 0.0
+2023-08-23 15:27:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 26, 1, 2, 4): evaluated objective: -0.0194931
+2023-08-23 15:27:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 1, 3] lie: 0.0
+2023-08-23 15:27:59|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 25, 1, 2, 4): evaluated objective: -0.0187793
+2023-08-23 15:28:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 1, 4] lie: 0.0
+2023-08-23 15:28:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 26, 1, 2, 3): evaluated objective: -0.0190991
+2023-08-23 15:28:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 3, 3] lie: 0.0
+2023-08-23 15:28:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 25, 1, 3, 3): evaluated objective: -0.0194642
+2023-08-23 15:28:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 3, 2, 3] lie: 0.0
+2023-08-23 15:29:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 26, 1, 1, 3): evaluated objective: -0.0187055
+2023-08-23 15:29:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 2, 2, 3] lie: 0.0
+2023-08-23 15:29:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 26, 1, 1, 4): evaluated objective: -0.0182079
+2023-08-23 15:29:52|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 4, 3] lie: 0.0
+2023-08-23 15:29:52|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 26, 1, 3, 3): evaluated objective: -0.0187463
+2023-08-23 15:29:53|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 1, 3, 4] lie: 0.0
+2023-08-23 15:30:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 26, 3, 2, 3): evaluated objective: -0.0189161
+2023-08-23 15:30:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 4, 2, 3] lie: 0.0
+2023-08-23 15:31:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 2, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 26, 2, 2, 3): evaluated objective: -0.0192854
+2023-08-23 15:31:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 4, 2, 4] lie: 0.0
+2023-08-23 15:31:42|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 26, 1, 3, 4): evaluated objective: -0.0193009
+2023-08-23 15:31:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 4, 3, 4] lie: 0.0
+2023-08-23 15:31:43|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 26, 1, 4, 3): evaluated objective: -0.0188829
+2023-08-23 15:31:44|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 36, 4, 3, 4] lie: 0.0
+2023-08-23 15:31:52|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 26, 4, 2, 3): evaluated objective: -0.0192872
+2023-08-23 15:31:53|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 38, 4, 3, 4] lie: 0.0
+2023-08-23 15:33:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 26, 4, 2, 4): evaluated objective: -0.0185725
+2023-08-23 15:33:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 40, 4, 3, 4] lie: 0.0
+2023-08-23 15:33:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 23, 4, 3, 4): evaluated objective: -0.0190774
+2023-08-23 15:33:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 4, 3, 3] lie: 0.0
+2023-08-23 15:33:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 36, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 36, 4, 3, 4): evaluated objective: -0.0188347
+2023-08-23 15:33:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 26, 4, 3, 4] lie: 0.0
+2023-08-23 15:33:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 38, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 38, 4, 3, 4): evaluated objective: -0.0186564
+2023-08-23 15:33:48|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 27, 4, 3, 4] lie: 0.0
+2023-08-23 15:35:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 40, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 40, 4, 3, 4): evaluated objective: -0.0194101
+2023-08-23 15:35:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 28, 4, 3, 4] lie: 0.0
+2023-08-23 15:35:22|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 4, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 25, 4, 3, 3): evaluated objective: -0.0192369
+2023-08-23 15:35:23|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 24, 4, 3, 3] lie: 0.0
+2023-08-23 15:35:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 26, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 26, 4, 3, 4): evaluated objective: -0.01881
+2023-08-23 15:35:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 4, 3, 4] lie: 0.0
+2023-08-23 15:35:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 27, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 27, 4, 3, 4): evaluated objective: -0.0190443
+2023-08-23 15:35:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 4, 2, 3] lie: 0.0
+2023-08-23 15:36:58|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 28, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 28, 4, 3, 4): evaluated objective: -0.019454
+2023-08-23 15:36:59|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 4, 2, 4] lie: 0.0
+2023-08-23 15:37:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 24, 'p1': 4, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 24, 4, 3, 3): evaluated objective: -0.0186555
+2023-08-23 15:37:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 3, 2, 4] lie: 0.0
+2023-08-23 15:37:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 25, 4, 3, 4): evaluated objective: -0.0182246
+2023-08-23 15:37:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 2, 2, 4] lie: 0.0
+2023-08-23 15:37:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 25, 4, 2, 3): evaluated objective: -0.0184298
+2023-08-23 15:37:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 24, 1, 2, 4] lie: 0.0
+2023-08-23 15:38:49|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 25, 4, 2, 4): evaluated objective: -0.0183131
+2023-08-23 15:38:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 4, 4] lie: 0.0
+2023-08-23 15:39:04|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 3, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 25, 3, 2, 4): evaluated objective: -0.018462
+2023-08-23 15:39:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 4, 3] lie: 0.0
+2023-08-23 15:39:05|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 2, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 25, 2, 2, 4): evaluated objective: -0.0182935
+2023-08-23 15:39:06|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 25, 1, 1, 3] lie: 0.0
+2023-08-23 15:39:14|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 24, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 24, 1, 2, 4): evaluated objective: -0.0186061
+2023-08-23 15:39:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 24, 1, 2, 3] lie: 0.0
+2023-08-23 15:40:35|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 25, 1, 4, 4): evaluated objective: -0.0187234
+2023-08-23 15:40:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 22, 1, 2, 3] lie: 0.0
+2023-08-23 15:40:54|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 25, 1, 4, 3): evaluated objective: -0.0186337
+2023-08-23 15:40:55|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 2, 4] lie: 0.0
+2023-08-23 15:41:04|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 24, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 24, 1, 2, 3): evaluated objective: -0.0190434
+2023-08-23 15:41:04|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 24, 1, 1, 3] lie: 0.0
+2023-08-23 15:42:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 22, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 22, 1, 2, 3): evaluated objective: -0.0218047
+2023-08-23 15:42:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 2, 3] lie: 0.0
+2023-08-23 15:42:29|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 23, 1, 2, 4): evaluated objective: -0.0225235
+2023-08-23 15:42:30|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 2, 3] lie: 0.0
+2023-08-23 15:42:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 24, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 24, 1, 1, 3): evaluated objective: -0.0220682
+2023-08-23 15:42:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 1, 4] lie: 0.0
+2023-08-23 15:43:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 23, 1, 2, 3): evaluated objective: -0.0225294
+2023-08-23 15:43:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 22, 1, 2, 4] lie: 0.0
+2023-08-23 15:44:02|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 21, 1, 2, 3): evaluated objective: -0.022708
+2023-08-23 15:44:03|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 22, 1, 4, 4] lie: 0.0
+2023-08-23 15:44:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 25, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 25, 1, 1, 3): evaluated objective: -0.0184829
+2023-08-23 15:44:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 3, 4] lie: 0.0
+2023-08-23 15:44:15|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 23, 1, 1, 4): evaluated objective: -0.0207242
+2023-08-23 15:44:16|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 22, 2, 1, 3] lie: 0.0
+2023-08-23 15:45:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 22, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 22, 1, 2, 4): evaluated objective: -0.0177101
+2023-08-23 15:45:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 4, 3] lie: 0.0
+2023-08-23 15:46:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 22, 'p1': 1, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 22, 1, 4, 4): evaluated objective: -0.0168877
+2023-08-23 15:46:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 1, 3] lie: 0.0
+2023-08-23 15:46:10|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 23, 1, 3, 4): evaluated objective: -0.0165549
+2023-08-23 15:46:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 2, 2, 3] lie: 0.0
+2023-08-23 15:46:24|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 22, 'p1': 2, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 22, 2, 1, 3): evaluated objective: -0.0169993
+2023-08-23 15:46:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 2, 1] lie: 0.0
+2023-08-23 15:47:40|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 23, 1, 4, 3): evaluated objective: -0.0187163
+2023-08-23 15:47:41|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 3, 3] lie: 0.0
+2023-08-23 15:48:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 2, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 23, 2, 2, 3): evaluated objective: -0.0189374
+2023-08-23 15:48:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 3, 2, 3] lie: 0.0
+2023-08-23 15:48:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 23, 1, 1, 3): evaluated objective: -0.0182438
+2023-08-23 15:48:09|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 1, 2, 2] lie: 0.0
+2023-08-23 15:49:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 2, 'p3': 1} --> ('roibin_blosc-9.json', 23, 1, 2, 1): evaluated objective: -0.01083
+2023-08-23 15:49:21|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 23, 4, 2, 3] lie: 0.0
+2023-08-23 15:49:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 23, 1, 3, 3): evaluated objective: -0.0188009
+2023-08-23 15:49:36|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 4, 3, 2, 3] lie: 0.0
+2023-08-23 15:50:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 23, 3, 2, 3): evaluated objective: -0.0184518
+2023-08-23 15:50:09|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 9, 1, 2, 3] lie: 0.0
+2023-08-23 15:50:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 1, 'p2': 2, 'p3': 2} --> ('roibin_blosc-9.json', 23, 1, 2, 2): evaluated objective: -0.0176799
+2023-08-23 15:50:13|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 20, 1, 2, 3] lie: 0.0
+2023-08-23 15:51:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 23, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 23, 4, 2, 3): evaluated objective: -0.0167105
+2023-08-23 15:51:28|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 1, 3] lie: 0.0
+2023-08-23 15:51:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 4, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 4, 3, 2, 3): evaluated objective: -0.0171646
+2023-08-23 15:51:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 2, 4] lie: 0.0
+2023-08-23 15:52:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 9, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 9, 1, 2, 3): evaluated objective: -0.0168899
+2023-08-23 15:52:12|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 4, 4, 4] lie: 0.0
+2023-08-23 15:52:18|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 20, 'p1': 1, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 20, 1, 2, 3): evaluated objective: -0.0169364
+2023-08-23 15:52:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 20, 1, 3, 3] lie: 0.0
+2023-08-23 15:53:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 21, 1, 1, 3): evaluated objective: -0.0171869
+2023-08-23 15:53:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 1, 4] lie: 0.0
+2023-08-23 15:53:50|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 21, 1, 2, 4): evaluated objective: -0.0171866
+2023-08-23 15:53:51|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 2, 2, 3] lie: 0.0
+2023-08-23 15:54:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 4, 'p2': 4, 'p3': 4} --> ('roibin_blosc-9.json', 21, 4, 4, 4): evaluated objective: -0.0178001
+2023-08-23 15:54:17|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 3, 3] lie: 0.0
+2023-08-23 15:54:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 20, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 20, 1, 3, 3): evaluated objective: -0.0175058
+2023-08-23 15:54:27|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 3, 2, 3] lie: 0.0
+2023-08-23 15:55:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 1, 'p3': 4} --> ('roibin_blosc-9.json', 21, 1, 1, 4): evaluated objective: -0.0163025
+2023-08-23 15:55:47|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 1, 2, 2] lie: 0.0
+2023-08-23 15:55:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 2, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 21, 2, 2, 3): evaluated objective: -0.0165148
+2023-08-23 15:55:58|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 2, 4, 3] lie: 0.0
+2023-08-23 15:56:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 21, 1, 3, 3): evaluated objective: -0.0163532
+2023-08-23 15:56:21|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 4, 2, 3] lie: 0.0
+2023-08-23 15:56:33|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 3, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 21, 3, 2, 3): evaluated objective: -0.01619
+2023-08-23 15:56:34|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 4, 1, 3] lie: 0.0
+2023-08-23 15:57:57|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 1, 'p2': 2, 'p3': 2} --> ('roibin_blosc-9.json', 21, 1, 2, 2): evaluated objective: -0.0158917
+2023-08-23 15:57:58|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 11, 4, 2, 3] lie: 0.0
+2023-08-23 15:58:03|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 2, 'p2': 4, 'p3': 3} --> ('roibin_blosc-9.json', 21, 2, 4, 3): evaluated objective: -0.0164493
+2023-08-23 15:58:04|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 4, 3, 3] lie: 0.0
+2023-08-23 15:58:25|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 21, 4, 2, 3): evaluated objective: -0.0170281
+2023-08-23 15:58:26|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 21, 4, 2, 4] lie: 0.0
+2023-08-23 15:58:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 4, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 21, 4, 1, 3): evaluated objective: -0.0172522
+2023-08-23 15:58:39|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 13, 4, 2, 3] lie: 0.0
+2023-08-23 16:00:00|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 11, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 11, 4, 2, 3): evaluated objective: -0.0161484
+2023-08-23 16:00:01|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 20, 4, 1, 3] lie: 0.0
+2023-08-23 16:00:10|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 4, 'p2': 3, 'p3': 3} --> ('roibin_blosc-9.json', 21, 4, 3, 3): evaluated objective: -0.0163021
+2023-08-23 16:00:11|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 12, 4, 1, 3] lie: 0.0
+2023-08-23 16:00:31|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 21, 'p1': 4, 'p2': 2, 'p3': 4} --> ('roibin_blosc-9.json', 21, 4, 2, 4): evaluated objective: -0.0161777
+2023-08-23 16:00:32|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 20, 4, 3, 4] lie: 0.0
+2023-08-23 16:00:45|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 13, 'p1': 4, 'p2': 2, 'p3': 3} --> ('roibin_blosc-9.json', 13, 4, 2, 3): evaluated objective: -0.0163085
+2023-08-23 16:00:46|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 20, 1, 1, 3] lie: 0.0
+2023-08-23 16:02:07|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 20, 'p1': 4, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 20, 4, 1, 3): evaluated objective: -0.0170902
+2023-08-23 16:02:08|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 2, 4, 1, 3] lie: 0.0
+2023-08-23 16:02:19|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 12, 'p1': 4, 'p2': 1, 'p3': 3} --> ('roibin_blosc-9.json', 12, 4, 1, 3): evaluated objective: -0.0176134
+2023-08-23 16:02:20|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 11, 4, 1, 3] lie: 0.0
+2023-08-23 16:02:37|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:165] tell: {'c0': 'roibin_blosc-9.json', 'p0': 20, 'p1': 4, 'p2': 3, 'p3': 4} --> ('roibin_blosc-9.json', 20, 4, 3, 4): evaluated objective: -0.0170812
+2023-08-23 16:02:38|41813|DEBUG|ytopt.search.hps.optimizer.optimizer:124] _ask: ['roibin_blosc-9.json', 12, 1, 1, 3] lie: 0.0
