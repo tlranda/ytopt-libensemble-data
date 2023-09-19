@@ -1,0 +1,30 @@
+Jobid: 669865
+qsub --mode script -t 03:00:00 -n 129 --attrs filesystems=home,grand,eagle -A EE-ECP -q default job_scripts/recollect_32n_theta.sh
+Fri Sep 15 18:36:22 2023 +0000 (UTC) submitted with cwd set to: /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
+jobid 669865 submitted from terminal /dev/pts/0
+2023-09-16 12:51:35,150 INFO: Starting Resource_Prologue
+2023-09-16 12:51:35,151 DEBUG: no enabling attribute found
+2023-09-16 12:51:35,151 INFO: Resource_Prologue finished with exit code 0
+Sat Sep 16 12:51:54 2023 +0000 (UTC) 
+Sat Sep 16 12:51:54 2023 +0000 (UTC) Command: '/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/job_scripts/recollect_32n_theta.sh'
+Sat Sep 16 12:51:54 2023 +0000 (UTC) 
+Sat Sep 16 12:51:54 2023 +0000 (UTC) Environment:
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_PARTCORES=64
+Sat Sep 16 12:51:54 2023 +0000 (UTC) SHELL=/bin/bash
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_PROJECT=EE-ECP
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_PARTNAME=90-98,406-407,451,458,510-514,550-559,621,624,680-689,873,879,1003,1172-1179,1190,1192-1199,1221-1224,1226,1280-1285,1287-1289,1342,1372,1374-1375,1377-1379,1578-1579,1620-1629,1750-1759,2740-2741,2743-2744,2860-2863,2866-2867,2964,3208-3209,3348-3349,3392,3398,3430-3431,3433-3434,3436-3437,3439-3440,3538
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_JOBID=669865
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_STARTTIME=1694868674
+Sat Sep 16 12:51:54 2023 +0000 (UTC) LOGNAME=trandall
+Sat Sep 16 12:51:54 2023 +0000 (UTC) USER=trandall
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_ENDTIME=1694879474
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_PARTSIZE=129
+Sat Sep 16 12:51:54 2023 +0000 (UTC) HOME=/home/trandall
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_JOBSIZE=129
+Sat Sep 16 12:51:54 2023 +0000 (UTC) COBALT_QUEUE=backfill
+Sat Sep 16 12:51:54 2023 +0000 (UTC) 
+Sat Sep 16 12:51:54 2023 +0000 (UTC) Info: stdin received from /dev/null
+Sat Sep 16 12:51:54 2023 +0000 (UTC) Info: stdout sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/669865.output
+Sat Sep 16 12:51:54 2023 +0000 (UTC) Info: stderr sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/669865.error
+Sat Sep 16 12:51:54 2023 +0000 (UTC) 
+Sat Sep 16 13:26:24 2023 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
