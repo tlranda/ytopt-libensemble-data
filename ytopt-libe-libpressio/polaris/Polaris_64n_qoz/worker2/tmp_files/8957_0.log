@@ -1,0 +1,116 @@
+time=1.03898 0/256 /pressio/roibin/background/pressio/qoz:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background/pressio/qoz:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background/pressio/qoz:pressio:abs <double> = 90
+/pressio/roibin/background/pressio/qoz:pressio:metric <char*> = "noop"
+/pressio/roibin/background/pressio/qoz:pressio:rel <double> = <empty>
+/pressio/roibin/background/pressio/qoz:qoz:abs_error_bound <double> = 90
+/pressio/roibin/background/pressio/qoz:qoz:algorithm <uint8> = 1
+/pressio/roibin/background/pressio/qoz:qoz:algorithm_str <char*> = <empty>
+/pressio/roibin/background/pressio/qoz:qoz:encoder <uint8> = 1
+/pressio/roibin/background/pressio/qoz:qoz:error_bound_mode <uint8> = 0
+/pressio/roibin/background/pressio/qoz:qoz:error_bound_mode_str <char*> = <empty>
+/pressio/roibin/background/pressio/qoz:qoz:interp_algo <uint8> = 1
+/pressio/roibin/background/pressio/qoz:qoz:interp_block_size <int32> = 32
+/pressio/roibin/background/pressio/qoz:qoz:interp_direction <uint8> = 0
+/pressio/roibin/background/pressio/qoz:qoz:intrep_algo_str <char*> = <empty>
+/pressio/roibin/background/pressio/qoz:qoz:l2_norm_error_bound <double> = 0
+/pressio/roibin/background/pressio/qoz:qoz:lorenzo <bool> = true
+/pressio/roibin/background/pressio/qoz:qoz:lorenzo2 <bool> = false
+/pressio/roibin/background/pressio/qoz:qoz:lossless <uint8> = 1
+/pressio/roibin/background/pressio/qoz:qoz:maxstep <uint64> = 8
+/pressio/roibin/background/pressio/qoz:qoz:metric <char*> = "noop"
+/pressio/roibin/background/pressio/qoz:qoz:openmp <bool> = false
+/pressio/roibin/background/pressio/qoz:qoz:pred_dim <int32> = 0
+/pressio/roibin/background/pressio/qoz:qoz:psnr_error_bound <double> = 0
+/pressio/roibin/background/pressio/qoz:qoz:quant_bin_size <int32> = 65536
+/pressio/roibin/background/pressio/qoz:qoz:regression <bool> = true
+/pressio/roibin/background/pressio/qoz:qoz:regression2 <bool> = false
+/pressio/roibin/background/pressio/qoz:qoz:rel_error_bound <double> = -1
+/pressio/roibin/background/pressio/qoz:qoz:stride <int32> = 6
+/pressio/roibin/background/pressio/qoz:qoz:test_lorenzo <int32> = 0
+/pressio/roibin/background/pressio/qoz:qoz:turning_target <uint8> = 0
+/pressio/roibin/background/pressio/qoz:qoz:turning_target_str <char*> = <empty>
+/pressio/roibin/background/pressio/qoz:qoz:use_qoz <bool> = true
+/pressio/roibin/background/pressio:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background/pressio:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background/pressio:pressio:abs <double> = 90
+/pressio/roibin/background/pressio:pressio:bound_name <char*> = <empty>
+/pressio/roibin/background/pressio:pressio:compressor <char*> = "qoz"
+/pressio/roibin/background/pressio:pressio:metric <char*> = "noop"
+/pressio/roibin/background/pressio:pressio:rel <double> = <empty>
+/pressio/roibin/background/pressio:pressio:reset_mode <bool> = <empty>
+/pressio/roibin/background:binning:compressor <char*> = "pressio"
+/pressio/roibin/background:binning:metric <char*> = "noop"
+/pressio/roibin/background:binning:nthreads <uint32> = 2
+/pressio/roibin/background:binning:shape <data> = data{ type=double dims={3, } has_data=[2, 2, 1, ]}
+/pressio/roibin/background:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background:pressio:metric <char*> = "noop"
+/pressio/roibin/background:pressio:nthreads <uint32> = 2
+/pressio/roibin/roi:fpzip:has_header <int32> = 0
+/pressio/roibin/roi:fpzip:metric <char*> = "noop"
+/pressio/roibin/roi:fpzip:prec <int32> = 0
+/pressio/roibin/roi:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/roi:metrics:errors_fatal <int32> = 1
+/pressio/roibin/roi:pressio:metric <char*> = "noop"
+/pressio/roibin:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin:metrics:errors_fatal <int32> = 1
+/pressio/roibin:pressio:metric <char*> = "noop"
+/pressio/roibin:pressio:nthreads <uint32> = 2
+/pressio/roibin:roibin:background <char*> = "binning"
+/pressio/roibin:roibin:centers <data> = data{ type=uint64_t dims={} has_data=false}
+/pressio/roibin:roibin:metric <char*> = "noop"
+/pressio/roibin:roibin:nthreads <uint32> = 2
+/pressio/roibin:roibin:roi <char*> = "fpzip"
+/pressio/roibin:roibin:roi_size <data> = data{ type=double dims={3, } has_data=[8, 8, 0, ]}
+/pressio/roibin:roibin:roi_strategy <char*> = "coordinates"
+/pressio:metrics:copy_compressor_results <int32> = 1
+/pressio:metrics:errors_fatal <int32> = 1
+/pressio:pressio:bound_name <char*> = <empty>
+/pressio:pressio:compressor <char*> = "roibin"
+/pressio:pressio:metric <char*> = "noop"
+/pressio:pressio:reset_mode <bool> = <empty>
+
+time=1.03907 0/256 global data_dims{130, 1480, 1552}
+time=1.03907 0/256 global peakx_dims{130, 2048}
+time=1.03908 0/256 global peaky_dims{130, 2048}
+time=1.03908 0/256 global npeaks{130}
+time=1.03908 0/256 processing 0 256
+global_cr=92.255
+wallclock_ms=9020
+compress_ms=65
+compress_bandwidth_GBps=36.186
+wallclock_bandwidth_GBps=0.260764
+MPICH ERROR [Rank 87] [job id bb93416b-4690-400f-8441-05ee123d004f] [Tue Sep 12 17:24:50 2023] [x3013c0s13b0n0] - Abort(812212879) (rank 87 in comm 0): Fatal error in PMPI_Finalize: Other MPI error, error stack:
+PMPI_Finalize(214)..........................: MPI_Finalize failed
+PMPI_Finalize(161)..........................: 
+MPID_Finalize(701)..........................: 
+MPIDI_OFI_mpi_finalize_hook(996)............: 
+MPIR_CRAY_Allreduce(574)....................: 
+MPIR_Allreduce_impl(301)....................: 
+MPIR_Allreduce_intra_auto(213)..............: 
+MPIR_Allreduce_intra_recursive_doubling(192): 
+MPIC_Sendrecv(338)..........................: 
+MPIC_Wait(71)...............................: 
+MPIR_Wait_impl(41)..........................: 
+MPID_Progress_wait(184).....................: 
+MPIDI_Progress_test(80).....................: 
+MPIDI_OFI_handle_cq_error(1059).............: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - transport retry counter exceeded)
+
+aborting job:
+Fatal error in PMPI_Finalize: Other MPI error, error stack:
+PMPI_Finalize(214)..........................: MPI_Finalize failed
+PMPI_Finalize(161)..........................: 
+MPID_Finalize(701)..........................: 
+MPIDI_OFI_mpi_finalize_hook(996)............: 
+MPIR_CRAY_Allreduce(574)....................: 
+MPIR_Allreduce_impl(301)....................: 
+MPIR_Allreduce_intra_auto(213)..............: 
+MPIR_Allreduce_intra_recursive_doubling(192): 
+MPIC_Sendrecv(338)..........................: 
+MPIC_Wait(71)...............................: 
+MPIR_Wait_impl(41)..........................: 
+MPID_Progress_wait(184).....................: 
+MPIDI_Progress_test(80).....................: 
+MPIDI_OFI_handle_cq_error(1059).............: OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - transport retry counter exceeded)
+x3013c0s13b0n0.hsn.cm.polaris.alcf.anl.gov: rank 87 exited with code 255

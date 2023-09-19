@@ -1,0 +1,20 @@
+[0]  2023-09-12 17:09:54,364 libensemble.libE (INFO): Logger initializing: [workerID] precedes each line. [0] = Manager
+[0]  2023-09-12 17:09:54,365 libensemble.libE (INFO): libE version v0.10.2
+[0]  2023-09-12 17:09:54,367 libensemble.manager (INFO): Manager initiated on node x3006c0s31b1n0
+[0]  2023-09-12 17:09:54,367 libensemble.manager (INFO): Manager exit_criteria: {'sim_max': 200}
+[1]  2023-09-12 17:09:54,368 libensemble.worker (INFO): Worker 1 initiated on node x3006c0s31b1n0
+[2]  2023-09-12 17:09:54,368 libensemble.worker (INFO): Worker 2 initiated on node x3006c0s31b1n0
+[3]  2023-09-12 17:09:54,368 libensemble.worker (INFO): Worker 3 initiated on node x3006c0s31b1n0
+[0]  2023-09-12 17:30:08,073 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-09-12 17:30:08,073 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-09-12 17:30:11,382 libensemble.manager (INFO): 
+*******************************************************************************
+A persistent worker has returned history data on shutdown. This data is
+not currently added to the manager's history to avoid possibly overwriting, but
+will be added to the manager's history in a future release. If you want to
+overwrite/append, you can set the libE_specs option ``use_persis_return_gen``
+or ``use_persis_return_sim``
+*******************************************************************************
+
+
+[0]  2023-09-12 17:30:11,382 libensemble.libE (INFO): Manager total time: 1217.015
