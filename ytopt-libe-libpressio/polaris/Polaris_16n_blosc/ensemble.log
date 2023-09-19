@@ -1,0 +1,27 @@
+[0]  2023-09-16 16:01:15,807 libensemble.libE (INFO): Logger initializing: [workerID] precedes each line. [0] = Manager
+[0]  2023-09-16 16:01:15,808 libensemble.libE (INFO): libE version v0.10.2
+[0]  2023-09-16 16:01:15,848 libensemble.manager (INFO): Manager initiated on node x3012c0s31b0n0
+[0]  2023-09-16 16:01:15,848 libensemble.manager (INFO): Manager exit_criteria: {'sim_max': 200}
+[1]  2023-09-16 16:01:15,849 libensemble.resources.rset_resources (WARNING): Resource sets (5) are not distributed evenly to available nodes (129)
+[2]  2023-09-16 16:01:15,849 libensemble.resources.rset_resources (WARNING): Resource sets (5) are not distributed evenly to available nodes (129)
+[3]  2023-09-16 16:01:15,849 libensemble.resources.rset_resources (WARNING): Resource sets (5) are not distributed evenly to available nodes (129)
+[4]  2023-09-16 16:01:15,849 libensemble.resources.rset_resources (WARNING): Resource sets (5) are not distributed evenly to available nodes (129)
+[5]  2023-09-16 16:01:15,849 libensemble.resources.rset_resources (WARNING): Resource sets (5) are not distributed evenly to available nodes (129)
+[1]  2023-09-16 16:01:15,850 libensemble.worker (INFO): Worker 1 initiated on node x3012c0s31b0n0
+[2]  2023-09-16 16:01:15,850 libensemble.worker (INFO): Worker 2 initiated on node x3012c0s31b0n0
+[3]  2023-09-16 16:01:15,850 libensemble.worker (INFO): Worker 3 initiated on node x3012c0s31b0n0
+[4]  2023-09-16 16:01:15,850 libensemble.worker (INFO): Worker 4 initiated on node x3012c0s31b0n0
+[5]  2023-09-16 16:01:15,850 libensemble.worker (INFO): Worker 5 initiated on node x3012c0s31b0n0
+[0]  2023-09-16 16:53:18,902 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-09-16 16:53:18,902 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-09-16 16:53:20,760 libensemble.manager (INFO): 
+*******************************************************************************
+A persistent worker has returned history data on shutdown. This data is
+not currently added to the manager's history to avoid possibly overwriting, but
+will be added to the manager's history in a future release. If you want to
+overwrite/append, you can set the libE_specs option ``use_persis_return_gen``
+or ``use_persis_return_sim``
+*******************************************************************************
+
+
+[0]  2023-09-16 16:53:20,760 libensemble.libE (INFO): Manager total time: 3124.913

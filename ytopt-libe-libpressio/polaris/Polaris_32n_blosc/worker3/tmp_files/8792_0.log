@@ -1,0 +1,59 @@
+time=9.20008 0/128 /pressio/roibin/background/blosc:blosc:blocksize <uint32> = 0
+/pressio/roibin/background/blosc:blosc:clevel <int32> = 3
+/pressio/roibin/background/blosc:blosc:compressor <char*> = "zstd"
+/pressio/roibin/background/blosc:blosc:doshuffle <int32> = 1
+/pressio/roibin/background/blosc:blosc:metric <char*> = "noop"
+/pressio/roibin/background/blosc:blosc:numinternalthreads <int32> = 1
+/pressio/roibin/background/blosc:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background/blosc:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background/blosc:pressio:lossless <int32> = 3
+/pressio/roibin/background/blosc:pressio:metric <char*> = "noop"
+/pressio/roibin/background/blosc:pressio:nthreads <uint32> = 1
+/pressio/roibin/background:binning:compressor <char*> = "blosc"
+/pressio/roibin/background:binning:metric <char*> = "noop"
+/pressio/roibin/background:binning:nthreads <uint32> = 4
+/pressio/roibin/background:binning:shape <data> = data{ type=double dims={3, } has_data=[2, 2, 1, ]}
+/pressio/roibin/background:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/background:metrics:errors_fatal <int32> = 1
+/pressio/roibin/background:pressio:metric <char*> = "noop"
+/pressio/roibin/background:pressio:nthreads <uint32> = 4
+/pressio/roibin/roi:blosc:blocksize <uint32> = 0
+/pressio/roibin/roi:blosc:clevel <int32> = 3
+/pressio/roibin/roi:blosc:compressor <char*> = "zstd"
+/pressio/roibin/roi:blosc:doshuffle <int32> = 1
+/pressio/roibin/roi:blosc:metric <char*> = "noop"
+/pressio/roibin/roi:blosc:numinternalthreads <int32> = 1
+/pressio/roibin/roi:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin/roi:metrics:errors_fatal <int32> = 1
+/pressio/roibin/roi:pressio:lossless <int32> = 3
+/pressio/roibin/roi:pressio:metric <char*> = "noop"
+/pressio/roibin/roi:pressio:nthreads <uint32> = 1
+/pressio/roibin:metrics:copy_compressor_results <int32> = 1
+/pressio/roibin:metrics:errors_fatal <int32> = 1
+/pressio/roibin:pressio:metric <char*> = "noop"
+/pressio/roibin:pressio:nthreads <uint32> = 1
+/pressio/roibin:roibin:background <char*> = "binning"
+/pressio/roibin:roibin:centers <data> = data{ type=uint64_t dims={} has_data=false}
+/pressio/roibin:roibin:metric <char*> = "noop"
+/pressio/roibin:roibin:nthreads <uint32> = 1
+/pressio/roibin:roibin:roi <char*> = "blosc"
+/pressio/roibin:roibin:roi_size <data> = data{ type=double dims={3, } has_data=[8, 8, 0, ]}
+/pressio/roibin:roibin:roi_strategy <char*> = "coordinates"
+/pressio:metrics:copy_compressor_results <int32> = 1
+/pressio:metrics:errors_fatal <int32> = 1
+/pressio:pressio:bound_name <char*> = <empty>
+/pressio:pressio:compressor <char*> = "roibin"
+/pressio:pressio:metric <char*> = "noop"
+/pressio:pressio:reset_mode <bool> = <empty>
+
+time=9.20015 0/128 global data_dims{130, 1480, 1552}
+time=9.20015 0/128 global peakx_dims{130, 2048}
+time=9.20016 0/128 global peaky_dims{130, 2048}
+time=9.20016 0/128 global npeaks{130}
+time=9.20017 0/128 processing 0 128
+time=56.0798 0/128 processing 128 256
+global_cr=9.41762
+wallclock_ms=53747
+compress_ms=74
+compress_bandwidth_GBps=31.785
+wallclock_bandwidth_GBps=0.0437622
