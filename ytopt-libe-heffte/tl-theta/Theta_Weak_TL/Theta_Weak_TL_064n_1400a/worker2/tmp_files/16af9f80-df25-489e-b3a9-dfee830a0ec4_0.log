@@ -1,0 +1,18 @@
+tmp_files/16af9f80-df25-489e-b3a9-dfee830a0ec4.sh: line 3: 89605 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -reorder -p2p -outgrid 1024 4 1 -n5
+[NID 02795] 2023-09-20 15:58:51 Apid 28729086: initiated application termination
+xpmem_attach error: : No such file or directory
+Rank 835 [Wed Sep 20 15:58:51 2023] [c1-1c2s9n1] Fatal error in MPI_Send: Other MPI error, error stack:
+MPI_Send(186).....................: MPI_Send(buf=0x2aab0f088df0, count=5324, dtype=0x4c000840, dest=834, tag=0, MPI_COMM_WORLD) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 835 (src_rank 848, vaddr 0x2aab0ea88df0, len 42592)
+xpmem_attach error: : No such file or directory
+tmp_files/16af9f80-df25-489e-b3a9-dfee830a0ec4.sh: line 3: 89608 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -reorder -p2p -outgrid 1024 4 1 -n5
+tmp_files/16af9f80-df25-489e-b3a9-dfee830a0ec4.sh: line 3: 89607 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -reorder -p2p -outgrid 1024 4 1 -n5
+[NID 02906] 2023-09-20 15:58:52 Apid 28729086: Error detected during page fault processing.  Process terminated via bus error.
+Application 28729086 exit codes: 139
+Application 28729086 exit signals: Killed
+Application 28729086 resources: utime ~115s, stime ~193s, Rss ~81836, inblocks ~15300, outblocks ~0

@@ -1,0 +1,262 @@
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_79111c82.py
++ EXE=run_gctla_79111c82.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_79111c82.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_79111c82.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_79111c82.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_79111c82.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_79111c82.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_79111c82.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_7e9a83af.py
++ EXE=run_gctla_7e9a83af.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_7e9a83af.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_7e9a83af.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_7e9a83af.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_7e9a83af.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_7e9a83af.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_7e9a83af.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_d77a62fb.py
++ EXE=run_gctla_d77a62fb.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_d77a62fb.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_d77a62fb.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_d77a62fb.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_d77a62fb.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_d77a62fb.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_d77a62fb.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_1e813bd6.py
++ EXE=run_gctla_1e813bd6.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_1e813bd6.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_1e813bd6.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_1e813bd6.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_1e813bd6.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_1e813bd6.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_1e813bd6.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_a53d4f6f.py
++ EXE=run_gctla_a53d4f6f.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_a53d4f6f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_a53d4f6f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_a53d4f6f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_a53d4f6f.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_a53d4f6f.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_a53d4f6f.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_7cbe90ce.py
++ EXE=run_gctla_7cbe90ce.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_7cbe90ce.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_7cbe90ce.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_7cbe90ce.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_7cbe90ce.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_7cbe90ce.py", line 275, in <module>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/run_gctla_7cbe90ce.py", line 275, in <listcomp>
+    data = pd.concat([pd.read_csv(_) for _ in data_files])
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/home/trandall/.conda/envs/ytune_23/lib/python3.10/site-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv'
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_4c548e99.py
++ EXE=run_gctla_4c548e99.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_4c548e99.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_4c548e99.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_4c548e99.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_4c548e99.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 767.17it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 746.80it/s]
++ echo
++ date
++ echo

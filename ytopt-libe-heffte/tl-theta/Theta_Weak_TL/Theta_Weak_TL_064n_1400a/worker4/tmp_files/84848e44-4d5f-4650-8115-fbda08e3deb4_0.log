@@ -1,0 +1,47 @@
+tmp_files/84848e44-4d5f-4650-8115-fbda08e3deb4.sh: line 3: 94029 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+tmp_files/84848e44-4d5f-4650-8115-fbda08e3deb4.sh: line 3: 94031 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+[NID 00123] 2023-09-20 15:57:39 Apid 28729076: initiated application termination
+tmp_files/84848e44-4d5f-4650-8115-fbda08e3deb4.sh: line 3: 94032 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+xpmem_attach error: : No such file or directory
+Rank 3520 [Wed Sep 20 15:57:39 2023] [c1-0c2s9n2] Fatal error in MPI_Send: Other MPI error, error stack:
+MPI_Send(186).....................: MPI_Send(buf=0x2aab12d1c130, count=5324, dtype=0x4c000840, dest=3505, tag=0, MPI_COMM_WORLD) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 3520 (src_rank 3521, vaddr 0x2aab0ef30df0, len 42592)
+xpmem_attach error: : No such file or directory
+xpmem_attach error: : No such file or directory
+Rank 3841 [Wed Sep 20 15:57:39 2023] [c2-0c1s1n1] Fatal error in MPI_Send: Other MPI error, error stack:
+MPI_Send(186).....................: MPI_Send(buf=0x2aab0e9e8ac0, count=4620, dtype=0x4c000840, dest=4083, tag=0, MPI_COMM_WORLD) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 3841 (src_rank 3873, vaddr 0x2aab0e9ac370, len 40656)
+Rank 3840 [Wed Sep 20 15:57:39 2023] [c2-0c1s1n1] Fatal error in MPI_Send: Other MPI error, error stack:
+MPI_Send(186).....................: MPI_Send(buf=0x2aab127f2990, count=4620, dtype=0x4c000840, dest=4083, tag=0, MPI_COMM_WORLD) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 3840 (src_rank 3872, vaddr 0x2aab0e9ac370, len 40656)
+xpmem_attach error: : No such file or directory
+Rank 2093 [Wed Sep 20 15:57:39 2023] [c1-0c1s7n1] Fatal error in MPI_Send: Other MPI error, error stack:
+MPI_Send(186).....................: MPI_Send(buf=0x2aab0f2af010, count=7700, dtype=0x4c000840, dest=2147, tag=0, MPI_COMM_WORLD) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 2093 (src_rank 2068, vaddr 0x2aab0ecdb0b0, len 61600)
+xpmem_attach error: : No such file or directory
+[NID 00358] 2023-09-20 15:57:40 Apid 28729076: Error detected during page fault processing.  Process terminated via bus error.
+[NID 00357] 2023-09-20 15:57:40 Apid 28729076: Error detected during page fault processing.  Process terminated via bus error.
+[NID 00047] 2023-09-20 15:57:40 Apid 28729076: Error detected during page fault processing.  Process terminated via bus error.
+Application 28729076 exit codes: 139
+Application 28729076 exit signals: Killed
+Application 28729076 resources: utime ~115s, stime ~194s, Rss ~81836, inblocks ~14616, outblocks ~0

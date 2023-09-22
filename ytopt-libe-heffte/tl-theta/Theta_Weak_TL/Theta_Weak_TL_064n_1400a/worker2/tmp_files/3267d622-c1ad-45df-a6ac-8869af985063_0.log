@@ -1,0 +1,23 @@
+tmp_files/3267d622-c1ad-45df-a6ac-8869af985063.sh: line 3: 89573 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+[NID 02248] 2023-09-20 15:57:25 Apid 28729074: initiated application termination
+tmp_files/3267d622-c1ad-45df-a6ac-8869af985063.sh: line 3: 89572 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+tmp_files/3267d622-c1ad-45df-a6ac-8869af985063.sh: line 3: 89570 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+xpmem_attach error: : No such file or directory
+xpmem_attach error: : No such file or directory
+Rank 1431 [Wed Sep 20 15:57:25 2023] [c11-0c2s1n0] Fatal error in MPI_Waitany: Other MPI error, error stack:
+MPI_Waitany(243)..................: MPI_Waitany(count=63, req_array=0x29da7c0, index=0x7fffffff52ec, status=0x1) failed
+MPIDI_CH3I_Progress(568)..........: 
+pkt_RTS_handler(306)..............: 
+do_cts(637).......................: 
+MPID_nem_lmt_xpmem_start_recv(983): 
+MPID_nem_lmt_send_COOKIE(462).....: 
+MPID_nem_lmt_send_COOKIE(403).....: xpmem_attach failed on rank 1431 (src_rank 1434, vaddr 0x2aab0ef08910, len 61600)
+tmp_files/3267d622-c1ad-45df-a6ac-8869af985063.sh: line 3: 89669 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+tmp_files/3267d622-c1ad-45df-a6ac-8869af985063.sh: line 3: 89674 Segmentation fault      speed3d_r2c fftw float 1400 1400 1400 -a2av -p2p -outgrid 1024 4 1 -n5
+xpmem_attach error: : No such file or directory
+xpmem_attach error: : No such file or directory
+xpmem_attach error: : No such file or directory
+[NID 02244] 2023-09-20 15:57:25 Apid 28729074: Error detected during page fault processing.  Process terminated via bus error.
+Application 28729074 exit codes: 139
+Application 28729074 exit signals: Killed
+Application 28729074 resources: utime ~153s, stime ~194s, Rss ~81840, inblocks ~39326, outblocks ~0

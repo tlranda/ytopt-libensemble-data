@@ -1,0 +1,164 @@
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_0bef30c4.py
++ EXE=run_gctla_0bef30c4.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_0bef30c4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_0bef30c4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_0bef30c4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_0bef30c4.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 128 --constraint-app 64 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 459.64it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 454.39it/s]
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_01e97b2b.py
++ EXE=run_gctla_01e97b2b.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_01e97b2b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_01e97b2b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_01e97b2b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_01e97b2b.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 256 --constraint-app 128 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 534.89it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 526.81it/s]
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_31dc4756.py
++ EXE=run_gctla_31dc4756.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_31dc4756.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_31dc4756.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_31dc4756.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_31dc4756.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 512 --constraint-app 256 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 374.72it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 370.93it/s]
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 137
+  warnings.warn(eval_error_warning)
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_5037c620.py
++ EXE=run_gctla_5037c620.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_5037c620.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_5037c620.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_5037c620.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_5037c620.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 1024 --constraint-app 512 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 468.82it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 462.94it/s]
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_49bca362.py
++ EXE=run_gctla_49bca362.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_49bca362.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_49bca362.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_49bca362.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_49bca362.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 2048 --constraint-app 1024 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 516.38it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 509.58it/s]
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_c9202b05.py
++ EXE=run_gctla_c9202b05.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_c9202b05.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_c9202b05.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_c9202b05.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_c9202b05.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 4096 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 573.52it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 564.12it/s]
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 137
+  warnings.warn(eval_error_warning)
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 137
+  warnings.warn(eval_error_warning)
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 137
+  warnings.warn(eval_error_warning)
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 137
+  warnings.warn(eval_error_warning)
++ echo
++ date
++ echo
++ echo thetamom2
++ date
++ echo
++ export EXE=run_gctla_91b4d791.py
++ EXE=run_gctla_91b4d791.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_91b4d791.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_91b4d791.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_91b4d791.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_91b4d791.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 8192 --constraint-app 1400 --input logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --auto-budget=False --ignore logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --predictions-only False --initial-quantile 1.0
+Resource sets (5) are not distributed evenly to available nodes (513)
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 461.87it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 455.93it/s]
++ echo
++ date
++ echo
