@@ -1,0 +1,62 @@
+Modify PS1
+Calling on 1 workers with 16384 mpi ranks per worker for size 512
+Sat Sep 16 06:47:30 UTC 2023
+python libEwrapper.py --mpi-ranks 16384 --worker-timeout 300 --application-scale 512 --cpu-override 256 --cpu-ranks-per-node 64 --ensemble-workers 1 --max-evals 200 --configure-environment craympi --machine-identifier theta-knl --system theta --ens-dir-path Theta_16384r_512a --resume Theta_256n_0512a/results.csv --launch-job --display-results
+thetamom1
+Sat Sep 16 06:47:31 UTC 2023
+
+python run_ytopt_05aeb7ee.py --comms local --nworkers 2 --learner=RF --max-evals 200  --resume Theta_256n_0512a/results.csv
+This ensemble operates as: ./ensemble_Theta_16384r_512a_499e8867
+
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 512 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 256 * 64 = 16384
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Resuming from records indicated in files: ['Theta_256n_0512a/results.csv']
+Loaded 85 previous evaluations
+Prepared 85 prior evaluations
+Optimizer updated and ready to resume -- max-evals reduced 200 --> 115
+Identifying machine as theta-knl
+
+Copy LibEnsemble template --> run_ytopt_05aeb7ee.py
+Failed to copy Job script <-- qsub.batch
+Set ('ens_dir_path',) to ('"Theta_16384r_512a_499e8867"',) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('machine_identifier',) to ('"theta-knl"',) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('seed_configspace',) to (1234,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('seed_ytopt',) to (2345,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('seed_numpy',) to (1,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('mpi_ranks',) to (16384,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('worker_timeout',) to (300,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('application_scale',) to (512,) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('cpu_override',) to ('256',) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('cpu_ranks_per_node',) to ('64',) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Set ('gpu_enabled',) to ('False',) in run_ytopt_05aeb7ee.py
+  -- SED OK
+Produce job script qsub_f2160bf0.batch
+Script written
+Job script migrated --> ensemble_Theta_16384r_512a_499e8867/qsub_f2160bf0.batch
+LibEnsemble driver migrated --> ensemble_Theta_16384r_512a_499e8867/run_ytopt_05aeb7ee.py
+Ensemble logs migrated --> ensemble_Theta_16384r_512a_499e8867/ensemble.log
+Ytopt logs migrated --> ensemble_Theta_16384r_512a_499e8867/ytopt.log
+LibE stats migrated --> ensemble_Theta_16384r_512a_499e8867/libE_stats.txt
+Manager Results unavailable
+No unfinished evaluations to view
+Job script could not be migrated <-- qsub_f2160bf0.batch
+LibEnsemble driver could not be migrated <-- run_ytopt_05aeb7ee.py
+Ensemble logs could not be migrated <-- ensemble.log
+Ytopt logs could not be migrated <-- ytopt.log
