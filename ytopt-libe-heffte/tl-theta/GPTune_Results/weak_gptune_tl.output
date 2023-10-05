@@ -1,0 +1,102 @@
+Modify PS1
+Calling on 1 workers with 128 mpi ranks (2 nodes) per worker for size 64
+Sun Sep 24 14:24:14 UTC 2023
+python gptune_heffte.py --sys 128 --app 64 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_2n_64a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 64 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 2 * 64 = 128
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Target problem (128, 64) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_0.json
+GPTune-ified logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv
+Sun Sep 24 14:24:40 UTC 2023
+Calling on 1 workers with 256 mpi ranks (4 nodes) per worker for size 128
+Sun Sep 24 14:24:40 UTC 2023
+python gptune_heffte.py --sys 256 --app 128 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_4n_128a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 128 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 4 * 64 = 256
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:24:46 UTC 2023
+Calling on 1 workers with 512 mpi ranks (8 nodes) per worker for size 256
+Sun Sep 24 14:24:46 UTC 2023
+python gptune_heffte.py --sys 512 --app 256 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_8n_256a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 256 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 8 * 64 = 512
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:24:53 UTC 2023
+Calling on 1 workers with 1024 mpi ranks (16 nodes) per worker for size 512
+Sun Sep 24 14:24:53 UTC 2023
+python gptune_heffte.py --sys 1024 --app 512 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_16n_512a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 512 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 16 * 64 = 1024
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:25:00 UTC 2023
+Calling on 1 workers with 2048 mpi ranks (32 nodes) per worker for size 1024
+Sun Sep 24 14:25:00 UTC 2023
+python gptune_heffte.py --sys 2048 --app 1024 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_32n_1024a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 1024 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 32 * 64 = 2048
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:25:07 UTC 2023
+Calling on 1 workers with 4096 mpi ranks (64 nodes) per worker for size 1400
+Sun Sep 24 14:25:07 UTC 2023
+python gptune_heffte.py --sys 4096 --app 1400 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_64n_1400a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 1400 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 64 * 64 = 4096
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:25:14 UTC 2023
+Calling on 1 workers with 8192 mpi ranks (128 nodes) per worker for size 1400
+Sun Sep 24 14:25:14 UTC 2023
+python gptune_heffte.py --sys 8192 --app 1400 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv --log gptune_128n_1400a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 1400 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 128 * 64 = 8192
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Sun Sep 24 14:25:21 UTC 2023
+
+Requested 7 calls
+Sun Sep 24 14:25:21 UTC 2023

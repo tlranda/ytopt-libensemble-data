@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 375, in main
+    prior_traces, prior_sizes = csvs_to_gptune(args.inputs, tuning_metadata)
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 83, in csvs_to_gptune
+    assert elapsed_time >= 0
+AssertionError
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (256, 128)
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (512, 256)
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (1024, 512)
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (2048, 1024)
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (4096, 1400)
+Traceback (most recent call last):
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 435, in <module>
+    main()
+  File "/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/gptune_heffte.py", line 238, in main
+    scale_name = gc_tla_problem.lookup_ival[(args.sys, args.app)]
+KeyError: (8192, 1400)

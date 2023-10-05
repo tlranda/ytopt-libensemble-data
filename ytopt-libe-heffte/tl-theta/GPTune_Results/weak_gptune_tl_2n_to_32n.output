@@ -1,0 +1,996 @@
+Modify PS1
+Calling on 1 workers with 256 mpi ranks (4 nodes) per worker for size 128
+Sat Sep 30 05:14:24 UTC 2023
+python gptune_heffte.py --sys 256 --app 128 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_4n_128a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 128 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 4 * 64 = 256
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Target problem (256, 128) constructed
+GPTune-ified logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv
+Build Surrogate model for size [128, 64]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 621.0504654082009
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      145.6445966814253  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  2.291624129409516e-08  |  1e-10,1e-05  |        
+Build Surrogate model for size [512, 256]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1221.642182459821
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |       408.2271331369717  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.0000000000018679e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [1024, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 3253.311094893391
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      207.73463432103955  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.0000000000106716e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [2048, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1713.7936441226707
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  3318.8428336860393  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [4096, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1613.0402691149156
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  43841.46410308861  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [8192, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1859.215573123173
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  87369.22812525132  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Machine: theta | Processor: intel | Num_Nodes: 4 | Num_Cores: 256
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 7 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.44317655278444573, 'p8': 0.903018630879212, 'p9': 0.6645916412686997, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -58.6079
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008244550252231312, 'p8': 0.5156827553589598, 'p9': 0.5581624564804387, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -59.1874
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.8512034559116024, 'p8': 0.7126391404251164, 'p9': 0.10952911481604488, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -15.4924
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': 0.7042238148802102, 'p8': 0.6520444680022498, 'p9': 0.9339134786084288, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -80.2131
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.11525438993402844, 'p8': 0.2660136913633746, 'p9': 0.404958626667385, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -9.5271
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': 0.3497881044938829, 'p8': 0.1893082779761565, 'p9': 0.056323211741432365, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -15.918
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.23042441907514574, 'p8': 0.009099340325585785, 'p9': 0.8785213324356352, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 256 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/ba28fe13-66de-41db-9fe7-07a331afefc8.sh
+OVERALL FAILED: aprun -n 256 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/ba28fe13-66de-41db-9fe7-07a331afefc8.sh
+OUTPUT: 1
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.9208349944805646, 'p8': 0.2769237897389828, 'p9': 0.3329604227410734, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -46.6299
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.9440300782175365, 'p8': 0.8495464777519586, 'p9': 0.5063547499619286, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -12.7321
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.7675504790211404, 'p8': 0.44676347613180667, 'p9': 0.39701140891557707, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -91.7352
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.14236476768995907, 'p8': 0.5889513439642188, 'p9': 0.2127978356200857, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -9.82778
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': 0.5165126417854197, 'p8': 0.9414949802936913, 'p9': 0.8212940605397688, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -31.182
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': 0.578229940007258, 'p8': 0.7576196437861129, 'p9': 0.75102341679286, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -96.6422
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.28273318561205074, 'p8': 0.35238469655256666, 'p9': 0.7179001305067431, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -31.4685
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.6435532973436361, 'p8': 0.11431915932653271, 'p9': 0.1591903618802829, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -80.2982
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  105
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8802500299650123, 'p8': 0.7794187416596378, 'p9': 0.22493277219786484, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -82.3333
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  112
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': 0.06500038108689715, 'p8': 0.41786162133873705, 'p9': 0.12924181707740295, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -25.1748
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  119
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.8934826150905857, 'p8': 0.5826459447715985, 'p9': 0.8130415560999418, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -99.1934
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.6472655204544858, 'p8': 0.5016443936704321, 'p9': 0.8404273101426478, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -35.5948
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  133
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 128, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.05203512861762759, 'p8': 0.7686114936151196, 'p9': 0.8184326488936235, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -31.7379
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  140
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.4078533862707402, 'p8': 0.49593779637531493, 'p9': 0.8684521922941466, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -59.8029
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  147
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': 0.8348223576730529, 'p8': 0.6555694444613789, 'p9': 0.03752854196965628, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -80.8457
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  154
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.6902240518436142, 'p8': 0.21147366325123232, 'p9': 0.5184689530800513, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -57.0868
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  161
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': 0.5276393975479153, 'p8': 0.5905857796924558, 'p9': 0.46706663805650067, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -69.7391
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': 0.5907571837264832, 'p8': 0.5860326011332679, 'p9': 0.8837612767934226, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -73.8878
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  175
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': 0.963394942399757, 'p8': 0.24983440788393116, 'p9': 0.740759129500449, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -22.2808
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  182
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.6017702039487892, 'p8': 0.8691345267174031, 'p9': 0.8629357410706533, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -76.0075
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  189
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': 0.0062244907524800904, 'p8': 0.6963734954393704, 'p9': 0.827681710277514, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -29.3074
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  196
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.99929683796211, 'p8': 0.4253137209832016, 'p9': 0.7888020114569564, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -92.8604
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  203
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 128, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.8364149262351077, 'p8': 0.9806172413129551, 'p9': 0.3042729662179322, 'mpi_ranks': 256, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 256, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -81.3327
+Stats: {'time_total': 2004.368700325, 'time_sample_init': 1.03955955, 'time_fun': 209.53264147299993, 'time_search': 1121.889097904, 'time_model': 671.8956606250001, 'func_eval_time': [109.756774722], 'search_time': [64.60009128, 74.085222283, 74.209757318, 74.206526368, 74.994067704, 75.12772444, 74.904283294, 75.435078393, 75.635400476, 75.156729987, 77.246229547, 77.158760012, 76.483091778, 76.159822503, 76.486312521], 'modeling_time': [18.07951749, 29.782793244, 34.090452495, 35.059112088, 20.764646765, 47.184755651, 52.128033889, 57.170970608, 36.726155433, 24.191845139, 22.338265848, 63.342318523, 21.247518593, 186.589982894, 23.199291965], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Sat Sep 30 05:48:57 UTC 2023
+Calling on 1 workers with 512 mpi ranks (8 nodes) per worker for size 256
+Sat Sep 30 05:48:57 UTC 2023
+python gptune_heffte.py --sys 512 --app 256 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_8n_256a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 256 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 8 * 64 = 512
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Target problem (512, 256) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_2.json
+GPTune-ified logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv
+Build Surrogate model for size [128, 64]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 621.0504654082009
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      145.6445966814253  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  2.291624129409516e-08  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 128]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 970.4592701333438
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      222.86560374834477  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.5103078350833998e-09  |  1e-10,1e-05  |        
+Build Surrogate model for size [1024, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 3253.311094893391
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      207.73463432103955  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.0000000000106716e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [2048, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1713.7936441226707
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  3318.8428336860393  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [4096, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1613.0402691149156
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  43841.46410308861  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [8192, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1859.215573123173
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  87369.22812525132  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Machine: theta | Processor: intel | Num_Nodes: 8 | Num_Cores: 256
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 7 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.44317655278444573, 'p8': 0.903018630879212, 'p9': 0.6645916412686997, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -166.446
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008244550252231312, 'p8': 0.5156827553589598, 'p9': 0.5581624564804387, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -161.811
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.8512034559116024, 'p8': 0.7126391404251164, 'p9': 0.10952911481604488, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -29.2454
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': 0.7042238148802102, 'p8': 0.6520444680022498, 'p9': 0.9339134786084288, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -147.036
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.11525438993402844, 'p8': 0.2660136913633746, 'p9': 0.404958626667385, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -29.7542
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': 0.3497881044938829, 'p8': 0.1893082779761565, 'p9': 0.056323211741432365, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -43.7219
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.23042441907514574, 'p8': 0.009099340325585785, 'p9': 0.8785213324356352, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 512 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/346104e8-adf5-437e-9801-9e16f4d3907a.sh
+OVERALL FAILED: aprun -n 512 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/346104e8-adf5-437e-9801-9e16f4d3907a.sh
+OUTPUT: 1
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.9208349944805646, 'p8': 0.2769237897389828, 'p9': 0.3329604227410734, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -95.0066
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.9440300782175365, 'p8': 0.8495464777519586, 'p9': 0.5063547499619286, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -24.3088
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.7675504790211404, 'p8': 0.44676347613180667, 'p9': 0.39701140891557707, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -212.334
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.14236476768995907, 'p8': 0.5889513439642188, 'p9': 0.2127978356200857, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -31.3117
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': 0.5165126417854197, 'p8': 0.9414949802936913, 'p9': 0.8212940605397688, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -107.076
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': 0.578229940007258, 'p8': 0.7576196437861129, 'p9': 0.75102341679286, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -67.7705
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.28273318561205074, 'p8': 0.35238469655256666, 'p9': 0.7179001305067431, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -86.192
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.6435532973436361, 'p8': 0.11431915932653271, 'p9': 0.1591903618802829, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -189.341
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  105
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.9511873273185817, 'p8': 0.9916026687614915, 'p9': 0.7561752398734053, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -216.52
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  112
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8260821221046295, 'p8': 0.6537598157248896, 'p9': 0.4454249724762116, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -204.91
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  119
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.005243859131609772, 'p8': 0.8409872277379661, 'p9': 0.3444168468020779, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -61.5371
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.738073192815061, 'p8': 0.9519882583683671, 'p9': 0.5699698686533784, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -111.147
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  133
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.30873923917108975, 'p8': 0.4346289376185045, 'p9': 0.252849688223902, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -126.128
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  140
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.49127402936719944, 'p8': 0.3371647302445392, 'p9': 0.831509426654367, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -216.548
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  147
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': 0.637833786738586, 'p8': 0.06634858340100712, 'p9': 0.4302314407525096, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 512 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/9d8abc69-0a61-49c1-9470-dd9caa37cb85.sh
+OVERALL FAILED: aprun -n 512 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/9d8abc69-0a61-49c1-9470-dd9caa37cb85.sh
+OUTPUT: 1
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  154
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.8606680302370235, 'p8': 0.5430860144031305, 'p9': 0.038791148510409636, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -138.596
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  161
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': 0.6061950312462171, 'p8': 0.08052143539903889, 'p9': 0.5547108042926782, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 512 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/3eb44ae0-d093-4d3f-a335-ca8aa8d96603.sh
+OVERALL FAILED: aprun -n 512 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/3eb44ae0-d093-4d3f-a335-ca8aa8d96603.sh
+OUTPUT: 1
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': 0.5358483784306158, 'p8': 0.5701177045782848, 'p9': 0.3930467326063761, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -214.161
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  175
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.9949942253145061, 'p8': 0.050185729269532776, 'p9': 0.16636725032840782, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 512 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/346b3980-a571-49e3-be12-e88bac458be3.sh
+OVERALL FAILED: aprun -n 512 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/346b3980-a571-49e3-be12-e88bac458be3.sh
+OUTPUT: 1
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  182
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': ' ', 'p7': 0.6803315294129828, 'p8': 0.9479176595361746, 'p9': 0.28563978699630643, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -203.094
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  189
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 256, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8170537499797448, 'p8': 0.5691839704474512, 'p9': 0.7076647561124929, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -53.6166
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  196
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': 0.7065344726974923, 'p8': 0.597707053533538, 'p9': 0.6289462378245662, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -201.77
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  203
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 256, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.9881955770278634, 'p8': 0.17075560393639747, 'p9': 0.2869070563953618, 'mpi_ranks': 512, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 512, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -210.99
+Stats: {'time_total': 2177.138415509, 'time_sample_init': 1.008780738, 'time_fun': 224.705430498, 'time_search': 1115.190857301, 'time_model': 836.221284887, 'func_eval_time': [114.016864249], 'search_time': [63.7477572, 73.487581393, 73.40284885, 73.294392013, 74.011180391, 74.195643708, 74.325269174, 74.325659914, 74.229238656, 76.341793419, 76.749579879, 75.255502427, 75.267207114, 78.670293554, 77.886909609], 'modeling_time': [45.901939276, 31.922861232, 44.055006715, 72.917505042, 87.406079793, 40.767481154, 17.475186714, 56.192297361, 45.178713938, 31.091162241, 244.054056165, 36.122626429, 46.416943628, 22.339189539, 14.38023566], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Sat Sep 30 06:26:03 UTC 2023
+Calling on 1 workers with 1024 mpi ranks (16 nodes) per worker for size 512
+Sat Sep 30 06:26:03 UTC 2023
+python gptune_heffte.py --sys 1024 --app 512 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_16n_512a.csv
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 512 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 16 * 64 = 1024
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Target problem (1024, 512) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_3.json
+GPTune-ified logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv
+GPTune-ified logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv
+Build Surrogate model for size [128, 64]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 621.0504654082009
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      145.6445966814253  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  2.291624129409516e-08  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 128]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 970.4592701333438
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      222.86560374834477  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.5103078350833998e-09  |  1e-10,1e-05  |        
+Build Surrogate model for size [512, 256]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1221.642182459821
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |       408.2271331369717  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.0000000000018679e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [2048, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1713.7936441226707
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  3318.8428336860393  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [4096, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1613.0402691149156
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  43841.46410308861  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [8192, 1400]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1859.215573123173
+Number of Parameters : 13
+Number of Optimization Parameters : 13
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  87369.22812525132  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (11,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Machine: theta | Processor: intel | Num_Nodes: 16 | Num_Cores: 256
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 7 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.44317655278444573, 'p8': 0.903018630879212, 'p9': 0.6645916412686997, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -217.313
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008244550252231312, 'p8': 0.5156827553589598, 'p9': 0.5581624564804387, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -429.022
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.8512034559116024, 'p8': 0.7126391404251164, 'p9': 0.10952911481604488, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -106.945
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': 0.7042238148802102, 'p8': 0.6520444680022498, 'p9': 0.9339134786084288, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -239.137
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': 0.11525438993402844, 'p8': 0.2660136913633746, 'p9': 0.404958626667385, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -32.114
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': 0.3497881044938829, 'p8': 0.1893082779761565, 'p9': 0.056323211741432365, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -81.767
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.23042441907514574, 'p8': 0.009099340325585785, 'p9': 0.8785213324356352, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+FAILED: aprun -n 1024 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/eb06dedf-3ec4-402d-bb18-a5c97ef6231b.sh
+OVERALL FAILED: aprun -n 1024 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/tmp_files/eb06dedf-3ec4-402d-bb18-a5c97ef6231b.sh
+OUTPUT: 1
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.9208349944805646, 'p8': 0.2769237897389828, 'p9': 0.3329604227410734, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -130.4
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': 0.9440300782175365, 'p8': 0.8495464777519586, 'p9': 0.5063547499619286, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -76.9105
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.7675504790211404, 'p8': 0.44676347613180667, 'p9': 0.39701140891557707, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -644.082
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': 0.14236476768995907, 'p8': 0.5889513439642188, 'p9': 0.2127978356200857, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -80.5211
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': 0.5165126417854197, 'p8': 0.9414949802936913, 'p9': 0.8212940605397688, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -214.829
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': 0.578229940007258, 'p8': 0.7576196437861129, 'p9': 0.75102341679286, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -464.147
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.28273318561205074, 'p8': 0.35238469655256666, 'p9': 0.7179001305067431, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -162.532
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.6435532973436361, 'p8': 0.11431915932653271, 'p9': 0.1591903618802829, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -431.202
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  105
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.2553162797733406, 'p8': 0.5499947891631022, 'p9': 0.04608539442247256, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -456.375
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  112
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.9652429957125583, 'p8': 0.3861978451771206, 'p9': 0.5195682531848429, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -568.259
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  119
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.9693162533668632, 'p8': 0.8101793535907686, 'p9': 0.5930695269968296, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -542.765
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8489392590848659, 'p8': 0.8304537643444774, 'p9': 0.050343476118115495, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -453.536
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  133
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.7733593607202287, 'p8': 0.9342171691381507, 'p9': 0.6187239450409341, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -500.684
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  140
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8621157265308781, 'p8': 0.8298157359442648, 'p9': 0.1842181618378119, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -243.529
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  147
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.9911707896378142, 'p8': 0.7763357405524092, 'p9': 0.09297428298983368, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -709.427
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  154
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': 0.8067844273998368, 'p8': 0.6630935435645903, 'p9': 0.5523928623203436, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -714.284
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  161
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.8044408258718839, 'p8': 0.9135771612104014, 'p9': 0.0653691618949878, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -107.043
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': 0.9635756854772526, 'p8': 0.5519061819786765, 'p9': 0.22839267909296967, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -387.304
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  175
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.7315630406452533, 'p8': 0.604688516691057, 'p9': 0.4030836397607278, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -666.762
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  182
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.8945078915133003, 'p8': 0.37023627796181335, 'p9': 0.8799975609538243, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -500.359
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  189
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.9704485491246578, 'p8': 0.3428108967548395, 'p9': 0.01396230042476922, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -546.632
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  196
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': 0.9779224256786535, 'p8': 0.5491491998246297, 'p9': 0.44708224532611507, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -571.145
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  203
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': 0.9496040949062903, 'p8': 0.722247768744231, 'p9': 0.4239699703073572, 'mpi_ranks': 1024, 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 1024, 'threads_per_node': 64, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+OUTPUT: -718.407
+Stats: {'time_total': 1930.255356854, 'time_sample_init': 1.063565693, 'time_fun': 299.706905788, 'time_search': 1191.627773734, 'time_model': 437.844624654, 'func_eval_time': [159.483430444], 'search_time': [64.261279479, 73.616312009, 73.889012108, 74.492817317, 74.399827131, 76.746225723, 78.319787346, 83.241119296, 85.694656636, 84.22951747, 83.480941745, 85.233188945, 85.808923263, 83.801949072, 84.412216194], 'modeling_time': [55.585635625, 9.992834889, 19.820674825, 19.354335174, 23.931744686, 86.884486205, 39.37840167, 25.273403076, 30.40255446, 30.452151124, 23.266470504, 8.525478068, 26.679648005, 20.359300335, 17.937506008], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Sat Sep 30 06:59:08 UTC 2023
+Calling on 1 workers with 2048 mpi ranks (32 nodes) per worker for size 1024
+Sat Sep 30 06:59:08 UTC 2023
+python gptune_heffte.py --sys 2048 --app 1024 --max-evals 30 --preserve-history --inputs logs/ThetaSourceTasks/Theta_002n_0064a/manager_results.csv logs/ThetaSourceTasks/Theta_004n_0128a/manager_results.csv logs/ThetaSourceTasks/Theta_008n_0256a/manager_results.csv logs/ThetaSourceTasks/Theta_016n_0512a/manager_results.csv logs/ThetaSourceTasks/Theta_064n_1400a/manager_results.csv logs/ThetaSourceTasks/Theta_128n_1400a/manager_results.csv --log gptune_32n_1024a.csv

@@ -1,0 +1,518 @@
+Modify PS1
+Calling on 1 workers with 16384 mpi ranks per worker for size 512
+Wed Sep 20 14:31:59 UTC 2023
+python libEwrapper.py --mpi-ranks 16384 --worker-timeout 300 --application-scale 512 --cpu-override 256 --cpu-ranks-per-node 64 --ensemble-workers 1 --max-evals 200 --configure-environment craympi --machine-identifier theta-knl --system theta --ens-dir-path Theta_16384r_512a --resume Theta_256n_0512a/results.csv --launch-job --display-results
+thetamom3
+Wed Sep 20 14:31:59 UTC 2023
+
+python run_ytopt_48a27896.py --comms local --nworkers 2 --learner=RF --max-evals 200  --resume Theta_256n_0512a/results.csv
+This ensemble operates as: ./ensemble_Theta_16384r_512a_4ebdc01f
+
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 512 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 256 * 64 = 16384
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Resuming from records indicated in files: ['Theta_256n_0512a/results.csv']
+Loaded 158 previous evaluations
+Prepared 158 prior evaluations
+Optimizer updated and ready to resume -- max-evals reduced 200 --> 42
+Identifying machine as theta-knl
+
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0006468721080244988, 'p8': 0.7038090787406056, 'p9': 0.060112326261389515}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0006468721080244988, 'p8': 0.7038090787406056, 'p9': 0.060112326261389515}, -264.664)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001578021360610693, 'p8': 0.25496711253674464, 'p9': 0.223448678656879}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001578021360610693, 'p8': 0.25496711253674464, 'p9': 0.223448678656879}, -363.142)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001248048215560238, 'p8': 0.0019466891715016477, 'p9': 0.08501501248520826}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001248048215560238, 'p8': 0.0019466891715016477, 'p9': 0.08501501248520826}, -137.378)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0006186608272494842, 'p8': 0.27842553262889513, 'p9': 0.44933002496900165}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0006186608272494842, 'p8': 0.27842553262889513, 'p9': 0.44933002496900165}, -368.995)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.004156857953915849, 'p8': 0.9950874933106956, 'p9': 0.06263752416627344}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.004156857953915849, 'p8': 0.9950874933106956, 'p9': 0.06263752416627344}, -219.876)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.001249845603451094, 'p8': 0.27065570218346946, 'p9': 0.3350178659914608}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.001249845603451094, 'p8': 0.27065570218346946, 'p9': 0.3350178659914608}, -172.347)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.010351498962645533, 'p8': 0.9853685050642734, 'p9': 0.02647761857715425}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.010351498962645533, 'p8': 0.9853685050642734, 'p9': 0.02647761857715425}, -299.078)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0002252734072664131, 'p8': 0.465878256620629, 'p9': 0.4051656400825622}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0002252734072664131, 'p8': 0.465878256620629, 'p9': 0.4051656400825622}, -222.931)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.00624479104192921, 'p8': 0.6465878268360223, 'p9': 0.0738522072010217}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.00624479104192921, 'p8': 0.6465878268360223, 'p9': 0.0738522072010217}, -268.143)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0014346316405389192, 'p8': 0.39804572060538324, 'p9': 0.49599120000542873}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0014346316405389192, 'p8': 0.39804572060538324, 'p9': 0.49599120000542873}, -356.042)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0012641794081604818, 'p8': 0.27528222530878976, 'p9': 0.5514079106059436}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0012641794081604818, 'p8': 0.27528222530878976, 'p9': 0.5514079106059436}, -355.975)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01406136050684692, 'p8': 0.19229923758647494, 'p9': 0.059346948298803714}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01406136050684692, 'p8': 0.19229923758647494, 'p9': 0.059346948298803714}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.011077121214768448, 'p8': 0.24789633196201122, 'p9': 0.17287555580998493}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.011077121214768448, 'p8': 0.24789633196201122, 'p9': 0.17287555580998493}, -169.082)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0033158932411415654, 'p8': 0.24634723781671197, 'p9': 0.26907205261925293}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0033158932411415654, 'p8': 0.24634723781671197, 'p9': 0.26907205261925293}, -176.823)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01003276530205155, 'p8': 0.810333813805338, 'p9': 0.2533813716731864}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01003276530205155, 'p8': 0.810333813805338, 'p9': 0.2533813716731864}, -278.338)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007207782062551571, 'p8': 0.9917406675403091, 'p9': 0.13096905463625508}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007207782062551571, 'p8': 0.9917406675403091, 'p9': 0.13096905463625508}, -290.373)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0017162516450824894, 'p8': 0.6515796396198018, 'p9': 0.31361722832462835}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0017162516450824894, 'p8': 0.6515796396198018, 'p9': 0.31361722832462835}, -264.603)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.011228318957590022, 'p8': 0.6397975672439391, 'p9': 0.094702465838024}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.011228318957590022, 'p8': 0.6397975672439391, 'p9': 0.094702465838024}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0015151729173452644, 'p8': 0.823906739246144, 'p9': 0.51134138907538}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0015151729173452644, 'p8': 0.823906739246144, 'p9': 0.51134138907538}, -267.257)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0036955243799241533, 'p8': 0.31950644841572495, 'p9': 0.12947620161818651}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0036955243799241533, 'p8': 0.31950644841572495, 'p9': 0.12947620161818651}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0007665097412001831, 'p8': 0.6959371543925795, 'p9': 0.28639043997388103}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0007665097412001831, 'p8': 0.6959371543925795, 'p9': 0.28639043997388103}, -237.706)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.002867627084433222, 'p8': 0.697633585521502, 'p9': 0.21757807494118664}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.002867627084433222, 'p8': 0.697633585521502, 'p9': 0.21757807494118664}, -258.213)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0014747950511581065, 'p8': 0.9489472951815191, 'p9': 0.45801173173485565}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0014747950511581065, 'p8': 0.9489472951815191, 'p9': 0.45801173173485565}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008400797130344362, 'p8': 0.29934725769220427, 'p9': 0.015904483539325276}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008400797130344362, 'p8': 0.29934725769220427, 'p9': 0.015904483539325276}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007884176845951663, 'p8': 0.2798619829332516, 'p9': 0.2800210418977672}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007884176845951663, 'p8': 0.2798619829332516, 'p9': 0.2800210418977672}, -162.139)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001969343195512452, 'p8': 0.6056354434114752, 'p9': 0.4211402913000629}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.001969343195512452, 'p8': 0.6056354434114752, 'p9': 0.4211402913000629}, -241.142)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.00043235431452615103, 'p8': 0.23007425147154825, 'p9': 0.37128008065236406}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.00043235431452615103, 'p8': 0.23007425147154825, 'p9': 0.37128008065236406}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01114162413443065, 'p8': 0.7788632161065144, 'p9': 0.07723446307818593}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.01114162413443065, 'p8': 0.7788632161065144, 'p9': 0.07723446307818593}, -256.925)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.009372757571933454, 'p8': 0.9886585136483892, 'p9': 0.03504349362339343}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.009372757571933454, 'p8': 0.9886585136483892, 'p9': 0.03504349362339343}, -275.561)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.0025739700540459154, 'p8': 0.9955587610939904, 'p9': 0.14149926265328405}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': 0.0025739700540459154, 'p8': 0.9955587610939904, 'p9': 0.14149926265328405}, 1.0)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008480665558454059, 'p8': 0.8962720625327076, 'p9': 0.19712464535588348}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008480665558454059, 'p8': 0.8962720625327076, 'p9': 0.19712464535588348}, -282.796)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0020218296042535666, 'p8': 0.5840069809276076, 'p9': 0.2480659126888347}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0020218296042535666, 'p8': 0.5840069809276076, 'p9': 0.2480659126888347}, -240.399)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.002938647017594276, 'p8': 0.3203545282916255, 'p9': 0.4687473594352759}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.002938647017594276, 'p8': 0.3203545282916255, 'p9': 0.4687473594352759}, -177.486)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.009916147426224153, 'p8': 0.964871456297272, 'p9': 0.11876658273189544}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.009916147426224153, 'p8': 0.964871456297272, 'p9': 0.11876658273189544}, -283.34)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007436379558627304, 'p8': 0.9490096406185369, 'p9': 0.17890245205888067}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.007436379558627304, 'p8': 0.9490096406185369, 'p9': 0.17890245205888067}, -266.397)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008638839667505338, 'p8': 0.8482956109576004, 'p9': 0.4717120877177198}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.008638839667505338, 'p8': 0.8482956109576004, 'p9': 0.4717120877177198}, -268.815)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0009699882499258905, 'p8': 0.7111195602537631, 'p9': 0.48230112277494663}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.0009699882499258905, 'p8': 0.7111195602537631, 'p9': 0.48230112277494663}, -260.043)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.0068067124546704605, 'p8': 0.8437765434012291, 'p9': 0.3163944516543069}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.0068067124546704605, 'p8': 0.8437765434012291, 'p9': 0.3163944516543069}, -260.091)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.009060372224706015, 'p8': 0.9198996661663431, 'p9': 0.3196892073264961}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': 0.009060372224706015, 'p8': 0.9198996661663431, 'p9': 0.3196892073264961}, -204.299)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.007968445380781897, 'p8': 0.8788078872395787, 'p9': 0.3877078114054383}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.007968445380781897, 'p8': 0.8788078872395787, 'p9': 0.3877078114054383}, -283.096)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.0064042406423823195, 'p8': 0.846832458548819, 'p9': 0.1544270882202876}]
+[libE - generator 1] tells optimizer about points: [({'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': 0.0064042406423823195, 'p8': 0.846832458548819, 'p9': 0.1544270882202876}, -266.742)]
+[libE - generator 1] creates points: [{'c0': 'fftw', 'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': 0.009869556343998553, 'p8': 0.9761978158926023, 'p9': 0.09784748289812306}]
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00064687), 'p8': array(0.70380908), 'p9': array(0.06011233), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/3867.sh
+[worker 2 - plopper] evaluation OK: -264.664
+[worker 2 - obj] returns point -264.664
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00157802), 'p8': array(0.25496711), 'p9': array(0.22344868), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7816.sh
+[worker 2 - plopper] evaluation OK: -363.142
+[worker 2 - obj] returns point -363.142
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00124805), 'p8': array(0.00194669), 'p9': array(0.08501501), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 16384 1 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6979.sh
+[worker 2 - plopper] evaluation OK: -137.378
+[worker 2 - obj] returns point -137.378
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 16384 1 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00061866), 'p8': array(0.27842553), 'p9': array(0.44933002), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/5236.sh
+[worker 2 - plopper] evaluation OK: -368.995
+[worker 2 - obj] returns point -368.995
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('double', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00415686), 'p8': array(0.99508749), 'p9': array(0.06263752), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/2853.sh
+[worker 2 - plopper] evaluation OK: -219.876
+[worker 2 - obj] returns point -219.876
+[libE simulator - 2] receives objective for point: {'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00124985), 'p8': array(0.2706557), 'p9': array(0.33501787), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7813.sh
+[worker 2 - plopper] evaluation OK: -172.347
+[worker 2 - obj] returns point -172.347
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.0103515), 'p8': array(0.98536851), 'p9': array(0.02647762), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7011.sh
+[worker 2 - plopper] evaluation OK: -299.078
+[worker 2 - obj] returns point -299.078
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00022527), 'p8': array(0.46587826), 'p9': array(0.40516564), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 512 8 4', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/1497.sh
+[worker 2 - plopper] evaluation OK: -222.931
+[worker 2 - obj] returns point -222.931
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 512 8 4', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00624479), 'p8': array(0.64658783), 'p9': array(0.07385221), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 128 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6749.sh
+[worker 2 - plopper] evaluation OK: -268.143
+[worker 2 - obj] returns point -268.143
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 128 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00143463), 'p8': array(0.39804572), 'p9': array(0.4959912), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 512 32 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7561.sh
+[worker 2 - plopper] evaluation OK: -356.042
+[worker 2 - obj] returns point -356.042
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 512 32 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00126418), 'p8': array(0.27528223), 'p9': array(0.55140791), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 4, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh .//tmp_files/5597.sh
+[worker 2 - plopper] evaluation OK: -355.975
+[worker 2 - obj] returns point -355.975
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 4, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.01406136), 'p8': array(0.19229924), 'p9': array(0.05934695), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 2048 8 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/3253.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/3253.sh (procID: 7772)
+FAILED TO KILL PROCESS 7772
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/3253.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 2048 8 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.01107712), 'p8': array(0.24789633), 'p9': array(0.17287556), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7550.sh
+[worker 2 - plopper] evaluation OK: -169.082
+[worker 2 - obj] returns point -169.082
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00331589), 'p8': array(0.24634724), 'p9': array(0.26907205), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/5560.sh
+[worker 2 - plopper] evaluation OK: -176.823
+[worker 2 - obj] returns point -176.823
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.01003277), 'p8': array(0.81033381), 'p9': array(0.25338137), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 64 4', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/8807.sh
+[worker 2 - plopper] evaluation OK: -278.338
+[worker 2 - obj] returns point -278.338
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 64 4', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00720778), 'p8': array(0.99174067), 'p9': array(0.13096905), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9289.sh
+[worker 2 - plopper] evaluation OK: -290.373
+[worker 2 - obj] returns point -290.373
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00171625), 'p8': array(0.65157964), 'p9': array(0.31361723), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 128 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9496.sh
+[worker 2 - plopper] evaluation OK: -264.603
+[worker 2 - obj] returns point -264.603
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 128 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.01122832), 'p8': array(0.63979757), 'p9': array(0.09470247), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 8 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9261.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/9261.sh (procID: 20559)
+FAILED TO KILL PROCESS 20559
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/9261.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 8 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00151517), 'p8': array(0.82390674), 'p9': array(0.51134139), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 64 4', 'p9': 4, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 4 -j 4 -e OMP_NUM_THREADS=4 sh .//tmp_files/9755.sh
+[worker 2 - plopper] evaluation OK: -267.257
+[worker 2 - obj] returns point -267.257
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 64 4', 'p9': 4, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('double', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00369552), 'p8': array(0.31950645), 'p9': array(0.1294762), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 8 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/1919.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/1919.sh (procID: 23325)
+FAILED TO KILL PROCESS 23325
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/1919.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'double', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 8 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00076651), 'p8': array(0.69593715), 'p9': array(0.28639044), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/3218.sh
+[worker 2 - plopper] evaluation OK: -237.706
+[worker 2 - obj] returns point -237.706
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00286763), 'p8': array(0.69763359), 'p9': array(0.21757807), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/3555.sh
+[worker 2 - plopper] evaluation OK: -258.213
+[worker 2 - obj] returns point -258.213
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.0014748), 'p8': array(0.9489473), 'p9': array(0.45801173), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 32 32 16', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9177.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/9177.sh (procID: 28599)
+FAILED TO KILL PROCESS 28599
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/9177.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 32 32 16', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array(' ', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.0084008), 'p8': array(0.29934726), 'p9': array(0.01590448), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 8 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/5989.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/5989.sh (procID: 32817)
+FAILED TO KILL PROCESS 32817
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/5989.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 8 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00788418), 'p8': array(0.27986198), 'p9': array(0.28002104), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9780.sh
+[worker 2 - plopper] evaluation OK: -162.139
+[worker 2 - obj] returns point -162.139
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 16 1', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00196934), 'p8': array(0.60563544), 'p9': array(0.42114029), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 8 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6120.sh
+[worker 2 - plopper] evaluation OK: -241.142
+[worker 2 - obj] returns point -241.142
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 8 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00043235), 'p8': array(0.23007425), 'p9': array(0.37128008), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 2048 4 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/760.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/760.sh (procID: 39269)
+FAILED TO KILL PROCESS 39269
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/760.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 2048 4 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.01114162), 'p8': array(0.77886322), 'p9': array(0.07723446), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 16 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6365.sh
+[worker 2 - plopper] evaluation OK: -256.925
+[worker 2 - obj] returns point -256.925
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 16 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00937276), 'p8': array(0.98865851), 'p9': array(0.03504349), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/5185.sh
+[worker 2 - plopper] evaluation OK: -275.561
+[worker 2 - obj] returns point -275.561
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array(' ', dtype='<U24'), 'p7': array(0.00257397), 'p8': array(0.99555876), 'p9': array(0.14149926), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6654.sh
+[worker 2 - plopper] triggers TIMEOUT (300.0 s) on .//tmp_files/6654.sh (procID: 46790)
+FAILED TO KILL PROCESS 46790
+[worker 2 - plopper] evaluation TIMED OUT: 1.0 from .//tmp_files/6654.sh; non-recoverable
+[worker 2 - obj] returns point 1.0
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00848067), 'p8': array(0.89627206), 'p9': array(0.19712465), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 16 16', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/4280.sh
+[worker 2 - plopper] evaluation OK: -282.796
+[worker 2 - obj] returns point -282.796
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 16 16', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00202183), 'p8': array(0.58400698), 'p9': array(0.24806591), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 16 4', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/1408.sh
+[worker 2 - plopper] evaluation OK: -240.399
+[worker 2 - obj] returns point -240.399
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 256 16 4', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00293865), 'p8': array(0.32035453), 'p9': array(0.46874736), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 4 4', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/8809.sh
+[worker 2 - plopper] evaluation OK: -177.486
+[worker 2 - obj] returns point -177.486
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 1024 4 4', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00991615), 'p8': array(0.96487146), 'p9': array(0.11876658), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9862.sh
+[worker 2 - plopper] evaluation OK: -283.34
+[worker 2 - obj] returns point -283.34
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00743638), 'p8': array(0.94900964), 'p9': array(0.17890245), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 32 32 16', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9110.sh
+[worker 2 - plopper] evaluation OK: -266.397
+[worker 2 - obj] returns point -266.397
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 32 32 16', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00863884), 'p8': array(0.84829561), 'p9': array(0.47171209), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9574.sh
+[worker 2 - plopper] evaluation OK: -268.815
+[worker 2 - obj] returns point -268.815
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00096999), 'p8': array(0.71111956), 'p9': array(0.48230112), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7976.sh
+[worker 2 - plopper] evaluation OK: -260.043
+[worker 2 - obj] returns point -260.043
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 128 64 2', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array(' ', dtype='<U24'), 'p3': array('-a2av', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00680671), 'p8': array(0.84377654), 'p9': array(0.31639445), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/7960.sh
+[worker 2 - plopper] evaluation OK: -260.091
+[worker 2 - obj] returns point -260.091
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('double', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-pencils', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00906037), 'p8': array(0.91989967), 'p9': array(0.31968921), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 16 16', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/9604.sh
+[worker 2 - plopper] evaluation OK: -204.299
+[worker 2 - obj] returns point -204.299
+[libE simulator - 2] receives objective for point: {'p0': 'double', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 16 16', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-no-reorder', dtype='<U24'), 'p3': array(' ', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00796845), 'p8': array(0.87880789), 'p9': array(0.38770781), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/6347.sh
+[worker 2 - plopper] evaluation OK: -283.096
+[worker 2 - obj] returns point -283.096
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p', dtype='<U24'), 'p5': array(' ', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00640424), 'p8': array(0.84683246), 'p9': array(0.15442709), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/400.sh
+[worker 2 - plopper] evaluation OK: -266.742
+[worker 2 - obj] returns point -266.742
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': '-outgrid 64 32 8', 'p9': 2, 'c0': 'fftw'}
+[libE simulator - 2] submits point: {'p0': array('float', dtype='<U24'), 'p1': array(512), 'p2': array('-reorder', dtype='<U24'), 'p3': array('-a2a', dtype='<U24'), 'p4': array('-p2p_pl', dtype='<U24'), 'p5': array('-slabs', dtype='<U24'), 'p6': array('-r2c_dir 1', dtype='<U24'), 'p7': array(0.00986956), 'p8': array(0.97619782), 'p9': array(0.09784748), 'c0': array('fftw', dtype='<U24'), 'machine_info': {'identifier': 'theta-knl', 'mpi_ranks': 16384, 'threads_per_node': 256, 'ranks_per_node': 64, 'gpu_enabled': False, 'libE_workers': 1, 'app_timeout': 300.0, 'sequence': [2, 4]}}
+[worker 2 - obj] receives point {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+[worker 2 - plopper] runs: aprun -n 16384 -N 64 -cc depth -d 2 -j 2 -e OMP_NUM_THREADS=2 sh .//tmp_files/4450.sh
+[worker 2 - plopper] evaluation OK: -1.99241
+[worker 2 - obj] returns point -1.99241
+[libE simulator - 2] receives objective for point: {'p0': 'float', 'p1': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '-ingrid 16384 1 1', 'p8': ' ', 'p9': 2, 'c0': 'fftw'}
+
+libEnsemble has completed evaluations.
+All simulations finished.
+All manager-finished results logged to ./ensemble_Theta_16384r_512a_4ebdc01f/manager_results.csv
+
+Wed Sep 20 17:56:33 UTC 2023
+
+Copy LibEnsemble template --> run_ytopt_48a27896.py
+Failed to copy Job script <-- qsub.batch
+Set ('ens_dir_path',) to ('"Theta_16384r_512a_4ebdc01f"',) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('machine_identifier',) to ('"theta-knl"',) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('seed_configspace',) to (1234,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('seed_ytopt',) to (2345,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('seed_numpy',) to (1,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('mpi_ranks',) to (16384,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('worker_timeout',) to (300,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('application_scale',) to (512,) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('cpu_override',) to ('256',) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('cpu_ranks_per_node',) to ('64',) in run_ytopt_48a27896.py
+  -- SED OK
+Set ('gpu_enabled',) to ('False',) in run_ytopt_48a27896.py
+  -- SED OK
+Produce job script qsub_b9a26fb2.batch
+Script written
+Job script migrated --> ensemble_Theta_16384r_512a_4ebdc01f/qsub_b9a26fb2.batch
+LibEnsemble driver migrated --> ensemble_Theta_16384r_512a_4ebdc01f/run_ytopt_48a27896.py
+Ensemble logs could not be migrated <-- ensemble.log
+Ytopt logs could not be migrated <-- ytopt.log
+Finished evaluations
+        p0   p1           p2  ... gpu_enabled libE_id libE_workers
+0    float  512     -reorder  ...       False       2            1
+1    float  512  -no-reorder  ...       False       2            1
+2    float  512  -no-reorder  ...       False       2            1
+3    float  512  -no-reorder  ...       False       2            1
+4   double  512  -no-reorder  ...       False       2            1
+5    float  512     -reorder  ...       False       2            1
+6    float  512  -no-reorder  ...       False       2            1
+7    float  512  -no-reorder  ...       False       2            1
+8    float  512     -reorder  ...       False       2            1
+9    float  512               ...       False       2            1
+10   float  512  -no-reorder  ...       False       2            1
+11   float  512               ...       False       2            1
+12   float  512  -no-reorder  ...       False       2            1
+13   float  512  -no-reorder  ...       False       2            1
+14   float  512               ...       False       2            1
+15   float  512  -no-reorder  ...       False       2            1
+16   float  512     -reorder  ...       False       2            1
+17   float  512     -reorder  ...       False       2            1
+18   float  512     -reorder  ...       False       2            1
+19  double  512     -reorder  ...       False       2            1
+20   float  512               ...       False       2            1
+21   float  512               ...       False       2            1
+22   float  512     -reorder  ...       False       2            1
+23   float  512     -reorder  ...       False       2            1
+24   float  512     -reorder  ...       False       2            1
+25   float  512               ...       False       2            1
+26   float  512     -reorder  ...       False       2            1
+27   float  512     -reorder  ...       False       2            1
+28   float  512               ...       False       2            1
+29   float  512     -reorder  ...       False       2            1
+30   float  512  -no-reorder  ...       False       2            1
+31   float  512               ...       False       2            1
+32   float  512  -no-reorder  ...       False       2            1
+33   float  512               ...       False       2            1
+34   float  512     -reorder  ...       False       2            1
+35   float  512               ...       False       2            1
+36   float  512               ...       False       2            1
+37   float  512               ...       False       2            1
+38  double  512  -no-reorder  ...       False       2            1
+39   float  512  -no-reorder  ...       False       2            1
+40   float  512     -reorder  ...       False       2            1
+41   float  512     -reorder  ...       False       2            1
+
+[42 rows x 20 columns]
+No unfinished evaluations to view
+Wed Sep 20 17:56:36 UTC 2023
+
+
+Calling on 1 workers with 16384 mpi ranks per worker for size 1024
+Wed Sep 20 17:56:36 UTC 2023
+python libEwrapper.py --mpi-ranks 16384 --worker-timeout 300 --application-scale 1024 --cpu-override 256 --cpu-ranks-per-node 64 --ensemble-workers 1 --max-evals 200 --configure-environment craympi --machine-identifier theta-knl --system theta --ens-dir-path Theta_16384r_1024a  --launch-job --display-results
+thetamom3
+Wed Sep 20 17:56:37 UTC 2023
+
+python run_ytopt_a83ff653.py --comms local --nworkers 2 --learner=RF --max-evals 200 
+This ensemble operates as: ./ensemble_Theta_16384r_1024a_d8f662e1
+
+Override indicates 256 CPU threads on this machine
+CPU mode; force 64 ranks per node
+Set ranks_per_node to 64
+
+APP_SCALE (AKA Problem Size X, X, X) = 1024 x3
+MPI_RANKS (AKA System Size X * Y = Z) = 256 * 64 = 16384
+Depths are based on 256 threads on each node, shared across 64 MPI ranks on each node
+Selectable depths are: [2, 4]
+
+Identifying machine as theta-knl
+
+Copy LibEnsemble template --> run_ytopt_a83ff653.py
+Failed to copy Job script <-- qsub.batch
+Set ('ens_dir_path',) to ('"Theta_16384r_1024a_d8f662e1"',) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('machine_identifier',) to ('"theta-knl"',) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('seed_configspace',) to (1234,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('seed_ytopt',) to (2345,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('seed_numpy',) to (1,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('mpi_ranks',) to (16384,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('worker_timeout',) to (300,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('application_scale',) to (1024,) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('cpu_override',) to ('256',) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('cpu_ranks_per_node',) to ('64',) in run_ytopt_a83ff653.py
+  -- SED OK
+Set ('gpu_enabled',) to ('False',) in run_ytopt_a83ff653.py
+  -- SED OK
+Produce job script qsub_b3b3de71.batch
+Script written
+Job script migrated --> ensemble_Theta_16384r_1024a_d8f662e1/qsub_b3b3de71.batch
+LibEnsemble driver migrated --> ensemble_Theta_16384r_1024a_d8f662e1/run_ytopt_a83ff653.py
+Ensemble logs migrated --> ensemble_Theta_16384r_1024a_d8f662e1/ensemble.log
+Ytopt logs migrated --> ensemble_Theta_16384r_1024a_d8f662e1/ytopt.log
+LibE stats migrated --> ensemble_Theta_16384r_1024a_d8f662e1/libE_stats.txt
+Manager Results unavailable
+No unfinished evaluations to view
+Job script could not be migrated <-- qsub_b3b3de71.batch
+LibEnsemble driver could not be migrated <-- run_ytopt_a83ff653.py
+Ensemble logs could not be migrated <-- ensemble.log
+Ytopt logs could not be migrated <-- ytopt.log

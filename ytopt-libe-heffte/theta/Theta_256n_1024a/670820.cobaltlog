@@ -1,0 +1,30 @@
+Jobid: 670820
+qsub --mode script -t 06:00:00 -n 257 --attrs filesystems=home -A EE-ECP -q default job_scripts/256n_theta.sh
+Fri Sep 22 18:04:29 2023 +0000 (UTC) submitted with cwd set to: /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
+jobid 670820 submitted from terminal /dev/pts/7
+2023-09-24 13:55:19,886 INFO: Starting Resource_Prologue
+2023-09-24 13:55:19,888 DEBUG: no enabling attribute found
+2023-09-24 13:55:19,888 INFO: Resource_Prologue finished with exit code 0
+Sun Sep 24 13:55:42 2023 +0000 (UTC) 
+Sun Sep 24 13:55:42 2023 +0000 (UTC) Command: '/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/job_scripts/256n_theta.sh'
+Sun Sep 24 13:55:42 2023 +0000 (UTC) 
+Sun Sep 24 13:55:42 2023 +0000 (UTC) Environment:
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_PARTCORES=64
+Sun Sep 24 13:55:42 2023 +0000 (UTC) SHELL=/bin/bash
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_PROJECT=EE-ECP
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_PARTNAME=70-75,180-189,300-302,304-309,311-313,318-319,470,661,664-669,672-677,710-729,760-779,860-869,880-889,970-971,973-979,1040-1049,1080-1083,1160,1180-1181,1183,1262,1264-1269,1310-1315,1317,1319,1460-1469,1537,1559,1684-1689,1740-1741,1744-1747,1788-1789,1870-1871,1878,1910-1919,2020-2029,2110-2111,2113-2117,2460,2620-2629,2758-2759,2960-2963,2970-2977,3020-3021,3025,3027,3035,3095,3124-3129,3141,3238,3276,3283,3285-3289,3341,3403,3444-3445,3447-3449,3548,3729
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_JOBID=670820
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_STARTTIME=1695563705
+Sun Sep 24 13:55:42 2023 +0000 (UTC) LOGNAME=trandall
+Sun Sep 24 13:55:42 2023 +0000 (UTC) USER=trandall
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_ENDTIME=1695585305
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_PARTSIZE=257
+Sun Sep 24 13:55:42 2023 +0000 (UTC) HOME=/home/trandall
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_JOBSIZE=257
+Sun Sep 24 13:55:42 2023 +0000 (UTC) COBALT_QUEUE=backfill
+Sun Sep 24 13:55:42 2023 +0000 (UTC) 
+Sun Sep 24 13:55:42 2023 +0000 (UTC) Info: stdin received from /dev/null
+Sun Sep 24 13:55:42 2023 +0000 (UTC) Info: stdout sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/670820.output
+Sun Sep 24 13:55:42 2023 +0000 (UTC) Info: stderr sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/670820.error
+Sun Sep 24 13:55:42 2023 +0000 (UTC) 
+Sun Sep 24 19:55:55 2023 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination
