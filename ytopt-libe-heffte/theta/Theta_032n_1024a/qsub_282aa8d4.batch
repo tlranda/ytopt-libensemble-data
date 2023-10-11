@@ -1,0 +1,43 @@
+#!/bin/bash -x
+#PBS -l walltime=01:00:00
+#PBS -l select=8193:system=theta
+#PBS -l filesystems=home:grand:eagle
+#PBS -A EE-ECP
+#PBS -q prod
+
+# Script output should indicate basic information
+echo "$HOSTNAME";
+date;
+echo;
+
+# Script to run libEnsemble using multiprocessing on launch nodes.
+# Assumes Conda environment is set up.
+
+# To be run with central job management
+# - Manager and workers run on launch node.
+# - Workers submit tasks to the nodes in the job available via scheduler (mpirun, aprun, etc) in plopper
+
+# Name of calling script
+export EXE="run_ytopt_b38565b0.py"
+
+# Communication Method
+export COMMS="--comms local"
+
+# Number of workers. For multiple nodes per worker, have nworkers be a divisor of nnodes, then add 1
+# e.g. for 2 nodes per worker, set nnodes = 12, nworkers = 7
+export NWORKERS="--nworkers 5"  # extra worker running generator (no resources needed)
+
+export EVALS="--max-evals 400"
+
+# ADJUST ENVIRONMENT
+
+export IBV_FORK_SAFE=1; # May fix some MPI issues where processes call fork()
+
+
+# Launch libE
+pycommand="python $EXE $COMMS $NWORKERS --learner=RF $EVALS  --resume logs/ThetaSourceTasks/Theta_032n_1024a/manager_results.csv" # > out.txt 2>&1"
+echo "$pycommand";
+eval "$pycommand";
+echo;
+date;
+echo;

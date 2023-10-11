@@ -1,4 +1,6 @@
-p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,ranks_per_node,gpu_enabled,libE_id,libE_workers
-float,64,-no-reorder,-a2av, , , ,0.7707879535489548,0.224734696232474,2,fftw,0.0,0.0,,0,0,False,0,0
-float,64, ,-a2av, , , ,0.8104340449055538,0.1757774511093988,2,fftw,0.0,0.0,,0,0,False,0,0
-float,64,-reorder, , ,-pencils, ,0.6679055573617255,0.13059513990056437,2,fftw,0.0,0.0,,0,0,False,0,0
+p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
+float,64,-reorder,-a2av, ,-pencils,-r2c_dir 1,0.9995767004527444,0.5630937199518485,0.7649695844074235,fftw,0.0,0.0,,0,0.0,0,False,0,0
+float,64,-reorder,-a2av, , ,-r2c_dir 0,0.8271416754521022,0.5482622583577881,0.79180834767757,fftw,0.0,0.0,,0,0.0,0,False,0,0
+float,64,-no-reorder,-a2av, , , ,0.7707879535489548,0.224734696232474,2.0,fftw,0.0,0.0,,0,,0,False,0,0
+float,64, ,-a2av, , , ,0.8104340449055538,0.1757774511093988,2.0,fftw,0.0,0.0,,0,,0,False,0,0
+float,64,-reorder, , ,-pencils, ,0.6679055573617255,0.1305951399005643,2.0,fftw,0.0,0.0,,0,,0,False,0,0
