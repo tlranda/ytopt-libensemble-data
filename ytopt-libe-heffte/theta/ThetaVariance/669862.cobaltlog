@@ -1,0 +1,30 @@
+Jobid: 669862
+qsub --mode script -t 03:00:00 -n 129 --attrs filesystems=home -A EE-ECP -q default job_scripts/variance_replay.sh
+Fri Sep 15 18:17:21 2023 +0000 (UTC) submitted with cwd set to: /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
+jobid 669862 submitted from terminal /dev/pts/0
+2023-09-16 12:50:04,998 INFO: Starting Resource_Prologue
+2023-09-16 12:50:05,000 DEBUG: no enabling attribute found
+2023-09-16 12:50:05,000 INFO: Resource_Prologue finished with exit code 0
+Sat Sep 16 12:50:18 2023 +0000 (UTC) 
+Sat Sep 16 12:50:18 2023 +0000 (UTC) Command: '/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/job_scripts/variance_replay.sh'
+Sat Sep 16 12:50:18 2023 +0000 (UTC) 
+Sat Sep 16 12:50:18 2023 +0000 (UTC) Environment:
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_PARTCORES=64
+Sat Sep 16 12:50:18 2023 +0000 (UTC) SHELL=/bin/bash
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_PROJECT=EE-ECP
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_PARTNAME=330-339,480-489,580-589,1026,1113,1115,1118-1119,1215,1219,1389,1430-1437,1440-1442,1444,1446-1449,1654,1657,1982-1985,2068-2069,2118-2119,2401,2790-2799,2837-2839,2854,3077,3100-3106,3156-3159,3195,3255,3370-3379,3399,3410-3411,3414,3417,3435,3460-3463,3570-3571,3574-3576,3578-3579,3632-3639,3704
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_JOBID=669862
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_STARTTIME=1694868582
+Sat Sep 16 12:50:18 2023 +0000 (UTC) LOGNAME=trandall
+Sat Sep 16 12:50:18 2023 +0000 (UTC) USER=trandall
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_ENDTIME=1694879382
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_PARTSIZE=129
+Sat Sep 16 12:50:18 2023 +0000 (UTC) HOME=/home/trandall
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_JOBSIZE=129
+Sat Sep 16 12:50:18 2023 +0000 (UTC) COBALT_QUEUE=backfill
+Sat Sep 16 12:50:18 2023 +0000 (UTC) 
+Sat Sep 16 12:50:18 2023 +0000 (UTC) Info: stdin received from /dev/null
+Sat Sep 16 12:50:18 2023 +0000 (UTC) Info: stdout sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/669862.output
+Sat Sep 16 12:50:18 2023 +0000 (UTC) Info: stderr sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/669862.error
+Sat Sep 16 12:50:18 2023 +0000 (UTC) 
+Sat Sep 16 15:50:32 2023 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination
