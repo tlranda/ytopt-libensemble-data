@@ -1,0 +1,1574 @@
+{
+  "tuning_problem_name": "heFFTe",
+  "tuning_problem_category": null,
+  "surrogate_model": [
+    {
+      "hyperparameters": {
+        "rbf_lengthscale": [
+          [
+            1.0,
+            14.331940030684782,
+            22.672555639655098,
+            6.774405755403888,
+            7.928114926139314,
+            20.587418339483204,
+            8.509327022768408,
+            0.8271176505890945,
+            15.878217273331796,
+            11.329113365397424,
+            6.272366264136595
+          ],
+          [
+            1.0,
+            4.7664866102282943e-07,
+            16.897174080037153,
+            3.947560841495412,
+            3.9933359464253186,
+            16.59340534737583,
+            3.579636833163826,
+            0.04722657246761913,
+            8.17207343272009,
+            5.671761140478725,
+            3.4958653037223004
+          ],
+          [
+            1.0,
+            0.04314905707284947,
+            13.01548581321943,
+            4.629504265980115,
+            4.733025254758991,
+            2.051870337592705,
+            3.186980463670549,
+            0.7613347385540082,
+            5.448741979668128e-08,
+            1.9668640705858587,
+            4.735568836609495
+          ],
+          [
+            1.0,
+            1.2025501338927225,
+            18.56104711632116,
+            6.402744710562643,
+            6.346888234767155,
+            12.434688379245424,
+            8.768483881301762,
+            0.0051638366509323,
+            7.824361224413582,
+            8.024551618303848,
+            16.03104561711272
+          ]
+        ],
+        "variance": [
+          [
+            1.0
+          ],
+          [
+            1.0
+          ],
+          [
+            1.0
+          ],
+          [
+            1.0
+          ]
+        ],
+        "B_W": [
+          [
+            [
+              1.042461908628058
+            ],
+            [
+              -60.130907211361226
+            ],
+            [
+              1.5459010954574964e-05
+            ],
+            [
+              -203.17537334996237
+            ]
+          ],
+          [
+            [
+              -0.26585201024250776
+            ],
+            [
+              -35.371620028249566
+            ],
+            [
+              1.0303654840701491e-05
+            ],
+            [
+              -137.50294673217203
+            ]
+          ],
+          [
+            [
+              0.29758070280774274
+            ],
+            [
+              1.3823549142175058
+            ],
+            [
+              -9.83723392154227e-06
+            ],
+            [
+              199.9875397451996
+            ]
+          ],
+          [
+            [
+              -0.7958835601117756
+            ],
+            [
+              -45.6742172177158
+            ],
+            [
+              8.211350686838654e-07
+            ],
+            [
+              -171.81356049954653
+            ]
+          ]
+        ],
+        "B_kappa": [
+          [
+            1.3735055564106657e-05,
+            0.005490770482207238,
+            9.490137736750061e-07,
+            1.4308200697566856e-05
+          ],
+          [
+            4.109157679767592e-06,
+            0.005347342644767225,
+            5.68561863516963e-07,
+            1.5709305779148646e-05
+          ],
+          [
+            4.1385712420642146e-06,
+            0.00509016535829023,
+            5.732632276532293e-07,
+            1.935143997539652e-05
+          ],
+          [
+            2.2550784027222362e-05,
+            0.0060801284269467615,
+            1.1015375549395925e-06,
+            1.0844768639281655e-05
+          ]
+        ],
+        "noise_variance": [
+          [
+            4.999638441445163e-06
+          ],
+          [
+            4.999978960866677e-06
+          ],
+          [
+            4.999394104341986e-06
+          ],
+          [
+            4.999982418713725e-06
+          ]
+        ]
+      },
+      "modeling_options": {
+        "model_kernel": "RBF",
+        "model_method": "GPCoregionalizedRegression",
+        "model_sparse": "no",
+        "multitask": "yes"
+      },
+      "model_stats": {
+        "log_marginal_likelihood": -15.815061542352034
+      },
+      "task_parameters": [
+        [
+          4096,
+          64
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "function_evaluations": [
+        "3d2cf5d8-58c0-11ee-9b1c-000101000c30",
+        "3da8abb0-58c0-11ee-9b1c-000101000c30",
+        "3daae3e4-58c0-11ee-9b1c-000101000c30",
+        "3dacbcfa-58c0-11ee-9b1c-000101000c30",
+        "3daec4aa-58c0-11ee-9b1c-000101000c30",
+        "3db085c4-58c0-11ee-9b1c-000101000c30",
+        "3db25020-58c0-11ee-9b1c-000101000c30",
+        "3db3f448-58c0-11ee-9b1c-000101000c30"
+      ],
+      "input_space": [
+        {
+          "name": "mpi_ranks",
+          "transformer": "normalize",
+          "type": "int",
+          "lower_bound": 64,
+          "upper_bound": 8192
+        },
+        {
+          "name": "p1",
+          "transformer": "normalize",
+          "type": "int",
+          "lower_bound": 64,
+          "upper_bound": 2048
+        }
+      ],
+      "parameter_space": [
+        {
+          "name": "c0",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "fftw"
+          ]
+        },
+        {
+          "name": "p0",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "double",
+            "float"
+          ]
+        },
+        {
+          "name": "p1",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "64",
+            "128",
+            "256",
+            "512",
+            "1024",
+            "1400"
+          ]
+        },
+        {
+          "name": "p2",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-no-reorder",
+            "-reorder",
+            " "
+          ]
+        },
+        {
+          "name": "p3",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-a2a",
+            "-a2av",
+            " "
+          ]
+        },
+        {
+          "name": "p4",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-p2p",
+            "-p2p_pl",
+            " "
+          ]
+        },
+        {
+          "name": "p5",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-pencils",
+            "-slabs",
+            " "
+          ]
+        },
+        {
+          "name": "p6",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-r2c_dir 0",
+            "-r2c_dir 1",
+            "-r2c_dir 2",
+            " "
+          ]
+        },
+        {
+          "name": "p7",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        },
+        {
+          "name": "p8",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        },
+        {
+          "name": "p9",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        }
+      ],
+      "output_space": [
+        {
+          "name": "time",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": Infinity
+        }
+      ],
+      "modeler": "Model_GPy_LCM",
+      "objective": {
+        "name": "time",
+        "transformer": "identity",
+        "type": "real",
+        "lower_bound": 0.0,
+        "upper_bound": Infinity,
+        "objective_id": 0
+      },
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 39,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3e4f2e9a-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "hyperparameters": {
+        "rbf_lengthscale": [
+          [
+            1.0,
+            83.9660709774592,
+            40.11252602164751,
+            21.163918121904008,
+            11.064665436476602,
+            37.70055088268375,
+            5.884134162832727,
+            4.7649302924522265,
+            6.288659140392045,
+            6.946366234786815,
+            6.947394087991352
+          ],
+          [
+            1.0,
+            14.614667748439823,
+            7.065382063300136,
+            19.484678343584886,
+            20.604265697807488,
+            16.845126745275614,
+            7.229793724247029,
+            10.048834781853504,
+            3.3773962645124236,
+            4.03554485918175,
+            24.515965997105496
+          ],
+          [
+            1.0,
+            2.375656073399308e-37,
+            79.73941095517027,
+            31.255250145787926,
+            19.806851499364786,
+            70.21553076101166,
+            18.678394203083936,
+            28.660853938666634,
+            23.05204789394823,
+            43.0202673231897,
+            7.391104000094246
+          ],
+          [
+            1.0,
+            47.306483637713775,
+            33.06917340553267,
+            41.41039062390995,
+            19.39013442027583,
+            34.19654301516718,
+            26.089617913496866,
+            35.00839071304491,
+            7.898821260235726,
+            26.47969912802387,
+            44.56502167871047
+          ]
+        ],
+        "variance": [
+          [
+            1.0
+          ],
+          [
+            1.0
+          ],
+          [
+            1.0
+          ],
+          [
+            1.0
+          ]
+        ],
+        "B_W": [
+          [
+            [
+              -0.07913354132342619
+            ],
+            [
+              -126.2377926480501
+            ],
+            [
+              -1.1823584426234515e-07
+            ],
+            [
+              -554.2126827967775
+            ]
+          ],
+          [
+            [
+              0.2595514301834247
+            ],
+            [
+              44.78948809349981
+            ],
+            [
+              6.196751864533094e-08
+            ],
+            [
+              119.23109139692161
+            ]
+          ],
+          [
+            [
+              0.19279317934869497
+            ],
+            [
+              -194.10155069675872
+            ],
+            [
+              -1.5089424917922521e-07
+            ],
+            [
+              -939.5424159812666
+            ]
+          ],
+          [
+            [
+              -0.9175720889318633
+            ],
+            [
+              134.0355961584618
+            ],
+            [
+              1.3855577483158268e-07
+            ],
+            [
+              344.81292321932636
+            ]
+          ]
+        ],
+        "B_kappa": [
+          [
+            1.8970012269519543e-39,
+            0.0023534349949065033,
+            5.309455939301977e-25,
+            3.853580791439554e-40
+          ],
+          [
+            1.0744544445632017e-37,
+            0.0022843060289230795,
+            2.836558150763832e-24,
+            1.153482176457553e-40
+          ],
+          [
+            4.839718539049256e-40,
+            0.0024734223869342705,
+            3.6731152949137965e-28,
+            8.406980730151459e-40
+          ],
+          [
+            2.946651624728205e-34,
+            0.0027076186623274205,
+            1.55455264810548e-21,
+            1.0287955093640396e-40
+          ]
+        ],
+        "noise_variance": [
+          [
+            4.984987586176884e-06
+          ],
+          [
+            5.000043163505629e-06
+          ],
+          [
+            1.3209572013266767e-10
+          ],
+          [
+            4.998489506940515e-06
+          ]
+        ]
+      },
+      "modeling_options": {
+        "model_kernel": "RBF",
+        "model_method": "GPCoregionalizedRegression",
+        "model_sparse": "no",
+        "multitask": "yes"
+      },
+      "model_stats": {
+        "log_marginal_likelihood": -9.439039377835583
+      },
+      "task_parameters": [
+        [
+          4096,
+          64
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          256,
+          256
+        ],
+        [
+          512,
+          512
+        ]
+      ],
+      "function_evaluations": [
+        "3d2cf5d8-58c0-11ee-9b1c-000101000c30",
+        "3da8abb0-58c0-11ee-9b1c-000101000c30",
+        "3daae3e4-58c0-11ee-9b1c-000101000c30",
+        "3dacbcfa-58c0-11ee-9b1c-000101000c30",
+        "3daec4aa-58c0-11ee-9b1c-000101000c30",
+        "3db085c4-58c0-11ee-9b1c-000101000c30",
+        "3db25020-58c0-11ee-9b1c-000101000c30",
+        "3db3f448-58c0-11ee-9b1c-000101000c30",
+        "4dbbd298-58c0-11ee-9b1c-000101000c30",
+        "4dbe342a-58c0-11ee-9b1c-000101000c30",
+        "4dc0767c-58c0-11ee-9b1c-000101000c30",
+        "4dc2b9c8-58c0-11ee-9b1c-000101000c30"
+      ],
+      "input_space": [
+        {
+          "name": "mpi_ranks",
+          "transformer": "normalize",
+          "type": "int",
+          "lower_bound": 64,
+          "upper_bound": 8192
+        },
+        {
+          "name": "p1",
+          "transformer": "normalize",
+          "type": "int",
+          "lower_bound": 64,
+          "upper_bound": 2048
+        }
+      ],
+      "parameter_space": [
+        {
+          "name": "c0",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "fftw"
+          ]
+        },
+        {
+          "name": "p0",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "double",
+            "float"
+          ]
+        },
+        {
+          "name": "p1",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "64",
+            "128",
+            "256",
+            "512",
+            "1024",
+            "1400"
+          ]
+        },
+        {
+          "name": "p2",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-no-reorder",
+            "-reorder",
+            " "
+          ]
+        },
+        {
+          "name": "p3",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-a2a",
+            "-a2av",
+            " "
+          ]
+        },
+        {
+          "name": "p4",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-p2p",
+            "-p2p_pl",
+            " "
+          ]
+        },
+        {
+          "name": "p5",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-pencils",
+            "-slabs",
+            " "
+          ]
+        },
+        {
+          "name": "p6",
+          "transformer": "onehot",
+          "type": "categorical",
+          "categories": [
+            "-r2c_dir 0",
+            "-r2c_dir 1",
+            "-r2c_dir 2",
+            " "
+          ]
+        },
+        {
+          "name": "p7",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        },
+        {
+          "name": "p8",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        },
+        {
+          "name": "p9",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": 1.0
+        }
+      ],
+      "output_space": [
+        {
+          "name": "time",
+          "transformer": "identity",
+          "type": "real",
+          "lower_bound": 0.0,
+          "upper_bound": Infinity
+        }
+      ],
+      "modeler": "Model_GPy_LCM",
+      "objective": {
+        "name": "time",
+        "transformer": "identity",
+        "type": "real",
+        "lower_bound": 0.0,
+        "upper_bound": Infinity,
+        "objective_id": 0
+      },
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 15,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "53e269e8-58c0-11ee-9b1c-000101000c30"
+    }
+  ],
+  "func_eval": [
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 64
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "64",
+        "p2": "-no-reorder",
+        "p3": "-a2av",
+        "p4": "-p2p",
+        "p5": " ",
+        "p6": "-r2c_dir 1",
+        "p7": 0.8334987831264502,
+        "p8": 0.5160547755961961,
+        "p9": 0.6101352186253136
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": 1
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": 1,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 37,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3d2cf5d8-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 64
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "512",
+        "p2": "-reorder",
+        "p3": "-a2av",
+        "p4": " ",
+        "p5": "-slabs",
+        "p6": "-r2c_dir 2",
+        "p7": 0.00821657305372725,
+        "p8": 0.07998263263573302,
+        "p9": 0.3213678656150558
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": 1
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": 1,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3da8abb0-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 128,
+        "p1": 128
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "1400",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": "-p2p",
+        "p5": "-pencils",
+        "p6": " ",
+        "p7": 0.3118356892962101,
+        "p8": 0.6637774433588958,
+        "p9": 0.648512946229029
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -58.662096
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -58.6620960924677,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3daae3e4-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 128,
+        "p1": 128
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "256",
+        "p2": "-reorder",
+        "p3": "-a2av",
+        "p4": " ",
+        "p5": " ",
+        "p6": "-r2c_dir 1",
+        "p7": 0.9056341432099512,
+        "p8": 0.02704695617735753,
+        "p9": 0.02241326818176337
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -19.487084
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -19.487083883859057,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3dacbcfa-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 256,
+        "p1": 256
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "512",
+        "p2": " ",
+        "p3": "-a2a",
+        "p4": "-p2p",
+        "p5": "-pencils",
+        "p6": "-r2c_dir 1",
+        "p7": 0.7199445735278273,
+        "p8": 0.882657353697575,
+        "p9": 0.6025689360028753
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.0
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -5.557489633215584e-52,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3daec4aa-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 256,
+        "p1": 256
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "256",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": " ",
+        "p5": " ",
+        "p6": " ",
+        "p7": 0.43369419155285505,
+        "p8": 0.12899101027907844,
+        "p9": 0.24434840667484659
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.0
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -1.2008070752083793e-10,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3db085c4-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 512,
+        "p1": 512
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "128",
+        "p2": " ",
+        "p3": "-a2av",
+        "p4": " ",
+        "p5": "-slabs",
+        "p6": " ",
+        "p7": 0.9525654031049056,
+        "p8": 0.3366678858466494,
+        "p9": 0.8191557520057019
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -313.147417
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -313.147416811259,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3db25020-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 512,
+        "p1": 512
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "512",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": "-p2p",
+        "p5": " ",
+        "p6": "-r2c_dir 1",
+        "p7": 0.029107643268314054,
+        "p8": 0.5178536020772695,
+        "p9": 0.41133135761065553
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.0
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -1.176694377629006e-08,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 48,
+        "tm_sec": 38,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "3db3f448-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 64
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "128",
+        "p2": " ",
+        "p3": "-a2av",
+        "p4": " ",
+        "p5": "-slabs",
+        "p6": " ",
+        "p7": 0.8540727802828094,
+        "p8": 0.5333608445630184,
+        "p9": 0.9825139267107618
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": 1
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": 1,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 5,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "4dbbd298-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 128,
+        "p1": 128
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "1024",
+        "p2": " ",
+        "p3": " ",
+        "p4": "-p2p",
+        "p5": "-pencils",
+        "p6": "-r2c_dir 1",
+        "p7": 0.11055896790927192,
+        "p8": 0.20948351537035428,
+        "p9": 0.9124664807734015
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -36.132095
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -36.13209513490095,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 5,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "4dbe342a-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 256,
+        "p1": 256
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "1024",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": "-p2p",
+        "p5": "-pencils",
+        "p6": "-r2c_dir 1",
+        "p7": 0.47523466839518314,
+        "p8": 0.9114035999462469,
+        "p9": 0.005997463611168426
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.0
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -4.366405727238354e-81,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 5,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "4dc0767c-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 512,
+        "p1": 512
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "1024",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": "-p2p_pl",
+        "p5": "-pencils",
+        "p6": "-r2c_dir 0",
+        "p7": 0.5701626630988783,
+        "p8": 0.99715346692595,
+        "p9": 0.9661731352845304
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.0
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -1.9975870994076001e-07,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 5,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "4dc2b9c8-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 64
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "1024",
+        "p2": "-no-reorder",
+        "p3": " ",
+        "p4": "-p2p_pl",
+        "p5": " ",
+        "p6": "-r2c_dir 0",
+        "p7": 0.8010684251979572,
+        "p8": 0.9059955857765204,
+        "p9": 0.1413459094893817
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": 1
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": 1,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 42,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "63b8805a-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 128,
+        "p1": 128
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "512",
+        "p2": " ",
+        "p3": "-a2a",
+        "p4": " ",
+        "p5": " ",
+        "p6": " ",
+        "p7": 0.8175496720032316,
+        "p8": 0.9946957359686938,
+        "p9": 0.2733845561848313
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -18.635025
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -18.635024774091065,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 42,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "63bad292-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 256,
+        "p1": 256
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "256",
+        "p2": "-reorder",
+        "p3": " ",
+        "p4": "-p2p_pl",
+        "p5": "-pencils",
+        "p6": " ",
+        "p7": 0.8792361012922417,
+        "p8": 0.41683525380018804,
+        "p9": 0.14004658896449554
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.13666
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -0.13666038237147254,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 42,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "63bd071a-58c0-11ee-9b1c-000101000c30"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 512,
+        "p1": 512
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "128",
+        "p2": "-no-reorder",
+        "p3": "-a2a",
+        "p4": "-p2p_pl",
+        "p5": "-slabs",
+        "p6": " ",
+        "p7": 0.9323782013614036,
+        "p8": 0.9623997838275565,
+        "p9": 0.3564687512001063
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 1,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -0.059155
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -0.05915466240047878,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "model_function",
+      "modeling": "TLA_LCM",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 9,
+        "tm_mday": 21,
+        "tm_hour": 20,
+        "tm_min": 49,
+        "tm_sec": 42,
+        "tm_wday": 3,
+        "tm_yday": 264,
+        "tm_isdst": 0
+      },
+      "uid": "63bf1280-58c0-11ee-9b1c-000101000c30"
+    }
+  ]
+}

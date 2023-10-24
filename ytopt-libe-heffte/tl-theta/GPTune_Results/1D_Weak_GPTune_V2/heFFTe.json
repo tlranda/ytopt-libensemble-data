@@ -1,0 +1,219 @@
+{
+  "tuning_problem_name": "heFFTe",
+  "tuning_problem_category": null,
+  "surrogate_model": [],
+  "func_eval": [
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 1400
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "512",
+        "p2": " ",
+        "p3": "-a2av",
+        "p4": "-p2p",
+        "p5": " ",
+        "p6": "-r2c_dir 0",
+        "p7": 0.44317655278444573,
+        "p8": 0.903018630879212,
+        "p9": 0.6645916412686997
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 64,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -429.118
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -429.118,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 10,
+        "tm_mday": 12,
+        "tm_hour": 6,
+        "tm_min": 17,
+        "tm_sec": 22,
+        "tm_wday": 3,
+        "tm_yday": 285,
+        "tm_isdst": 0
+      },
+      "uid": "01383a08-68c7-11ee-a80a-000101000430"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 1400
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "1400",
+        "p2": "-no-reorder",
+        "p3": " ",
+        "p4": " ",
+        "p5": "-pencils",
+        "p6": "-r2c_dir 1",
+        "p7": 0.008244550252231312,
+        "p8": 0.5156827553589598,
+        "p9": 0.5581624564804387
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 64,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -1211.36
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -1211.36,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 10,
+        "tm_mday": 12,
+        "tm_hour": 6,
+        "tm_min": 17,
+        "tm_sec": 56,
+        "tm_wday": 3,
+        "tm_yday": 285,
+        "tm_isdst": 0
+      },
+      "uid": "15a6e750-68c7-11ee-a80a-000101000430"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 1400
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "double",
+        "p1": "256",
+        "p2": "-no-reorder",
+        "p3": "-a2av",
+        "p4": "-p2p_pl",
+        "p5": "-slabs",
+        "p6": "-r2c_dir 2",
+        "p7": 0.8512034559116024,
+        "p8": 0.7126391404251164,
+        "p9": 0.10952911481604488
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 64,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -149.482
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -149.482,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 10,
+        "tm_mday": 12,
+        "tm_hour": 6,
+        "tm_min": 19,
+        "tm_sec": 27,
+        "tm_wday": 3,
+        "tm_yday": 285,
+        "tm_isdst": 0
+      },
+      "uid": "4bc048fe-68c7-11ee-a80a-000101000430"
+    },
+    {
+      "task_parameter": {
+        "mpi_ranks": 4096,
+        "p1": 1400
+      },
+      "tuning_parameter": {
+        "c0": "fftw",
+        "p0": "float",
+        "p1": "1400",
+        "p2": "-reorder",
+        "p3": "-a2a",
+        "p4": "-p2p",
+        "p5": " ",
+        "p6": " ",
+        "p7": 0.7042238148802102,
+        "p8": 0.6520444680022498,
+        "p9": 0.9339134786084288
+      },
+      "constants": {},
+      "machine_configuration": {
+        "machine_name": "theta",
+        "intel": {
+          "nodes": 64,
+          "cores": 256
+        }
+      },
+      "software_configuration": {},
+      "evaluation_result": {
+        "time": -1062.68
+      },
+      "evaluation_detail": {
+        "time": {
+          "evaluations": -1062.68,
+          "objective_scheme": "average"
+        }
+      },
+      "additional_output": {},
+      "source": "measure",
+      "modeling": "Pilot",
+      "model_class": "Model_GPy_LCM",
+      "time": {
+        "tm_year": 2023,
+        "tm_mon": 10,
+        "tm_mday": 12,
+        "tm_hour": 6,
+        "tm_min": 20,
+        "tm_sec": 6,
+        "tm_wday": 3,
+        "tm_yday": 285,
+        "tm_isdst": 0
+      },
+      "uid": "634955d8-68c7-11ee-a80a-000101000430"
+    }
+  ]
+}

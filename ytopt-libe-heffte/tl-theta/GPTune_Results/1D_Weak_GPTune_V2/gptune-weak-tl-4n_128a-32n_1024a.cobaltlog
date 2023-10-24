@@ -1,0 +1,30 @@
+Jobid: 672907
+qsub --mode script -t 06:00:00 -n 256 --attrs filesystems=home -A EE-ECP -q default job_scripts/weak_tl_gptune_theta.sh
+Wed Oct 11 20:41:00 2023 +0000 (UTC) submitted with cwd set to: /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
+jobid 672907 submitted from terminal /dev/pts/27
+2023-10-12 03:36:14,285 INFO: Starting Resource_Prologue
+2023-10-12 03:36:14,287 DEBUG: no enabling attribute found
+2023-10-12 03:36:14,287 INFO: Resource_Prologue finished with exit code 0
+Thu Oct 12 03:36:37 2023 +0000 (UTC) 
+Thu Oct 12 03:36:37 2023 +0000 (UTC) Command: '/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/job_scripts/weak_tl_gptune_theta.sh'
+Thu Oct 12 03:36:37 2023 +0000 (UTC) 
+Thu Oct 12 03:36:37 2023 +0000 (UTC) Environment:
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_PARTCORES=64
+Thu Oct 12 03:36:37 2023 +0000 (UTC) SHELL=/bin/bash
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_PROJECT=EE-ECP
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_PARTNAME=130-139,646,648,672-677,700-709,760-769,870-872,874-878,890-894,896-899,940-943,945,960-966,968-969,1070-1079,1090-1099,1240-1245,1247,1249,1252,1254-1257,1320-1329,1410-1412,1414-1419,1531,1533,1537,1561,1670-1675,1788-1789,1793,1868,1962-1963,2010-2019,2030-2033,2035-2037,2039,2100-2109,2112,2410,2494,2630-2639,2650-2659,2874,2900-2905,2960-2963,3000,3034,3037,3040-3041,3043-3049,3130-3139,3207,3236-3238,3418-3419,3438,3483-3484,3527,3540-3548,3560-3561,3563-3568,3618,3651,3720-3721,3723,3726-3727,3765
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_JOBID=672907
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_STARTTIME=1697081759
+Thu Oct 12 03:36:37 2023 +0000 (UTC) LOGNAME=trandall
+Thu Oct 12 03:36:37 2023 +0000 (UTC) USER=trandall
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_ENDTIME=1697103359
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_PARTSIZE=256
+Thu Oct 12 03:36:37 2023 +0000 (UTC) HOME=/home/trandall
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_JOBSIZE=256
+Thu Oct 12 03:36:37 2023 +0000 (UTC) COBALT_QUEUE=backfill
+Thu Oct 12 03:36:37 2023 +0000 (UTC) 
+Thu Oct 12 03:36:37 2023 +0000 (UTC) Info: stdin received from /dev/null
+Thu Oct 12 03:36:37 2023 +0000 (UTC) Info: stdout sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/672907.output
+Thu Oct 12 03:36:37 2023 +0000 (UTC) Info: stderr sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/672907.error
+Thu Oct 12 03:36:37 2023 +0000 (UTC) 
+Thu Oct 12 09:36:55 2023 +0000 (UTC) Info: maximum execution time exceeded; initiating job termination
