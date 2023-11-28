@@ -1,0 +1,69 @@
+Modify PS1
+Calling on 4 workers with 8 mpi ranks (2 nodes) per worker for size 64
+Thu 09 Nov 2023 02:09:34 PM UTC
+python libEwrapper.py --mpi-ranks 8 --worker-timeout 300 --application-scale 64 --gpu-enabled --ensemble-workers 4 --max-evals 30 --configure-environment craympi --machine-identifier polaris-gpu --system polaris --ens-dir-path Polaris_Weak_TL_2n_64a --ens-template run_gctla.py --ens-script qsub_tl.batch --gc-input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --gc-ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --gc-initial-quantile 1.0 --launch-job --display-results
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+x3111c0s19b1n0
+Thu 09 Nov 2023 02:09:34 PM UTC
+
+python run_gctla_d243d081.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 64 --constraint-app-y 64 --constraint-app-z 64 --input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --predictions-only False --initial-quantile 1.0
+This ensemble operates as: ./ensemble_Polaris_Weak_TL_2n_64a_535ecb0e
+
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 64, 64, 64
+MPI_RANKS (AKA System Size X * Y = Z) = 2 * 4 = 8
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Identifying machine as polaris-gpu
+
+GC will be fitted against data from: ['logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv', 'logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv', 'logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv', 'logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv', 'logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv']
+Using max-evals: 30
+Copy LibEnsemble template --> run_gctla_d243d081.py
+Failed to copy Job script <-- qsub_tl.batch
+Set ('ens_dir_path',) to ('"Polaris_Weak_TL_2n_64a_535ecb0e"',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('machine_identifier',) to ('"polaris-gpu"',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('seed_configspace',) to (1234,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('seed_ytopt',) to (2345,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('seed_numpy',) to (1,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('mpi_ranks',) to (8,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('worker_timeout',) to (300,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('application_scale',) to (64,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('application_x',) to ('APP_SCALE',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('application_y',) to ('APP_SCALE',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('application_z',) to ('APP_SCALE',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('cpu_override',) to ('None',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('cpu_ranks_per_node',) to ('64',) in run_gctla_d243d081.py
+  -- SED OK
+Set ('gpu_override',) to (None,) in run_gctla_d243d081.py
+  -- SED OK
+Set ('gpu_enabled',) to ('True',) in run_gctla_d243d081.py
+  -- SED OK
+Produce job script qsub_tl_391fc822.batch
+Script written
+Job script migrated --> ensemble_Polaris_Weak_TL_2n_64a_535ecb0e/qsub_tl_391fc822.batch
+LibEnsemble driver migrated --> ensemble_Polaris_Weak_TL_2n_64a_535ecb0e/run_gctla_d243d081.py
+Ensemble logs migrated --> ensemble_Polaris_Weak_TL_2n_64a_535ecb0e/ensemble.log
+Ytopt logs could not be migrated <-- ytopt.log
+LibE stats migrated --> ensemble_Polaris_Weak_TL_2n_64a_535ecb0e/libE_stats.txt
+Manager Results unavailable
+No unfinished evaluations to view
+Job script could not be migrated <-- qsub_tl_391fc822.batch
+LibEnsemble driver could not be migrated <-- run_gctla_d243d081.py
+Ensemble logs could not be migrated <-- ensemble.log
+Ytopt logs could not be migrated <-- ytopt.log

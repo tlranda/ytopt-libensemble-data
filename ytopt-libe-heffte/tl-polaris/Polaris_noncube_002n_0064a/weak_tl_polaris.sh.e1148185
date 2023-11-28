@@ -1,0 +1,46 @@
+
+Lmod is automatically replacing "nvhpc/21.9" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-nvhpc/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+
+Lmod is automatically replacing "gcc/11.2.0" with "nvhpc/21.9".
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: PrgEnv-gnu (required by: conda/2022-09-08)
+-------------------------------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3111c0s19b1n0
++ date
++ echo
++ export EXE=run_gctla_d243d081.py
++ EXE=run_gctla_d243d081.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_d243d081.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 64 --constraint-app-y 64 --constraint-app-z 64 --input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_d243d081.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 64 --constraint-app-y 64 --constraint-app-z 64 --input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_d243d081.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 64 --constraint-app-y 64 --constraint-app-z 64 --input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_d243d081.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 8 --constraint-app-x 64 --constraint-app-y 64 --constraint-app-z 64 --input logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_04n_0128a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_08n_0256a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_16n_0512a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_32n_1024a_NoTopology/manager_results.csv logs/PolarisSourceTasks/Polaris_64n_1400a_NoTopology/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_02n_0064a_NoTopology/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 686.84it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 678.59it/s]
+=>> PBS: job killed: walltime 3627 exceeded limit 3600

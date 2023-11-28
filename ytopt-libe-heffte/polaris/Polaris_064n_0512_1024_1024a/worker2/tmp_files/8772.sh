@@ -1,0 +1,3 @@
+#!/bin/bash -x
+
+speed3d_r2c cufft float-long 512 1024 1024 -no-reorder -a2a -p2p_pl -pencils -r2c_dir 1 -ingrid 16 8 2 -outgrid 1 128 2 -no-gpu-aware -n5

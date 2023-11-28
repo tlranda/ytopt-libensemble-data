@@ -1,0 +1,117 @@
+“RANK= 4 LOCAL_RANK= 0 gpu= 3”
+“RANK= 5 LOCAL_RANK= 1 gpu= 2”
+“RANK= 6 LOCAL_RANK= 2 gpu= 1”
+“RANK= 7 LOCAL_RANK= 3 gpu= 0”
+“RANK= 0 LOCAL_RANK= 0 gpu= 3”
+“RANK= 1 LOCAL_RANK= 1 gpu= 2”
+“RANK= 3 LOCAL_RANK= 3 gpu= 0”
+“RANK= 2 LOCAL_RANK= 2 gpu= 1”
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -n x ']'
++ set +x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
+Shell debugging restarted
++ unset __lmod_vx
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
++ speed3d_r2c cufft float 256 256 256 -no-reorder -pencils -r2c_dir 1 -ingrid 2 1 4 -outgrid 4 2 1 -n5
+MPICH ERROR [Rank 1] [job id 100870a5-0d80-4cc9-b9ce-f44150200d6d] [Sun Nov 12 08:27:05 2023] [x3001c0s19b0n0] - Abort(137435791) (rank 1 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14e97c000000, scnts=0x2421470, sdispls=0x23eb2a0, dtype=0x4c000840, rbuf=0x14e97c820000, rcnts=0x23eb590, rdispls=0x23eb5c0, datatype=dtype=0x4c000840, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14e97c000000, scnts=0x2421470, sdispls=0x23eb2a0, dtype=0x4c000840, rbuf=0x14e97c820000, rcnts=0x23eb590, rdispls=0x23eb5c0, datatype=dtype=0x4c000840, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+MPICH ERROR [Rank 3] [job id 100870a5-0d80-4cc9-b9ce-f44150200d6d] [Sun Nov 12 08:27:05 2023] [x3001c0s19b0n0] - Abort(607197839) (rank 3 in comm 0): Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14e098000000, scnts=0x85a470, sdispls=0x8242a0, dtype=0x4c000840, rbuf=0x14e098820000, rcnts=0x824590, rdispls=0x8245c0, datatype=dtype=0x4c000840, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+
+aborting job:
+Fatal error in PMPI_Alltoallv: Other MPI error, error stack:
+PMPI_Alltoallv(389)............: MPI_Alltoallv(sbuf=0x14e098000000, scnts=0x85a470, sdispls=0x8242a0, dtype=0x4c000840, rbuf=0x14e098820000, rcnts=0x824590, rdispls=0x8245c0, datatype=dtype=0x4c000840, comm=comm=0x84000007) failed
+MPIR_CRAY_Alltoallv(1162)......: 
+MPIR_Waitall(167)..............: 
+MPIR_Waitall_impl(51)..........: 
+MPID_Progress_wait(184)........: 
+MPIDI_Progress_test(80)........: 
+MPIDI_OFI_handle_cq_error(1059): OFI poll failed (ofi_events.c:1061:MPIDI_OFI_handle_cq_error:Input/output error - local protection error)
+x3001c0s19b0n0.hsn.cm.polaris.alcf.anl.gov: rank 1 exited with code 255

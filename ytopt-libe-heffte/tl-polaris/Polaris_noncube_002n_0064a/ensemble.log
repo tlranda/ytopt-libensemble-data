@@ -1,0 +1,142 @@
+[0]  2023-11-09 14:09:46,850 libensemble.libE (INFO): Logger initializing: [workerID] precedes each line. [0] = Manager
+[0]  2023-11-09 14:09:46,850 libensemble.libE (INFO): libE version v0.10.2
+[0]  2023-11-09 14:09:46,854 libensemble.manager (INFO): Manager initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,854 libensemble.manager (INFO): Manager exit_criteria: {'sim_max': 30}
+[0]  2023-11-09 14:09:46,854 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: None
+[0]  2023-11-09 14:09:46,854 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-11-09 14:09:46,854 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows None
+[0]  2023-11-09 14:09:46,855 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,853 libensemble.worker (DEBUG): No executor set on worker 1
+[0]  2023-11-09 14:09:46,855 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:46,853 libensemble.worker (DEBUG): No executor set on worker 2
+[0]  2023-11-09 14:09:46,855 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:46,854 libensemble.worker (DEBUG): No executor set on worker 3
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:46,854 libensemble.worker (DEBUG): No executor set on worker 4
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:46,854 libensemble.worker (DEBUG): No executor set on worker 5
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,854 libensemble.resources.rset_resources (DEBUG): split_list is [['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0'], ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0'], ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0'], ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0'], ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']]
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:46,854 libensemble.resources.rset_resources (DEBUG): split_list is [['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0'], ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0'], ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0'], ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0'], ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']]
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:46,854 libensemble.resources.rset_resources (DEBUG): split_list is [['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0'], ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0'], ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0'], ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0'], ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']]
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:46,854 libensemble.resources.rset_resources (DEBUG): split_list is [['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0'], ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0'], ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0'], ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0'], ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']]
+[0]  2023-11-09 14:09:46,856 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:46,855 libensemble.resources.rset_resources (DEBUG): split_list is [['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0'], ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0'], ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0'], ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0'], ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']]
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,855 libensemble.worker (INFO): Worker 1 initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:46,855 libensemble.worker (INFO): Worker 2 initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:46,856 libensemble.worker (INFO): Worker 3 initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:46,856 libensemble.worker (INFO): Worker 4 initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:46,856 libensemble.worker (INFO): Worker 5 initiated on node x3111c0s19b1n0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,855 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:46,855 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:46,856 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:46,856 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:46,856 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,856 libensemble.worker (DEBUG): Received calc_in (gen) of len 0
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,856 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3111c0s19b1n0', 'x3111c0s1b0n0', 'x3111c0s1b1n0', 'x3111c0s25b0n0', 'x3111c0s25b1n0', 'x3111c0s31b0n0', 'x3111c0s31b1n0', 'x3111c0s37b0n0', 'x3111c0s37b1n0', 'x3111c0s7b0n0', 'x3111c0s7b1n0', 'x3112c0s13b0n0', 'x3112c0s13b1n0']
+[0]  2023-11-09 14:09:46,857 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:46,856 libensemble.worker (DEBUG): Starting Gen no:     1
+[0]  2023-11-09 14:09:47,020 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:47,020 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-11-09 14:09:47,020 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-11-09 14:09:47,021 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 0
+[0]  2023-11-09 14:09:47,021 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 1
+[0]  2023-11-09 14:09:47,021 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 2
+[0]  2023-11-09 14:09:47,021 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 3
+[0]  2023-11-09 14:09:47,021 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-11-09 14:09:47,021 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 0
+[0]  2023-11-09 14:09:47,021 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-11-09 14:09:47,021 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 1
+[0]  2023-11-09 14:09:47,022 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-11-09 14:09:47,022 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 2
+[0]  2023-11-09 14:09:47,022 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-11-09 14:09:47,022 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 3
+[0]  2023-11-09 14:09:47,023 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:47,022 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:47,023 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:47,022 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3112c0s19b0n0', 'x3112c0s19b1n0', 'x3112c0s1b1n0', 'x3112c0s25b0n0', 'x3112c0s25b1n0', 'x3112c0s31b0n0', 'x3112c0s31b1n0', 'x3112c0s37b0n0', 'x3112c0s37b1n0', 'x3112c0s7b0n0', 'x3112c0s7b1n0', 'x3201c0s13b0n0', 'x3201c0s13b1n0']
+[0]  2023-11-09 14:09:47,023 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-11-09 14:09:47,022 libensemble.worker (DEBUG): Starting sim_id:     0
+[0]  2023-11-09 14:09:47,023 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:47,023 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3201c0s19b0n0', 'x3201c0s19b1n0', 'x3201c0s1b0n0', 'x3201c0s1b1n0', 'x3201c0s25b0n0', 'x3201c0s25b1n0', 'x3201c0s31b0n0', 'x3201c0s31b1n0', 'x3201c0s37b0n0', 'x3201c0s37b1n0', 'x3201c0s7b0n0', 'x3201c0s7b1n0', 'x3202c0s13b0n0']
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:47,023 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3202c0s13b1n0', 'x3202c0s19b0n0', 'x3202c0s19b1n0', 'x3202c0s1b0n0', 'x3202c0s1b1n0', 'x3202c0s25b0n0', 'x3202c0s25b1n0', 'x3202c0s31b0n0', 'x3202c0s31b1n0', 'x3202c0s37b1n0', 'x3202c0s7b0n0', 'x3202c0s7b1n0', 'x3203c0s13b0n0']
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:47,023 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3203c0s13b1n0', 'x3203c0s19b0n0', 'x3203c0s19b1n0', 'x3203c0s1b0n0', 'x3203c0s1b1n0', 'x3203c0s25b0n0', 'x3203c0s25b1n0', 'x3203c0s31b0n0', 'x3203c0s31b1n0', 'x3203c0s37b0n0', 'x3203c0s37b1n0', 'x3203c0s7b0n0', 'x3004c0s31b1n0']
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Starting sim_id:     1
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Starting sim_id:     2
+[0]  2023-11-09 14:09:47,024 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-11-09 14:09:47,023 libensemble.worker (DEBUG): Starting sim_id:     3
+[0]  2023-11-09 14:09:49,410 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:49,410 libensemble.worker (DEBUG): Returned from user function for sim_id     2
+[0]  2023-11-09 14:09:49,410 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-11-09 14:09:49,410 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:49,410 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-11-09 14:09:49,411 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-11-09 14:09:49,411 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:49,410 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-11-09 14:09:49,411 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 2
+[0]  2023-11-09 14:09:49,411 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-11-09 14:09:49,411 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 2
+[0]  2023-11-09 14:09:49,413 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,412 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-11-09 14:09:49,414 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,413 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-11-09 14:09:49,417 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,416 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-11-09 14:09:49,417 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-11-09 14:09:49,417 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 4
+[0]  2023-11-09 14:09:49,417 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-11-09 14:09:49,417 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 4
+[0]  2023-11-09 14:09:49,418 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:49,418 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:49,419 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-11-09 14:09:49,418 libensemble.worker (DEBUG): Starting sim_id:     4
+[0]  2023-11-09 14:09:49,735 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:49,735 libensemble.worker (DEBUG): Returned from user function for sim_id     1
+[0]  2023-11-09 14:09:49,735 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-11-09 14:09:49,735 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:49,735 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-11-09 14:09:49,736 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-11-09 14:09:49,736 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:49,735 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-11-09 14:09:49,736 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 1
+[0]  2023-11-09 14:09:49,736 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-11-09 14:09:49,736 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 1
+[0]  2023-11-09 14:09:49,738 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,737 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-11-09 14:09:49,738 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,737 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-11-09 14:09:49,739 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-11-09 14:09:49,739 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-11-09 14:09:49,739 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-11-09 14:09:49,740 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 5
+[0]  2023-11-09 14:09:49,740 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-11-09 14:09:49,740 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 5
+[0]  2023-11-09 14:09:49,741 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:49,741 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-11-09 14:09:49,741 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-11-09 14:09:49,741 libensemble.worker (DEBUG): Starting sim_id:     5

@@ -1,0 +1,76 @@
+
+Lmod is automatically replacing "nvhpc/21.9" with "gcc/11.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-nvhpc/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
+
+Lmod is automatically replacing "gcc/11.2.0" with "nvhpc/21.9".
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: PrgEnv-gnu (required by: conda/2022-09-08)
+-------------------------------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.16
+
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s37b0n0
++ date
++ echo
++ export EXE=run_ytopt_63ca4e79.py
++ EXE=run_ytopt_63ca4e79.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 3'
++ NWORKERS='--nworkers 3'
++ export 'EVALS=--max-evals 200'
++ EVALS='--max-evals 200'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_ytopt_63ca4e79.py --comms local --nworkers 3 --learner=RF --max-evals 200 '
++ echo 'python run_ytopt_63ca4e79.py --comms local --nworkers 3 --learner=RF --max-evals 200 '
++ eval 'python run_ytopt_63ca4e79.py --comms local --nworkers 3 --learner=RF --max-evals 200 '
+++ python run_ytopt_63ca4e79.py --comms local --nworkers 3 --learner=RF --max-evals 200
+Resource sets (3) are not distributed evenly to available nodes (65)
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3204c0s37b0n0
++ date
++ echo
++ export EXE=run_ytopt_cb3f3125.py
++ EXE=run_ytopt_cb3f3125.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 2'
++ NWORKERS='--nworkers 2'
++ export 'EVALS=--max-evals 200'
++ EVALS='--max-evals 200'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_ytopt_cb3f3125.py --comms local --nworkers 2 --learner=RF --max-evals 200 '
++ echo 'python run_ytopt_cb3f3125.py --comms local --nworkers 2 --learner=RF --max-evals 200 '
++ eval 'python run_ytopt_cb3f3125.py --comms local --nworkers 2 --learner=RF --max-evals 200 '
+++ python run_ytopt_cb3f3125.py --comms local --nworkers 2 --learner=RF --max-evals 200
+Resource sets (2) are not distributed evenly to available nodes (65)
++ echo
++ date
++ echo
