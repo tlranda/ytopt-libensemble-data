@@ -1,0 +1,4 @@
+p0,p1x,p1y,p1z,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,p7_float,p8_float,p9_float,libE_id,libE_workers
+double,128,128,128,-reorder,-a2av,-p2p_pl,-slabs,-r2c_dir 1,16 1 1,16 1 1,4,cufft,0.0,0.0,,0,0,0,False,0.0,0.0,0.0,0,0
+double,128,128,128,-reorder, ,-p2p_pl,-slabs,-r2c_dir 1,16 1 1,16 1 1,8,cufft,0.0,0.0,,0,0,0,False,0.0,0.0,0.0,0,0
+double,128,128,128,-reorder, ,-p2p_pl, ,-r2c_dir 2,16 1 1,16 1 1,8,cufft,0.0,0.0,,0,0,0,False,0.0,0.0,0.0,0,0

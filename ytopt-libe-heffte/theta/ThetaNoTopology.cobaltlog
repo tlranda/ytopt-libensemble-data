@@ -1,0 +1,32 @@
+Jobid: 674676
+qsub --mode script -t 06:00:00 -n 513 --attrs filesystems=home -A EE-ECP -q default job_scripts/weak_tl_ytopt.sh
+Tue Oct 24 17:41:28 2023 +0000 (UTC) submitted with cwd set to: /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine
+jobid 674676 submitted from terminal /dev/pts/72
+Tue Oct 31 05:48:45 2023 +0000 (UTC) Info: job is not being held; ignoring release request
+2023-11-06 08:46:59,548 INFO: Starting Resource_Prologue
+2023-11-06 08:46:59,550 DEBUG: no enabling attribute found
+2023-11-06 08:46:59,550 INFO: Resource_Prologue finished with exit code 0
+Mon Nov 06 08:48:52 2023 +0000 (UTC) 
+Mon Nov 06 08:48:52 2023 +0000 (UTC) Command: '/lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/job_scripts/weak_tl_ytopt.sh'
+Mon Nov 06 08:48:52 2023 +0000 (UTC) 
+Mon Nov 06 08:48:52 2023 +0000 (UTC) Environment:
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_PARTCORES=64
+Mon Nov 06 08:48:52 2023 +0000 (UTC) SHELL=/bin/bash
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_PROJECT=EE-ECP
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_PARTNAME=1114,1128,1140-1159,1172-1179,1190-1199,1210,1221-1224,1226-1227,1280-1285,1287-1289,1342-1343,1372,1374-1375,1377-1380,1382-1388,1390-1399,1490,1492-1496,1498-1507,1521-1527,1544-1545,1556-1558,1578-1579,1600-1611,1620-1629,1653,1655,1700-1702,1704-1708,1750-1787,1800-1819,1842,1848-1849,1940-1946,1948,1960-1961,1964-1979,1990,1993-1994,2038,2040-2049,2051-2055,2057-2059,2147-2148,2519,2542,2544,2618,2680,2682-2691,2693,2695-2697,2699,2730-2741,2743-2744,2746-2749,2805,2840-2848,2860-2863,2866-2867,2870-2873,2875-2879,2964,2966-2968,2992-2999,3030-3031,3038-3039,3042,3083,3086-3087,3093,3202-3203,3205-3206,3208-3210,3226,3228-3235,3239,3257,3290-3292,3294-3297,3320-3329,3348-3359,3390-3393,3398,3430-3431,3433-3434,3436-3437,3439-3441,3446,3450,3452-3453,3470,3473,3495,3511-3515,3518-3520,3522-3526,3529-3539,3585,3587-3589,3591-3594,3596-3597,3620,3650,3658-3659,3680-3689,3692-3694,3696-3697,3710,3724-3725,3734,3740-3746,3748-3759,3770-3779,3781-3782,3784,3787-3789,3796,3798,3810-3812,3814,3816-3823
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_JOBID=674676
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_STARTTIME=1699260397
+Mon Nov 06 08:48:52 2023 +0000 (UTC) LOGNAME=trandall
+Mon Nov 06 08:48:52 2023 +0000 (UTC) USER=trandall
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_ENDTIME=1699281997
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_PARTSIZE=513
+Mon Nov 06 08:48:52 2023 +0000 (UTC) HOME=/home/trandall
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_JOBSIZE=513
+Mon Nov 06 08:48:52 2023 +0000 (UTC) COBALT_QUEUE=backfill
+Mon Nov 06 08:48:52 2023 +0000 (UTC) 
+Mon Nov 06 08:48:52 2023 +0000 (UTC) Info: stdin received from /dev/null
+Mon Nov 06 08:48:52 2023 +0000 (UTC) Info: stdout sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/674676.output
+Mon Nov 06 08:48:52 2023 +0000 (UTC) Info: stderr sent to /lus/swift/home/trandall/ytune_23/tlranda-ytopt-libensemble/ytopt-libe-heffte/polaris/combine/674676.error
+Mon Nov 06 08:48:52 2023 +0000 (UTC) 
+Mon Nov 06 08:50:27 2023 +0000 (UTC) ERROR: unexpected error returned from the system component when attempting to add task
+Mon Nov 06 11:52:52 2023 +0000 (UTC) Info: task completed normally with an exit code of 0; initiating job cleanup and removal
