@@ -1,0 +1,801 @@
+[0]  2023-12-01 17:40:35,566 libensemble.libE (INFO): Logger initializing: [workerID] precedes each line. [0] = Manager
+[0]  2023-12-01 17:40:35,567 libensemble.libE (INFO): libE version v0.10.2
+[0]  2023-12-01 17:40:35,570 libensemble.manager (INFO): Manager initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,570 libensemble.manager (INFO): Manager exit_criteria: {'sim_max': 30}
+[0]  2023-12-01 17:40:35,571 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: None
+[0]  2023-12-01 17:40:35,571 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows None
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,570 libensemble.worker (DEBUG): No executor set on worker 1
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,570 libensemble.worker (DEBUG): No executor set on worker 2
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,571 libensemble.resources.rset_resources (DEBUG): split_list is [['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0'], ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0'], ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0'], ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0'], ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']]
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,571 libensemble.resources.rset_resources (DEBUG): split_list is [['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0'], ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0'], ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0'], ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0'], ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']]
+[0]  2023-12-01 17:40:35,572 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,571 libensemble.worker (DEBUG): No executor set on worker 3
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,571 libensemble.worker (DEBUG): No executor set on worker 5
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,572 libensemble.worker (INFO): Worker 1 initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,572 libensemble.worker (INFO): Worker 2 initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,572 libensemble.resources.rset_resources (DEBUG): split_list is [['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0'], ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0'], ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0'], ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0'], ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']]
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,571 libensemble.worker (DEBUG): No executor set on worker 4
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,572 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,572 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,573 libensemble.worker (INFO): Worker 3 initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,572 libensemble.resources.rset_resources (DEBUG): split_list is [['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0'], ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0'], ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0'], ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0'], ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']]
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,572 libensemble.resources.rset_resources (DEBUG): split_list is [['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0'], ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0'], ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0'], ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0'], ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']]
+[0]  2023-12-01 17:40:35,573 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,573 libensemble.worker (DEBUG): Received calc_in (gen) of len 0
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,573 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,573 libensemble.worker (INFO): Worker 4 initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,573 libensemble.worker (INFO): Worker 5 initiated on node x3012c0s31b0n0
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,573 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3012c0s31b0n0', 'x3016c0s7b1n0', 'x3103c0s13b0n0', 'x3103c0s13b1n0', 'x3103c0s19b0n0', 'x3103c0s19b1n0', 'x3103c0s1b0n0', 'x3103c0s1b1n0', 'x3103c0s25b0n0', 'x3103c0s25b1n0', 'x3103c0s31b0n0', 'x3103c0s31b1n0', 'x3103c0s37b0n0']
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,573 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,573 libensemble.worker (DEBUG): Iteration 1
+[0]  2023-12-01 17:40:35,574 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,573 libensemble.worker (DEBUG): Starting Gen no:     1
+[0]  2023-12-01 17:40:35,743 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:35,743 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:35,743 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:35,743 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 0
+[0]  2023-12-01 17:40:35,743 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 1
+[0]  2023-12-01 17:40:35,744 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 2
+[0]  2023-12-01 17:40:35,744 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 3
+[0]  2023-12-01 17:40:35,744 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:40:35,744 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 0
+[0]  2023-12-01 17:40:35,744 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:40:35,744 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 1
+[0]  2023-12-01 17:40:35,744 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:40:35,745 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 2
+[0]  2023-12-01 17:40:35,745 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:40:35,745 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 3
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,745 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,745 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,745 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3103c0s37b1n0', 'x3103c0s7b0n0', 'x3103c0s7b1n0', 'x3104c0s13b0n0', 'x3104c0s25b0n0', 'x3104c0s25b1n0', 'x3106c0s19b0n0', 'x3106c0s19b1n0', 'x3106c0s1b0n0', 'x3106c0s1b1n0', 'x3106c0s25b0n0', 'x3106c0s25b1n0', 'x3106c0s31b0n0']
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,745 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3106c0s31b1n0', 'x3106c0s37b0n0', 'x3106c0s37b1n0', 'x3107c0s13b0n0', 'x3107c0s13b1n0', 'x3107c0s19b0n0', 'x3107c0s19b1n0', 'x3107c0s1b0n0', 'x3107c0s1b1n0', 'x3107c0s25b0n0', 'x3107c0s31b0n0', 'x3107c0s31b1n0', 'x3107c0s37b0n0']
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:35,745 libensemble.worker (DEBUG): Starting sim_id:     0
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:35,745 libensemble.worker (DEBUG): Starting sim_id:     1
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,746 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:35,746 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,746 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3109c0s13b0n0', 'x3109c0s19b0n0', 'x3109c0s19b1n0', 'x3109c0s1b0n0', 'x3109c0s1b1n0', 'x3109c0s25b0n0', 'x3109c0s25b1n0', 'x3109c0s31b0n0', 'x3109c0s31b1n0', 'x3109c0s37b0n0', 'x3109c0s37b1n0', 'x3109c0s7b1n0', 'x3205c0s31b0n0']
+[0]  2023-12-01 17:40:35,747 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:35,746 libensemble.worker (DEBUG): Starting sim_id:     2
+[0]  2023-12-01 17:40:35,747 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,746 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:35,747 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,746 libensemble.resources.worker_resources (DEBUG): Worker's local_nodelist is ['x3205c0s31b1n0', 'x3208c0s37b1n0', 'x3002c0s13b0n0', 'x3002c0s13b1n0', 'x3002c0s7b0n0', 'x3002c0s7b1n0', 'x3003c0s13b0n0', 'x3003c0s13b1n0', 'x3003c0s19b0n0', 'x3003c0s19b1n0', 'x3003c0s1b0n0', 'x3003c0s1b1n0', 'x3003c0s25b0n0']
+[0]  2023-12-01 17:40:35,747 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:35,746 libensemble.worker (DEBUG): Starting sim_id:     3
+[0]  2023-12-01 17:40:43,395 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:43,394 libensemble.worker (DEBUG): Returned from user function for sim_id     2
+[0]  2023-12-01 17:40:43,395 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:40:43,395 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:43,394 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:43,395 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:40:43,396 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:43,394 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-12-01 17:40:43,396 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 2
+[0]  2023-12-01 17:40:43,396 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:43,396 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 2
+[0]  2023-12-01 17:40:43,398 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:43,397 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:43,398 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:43,397 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:43,404 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:43,404 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:43,404 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:43,405 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 4
+[0]  2023-12-01 17:40:43,405 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:40:43,405 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 4
+[0]  2023-12-01 17:40:43,406 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:43,405 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:43,406 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:43,405 libensemble.worker (DEBUG): Starting sim_id:     4
+[0]  2023-12-01 17:40:44,323 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:44,322 libensemble.worker (DEBUG): Returned from user function for sim_id     0
+[0]  2023-12-01 17:40:44,323 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:40:44,323 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:44,323 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:44,323 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:40:44,324 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:44,323 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-12-01 17:40:44,324 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 0
+[0]  2023-12-01 17:40:44,324 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:44,324 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 0
+[0]  2023-12-01 17:40:44,326 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:44,325 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:44,326 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:44,325 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:44,328 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:44,328 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:44,328 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:44,328 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 5
+[0]  2023-12-01 17:40:44,329 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:40:44,329 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 5
+[0]  2023-12-01 17:40:44,330 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:44,329 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:44,330 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:44,329 libensemble.worker (DEBUG): Starting sim_id:     5
+[0]  2023-12-01 17:40:45,790 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:45,789 libensemble.worker (DEBUG): Returned from user function for sim_id     1
+[0]  2023-12-01 17:40:45,790 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:40:45,790 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:45,790 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:45,790 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:40:45,791 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:45,790 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-12-01 17:40:45,791 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 1
+[0]  2023-12-01 17:40:45,791 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:45,791 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 1
+[0]  2023-12-01 17:40:45,793 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,793 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:45,794 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,793 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:45,795 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,795 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:45,795 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:45,796 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 6
+[0]  2023-12-01 17:40:45,796 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:40:45,796 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 6
+[0]  2023-12-01 17:40:45,797 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:45,797 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:45,797 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:45,797 libensemble.worker (DEBUG): Starting sim_id:     6
+[0]  2023-12-01 17:40:45,861 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:45,861 libensemble.worker (DEBUG): Returned from user function for sim_id     3
+[0]  2023-12-01 17:40:45,861 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:40:45,862 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:45,861 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:45,862 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:40:45,862 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:45,861 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-12-01 17:40:45,862 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 3
+[0]  2023-12-01 17:40:45,862 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:45,862 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 3
+[0]  2023-12-01 17:40:45,864 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,863 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:45,864 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,863 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:45,866 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:45,866 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:45,866 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:45,867 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 7
+[0]  2023-12-01 17:40:45,867 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:40:45,867 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 7
+[0]  2023-12-01 17:40:45,869 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:45,868 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:45,869 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:45,868 libensemble.worker (DEBUG): Starting sim_id:     7
+[0]  2023-12-01 17:40:49,317 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:49,316 libensemble.worker (DEBUG): Returned from user function for sim_id     4
+[0]  2023-12-01 17:40:49,317 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:40:49,317 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:49,316 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:49,317 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:40:49,317 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:49,316 libensemble.worker (DEBUG): Iteration 3
+[0]  2023-12-01 17:40:49,318 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 4
+[0]  2023-12-01 17:40:49,318 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:49,318 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 4
+[0]  2023-12-01 17:40:49,319 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:49,319 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:49,320 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:49,319 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:49,323 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:49,322 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:49,323 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:49,323 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 8
+[0]  2023-12-01 17:40:49,323 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:40:49,323 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 8
+[0]  2023-12-01 17:40:49,325 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:49,324 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:49,325 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:49,324 libensemble.worker (DEBUG): Starting sim_id:     8
+[0]  2023-12-01 17:40:50,273 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:50,272 libensemble.worker (DEBUG): Returned from user function for sim_id     5
+[0]  2023-12-01 17:40:50,273 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:40:50,273 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:50,272 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:50,273 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:40:50,273 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:50,272 libensemble.worker (DEBUG): Iteration 3
+[0]  2023-12-01 17:40:50,274 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 5
+[0]  2023-12-01 17:40:50,274 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:50,274 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 5
+[0]  2023-12-01 17:40:50,276 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:50,275 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:50,276 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:50,275 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:50,278 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:50,278 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:50,278 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:50,279 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 9
+[0]  2023-12-01 17:40:50,279 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:40:50,279 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 9
+[0]  2023-12-01 17:40:50,280 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:50,279 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:50,280 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:50,280 libensemble.worker (DEBUG): Starting sim_id:     9
+[0]  2023-12-01 17:40:52,840 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:52,840 libensemble.worker (DEBUG): Returned from user function for sim_id     7
+[0]  2023-12-01 17:40:52,840 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:40:52,840 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:52,840 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:52,841 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:40:52,841 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:52,840 libensemble.worker (DEBUG): Iteration 3
+[0]  2023-12-01 17:40:52,841 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 7
+[0]  2023-12-01 17:40:52,841 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:52,841 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 7
+[0]  2023-12-01 17:40:52,843 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:52,843 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:52,844 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:52,843 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:52,846 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:52,846 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:52,847 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:52,847 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 10
+[0]  2023-12-01 17:40:52,847 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:40:52,847 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 10
+[0]  2023-12-01 17:40:52,849 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:52,849 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:52,849 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:52,849 libensemble.worker (DEBUG): Starting sim_id:    10
+[0]  2023-12-01 17:40:53,766 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:53,766 libensemble.worker (DEBUG): Returned from user function for sim_id     8
+[0]  2023-12-01 17:40:53,766 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:40:53,767 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:53,766 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:53,767 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:40:53,767 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:53,766 libensemble.worker (DEBUG): Iteration 4
+[0]  2023-12-01 17:40:53,767 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 8
+[0]  2023-12-01 17:40:53,767 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:53,767 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 8
+[0]  2023-12-01 17:40:53,768 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,768 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:53,769 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,768 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:53,772 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,771 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:53,772 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:53,772 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 11
+[0]  2023-12-01 17:40:53,772 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:40:53,772 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 11
+[0]  2023-12-01 17:40:53,774 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:53,773 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:53,774 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:53,774 libensemble.worker (DEBUG): Starting sim_id:    11
+[0]  2023-12-01 17:40:53,829 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:53,829 libensemble.worker (DEBUG): Returned from user function for sim_id     6
+[0]  2023-12-01 17:40:53,830 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:40:53,830 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:53,829 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:53,830 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:40:53,830 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:53,829 libensemble.worker (DEBUG): Iteration 3
+[0]  2023-12-01 17:40:53,830 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 6
+[0]  2023-12-01 17:40:53,831 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:53,831 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 6
+[0]  2023-12-01 17:40:53,832 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,831 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:53,832 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,831 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:53,834 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:53,834 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:53,834 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:53,835 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 12
+[0]  2023-12-01 17:40:53,835 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:40:53,835 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 12
+[0]  2023-12-01 17:40:53,836 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:53,836 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:53,836 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:53,836 libensemble.worker (DEBUG): Starting sim_id:    12
+[0]  2023-12-01 17:40:55,368 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:55,368 libensemble.worker (DEBUG): Returned from user function for sim_id     9
+[0]  2023-12-01 17:40:55,368 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:40:55,369 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:55,368 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:55,369 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:40:55,369 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:55,368 libensemble.worker (DEBUG): Iteration 4
+[0]  2023-12-01 17:40:55,369 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 9
+[0]  2023-12-01 17:40:55,369 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:55,369 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 9
+[0]  2023-12-01 17:40:55,371 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:55,371 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:55,372 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:55,371 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:55,374 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:55,374 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:55,375 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:55,375 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 13
+[0]  2023-12-01 17:40:55,375 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:40:55,375 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 13
+[0]  2023-12-01 17:40:55,376 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:55,376 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:55,377 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:40:55,376 libensemble.worker (DEBUG): Starting sim_id:    13
+[0]  2023-12-01 17:40:58,644 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:58,644 libensemble.worker (DEBUG): Returned from user function for sim_id    10
+[0]  2023-12-01 17:40:58,645 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:40:58,645 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:58,644 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:58,645 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:40:58,645 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:58,644 libensemble.worker (DEBUG): Iteration 4
+[0]  2023-12-01 17:40:58,645 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 10
+[0]  2023-12-01 17:40:58,646 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:58,646 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 10
+[0]  2023-12-01 17:40:58,647 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:58,646 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:58,647 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:58,647 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:58,650 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:58,650 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:58,650 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:58,650 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 14
+[0]  2023-12-01 17:40:58,650 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:40:58,650 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 14
+[0]  2023-12-01 17:40:58,653 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:58,653 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:58,653 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:40:58,653 libensemble.worker (DEBUG): Starting sim_id:    14
+[0]  2023-12-01 17:40:59,156 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:59,156 libensemble.worker (DEBUG): Returned from user function for sim_id    11
+[0]  2023-12-01 17:40:59,156 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:40:59,156 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:59,156 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:59,157 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:40:59,157 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:59,156 libensemble.worker (DEBUG): Iteration 5
+[0]  2023-12-01 17:40:59,157 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 11
+[0]  2023-12-01 17:40:59,157 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:59,157 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 11
+[0]  2023-12-01 17:40:59,159 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,159 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:59,160 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,159 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:59,163 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,163 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:59,163 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:59,163 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 15
+[0]  2023-12-01 17:40:59,163 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:40:59,163 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 15
+[0]  2023-12-01 17:40:59,165 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:59,165 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:59,165 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:40:59,165 libensemble.worker (DEBUG): Starting sim_id:    15
+[0]  2023-12-01 17:40:59,642 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:59,641 libensemble.worker (DEBUG): Returned from user function for sim_id    12
+[0]  2023-12-01 17:40:59,642 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:40:59,642 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:59,641 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:40:59,642 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:40:59,643 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:59,641 libensemble.worker (DEBUG): Iteration 4
+[0]  2023-12-01 17:40:59,643 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 12
+[0]  2023-12-01 17:40:59,643 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:40:59,643 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 12
+[0]  2023-12-01 17:40:59,644 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,644 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:40:59,644 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,644 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:40:59,647 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:40:59,647 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:40:59,647 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:40:59,647 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 16
+[0]  2023-12-01 17:40:59,647 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:40:59,647 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 16
+[0]  2023-12-01 17:40:59,649 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:59,649 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:40:59,649 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:40:59,649 libensemble.worker (DEBUG): Starting sim_id:    16
+[0]  2023-12-01 17:41:01,493 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:01,492 libensemble.worker (DEBUG): Returned from user function for sim_id    13
+[0]  2023-12-01 17:41:01,493 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:41:01,493 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:01,492 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:01,493 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:41:01,493 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:01,492 libensemble.worker (DEBUG): Iteration 5
+[0]  2023-12-01 17:41:01,494 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 13
+[0]  2023-12-01 17:41:01,494 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:01,494 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 13
+[0]  2023-12-01 17:41:01,496 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:01,495 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:01,496 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:01,495 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:01,499 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:01,499 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:01,499 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:01,499 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 17
+[0]  2023-12-01 17:41:01,499 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:41:01,499 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 17
+[0]  2023-12-01 17:41:01,501 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:01,501 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:01,501 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:01,501 libensemble.worker (DEBUG): Starting sim_id:    17
+[0]  2023-12-01 17:41:04,449 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:04,449 libensemble.worker (DEBUG): Returned from user function for sim_id    14
+[0]  2023-12-01 17:41:04,450 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:41:04,450 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:04,449 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:04,450 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:41:04,450 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:04,449 libensemble.worker (DEBUG): Iteration 5
+[0]  2023-12-01 17:41:04,450 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 14
+[0]  2023-12-01 17:41:04,451 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:04,451 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 14
+[0]  2023-12-01 17:41:04,453 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,452 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:04,453 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,452 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:04,456 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,456 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:04,456 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:04,456 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 18
+[0]  2023-12-01 17:41:04,456 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:41:04,456 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 18
+[0]  2023-12-01 17:41:04,457 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:04,457 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:04,458 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:04,457 libensemble.worker (DEBUG): Starting sim_id:    18
+[0]  2023-12-01 17:41:04,877 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:04,877 libensemble.worker (DEBUG): Returned from user function for sim_id    15
+[0]  2023-12-01 17:41:04,877 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:41:04,877 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:04,877 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:04,877 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:41:04,878 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:04,877 libensemble.worker (DEBUG): Iteration 6
+[0]  2023-12-01 17:41:04,878 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 15
+[0]  2023-12-01 17:41:04,878 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:04,878 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 15
+[0]  2023-12-01 17:41:04,879 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,879 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:04,880 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,879 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:04,882 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:04,882 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:04,882 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:04,883 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 19
+[0]  2023-12-01 17:41:04,883 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:41:04,883 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 19
+[0]  2023-12-01 17:41:04,884 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:04,883 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:04,884 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:04,883 libensemble.worker (DEBUG): Starting sim_id:    19
+[0]  2023-12-01 17:41:07,157 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:07,156 libensemble.worker (DEBUG): Returned from user function for sim_id    17
+[0]  2023-12-01 17:41:07,157 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:41:07,157 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:07,156 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:07,157 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:41:07,157 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:07,156 libensemble.worker (DEBUG): Iteration 6
+[0]  2023-12-01 17:41:07,158 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 17
+[0]  2023-12-01 17:41:07,158 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:07,158 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 17
+[0]  2023-12-01 17:41:07,159 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:07,159 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:07,160 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:07,159 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:07,162 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:07,162 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:07,162 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:07,163 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 20
+[0]  2023-12-01 17:41:07,163 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:41:07,163 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 20
+[0]  2023-12-01 17:41:07,164 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:07,163 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:07,164 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:07,163 libensemble.worker (DEBUG): Starting sim_id:    20
+[0]  2023-12-01 17:41:08,213 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:08,213 libensemble.worker (DEBUG): Returned from user function for sim_id    16
+[0]  2023-12-01 17:41:08,213 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:41:08,213 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:08,213 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:08,214 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:41:08,214 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:08,213 libensemble.worker (DEBUG): Iteration 5
+[0]  2023-12-01 17:41:08,214 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 16
+[0]  2023-12-01 17:41:08,214 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:08,214 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 16
+[0]  2023-12-01 17:41:08,216 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:08,215 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:08,217 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:08,216 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:08,220 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:08,220 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:08,220 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:08,220 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 21
+[0]  2023-12-01 17:41:08,221 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:41:08,221 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 21
+[0]  2023-12-01 17:41:08,223 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:08,223 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:08,223 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:08,223 libensemble.worker (DEBUG): Starting sim_id:    21
+[0]  2023-12-01 17:41:10,560 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:10,559 libensemble.worker (DEBUG): Returned from user function for sim_id    18
+[0]  2023-12-01 17:41:10,560 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:41:10,560 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:10,559 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:10,560 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:41:10,560 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:10,559 libensemble.worker (DEBUG): Iteration 6
+[0]  2023-12-01 17:41:10,561 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 18
+[0]  2023-12-01 17:41:10,561 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:10,561 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 18
+[0]  2023-12-01 17:41:10,563 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:10,562 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:10,563 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:10,562 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:10,565 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:10,565 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:10,565 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:10,566 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 22
+[0]  2023-12-01 17:41:10,566 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:41:10,566 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 22
+[0]  2023-12-01 17:41:10,567 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:10,566 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:10,567 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:10,566 libensemble.worker (DEBUG): Starting sim_id:    22
+[0]  2023-12-01 17:41:11,469 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:11,469 libensemble.worker (DEBUG): Returned from user function for sim_id    19
+[0]  2023-12-01 17:41:11,470 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:41:11,470 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:11,469 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:11,470 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:41:11,470 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:11,469 libensemble.worker (DEBUG): Iteration 7
+[0]  2023-12-01 17:41:11,471 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 19
+[0]  2023-12-01 17:41:11,471 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:11,471 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 19
+[0]  2023-12-01 17:41:11,472 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:11,471 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:11,473 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:11,472 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:11,475 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:11,475 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:11,475 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:11,475 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 23
+[0]  2023-12-01 17:41:11,476 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:41:11,476 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 23
+[0]  2023-12-01 17:41:11,476 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:11,476 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:11,477 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:11,476 libensemble.worker (DEBUG): Starting sim_id:    23
+[0]  2023-12-01 17:41:13,562 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:13,561 libensemble.worker (DEBUG): Returned from user function for sim_id    20
+[0]  2023-12-01 17:41:13,562 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:41:13,562 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:13,561 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:13,562 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:41:13,562 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:13,561 libensemble.worker (DEBUG): Iteration 7
+[0]  2023-12-01 17:41:13,563 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 20
+[0]  2023-12-01 17:41:13,563 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:13,563 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 20
+[0]  2023-12-01 17:41:13,564 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:13,563 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:13,564 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:13,564 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:13,567 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:13,567 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:13,567 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:13,567 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 24
+[0]  2023-12-01 17:41:13,567 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:41:13,568 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 24
+[0]  2023-12-01 17:41:13,569 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:13,568 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:13,569 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:13,568 libensemble.worker (DEBUG): Starting sim_id:    24
+[0]  2023-12-01 17:41:14,952 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:14,951 libensemble.worker (DEBUG): Returned from user function for sim_id    21
+[0]  2023-12-01 17:41:14,952 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:41:14,952 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:14,951 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:14,952 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:41:14,952 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:14,951 libensemble.worker (DEBUG): Iteration 6
+[0]  2023-12-01 17:41:14,953 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 21
+[0]  2023-12-01 17:41:14,953 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:14,953 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 21
+[0]  2023-12-01 17:41:14,954 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:14,954 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:14,955 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:14,954 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:14,957 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:14,957 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:14,957 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:14,958 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 25
+[0]  2023-12-01 17:41:14,958 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:41:14,958 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 25
+[0]  2023-12-01 17:41:14,962 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:14,961 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:14,962 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:14,962 libensemble.worker (DEBUG): Starting sim_id:    25
+[0]  2023-12-01 17:41:16,437 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:16,436 libensemble.worker (DEBUG): Returned from user function for sim_id    22
+[0]  2023-12-01 17:41:16,437 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:41:16,437 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:16,436 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:16,437 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:41:16,438 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:16,436 libensemble.worker (DEBUG): Iteration 7
+[0]  2023-12-01 17:41:16,438 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 22
+[0]  2023-12-01 17:41:16,438 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:16,438 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 22
+[0]  2023-12-01 17:41:16,440 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:16,439 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:16,440 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:16,439 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:16,443 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:16,442 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:16,443 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:16,443 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 5. Packing sim_ids: 26
+[0]  2023-12-01 17:41:16,443 libensemble.manager (DEBUG): Manager sending work unit to worker 5
+[0]  2023-12-01 17:41:16,443 libensemble.manager (DEBUG): Manager sending sim work to worker 5. Rows 26
+[0]  2023-12-01 17:41:16,444 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:16,444 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:16,445 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:16,444 libensemble.worker (DEBUG): Starting sim_id:    26
+[0]  2023-12-01 17:41:17,909 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:17,908 libensemble.worker (DEBUG): Returned from user function for sim_id    23
+[0]  2023-12-01 17:41:17,909 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:41:17,909 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:17,908 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:17,909 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:41:17,909 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:17,908 libensemble.worker (DEBUG): Iteration 8
+[0]  2023-12-01 17:41:17,910 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 23
+[0]  2023-12-01 17:41:17,910 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:17,910 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 23
+[0]  2023-12-01 17:41:17,912 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:17,911 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:17,912 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:17,911 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:17,914 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:17,914 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:17,914 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:17,914 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 4. Packing sim_ids: 27
+[0]  2023-12-01 17:41:17,915 libensemble.manager (DEBUG): Manager sending work unit to worker 4
+[0]  2023-12-01 17:41:17,915 libensemble.manager (DEBUG): Manager sending sim work to worker 4. Rows 27
+[0]  2023-12-01 17:41:17,916 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:17,915 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:17,916 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:17,915 libensemble.worker (DEBUG): Starting sim_id:    27
+[0]  2023-12-01 17:41:19,424 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:19,423 libensemble.worker (DEBUG): Returned from user function for sim_id    24
+[0]  2023-12-01 17:41:19,424 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:41:19,424 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:19,423 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:19,424 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:41:19,424 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:19,423 libensemble.worker (DEBUG): Iteration 8
+[0]  2023-12-01 17:41:19,425 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 24
+[0]  2023-12-01 17:41:19,425 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:19,425 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 24
+[0]  2023-12-01 17:41:19,426 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:19,425 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:19,426 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:19,426 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:19,429 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:19,429 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:19,429 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:19,429 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 2. Packing sim_ids: 28
+[0]  2023-12-01 17:41:19,430 libensemble.manager (DEBUG): Manager sending work unit to worker 2
+[0]  2023-12-01 17:41:19,430 libensemble.manager (DEBUG): Manager sending sim work to worker 2. Rows 28
+[0]  2023-12-01 17:41:19,431 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:19,431 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:19,431 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:19,431 libensemble.worker (DEBUG): Starting sim_id:    28
+[0]  2023-12-01 17:41:20,808 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,808 libensemble.worker (DEBUG): Returned from user function for sim_id    25
+[0]  2023-12-01 17:41:20,809 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:41:20,809 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,808 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:20,809 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:41:20,809 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,808 libensemble.worker (DEBUG): Iteration 7
+[0]  2023-12-01 17:41:20,810 libensemble.tools.alloc_support (DEBUG): Alloc func packing GEN work for worker 1. Packing sim_ids: 25
+[0]  2023-12-01 17:41:20,810 libensemble.manager (DEBUG): Manager sending work unit to worker 1
+[0]  2023-12-01 17:41:20,810 libensemble.manager (DEBUG): Manager sending gen work to worker 1. Rows 25
+[0]  2023-12-01 17:41:20,811 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:20,811 libensemble.tools.persistent_support (DEBUG): Persistent gen received work request from manager
+[0]  2023-12-01 17:41:20,812 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:20,811 libensemble.tools.persistent_support (DEBUG): Persistent gen received work rows from manager
+[0]  2023-12-01 17:41:20,814 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:20,814 libensemble.tools.persistent_support (DEBUG): Persistent gen function sending data message to manager
+[0]  2023-12-01 17:41:20,814 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:20,815 libensemble.tools.alloc_support (DEBUG): Alloc func packing SIM work for worker 3. Packing sim_ids: 29
+[0]  2023-12-01 17:41:20,815 libensemble.manager (DEBUG): Manager sending work unit to worker 3
+[0]  2023-12-01 17:41:20,815 libensemble.manager (DEBUG): Manager sending sim work to worker 3. Rows 29
+[0]  2023-12-01 17:41:20,816 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,816 libensemble.worker (DEBUG): Received calc_in (sim) of len 1
+[0]  2023-12-01 17:41:20,816 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,816 libensemble.worker (DEBUG): Starting sim_id:    29
+[0]  2023-12-01 17:41:20,878 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,877 libensemble.worker (DEBUG): Returned from user function for sim_id    29
+[0]  2023-12-01 17:41:20,878 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[0]  2023-12-01 17:41:20,878 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,877 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:20,878 libensemble.manager (DEBUG): Manager received data message from worker 3
+[0]  2023-12-01 17:41:20,878 libensemble.manager (DEBUG): Manager received a log message from worker 3
+[3]  2023-12-01 17:41:20,877 libensemble.worker (DEBUG): Iteration 8
+[0]  2023-12-01 17:41:23,618 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:23,617 libensemble.worker (DEBUG): Returned from user function for sim_id    28
+[0]  2023-12-01 17:41:23,618 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[0]  2023-12-01 17:41:23,618 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:23,618 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:23,618 libensemble.manager (DEBUG): Manager received data message from worker 2
+[0]  2023-12-01 17:41:23,619 libensemble.manager (DEBUG): Manager received a log message from worker 2
+[2]  2023-12-01 17:41:23,618 libensemble.worker (DEBUG): Iteration 9
+[0]  2023-12-01 17:41:24,621 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:24,620 libensemble.worker (DEBUG): Returned from user function for sim_id    27
+[0]  2023-12-01 17:41:24,621 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[0]  2023-12-01 17:41:24,621 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:24,621 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:24,621 libensemble.manager (DEBUG): Manager received data message from worker 4
+[0]  2023-12-01 17:41:24,622 libensemble.manager (DEBUG): Manager received a log message from worker 4
+[4]  2023-12-01 17:41:24,621 libensemble.worker (DEBUG): Iteration 9
+[0]  2023-12-01 17:41:24,631 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:24,630 libensemble.worker (DEBUG): Returned from user function for sim_id    26
+[0]  2023-12-01 17:41:24,631 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[0]  2023-12-01 17:41:24,631 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:24,630 libensemble.worker (DEBUG): Sending to Manager with status 0
+[0]  2023-12-01 17:41:24,631 libensemble.manager (DEBUG): Manager received data message from worker 5
+[0]  2023-12-01 17:41:24,631 libensemble.manager (DEBUG): Manager received a log message from worker 5
+[5]  2023-12-01 17:41:24,630 libensemble.worker (DEBUG): Iteration 8
+[0]  2023-12-01 17:41:24,632 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-12-01 17:41:24,632 libensemble.manager (INFO): Term test tripped: sim_max
+[0]  2023-12-01 17:41:24,632 libensemble.manager (DEBUG): Manager sending PERSIS_STOP to worker 1
+[0]  2023-12-01 17:41:24,635 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:24,635 libensemble.tools.persistent_support (DEBUG): Persistent gen received signal 4 from manager
+[0]  2023-12-01 17:41:24,635 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:24,635 libensemble.worker (DEBUG): Returned from user function for Gen no     1
+[0]  2023-12-01 17:41:24,636 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[0]  2023-12-01 17:41:24,636 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:24,635 libensemble.worker (DEBUG): Sending to Manager with status 12
+[0]  2023-12-01 17:41:24,636 libensemble.manager (DEBUG): Manager received data message from worker 1
+[0]  2023-12-01 17:41:24,636 libensemble.manager (INFO): 
+*******************************************************************************
+A persistent worker has returned history data on shutdown. This data is
+not currently added to the manager's history to avoid possibly overwriting, but
+will be added to the manager's history in a future release. If you want to
+overwrite/append, you can set the libE_specs option ``use_persis_return_gen``
+or ``use_persis_return_sim``
+*******************************************************************************
+
+
+[0]  2023-12-01 17:41:24,636 libensemble.manager (DEBUG): Manager received a log message from worker 1
+[1]  2023-12-01 17:41:24,635 libensemble.worker (DEBUG): Iteration 2
+[0]  2023-12-01 17:41:24,636 libensemble.libE (INFO): Manager total time: 49.066
+[0]  2023-12-01 17:41:24,636 libensemble.libE (DEBUG): Manager exiting
+[0]  2023-12-01 17:41:24,636 libensemble.libE (DEBUG): Exiting with 5 workers.
+[0]  2023-12-01 17:41:24,636 libensemble.libE (DEBUG): Exiting with exit criteria: {'sim_max': 30}

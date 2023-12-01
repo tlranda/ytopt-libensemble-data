@@ -1,0 +1,101 @@
+source,c0,p0,p1x,p1y,p1z,p2,p3,p4,p5,p6,p7,p8,p9,mpi_ranks,threads_per_node,ranks_per_node
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p,-pencils, ,2 2 64,2 128 1,13,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, ,-p2p_pl,-slabs, ,2 2 64,1 128 2,14,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a,-p2p_pl,-pencils,-r2c_dir 0,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a, ,-pencils, ,2 2 64,128 1 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a, ,-slabs, ,2 2 64,1 2 128,16,256,64,4
+sample,cufft,double,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,1 128 2,16,256,64,4
+sample,cufft,double,512,1024,1024, , , ,-slabs, ,2 2 64,64 2 2,15,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder, , ,-slabs, ,2 2 64,2 64 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, ,-r2c_dir 1,2 2 64,1 2 128,16,256,64,4
+sample,cufft,double,512,1024,1024, , ,-p2p_pl,-pencils,-r2c_dir 1,2 2 64,4 64 1,15,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, ,-r2c_dir 1,2 2 64,8 2 16,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , , , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p,-pencils, ,2 2 64,64 2 2,14,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p, ,-r2c_dir 1,2 2 64,2 64 2,16,256,64,4
+sample,cufft,double,512,1024,1024,-reorder,-a2av,-p2p_pl,-slabs, ,2 2 64,8 2 16,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,2 2 64,64 2 2,12,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a, ,-slabs, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,2 2 64,32 4 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,2 64 2,14,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2av,-p2p_pl, , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder, ,-p2p_pl, , ,2 2 64,1 128 2,15,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , ,-pencils,-r2c_dir 1,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2av,-p2p_pl,-pencils, ,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, ,-p2p,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a,-p2p_pl,-pencils, ,2 2 64,8 16 2,14,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, ,-r2c_dir 1,2 2 64,2 2 64,14,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a, ,-pencils, ,2 2 64,2 16 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a, , , ,2 2 64,2 2 64,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , ,-pencils, ,2 2 64,2 1 128,16,256,64,4
+sample,cufft,double,512,1024,1024,-reorder, ,-p2p,-slabs, ,2 2 64,4 8 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , ,-pencils, ,2 2 64,128 1 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,1 128 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a, ,-slabs, ,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, ,-r2c_dir 0,2 2 64,64 2 2,13,256,64,4
+sample,cufft,double,512,1024,1024,-reorder, ,-p2p_pl,-slabs, ,2 2 64,128 1 2,16,256,64,4
+sample,cufft,float,512,1024,1024, , , , , ,2 2 64,64 2 2,11,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p_pl,-pencils, ,2 2 64,4 2 32,3,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a, , , ,2 2 64,8 16 2,13,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p,-pencils,-r2c_dir 1,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , , , ,2 2 64,2 1 128,15,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, ,-p2p, , ,2 2 64,2 1 128,16,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder, ,-p2p_pl, , ,2 2 64,64 2 2,9,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , ,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a, ,-slabs, ,2 2 64,128 2 1,16,256,64,4
+sample,cufft,float,512,1024,1024, , , , , ,2 2 64,64 2 2,10,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a, , ,-r2c_dir 1,2 2 64,64 2 2,6,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a,-p2p_pl,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , ,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, ,-p2p_pl, , ,2 2 64,128 2 1,16,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder, ,-p2p, , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,double,512,1024,1024, , , ,-slabs, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p, ,-r2c_dir 1,2 2 64,64 2 2,13,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , , , ,2 2 64,8 2 16,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,4 16 4,15,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , , , ,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a,-p2p_pl,-pencils, ,2 2 64,4 2 32,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p, , ,2 2 64,64 2 2,15,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p_pl,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-slabs, ,2 2 64,4 32 2,14,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , ,-pencils, ,2 2 64,1 2 128,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , ,-slabs, ,2 2 64,8 4 8,12,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2av,-p2p_pl, , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , ,-slabs, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,double,512,1024,1024,-reorder,-a2a, ,-pencils, ,2 2 64,128 2 1,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a,-p2p,-pencils, ,2 2 64,16 2 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , , , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p,-slabs,-r2c_dir 1,2 2 64,64 2 2,8,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , , , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p_pl, , ,2 2 64,2 16 8,15,256,64,4
+sample,cufft,double,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,8 16 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2a, , , ,2 2 64,2 2 64,16,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , , , ,2 2 64,64 2 2,11,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, , ,2 2 64,8 4 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p,-pencils,-r2c_dir 1,2 2 64,64 2 2,14,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av,-p2p_pl, , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p,-pencils,-r2c_dir 1,2 2 64,128 2 1,15,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p, ,-r2c_dir 1,2 2 64,1 2 128,16,256,64,4
+sample,cufft,double,512,1024,1024,-reorder, , , , ,2 2 64,16 8 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , ,-pencils, ,2 2 64,2 16 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p_pl, , ,2 2 64,8 2 16,13,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, ,-p2p,-pencils, ,2 2 64,1 128 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2av, ,-pencils, ,2 2 64,64 2 2,13,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,2 2 64,2 8 16,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-slabs, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2av, , , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024, , ,-p2p, , ,2 2 64,64 2 2,9,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , , , ,2 2 64,8 2 16,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a, , ,-r2c_dir 0,2 2 64,64 2 2,11,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl,-pencils, ,2 2 64,64 4 1,16,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder,-a2a, ,-pencils, ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p_pl, , ,2 2 64,128 2 1,15,256,64,4
+sample,cufft,float,512,1024,1024,-no-reorder, , ,-slabs,-r2c_dir 2,2 2 64,1 128 2,13,256,64,4
+sample,cufft,float,512,1024,1024, ,-a2a, , , ,2 2 64,4 64 1,15,256,64,4
+sample,cufft,float,512,1024,1024,-reorder,-a2a,-p2p, , ,2 2 64,2 16 8,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, , , , ,2 2 64,64 2 2,16,256,64,4
+sample,cufft,float,512,1024,1024,-reorder, ,-p2p_pl, , ,2 2 64,2 8 16,16,256,64,4
+sample,cufft,double,512,1024,1024,-no-reorder,-a2a,-p2p, , ,2 2 64,2 16 8,11,256,64,4

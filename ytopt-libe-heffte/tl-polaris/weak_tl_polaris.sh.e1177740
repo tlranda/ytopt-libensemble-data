@@ -1,0 +1,190 @@
+
+Lmod is automatically replacing "nvhpc/22.11" with "gcc/12.2.0".
+
+
+Lmod is automatically replacing "PrgEnv-nvhpc/8.3.3" with "PrgEnv-gnu/8.3.3".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.25
+
+
+Lmod is automatically replacing "gcc/12.2.0" with "nvhpc/22.11".
+
+-------------------------------------------------------------------------------
+The following dependent module(s) are not currently loaded: PrgEnv-gnu (required by: conda/2022-09-08)
+-------------------------------------------------------------------------------
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-mpich/8.1.25
+
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_fdb59698.py
++ EXE=run_gctla_fdb59698.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_fdb59698.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 256 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_fdb59698.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 256 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_fdb59698.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 8 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 256 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_fdb59698.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 8 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 256 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 599.80it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 583.10it/s]
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_84d45f70.py
++ EXE=run_gctla_84d45f70.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_84d45f70.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_84d45f70.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_84d45f70.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 16 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_84d45f70.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 16 --constraint-app-x 256 --constraint-app-y 256 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 686.49it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 678.61it/s]
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_8997041b.py
++ EXE=run_gctla_8997041b.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_8997041b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app-x 256 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_8997041b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app-x 256 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_8997041b.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 32 --constraint-app-x 256 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_8997041b.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 32 --constraint-app-x 256 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 718.04it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 709.38it/s]
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_9e9f40ec.py
++ EXE=run_gctla_9e9f40ec.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_9e9f40ec.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_9e9f40ec.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_9e9f40ec.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 64 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_9e9f40ec.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 64 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 512 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 718.48it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 709.55it/s]
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_8b32c36f.py
++ EXE=run_gctla_8b32c36f.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_8b32c36f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_8b32c36f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_8b32c36f.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 128 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_8b32c36f.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 128 --constraint-app-x 512 --constraint-app-y 512 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 716.45it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 707.16it/s]
++ echo
++ date
++ echo
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging restarted
++ unset __lmod_vx
++ echo x3012c0s31b0n0
++ date
++ echo
++ export EXE=run_gctla_2c7b3fa4.py
++ EXE=run_gctla_2c7b3fa4.py
++ export 'COMMS=--comms local'
++ COMMS='--comms local'
++ export 'NWORKERS=--nworkers 5'
++ NWORKERS='--nworkers 5'
++ export 'EVALS=--max-evals 30'
++ EVALS='--max-evals 30'
++ export IBV_FORK_SAFE=1
++ IBV_FORK_SAFE=1
++ pycommand='python run_gctla_2c7b3fa4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app-x 512 --constraint-app-y 1024 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ echo 'python run_gctla_2c7b3fa4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app-x 512 --constraint-app-y 1024 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
++ eval 'python run_gctla_2c7b3fa4.py --comms local --nworkers 5 --learner=RF --max-evals 30  --constraint-sys 256 --constraint-app-x 512 --constraint-app-y 1024 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0'
+++ python run_gctla_2c7b3fa4.py --comms local --nworkers 5 --learner=RF --max-evals 30 --constraint-sys 256 --constraint-app-x 512 --constraint-app-y 1024 --constraint-app-z 1024 --input logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --auto-budget=False --ignore logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --predictions-only False --initial-quantile 1.0
+  0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions:   0%|          | 0/100 [00:00<?, ?it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 660.11it/s]Sampling conditions: 100%|██████████| 100/100 [00:00<00:00, 652.34it/s]
+/home/trandall/ytune_23/dependencies/GC_TLA/GC_TLA/base_plopper.py:451: UserWarning: Error Code 127
+  warnings.warn(eval_error_warning)
++ echo
++ date
++ echo
