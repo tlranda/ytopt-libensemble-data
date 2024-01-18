@@ -1,0 +1,31 @@
+c0,p0,p1x,p1y,p1z,p2,p3,p4,p5,p6,p7,p8,p9,mpi_ranks,FLOPS,elapsed_sec,identifier,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
+cufft,double,256,512,512, ,-a2av, ,-pencils,-r2c_dir 0,4 2 4,16 2 1,2,32,-850.252,7.845726013183594,polaris,4,4,True,0,1
+cufft,double,256,512,512,-reorder,-a2av,-p2p,-pencils,-r2c_dir 2,4 2 4,4 2 4,4,32,-969.67,10.1541268825531,polaris,4,4,True,0,1
+cufft,float,256,512,512,-no-reorder, , ,-slabs, ,1 4 8,8 4 1,8,32,-703.038,12.567277431488035,polaris,4,4,True,0,1
+cufft,double,256,512,512,-reorder,-a2a,-p2p_pl,-slabs, ,1 16 2,4 1 8,12,32,-1283.05,14.77218461036682,polaris,4,4,True,0,1
+cufft,float,256,512,512,-no-reorder, , ,-pencils, ,2 1 16,1 8 4,2,32,-1186.82,17.01915669441223,polaris,4,4,True,0,1
+cufft,double,256,512,512,-reorder,-a2av,-p2p, ,-r2c_dir 0,8 4 1,2 1 16,8,32,-1024.55,19.29386615753174,polaris,4,4,True,0,1
+cufft,float,256,512,512,-no-reorder,-a2av,-p2p,-slabs, ,1 4 8,2 2 8,8,32,-527.9,21.694671154022217,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a,-p2p,-slabs,-r2c_dir 2,32 1 1,1 1 32,16,32,-1179.03,23.948715209960938,polaris,4,4,True,0,1
+cufft,double,256,512,512, ,-a2av, , ,-r2c_dir 1,8 1 4,1 16 2,12,32,-1125.88,26.263999700546265,polaris,4,4,True,0,1
+cufft,double,256,512,512,-reorder,-a2a, ,-pencils,-r2c_dir 1,16 2 1,2 4 4,16,32,-289.65,28.811973333358765,polaris,4,4,True,0,1
+cufft,float,256,512,512,-reorder,-a2a,-p2p, ,-r2c_dir 1,8 2 2,4 8 1,16,32,-1989.59,31.07002568244934,polaris,4,4,True,0,1
+cufft,double,256,512,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 2,1 1 32,16 1 2,2,32,-1073.08,33.56330990791321,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a,-p2p_pl, ,-r2c_dir 2,2 16 1,8 2 2,12,32,-2208.28,35.857568979263306,polaris,4,4,True,0,1
+cufft,float,256,512,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,2 4 4,1 4 8,4,32,-1957.64,38.08850073814392,polaris,4,4,True,0,1
+cufft,float,256,512,512, , ,-p2p_pl, ,-r2c_dir 0,2 2 8,4 4 2,4,32,-1818.74,40.34420394897461,polaris,4,4,True,0,1
+cufft,float,256,512,512,-reorder,-a2av, ,-pencils,-r2c_dir 2,2 4 4,4 4 2,4,32,-1559.99,80.9280035495758,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a,-p2p_pl, ,-r2c_dir 1,2 16 1,16 1 2,4,32,-1778.39,121.4360773563385,polaris,4,4,True,0,1
+cufft,double,256,512,512, ,-a2av,-p2p_pl, , ,1 1 32,8 1 4,12,32,-1250.64,163.55369544029236,polaris,4,4,True,0,1
+cufft,float,256,512,512,-no-reorder, ,-p2p,-slabs,-r2c_dir 1,4 8 1,4 4 2,4,32,-1235.6,202.78197240829468,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a, ,-pencils,-r2c_dir 1,4 4 2,2 2 8,4,32,-1093.69,243.1046018600464,polaris,4,4,True,0,1
+cufft,float,256,512,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 2,8 4 1,8 1 4,8,32,-2750.16,283.82948327064514,polaris,4,4,True,0,1
+cufft,float,256,512,512,-reorder,-a2a,-p2p_pl, ,-r2c_dir 1,8 4 1,4 4 2,16,32,-1713.85,323.74343633651733,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a,-p2p,-slabs,-r2c_dir 1,4 4 2,2 2 8,8,32,-1365.13,364.4539813995361,polaris,4,4,True,0,1
+cufft,double,256,512,512, , ,-p2p_pl,-pencils,-r2c_dir 1,8 4 1,8 1 4,8,32,-769.293,405.1732566356659,polaris,4,4,True,0,1
+cufft,double,256,512,512,-no-reorder, , , ,-r2c_dir 2,32 1 1,1 1 32,16,32,-1860.17,448.585422039032,polaris,4,4,True,0,1
+cufft,double,256,512,512,-no-reorder,-a2av,-p2p,-slabs,-r2c_dir 2,1 16 2,4 4 2,16,32,-1073.41,492.2755589485169,polaris,4,4,True,0,1
+cufft,double,256,512,512, ,-a2a,-p2p,-pencils,-r2c_dir 0,2 16 1,1 1 32,16,32,-1486.43,533.26300740242,polaris,4,4,True,0,1
+cufft,float,256,512,512,-reorder, , ,-slabs,-r2c_dir 2,8 4 1,4 8 1,8,32,-1787.02,574.1885902881622,polaris,4,4,True,0,1
+cufft,double,256,512,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,2 8 2,2 2 8,12,32,-1003.58,615.2805054187775,polaris,4,4,True,0,1
+cufft,float,256,512,512, ,-a2a,-p2p_pl,-pencils,-r2c_dir 2,8 1 4,8 2 2,4,32,-1665.03,663.2403428554535,polaris,4,4,True,0,1
