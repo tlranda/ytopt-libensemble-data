@@ -1,0 +1,1529 @@
+Modify PS1
+Calling on  workers with 8 mpi ranks (2 nodes) per worker for size 0256_0256_0256
+Fri 12 Jan 2024 10:25:49 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 8 --app-x 0256 --app-y 0256 --app-z 0256 --gpu-enabled --log GPTune_2n_0256_0256_0256a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv --preserve-history
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 256, 256, 256
+MPI_RANKS (AKA System Size X * Y = Z) = 2 * 4 = 8
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Removing empty default output directory
+Target problem (8, 256, 256, 256) constructed
+GPTune-ified logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv
+Build Surrogate model for size [16, 256, 256, 512]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 14873737137.060774
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [32, 256, 512, 512]
+[HistoryDB] Found a history database file
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 115817707640.45177
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [64, 512, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 7970.674703672044
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  319.06931984444816  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-05  |  1e-10,1e-05  |        
+Build Surrogate model for size [128, 512, 512, 1024]
+[HistoryDB] Found a history database file
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 2199812674097.095
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 512, 1024, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 10039431.584606176
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |       92.8351396661171  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  9.999999999999979e-06  |  1e-10,1e-05  |        
+Machine: polaris | Processor: intel | Num_Nodes: 2 | Num_Cores: 64
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 6 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 2 2', 'p8': '8 1 1', 'p9': '2', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -232.914
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '2 4 1', 'p8': '2 2 2', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -466.135
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '1 2 4', 'p8': '4 2 1', 'p9': '8', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -414.273
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '1 4 2', 'p8': '2 2 2', 'p9': '12', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -497.498
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': '1 4 2', 'p8': '1 2 4', 'p9': '2', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -513.448
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '4 2 1', 'p8': '1 4 2', 'p9': '8', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -363.096
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '1 2 4', 'p8': '1 8 1', 'p9': '8', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -349.806
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '8 1 1', 'p8': '1 1 8', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -740.744
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 1 2', 'p8': '1 4 2', 'p9': '12', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -461.957
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '8 1 1', 'p8': '2 1 4', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -194.055
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 1 2', 'p8': '2 4 1', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -835.382
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 1 8', 'p8': '4 2 1', 'p9': '2', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -368.788
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '2 1 4', 'p8': '4 1 2', 'p9': '12', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -767.096
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 1 4', 'p8': '1 2 4', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -544.101
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '1 8 1', 'p8': '2 4 1', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -794.876
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  90
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '2 4 1', 'p8': '1 4 2', 'p9': '12', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -778.623
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  96
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': '2 2 2', 'p8': '1 2 4', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -442.441
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  102
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 1 2', 'p8': '4 1 2', 'p9': '12', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -398.385
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  108
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': '4 2 1', 'p8': '4 2 1', 'p9': '8', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -545.939
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  114
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '1 8 1', 'p8': '1 1 8', 'p9': '8', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1234.79
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  120
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': ' ', 'p7': '4 2 1', 'p8': '2 4 1', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -449.628
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '1 8 1', 'p8': '1 2 4', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -811.235
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  132
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 4 1', 'p8': '1 8 1', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -248.321
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  138
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '4 1 2', 'p8': '8 1 1', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -498.242
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  144
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': '4 1 2', 'p8': '2 1 4', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -388.905
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  150
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 2 1', 'p8': '2 2 2', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -428.423
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  156
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '1 1 8', 'p8': '2 4 1', 'p9': '2', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -208.18
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  162
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '1 2 4', 'p8': '1 2 4', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -759.882
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': ' ', 'p7': '2 2 2', 'p8': '1 4 2', 'p9': '4', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -410.641
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  174
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 256, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '1 2 4', 'p8': '1 1 8', 'p9': '16', 'mpi_ranks': 8, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 8, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -783.767
+Stats: {'time_total': 649.869835718, 'time_sample_init': 0.669300956, 'time_fun': 76.16057617199999, 'time_search': 537.5449204429999, 'time_model': 35.487365308, 'func_eval_time': [35.911003272], 'search_time': [33.703472856, 35.517496573, 35.588120026, 35.592870957, 35.848513898, 35.884088516, 36.00524105, 36.066612175, 36.494128948, 35.965957849, 36.050443333, 35.966867385, 36.148048724, 36.420424722, 36.292633431], 'modeling_time': [2.762962804, 1.112882334, 1.083788421, 1.239811023, 1.394187685, 1.995373267, 1.117007721, 4.246008388, 2.145648991, 5.728419885, 1.825099877, 1.21181479, 1.65416086, 6.263060635, 1.707138627], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Fri 12 Jan 2024 10:37:03 PM UTC
+Calling on  workers with 16 mpi ranks (4 nodes) per worker for size 0256_0256_0512
+Fri 12 Jan 2024 10:37:03 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 16 --app-x 0256 --app-y 0256 --app-z 0512 --gpu-enabled --log GPTune_4n_0256_0256_0512a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv --preserve-history
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 256, 256, 512
+MPI_RANKS (AKA System Size X * Y = Z) = 4 * 4 = 16
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Removing empty default output directory
+Moved existing gptune files to gptune_files_0
+Target problem (16, 256, 256, 512) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_0.json
+GPTune-ified logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv
+Build Surrogate model for size [8, 256, 256, 256]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 2432.2911588084035
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |     207.55517988861433  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  3.653920004112437e-08  |  1e-10,1e-05  |        
+Build Surrogate model for size [32, 256, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 5571.781389690918
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                 value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |     945.3211536780822  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                 (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  2.41451314027414e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [64, 512, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 3196.326954296573
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  5311.448216447228  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [128, 512, 512, 1024]
+[HistoryDB] Found a history database file
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1587086120314.8691
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 512, 1024, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 12668.433593561267
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      48257.25037987301  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  9.999999826881972e-06  |  1e-10,1e-05  |        
+Machine: polaris | Processor: intel | Num_Nodes: 4 | Num_Cores: 64
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 6 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 8 1', 'p8': '16 1 1', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -406.731
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '4 1 4', 'p8': '2 8 1', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -447.095
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '1 4 4', 'p8': '8 1 2', 'p9': '8', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -505.994
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '1 8 2', 'p8': '2 4 2', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -712.489
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': '1 16 1', 'p8': '1 4 4', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -989.829
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '8 1 2', 'p8': '1 16 1', 'p9': '8', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -596.239
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '1 2 8', 'p8': '2 1 8', 'p9': '8', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -448.325
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '16 1 1', 'p8': '1 1 16', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -899.913
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 2 2', 'p8': '1 8 2', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -520.951
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '8 2 1', 'p8': '2 2 4', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -256.175
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 4 1', 'p8': '4 2 2', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -823.759
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 1 16', 'p8': '8 2 1', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -511.301
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '2 4 2', 'p8': '4 4 1', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1045.9
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 2 4', 'p8': '1 2 8', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -910.572
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 1 8', 'p8': '4 1 4', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -877.703
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  90
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 1 8', 'p8': '1 2 8', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -520.295
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  96
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': ' ', 'p7': '2 4 2', 'p8': '4 1 4', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1059.49
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  102
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '16 1 1', 'p8': '2 4 2', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -887.317
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  108
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '2 1 8', 'p8': '2 8 1', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1173.74
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  114
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '4 4 1', 'p8': '1 2 8', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -360.632
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  120
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '2 2 4', 'p8': '1 8 2', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -465.123
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '4 1 4', 'p8': '2 1 8', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -668.646
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  132
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '1 4 4', 'p8': '16 1 1', 'p9': '4', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -592.8
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  138
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '1 2 8', 'p8': '8 2 1', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1200.5
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  144
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 8 1', 'p8': '8 2 1', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -985.308
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  150
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '2 8 1', 'p8': '8 1 2', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -647.782
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  156
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '1 2 8', 'p8': '2 2 4', 'p9': '12', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1341.29
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  162
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '4 2 2', 'p8': '4 4 1', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -729.25
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '1 8 2', 'p8': '2 4 2', 'p9': '2', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -510.312
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  174
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 256, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '2 1 8', 'p8': '2 4 2', 'p9': '16', 'mpi_ranks': 16, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 16, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -654.036
+Stats: {'time_total': 657.315323348, 'time_sample_init': 0.606273396, 'time_fun': 76.21506459599999, 'time_search': 544.946308958, 'time_model': 35.539778868000006, 'func_eval_time': [35.870530476], 'search_time': [34.10468119, 35.888013009, 35.887121304, 35.678509535, 36.092497332, 36.655271877, 36.505159476, 36.392414544, 36.340054176, 36.379087946, 36.645877491, 37.390045115, 37.064493186, 36.824014984, 37.099067793], 'modeling_time': [1.414376941, 0.844151674, 0.923455134, 2.116134678, 2.586453171, 3.455036789, 1.345105007, 1.603685947, 2.289579626, 1.176927667, 4.563195737, 4.776139577, 1.696972366, 1.694966624, 5.05359793], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Fri 12 Jan 2024 10:48:09 PM UTC
+Calling on  workers with 32 mpi ranks (8 nodes) per worker for size 0256_0512_0512
+Fri 12 Jan 2024 10:48:09 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 32 --app-x 0256 --app-y 0512 --app-z 0512 --gpu-enabled --log GPTune_8n_0256_0512_0512a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv --preserve-history
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 256, 512, 512
+MPI_RANKS (AKA System Size X * Y = Z) = 8 * 4 = 32
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Removing empty default output directory
+Moved existing gptune files to gptune_files_1
+Target problem (32, 256, 512, 512) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_1.json
+GPTune-ified logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv
+Build Surrogate model for size [8, 256, 256, 256]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 5748877797.142216
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [16, 256, 256, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1724.0920026273056
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  228.5583741929881  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-05  |  1e-10,1e-05  |        
+Build Surrogate model for size [64, 512, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 5986.510404364458
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |              value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  402.9214273221922  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |              (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |              1e-05  |  1e-10,1e-05  |        
+Build Surrogate model for size [128, 512, 512, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 2783.4993289444365
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  25240.581254984376  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-05  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 512, 1024, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1864008.9654132484
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      97.47420556983474  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  9.999999999995994e-06  |  1e-10,1e-05  |        
+Machine: polaris | Processor: intel | Num_Nodes: 8 | Num_Cores: 64
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 6 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '4 2 4', 'p8': '16 2 1', 'p9': '2', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -850.252
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '4 2 4', 'p8': '4 2 4', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -969.67
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '1 4 8', 'p8': '8 4 1', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -703.038
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '1 16 2', 'p8': '4 1 8', 'p9': '12', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1283.05
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': '2 1 16', 'p8': '1 8 4', 'p9': '2', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1186.82
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '8 4 1', 'p8': '2 1 16', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1024.55
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '1 4 8', 'p8': '2 2 8', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -527.9
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '32 1 1', 'p8': '1 1 32', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1179.03
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '8 1 4', 'p8': '1 16 2', 'p9': '12', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1125.88
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '16 2 1', 'p8': '2 4 4', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -289.65
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '8 2 2', 'p8': '4 8 1', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1989.59
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 1 32', 'p8': '16 1 2', 'p9': '2', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1073.08
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '2 16 1', 'p8': '8 2 2', 'p9': '12', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2208.28
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 4 4', 'p8': '1 4 8', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1957.64
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 2 8', 'p8': '4 4 2', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1818.74
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  90
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '2 4 4', 'p8': '4 4 2', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1559.99
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  96
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '2 16 1', 'p8': '16 1 2', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1778.39
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  102
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': '1 1 32', 'p8': '8 1 4', 'p9': '12', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1250.64
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  108
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '4 8 1', 'p8': '4 4 2', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1235.6
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  114
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '4 4 2', 'p8': '2 2 8', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1093.69
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  120
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '8 4 1', 'p8': '8 1 4', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2750.16
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '8 4 1', 'p8': '4 4 2', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1713.85
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  132
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '4 4 2', 'p8': '2 2 8', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1365.13
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  138
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '8 4 1', 'p8': '8 1 4', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -769.293
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  144
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '32 1 1', 'p8': '1 1 32', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1860.17
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  150
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 16 2', 'p8': '4 4 2', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1073.41
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  156
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 16 1', 'p8': '1 1 32', 'p9': '16', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1486.43
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  162
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '8 4 1', 'p8': '4 8 1', 'p9': '8', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1787.02
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 8 2', 'p8': '2 2 8', 'p9': '12', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1003.58
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  174
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 256, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '8 1 4', 'p8': '8 2 2', 'p9': '4', 'mpi_ranks': 32, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 32, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1665.03
+Stats: {'time_total': 659.161588896, 'time_sample_init': 0.598024455, 'time_fun': 77.63569462099998, 'time_search': 538.8181235229999, 'time_model': 42.101872232999995, 'func_eval_time': [36.343251024], 'search_time': [33.99861953, 35.788551713, 35.616334208, 35.721388374, 35.307196532, 35.937256816, 35.617481814, 36.311628076, 36.331874569, 36.149439901, 36.051199302, 36.438129726, 36.360645735, 36.507517641, 36.680859586], 'modeling_time': [3.189861695, 2.083270074, 3.819460146, 0.896036018, 2.11066179, 2.182922897, 1.607425137, 1.454703824, 1.628957034, 4.550286911, 4.871084945, 1.889467689, 1.57406182, 1.903579816, 8.340092437], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Fri 12 Jan 2024 10:59:17 PM UTC
+Calling on  workers with 64 mpi ranks (16 nodes) per worker for size 0512_0512_0512
+Fri 12 Jan 2024 10:59:17 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 64 --app-x 0512 --app-y 0512 --app-z 0512 --gpu-enabled --log GPTune_16n_0512_0512_0512a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv --preserve-history
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 512, 512, 512
+MPI_RANKS (AKA System Size X * Y = Z) = 16 * 4 = 64
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Removing empty default output directory
+Moved existing gptune files to gptune_files_2
+Target problem (64, 512, 512, 512) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_2.json
+GPTune-ified logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv
+Build Surrogate model for size [8, 256, 256, 256]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 3243.303071256463
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |       542.7382901203453  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  3.0077573002512118e-09  |  1e-10,1e-05  |        
+Build Surrogate model for size [16, 256, 256, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1459.181575764285
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |     1363.5256698031108  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  4.406240674166613e-08  |  1e-10,1e-05  |        
+Build Surrogate model for size [32, 256, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 1666.5906004100523
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |     10700.939584782112  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  3.886690160143471e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [128, 512, 512, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 382079.5793284051
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |               value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |  197.94523805064404  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |               (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |               1e-05  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 512, 1024, 1024]
+[HistoryDB] Found a history database file
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 5511861744748.756
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Machine: polaris | Processor: intel | Num_Nodes: 16 | Num_Cores: 64
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 6 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '4 8 2', 'p8': '32 2 1', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1818.97
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '4 8 2', 'p8': '4 8 2', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1731.3
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '1 8 8', 'p8': '16 2 2', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1369.39
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '1 64 1', 'p8': '4 2 8', 'p9': '12', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2768.45
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': '2 2 16', 'p8': '1 32 2', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2717.94
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '16 2 2', 'p8': '2 2 16', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1418.93
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '1 4 16', 'p8': '2 8 4', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -969.902
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '64 1 1', 'p8': '1 2 32', 'p9': '16', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1870.46
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '8 4 2', 'p8': '1 32 2', 'p9': '12', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1758.64
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '32 1 2', 'p8': '2 16 2', 'p9': '16', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -391.367
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '16 1 4', 'p8': '8 2 4', 'p9': '16', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3102.39
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 1 64', 'p8': '16 4 1', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1734.31
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '4 1 16', 'p8': '8 8 1', 'p9': '12', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3221.37
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 16 2', 'p8': '1 8 8', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3600.44
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 4 8', 'p8': '4 16 1', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -5200.98
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  90
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 2 16', 'p8': '4 8 2', 'p9': '16', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3614.17
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  96
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '4 1 16', 'p8': '8 8 1', 'p9': '12', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2573.04
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  102
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '4 4 4', 'p8': '8 8 1', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2300.15
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  108
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '8 1 8', 'p8': '8 1 8', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1928.93
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  114
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 4 8', 'p8': '8 1 8', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2608.51
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  120
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '4 8 2', 'p8': '16 2 2', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3546.62
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '4 2 8', 'p8': '16 4 1', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4753.56
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  132
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': '2 4 8', 'p8': '1 4 16', 'p9': '16', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1908.54
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  138
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '64 1 1', 'p8': '16 1 4', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1493.12
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  144
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': '4 1 16', 'p8': '1 1 64', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4074.9
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  150
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '8 4 2', 'p8': '8 4 2', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1422.98
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  156
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 4 8', 'p8': '16 4 1', 'p9': '8', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2657.52
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  162
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '4 4 4', 'p8': '2 2 16', 'p9': '4', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2709.74
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '4 2 8', 'p8': '64 1 1', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3379.63
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  174
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 512, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '1 32 2', 'p8': '1 4 16', 'p9': '2', 'mpi_ranks': 64, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 64, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 10.0, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3632.02
+Stats: {'time_total': 652.057216979, 'time_sample_init': 0.610810173, 'time_fun': 78.26884335300002, 'time_search': 533.310650965, 'time_model': 39.85889830799999, 'func_eval_time': [37.21800016], 'search_time': [33.30049154, 35.10006004, 35.08944761, 35.122734107, 35.298629895, 35.418808491, 35.36445279, 35.745833796, 36.048157762, 35.839420187, 36.086047841, 36.177663514, 36.139285147, 36.332018491, 36.247599754], 'modeling_time': [4.710925997, 0.828440388, 2.027069838, 2.014983386, 1.368775448, 1.169682698, 4.420293837, 1.594111344, 2.937607289, 3.163936748, 1.850945305, 1.941979092, 3.189461355, 6.086554775, 2.554130808], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Fri 12 Jan 2024 11:10:18 PM UTC
+Calling on  workers with 128 mpi ranks (32 nodes) per worker for size 0512_0512_1024
+Fri 12 Jan 2024 11:10:18 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 128 --app-x 0512 --app-y 0512 --app-z 1024 --gpu-enabled --log GPTune_32n_0512_0512_1024a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv --preserve-history
+Detected 64 CPU threads on this machine
+Detected 4 GPUs on this machine
+Set ranks_per_node to 4
+
+APP_SCALE (AKA Problem Size X, Y, Z) = 512, 512, 1024
+MPI_RANKS (AKA System Size X * Y = Z) = 32 * 4 = 128
+Depths are based on 64 threads on each node, shared across 4 MPI ranks on each node
+Selectable depths are: [2, 4, 8, 12, 16]
+
+Removing empty default output directory
+Moved existing gptune files to gptune_files_3
+Target problem (128, 512, 512, 1024) constructed
+--PRESERVE HISTORY-- Move gptune.db/heFFTe.json --> gptune.db/heFFTe_3.json
+GPTune-ified logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv
+GPTune-ified logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv
+Build Surrogate model for size [8, 256, 256, 256]
+[HistoryDB] Create a JSON file at ./gptune.db/heFFTe.json
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 11802.076956203911
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                  value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |     118.39112651149856  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                  (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.197031244952338e-07  |  1e-10,1e-05  |        
+Build Surrogate model for size [16, 256, 256, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 2224.745556834569
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |      151.61240441449092  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  2.7717550112555853e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [32, 256, 512, 512]
+[HistoryDB] Found a history database file
+Warning - optimization restart 1/1 failed
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 38682646702.30757
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |                     1.0  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  5.0000500000000005e-06  |  1e-10,1e-05  |        
+Build Surrogate model for size [64, 512, 512, 512]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 31168.736533690353
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                   value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |       400.0070261018925  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                   (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  1.0000021464369599e-10  |  1e-10,1e-05  |        
+Build Surrogate model for size [256, 512, 1024, 1024]
+[HistoryDB] Found a history database file
+modeler:  Model_GPy_LCM
+M:  
+Name : GP regression
+Objective : 135672.8964724909
+Number of Parameters : 15
+Number of Optimization Parameters : 15
+Updates : True
+Parameters:
+  [1mGP_regression.         [0;0m  |                 value  |  constraints  |  priors
+  [1mGPy_GP.variance        [0;0m  |    138.37619565632318  |      +ve      |        
+  [1mGPy_GP.lengthscale     [0;0m  |                 (13,)  |      +ve      |        
+  [1mGaussian_noise.variance[0;0m  |  9.99999902141723e-06  |  1e-10,1e-05  |        
+Machine: polaris | Processor: intel | Num_Nodes: 32 | Num_Cores: 64
+[HistoryDB] Found a history database file
+
+
+
+------Starting MLA with 6 tasks and 30 samples each 
+[HistoryDB] Found a history database file
+no history data has been loaded
+NS1:  15
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '8 1 16', 'p8': '64 2 1', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3204.29
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '8 1 16', 'p8': '4 32 1', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2985.18
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-slabs', 'p6': ' ', 'p7': '1 16 8', 'p8': '32 1 4', 'p9': '8', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1695.28
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '2 1 64', 'p8': '4 8 4', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4465.25
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': '-pencils', 'p6': ' ', 'p7': '2 4 16', 'p8': '1 64 2', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4609.12
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '32 1 4', 'p8': '2 4 16', 'p9': '8', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2347.23
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': '-slabs', 'p6': ' ', 'p7': '1 8 16', 'p8': '2 32 2', 'p9': '8', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1090.02
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '128 1 1', 'p8': '1 2 64', 'p9': '16', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2288.21
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '16 1 8', 'p8': '1 128 1', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -5519.27
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2a', 'p4': ' ', 'p5': '-pencils', 'p6': '-r2c_dir 1', 'p7': '32 4 1', 'p8': '2 64 1', 'p9': '16', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -1069.81
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '16 4 2', 'p8': '8 8 2', 'p9': '16', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -5317.82
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 2', 'p7': '1 1 128', 'p8': '32 4 1', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3598.09
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '4 4 8', 'p8': '16 2 4', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6284.49
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 0', 'p7': '2 64 1', 'p8': '1 16 8', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6206.14
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 16 4', 'p8': '8 4 4', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6924.44
+NSmin:  15
+NS:  30
+Iteration:  0
+[HistoryDB] Found a history database file
+loaded function evaluations:  90
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '4 8 4', 'p8': '4 2 16', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6109.17
+Iteration:  1
+[HistoryDB] Found a history database file
+loaded function evaluations:  96
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '2 16 4', 'p8': '1 128 1', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3376.66
+Iteration:  2
+[HistoryDB] Found a history database file
+loaded function evaluations:  102
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': ' ', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '2 64 1', 'p8': '4 8 4', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -710.087
+Iteration:  3
+[HistoryDB] Found a history database file
+loaded function evaluations:  108
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2av', 'p4': '-p2p_pl', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 8 4', 'p8': '4 4 8', 'p9': '8', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3075.7
+Iteration:  4
+[HistoryDB] Found a history database file
+loaded function evaluations:  114
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 0', 'p7': '8 1 16', 'p8': '4 2 16', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2995.65
+Iteration:  5
+[HistoryDB] Found a history database file
+loaded function evaluations:  120
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': ' ', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': '2 16 4', 'p8': '32 4 1', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4872.62
+Iteration:  6
+[HistoryDB] Found a history database file
+loaded function evaluations:  126
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'double', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': '-a2av', 'p4': ' ', 'p5': ' ', 'p6': ' ', 'p7': '2 16 4', 'p8': '8 8 2', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -2454.87
+Iteration:  7
+[HistoryDB] Found a history database file
+loaded function evaluations:  132
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-no-reorder', 'p3': '-a2av', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 2', 'p7': '1 1 128', 'p8': '1 4 32', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -3802.49
+Iteration:  8
+[HistoryDB] Found a history database file
+loaded function evaluations:  138
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '8 2 8', 'p8': '8 4 4', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6327.78
+Iteration:  9
+[HistoryDB] Found a history database file
+loaded function evaluations:  144
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p', 'p5': ' ', 'p6': '-r2c_dir 1', 'p7': '4 2 16', 'p8': '16 4 2', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -5515.77
+Iteration:  10
+[HistoryDB] Found a history database file
+loaded function evaluations:  150
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': ' ', 'p7': '16 1 8', 'p8': '1 8 16', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6373.98
+Iteration:  11
+[HistoryDB] Found a history database file
+loaded function evaluations:  156
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': '-a2a', 'p4': '-p2p_pl', 'p5': '-slabs', 'p6': '-r2c_dir 1', 'p7': '2 32 2', 'p8': '4 32 1', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -7328.15
+Iteration:  12
+[HistoryDB] Found a history database file
+loaded function evaluations:  162
+Warning - optimization restart 1/1 failed
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': ' ', 'p3': ' ', 'p4': '-p2p', 'p5': '-slabs', 'p6': '-r2c_dir 0', 'p7': '2 8 8', 'p8': '16 8 1', 'p9': '2', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -4095.92
+Iteration:  13
+[HistoryDB] Found a history database file
+loaded function evaluations:  168
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': '-pencils', 'p6': '-r2c_dir 2', 'p7': '2 4 16', 'p8': '32 2 2', 'p9': '12', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -6906.35
+Iteration:  14
+[HistoryDB] Found a history database file
+loaded function evaluations:  174
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+searcher:  SearchPyGMO algorithm:  pso
+CONFIG: {'c0': 'cufft', 'p0': 'float', 'p1x': 512, 'p1y': 512, 'p1z': 1024, 'p2': '-reorder', 'p3': ' ', 'p4': '-p2p_pl', 'p5': ' ', 'p6': ' ', 'p7': '4 32 1', 'p8': '1 1 128', 'p9': '4', 'mpi_ranks': 128, 'machine_info': {'identifier': 'polaris', 'mpi_ranks': 128, 'threads_per_node': 4, 'ranks_per_node': 4, 'gpu_enabled': True, 'libE_workers': 1, 'app_timeout': 300, 'sequence': [2, 4, 8, 12, 16]}}
+OUTPUT: -5936.15
+Stats: {'time_total': 675.676111682, 'time_sample_init': 0.60123017, 'time_fun': 80.30492990500001, 'time_search': 540.3193719840001, 'time_model': 54.442318305, 'func_eval_time': [37.54885471], 'search_time': [33.653731223, 35.776078876, 35.468779133, 35.561387234, 35.758387031, 35.861551531, 35.992167788, 36.118098427, 35.738768547, 36.745762307, 36.434459608, 36.277625196, 37.281212615, 36.680130802, 36.971231666], 'modeling_time': [4.67576244, 1.281587264, 1.000886738, 1.686501094, 2.758743385, 6.571869414, 1.134794976, 3.097411039, 1.751665919, 3.293561853, 4.360259256, 4.604786679, 3.834941646, 4.904116453, 9.485430149], 'modeling_iteration': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Fri 12 Jan 2024 11:21:42 PM UTC
+Calling on  workers with 256 mpi ranks (64 nodes) per worker for size 0512_1024_1024
+Fri 12 Jan 2024 11:21:42 PM UTC
+python3 wrapper_components/gptune_heffte.py --sys 256 --app-x 0512 --app-y 1024 --app-z 1024 --gpu-enabled --log GPTune_64n_0512_1024_1024a.csv --inputs logs/PolarisSourceTasks/Polaris_002n_0256_0256_0256a/manager_results.csv logs/PolarisSourceTasks/Polaris_004n_0256_0256_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_008n_0256_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_016n_0512_0512_0512a/manager_results.csv logs/PolarisSourceTasks/Polaris_032n_0512_0512_1024a/manager_results.csv logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --ignore logs/PolarisSourceTasks/Polaris_064n_0512_1024_1024a/manager_results.csv --preserve-history

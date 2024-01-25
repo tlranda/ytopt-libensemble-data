@@ -1,0 +1,104 @@
+,FLOPS,c0,elapsed_sec,gpu_enabled,libE_id,libE_workers,mpi_ranks,p0,p1x,p1y,p1z,p2,p3,p4,p5,p6,p7,p8,p9,ranks_per_node,threads_per_node
+0,-711.928,cufft,1119.248328447342,True,4,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,4,4,64
+1,-705.054,cufft,1036.604721069336,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,4,4,64
+2,-703.47,cufft,749.02738904953,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,2,4,64
+3,-701.144,cufft,1174.5108737945557,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,2,4,64
+4,-700.878,cufft,800.5036544799805,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,12,4,64
+5,-698.13,cufft,827.5838820934296,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,8,4,64
+6,-697.351,cufft,810.7835810184479,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,8,4,64
+7,-697.076,cufft,796.3474013805389,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,8,4,64
+8,-697.058,cufft,837.9587614536285,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,16,4,64
+9,-695.194,cufft,666.1687512397766,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,16,4,64
+10,-689.38,cufft,993.674036502838,True,2,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,12,4,64
+11,-687.246,cufft,1141.7252714633942,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl, ,-r2c_dir 1,8 2 1,2 8 1,12,4,64
+12,-680.704,cufft,1065.6760878562927,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,12,4,64
+13,-675.724,cufft,1077.9094443321228,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,16,4,64
+14,-674.75,cufft,779.8956377506256,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,2,4,64
+15,-672.636,cufft,703.757052898407,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,4,4,64
+16,-670.845,cufft,693.535641670227,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,8,4,64
+17,-670.77,cufft,1086.0965065956116,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,12,4,64
+18,-670.446,cufft,825.4958698749542,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,8,4,64
+19,-669.039,cufft,854.3565864562988,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,8,4,64
+20,-668.526,cufft,729.5257470607758,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,2,4,64
+21,-667.92,cufft,1176.481965303421,True,5,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl, ,-r2c_dir 1,8 2 1,4 4 1,2,4,64
+22,-667.751,cufft,1069.7571301460266,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,16,4,64
+23,-666.844,cufft,969.1196093559264,True,2,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,2,4,64
+24,-665.863,cufft,682.4616820812225,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,4,4,64
+25,-665.325,cufft,829.5878176689148,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,12,4,64
+26,-663.944,cufft,1148.0474219322205,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,8,4,64
+27,-663.4,cufft,759.3917100429535,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,16,4,64
+28,-662.942,cufft,1098.4058921337128,True,4,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils, ,8 2 1,4 4 1,12,4,64
+29,-662.098,cufft,783.9982762336731,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,16,4,64
+30,-662.055,cufft,819.3057034015656,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,4,4,64
+31,-661.09,cufft,846.2260942459106,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,12,4,64
+32,-660.396,cufft,977.4149537086488,True,2,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,8,4,64
+33,-660.244,cufft,1090.1982719898224,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,12,4,64
+34,-659.965,cufft,1073.8709254264832,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,12,4,64
+35,-659.83,cufft,817.0151715278625,True,5,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,4,4,64
+36,-659.533,cufft,850.3190312385559,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 4 2,12,4,64
+37,-659.518,cufft,1163.8729012012482,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils, ,8 2 1,4 4 1,16,4,64
+38,-658.291,cufft,703.7857155799866,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,4 4 1,8,4,64
+39,-658.165,cufft,1094.3043687343595,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils, ,8 2 1,4 4 1,2,4,64
+40,-656.716,cufft,1169.1795644760132,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl, ,-r2c_dir 1,8 2 1,4 4 1,12,4,64
+41,-655.467,cufft,781.9734191894531,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,4,4,64
+42,-654.801,cufft,1061.5701355934143,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 4 1,16,4,64
+43,-653.327,cufft,798.4540605545044,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,12,4,64
+44,-652.089,cufft,682.5005595684052,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,4 1 4,4,4,64
+45,-648.831,cufft,732.6485934257507,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils, ,8 2 1,4 4 1,8,4,64
+46,-648.802,cufft,761.4300653934479,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,4 1 4,12,4,64
+47,-647.506,cufft,646.1250739097595,True,2,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils, ,8 2 1,4 4 1,16,4,64
+48,-643.333,cufft,1163.8844470977783,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl, ,-r2c_dir 0,8 2 1,4 4 1,12,4,64
+49,-638.596,cufft,1001.9565649032592,True,2,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,4 4 1,12,4,64
+50,-633.923,cufft,1115.166160583496,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,2,4,64
+51,-626.195,cufft,1123.4245162010193,True,4,4,16,float,256,256,512,-no-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,12,4,64
+52,-626.16,cufft,1106.7003645896912,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils, ,8 2 1,2 8 1,12,4,64
+53,-624.754,cufft,646.123288154602,True,3,4,16,float,256,256,512,-reorder, , ,-pencils, ,8 2 1,8 1 2,16,4,64
+54,-619.805,cufft,1135.7466440200806,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,12,4,64
+55,-619.147,cufft,727.351033449173,True,5,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 1 4,12,4,64
+56,-618.454,cufft,664.1801156997681,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils, ,8 2 1,2 1 8,4,4,64
+57,-617.794,cufft,823.4408895969391,True,3,4,16,float,256,256,512, , ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,8,4,64
+58,-617.137,cufft,1131.6912353038788,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,8,4,64
+59,-617.042,cufft,696.6828529834747,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,8 2 1,8,4,64
+60,-615.478,cufft,775.7919461727142,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,2,4,64
+61,-614.635,cufft,804.697735786438,True,5,4,16,float,256,256,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,8,4,64
+62,-614.053,cufft,786.0782210826874,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,2,4,64
+63,-613.918,cufft,1181.830836057663,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,12,4,64
+64,-613.368,cufft,757.2908098697662,True,5,4,16,float,256,256,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,4,4,64
+65,-612.982,cufft,1127.5898854732511,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,2 1 8,12,4,64
+66,-612.169,cufft,790.2490723133087,True,3,4,16,float,256,256,512,-no-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,4,4,64
+67,-611.207,cufft,689.5298547744751,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 2 2,4,4,64
+68,-610.121,cufft,1145.9665579795835,True,4,4,16,float,256,256,512, ,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,4 4 1,12,4,64
+69,-608.425,cufft,842.0805988311768,True,3,4,16,float,256,256,512,-no-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 8 1,16,4,64
+70,-607.46,cufft,773.7186629772186,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,2 8 1,16,4,64
+71,-607.124,cufft,713.0178365707397,True,5,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,2 4 2,2,4,64
+72,-606.334,cufft,769.680602312088,True,5,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,2 8 1,8,4,64
+73,-605.928,cufft,658.1145532131195,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils, ,8 2 1,2 4 2,16,4,64
+74,-605.472,cufft,738.7718806266785,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 2 1,2 8 1,4,4,64
+75,-605.325,cufft,1160.7638919353485,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,8 2 1,4,4,64
+76,-605.216,cufft,1143.8810431957245,True,4,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 1 8,2,4,64
+77,-604.812,cufft,763.5649802684784,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,8 2 1,2,4,64
+78,-603.841,cufft,1165.9028379917145,True,3,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 2 4,16,4,64
+79,-603.374,cufft,771.7230031490326,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils, ,8 2 1,2 8 1,12,4,64
+80,-600.311,cufft,1110.8506383895874,True,4,4,16,float,256,256,512,-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 2 1,2 1 8,8,4,64
+0,-1341.29,cufft,532.7571520805359,True,0,1,16,float,256,256,512,-reorder, ,-p2p_pl,-slabs,-r2c_dir 0,1 2 8,2 2 4,12,4,4
+1,-1200.5,cufft,403.3767583370209,True,0,1,16,double,256,256,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 1,1 2 8,8 2 1,12,4,4
+2,-1173.74,cufft,196.8098692893982,True,0,1,16,float,256,256,512, , , ,-pencils,-r2c_dir 1,2 1 8,2 8 1,12,4,4
+3,-1059.49,cufft,116.97598361968994,True,0,1,16,float,256,256,512,-no-reorder,-a2av,-p2p, , ,2 4 2,4 1 4,4,4,4
+4,-1045.9,cufft,34.125879526138306,True,0,1,16,float,256,256,512, ,-a2a,-p2p_pl, ,-r2c_dir 2,2 4 2,4 4 1,12,4,4
+5,-989.829,cufft,15.876272916793823,True,0,1,16,float,256,256,512,-no-reorder, , ,-pencils, ,1 16 1,1 4 4,2,4,4
+6,-985.308,cufft,443.5839469432831,True,0,1,16,float,256,256,512, ,-a2av,-p2p_pl,-pencils,-r2c_dir 0,2 8 1,8 2 1,16,4,4
+7,-910.572,cufft,36.32789731025696,True,0,1,16,float,256,256,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,2 2 4,1 2 8,4,4,4
+8,-899.913,cufft,22.74980330467224,True,0,1,16,float,256,256,512, ,-a2a,-p2p,-slabs,-r2c_dir 2,16 1 1,1 1 16,16,4,4
+9,-887.317,cufft,156.3733627796173,True,0,1,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-slabs, ,16 1 1,2 4 2,2,4,4
+10,-877.703,cufft,38.73637819290161,True,0,1,16,float,256,256,512, , ,-p2p_pl, ,-r2c_dir 0,2 1 8,4 1 4,4,4,4
+11,-823.759,cufft,29.61971592903137,True,0,1,16,float,256,256,512,-reorder,-a2a,-p2p, ,-r2c_dir 1,4 4 1,4 2 2,16,4,4
+12,-729.25,cufft,574.1904151439667,True,0,1,16,double,256,256,512, , ,-p2p,-slabs, ,4 2 2,4 4 1,16,4,4
+13,-712.489,cufft,13.63792109489441,True,0,1,16,double,256,256,512,-reorder,-a2a,-p2p_pl,-slabs, ,1 8 2,2 4 2,12,4,4
+14,-668.646,cufft,321.44616985321045,True,0,1,16,double,256,256,512, ,-a2av, ,-slabs,-r2c_dir 0,4 1 4,2 1 8,4,4,4
+15,-654.036,cufft,660.2636361122131,True,0,1,16,double,256,256,512, ,-a2av, ,-slabs,-r2c_dir 1,2 1 8,2 4 2,16,4,4
+16,-647.782,cufft,487.9253981113434,True,0,1,16,double,256,256,512,-no-reorder,-a2a, ,-slabs,-r2c_dir 0,2 8 1,8 1 2,2,4,4
+0,-1210.89,cufft,51.6019458770752,True,3,4,16,float,256,256,512,-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 2,1 4 4,2 2 4,2,4,64
+1,-1013.89,cufft,50.827735900878906,True,2,4,16,float,256,256,512, , ,-p2p_pl,-slabs,-r2c_dir 0,2 8 1,2 2 4,3,4,64
+2,-912.487,cufft,35.81609916687012,True,3,4,16,float,256,256,512,-no-reorder, ,-p2p,-pencils,-r2c_dir 0,1 16 1,2 2 4,10,4,64
+3,-847.6,cufft,35.40143346786499,True,5,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils, ,1 4 4,2 2 4,9,4,64
+4,-765.896,cufft,47.578036308288574,True,3,4,16,float,256,256,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,2 8 1,2 2 4,8,4,64
