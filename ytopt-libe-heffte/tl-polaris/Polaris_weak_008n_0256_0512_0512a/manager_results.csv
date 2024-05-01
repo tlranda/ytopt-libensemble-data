@@ -1,31 +1,31 @@
 p0,p1x,p1y,p1z,p2,p3,p4,p5,p6,p7,p8,p9,c0,FLOPS,elapsed_sec,machine_identifier,mpi_ranks,threads_per_node,ranks_per_node,gpu_enabled,libE_id,libE_workers
-double,256,512,512, , ,-p2p, ,-r2c_dir 1,4 4 2,16 2 1,7,cufft,-342.274,11.784016132354736,polaris-gpu,32,64,4,True,2,4
-float,256,512,512,-no-reorder, , , ,-r2c_dir 0,8 4 1,1 2 16,14,cufft,-296.746,11.546875238418579,polaris-gpu,32,64,4,True,3,4
-float,256,512,512,-no-reorder, , , , ,32 1 1,1 4 8,15,cufft,-282.77,13.028260231018066,polaris-gpu,32,64,4,True,4,4
-float,256,512,512, , ,-p2p_pl, ,-r2c_dir 0,4 1 8,8 1 4,10,cufft,-324.133,11.229033708572388,polaris-gpu,32,64,4,True,5,4
-float,256,512,512, , ,-p2p_pl,-slabs,-r2c_dir 0,4 1 8,16 2 1,4,cufft,-284.614,16.8955237865448,polaris-gpu,32,64,4,True,5,4
-float,256,512,512, ,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 4 1,32 1 1,7,cufft,-214.095,17.68481159210205,polaris-gpu,32,64,4,True,3,4
-float,256,512,512, ,-a2a,-p2p_pl, ,-r2c_dir 2,8 4 1,4 4 2,4,cufft,-570.886,17.682601928710938,polaris-gpu,32,64,4,True,2,4
-float,256,512,512, ,-a2a,-p2p_pl, ,-r2c_dir 0,1 32 1,1 4 8,4,cufft,-386.951,20.145254611968994,polaris-gpu,32,64,4,True,4,4
-float,256,512,512,-reorder, , ,-pencils, ,4 4 2,8 1 4,4,cufft,-419.912,22.800901412963867,polaris-gpu,32,64,4,True,5,4
-double,256,512,512,-reorder, ,-p2p_pl, ,-r2c_dir 0,4 4 2,4 8 1,6,cufft,-215.464,23.417943477630615,polaris-gpu,32,64,4,True,2,4
-float,256,512,512,-reorder,-a2av, ,-slabs, ,4 4 2,8 4 1,4,cufft,-1426.62,23.917689323425293,polaris-gpu,32,64,4,True,3,4
-float,256,512,512,-reorder,-a2av,-p2p_pl,-slabs,-r2c_dir 1,8 2 2,1 32 1,4,cufft,-419.769,26.395092248916626,polaris-gpu,32,64,4,True,4,4
-float,256,512,512,-no-reorder,-a2a,-p2p_pl,-slabs,-r2c_dir 1,4 4 2,4 4 2,14,cufft,-444.225,28.720181465148926,polaris-gpu,32,64,4,True,5,4
-float,256,512,512,-no-reorder, ,-p2p_pl, ,-r2c_dir 2,4 4 2,1 8 4,4,cufft,-1546.58,29.65872311592102,polaris-gpu,32,64,4,True,2,4
-float,256,512,512, , , ,-pencils,-r2c_dir 0,8 4 1,1 16 2,4,cufft,-273.044,29.339606046676636,polaris-gpu,32,64,4,True,3,4
-float,256,512,512, , , ,-pencils, ,1 32 1,8 4 1,16,cufft,-659.874,33.211477279663086,polaris-gpu,32,64,4,True,4,4
-float,256,512,512, , ,-p2p_pl,-slabs,-r2c_dir 0,1 32 1,4 4 2,4,cufft,-258.225,33.87372636795044,polaris-gpu,32,64,4,True,5,4
-float,256,512,512, , , ,-pencils, ,8 4 1,8 2 2,7,cufft,-880.918,34.35789632797241,polaris-gpu,32,64,4,True,3,4
-float,256,512,512, ,-a2a,-p2p_pl, ,-r2c_dir 1,8 4 1,4 1 8,16,cufft,-500.904,35.56546592712402,polaris-gpu,32,64,4,True,2,4
-float,256,512,512,-no-reorder,-a2a, ,-pencils,-r2c_dir 2,4 4 2,1 4 8,4,cufft,-1607.85,39.854633808135986,polaris-gpu,32,64,4,True,4,4
-float,256,512,512,-reorder,-a2av, , ,-r2c_dir 2,4 4 2,8 4 1,4,cufft,-271.841,40.3451988697052,polaris-gpu,32,64,4,True,5,4
-float,256,512,512,-reorder, ,-p2p_pl, , ,2 4 4,4 2 4,12,cufft,-1591.04,39.39302372932434,polaris-gpu,32,64,4,True,3,4
-float,256,512,512,-no-reorder, , , ,-r2c_dir 2,1 32 1,32 1 1,11,cufft,-208.232,43.19453310966492,polaris-gpu,32,64,4,True,2,4
+double,256,512,512,-no-reorder, ,-p2p,-pencils,-r2c_dir 1,4 4 2,16 2 1,7,cufft,-342.274,11.784016132354736,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 0,8 4 1,1 2 16,14,cufft,-296.746,11.54687523841858,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 0,32 1 1,1 4 8,15,cufft,-282.77,13.028260231018066,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,4 1 8,8 1 4,10,cufft,-324.133,11.229033708572388,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 0,4 1 8,16 2 1,4,cufft,-284.614,16.8955237865448,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,8 4 1,32 1 1,7,cufft,-214.095,17.68481159210205,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 2,8 4 1,4 4 2,4,cufft,-570.886,17.682601928710938,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-no-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 0,1 32 1,1 4 8,4,cufft,-386.951,20.145254611969,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-reorder, , ,-pencils,-r2c_dir 0,4 4 2,8 1 4,4,cufft,-419.912,22.800901412963867,polaris-gpu,32,64,4,True,5,4
+double,256,512,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,4 4 2,4 8 1,6,cufft,-215.464,23.41794347763061,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-reorder,-a2av, ,-slabs,-r2c_dir 0,4 4 2,8 4 1,4,cufft,-1426.62,23.917689323425293,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-reorder,-a2av,-p2p_pl,-slabs,-r2c_dir 1,8 2 2,1 32 1,4,cufft,-419.769,26.395092248916622,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-no-reorder,-a2a,-p2p_pl,-slabs,-r2c_dir 1,4 4 2,4 4 2,14,cufft,-444.225,28.72018146514893,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 2,4 4 2,1 8 4,4,cufft,-1546.58,29.65872311592102,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 0,8 4 1,1 16 2,4,cufft,-273.044,29.33960604667664,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 0,1 32 1,8 4 1,16,cufft,-659.874,33.211477279663086,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 0,1 32 1,4 4 2,4,cufft,-258.225,33.87372636795044,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 0,8 4 1,8 2 2,7,cufft,-880.918,34.35789632797241,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder,-a2a,-p2p_pl,-pencils,-r2c_dir 1,8 4 1,4 1 8,16,cufft,-500.904,35.56546592712402,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-no-reorder,-a2a, ,-pencils,-r2c_dir 2,4 4 2,1 4 8,4,cufft,-1607.85,39.85463380813599,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-reorder,-a2av, ,-pencils,-r2c_dir 2,4 4 2,8 4 1,4,cufft,-271.841,40.3451988697052,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,2 4 4,4 2 4,12,cufft,-1591.04,39.39302372932434,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder, , ,-pencils,-r2c_dir 2,1 32 1,32 1 1,11,cufft,-208.232,43.19453310966492,polaris-gpu,32,64,4,True,2,4
 float,256,512,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 1,1 8 4,1 1 32,15,cufft,-344.695,45.468639850616455,polaris-gpu,32,64,4,True,3,4
-float,256,512,512, , ,-p2p_pl,-slabs,-r2c_dir 0,4 1 8,16 1 2,14,cufft,-509.809,45.76162886619568,polaris-gpu,32,64,4,True,4,4
-float,256,512,512,-no-reorder,-a2a, , , ,4 4 2,1 2 16,4,cufft,-642.978,47.25026774406433,polaris-gpu,32,64,4,True,5,4
-float,256,512,512, , ,-p2p_pl,-pencils,-r2c_dir 0,4 4 2,1 2 16,7,cufft,-326.149,48.73119592666626,polaris-gpu,32,64,4,True,2,4
-float,256,512,512,-no-reorder,-a2av,-p2p_pl,-pencils, ,4 4 2,32 1 1,4,cufft,-338.702,50.37084174156189,polaris-gpu,32,64,4,True,3,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 0,4 1 8,16 1 2,14,cufft,-509.809,45.76162886619568,polaris-gpu,32,64,4,True,4,4
+float,256,512,512,-no-reorder,-a2a, ,-pencils,-r2c_dir 0,4 4 2,1 2 16,4,cufft,-642.978,47.25026774406433,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder, ,-p2p_pl,-pencils,-r2c_dir 0,4 4 2,1 2 16,7,cufft,-326.149,48.73119592666626,polaris-gpu,32,64,4,True,2,4
+float,256,512,512,-no-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,4 4 2,32 1 1,4,cufft,-338.702,50.37084174156189,polaris-gpu,32,64,4,True,3,4
 float,256,512,512,-no-reorder, ,-p2p_pl,-slabs,-r2c_dir 0,4 4 2,32 1 1,5,cufft,-696.72,50.79559636116028,polaris-gpu,32,64,4,True,4,4
-float,256,512,512, ,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 4 1,2 8 2,6,cufft,-1516.91,51.58157920837402,polaris-gpu,32,64,4,True,5,4
+float,256,512,512,-no-reorder,-a2av,-p2p_pl,-pencils,-r2c_dir 0,8 4 1,2 8 2,6,cufft,-1516.91,51.58157920837402,polaris-gpu,32,64,4,True,5,4
